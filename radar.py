@@ -2,11 +2,19 @@
 import os
 import requests
 
-MIN_LIQUIDITY_USD = 25000
+MIN_LIQUIDITY_USD = 25_000
 DEXSCREENER_URL = "https://api.dexscreener.com/token-profiles/latest/v1"
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+# Criteri iniziali, da calibrare dopo aver osservato i risultati.
+MIN_VOLUME_5M_USD = 5_000
+MIN_VOLUME_1H_USD = 20_000
+MIN_CHANGE_5M_PERCENT = 2.0
+MIN_CHANGE_1H_PERCENT = 3.0
+
+HEADERS = {"User-Agent": "Meme-Pump-Radar-AI/1.0"}
 
 
 def send_telegram(message):
@@ -25,27 +33,41 @@ def send_telegram(message):
             data={
                 "chat_id": TELEGRAM_CHAT_ID,
                 "text": message,
+                "disable_web_page_preview": True,
             },
             timeout=15,
         )
         response.raise_for_status()
         print("Notifica Telegram inviata.")
-
     except requests.RequestException as error:
         print(f"Errore Telegram: {error}")
 
 
+def number(value):
+    try:
+        return float(value or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
 def main():
     print("Meme Pump Radar AI")
-    print("Ricerca delle meme coin Solana...")
+    print("Ricerca delle coppie Solana...")
 
     try:
-        response = requests.get(DEXSCREENER_URL, timeout=20)
+        response = requests.get(
+            DEXSCREENER_URL, headers=HEADERS, timeout=20
+        )
         response.raise_for_status()
         tokens = response.json()
 
+        if not isinstance(tokens, list):
+            print("Risposta inattesa da DexScreener.")
+            return
+
+        seen_pairs = set()
         found = 0
-        alerted = set()
+        candidates = 0
 
         for token in tokens:
             if token.get("chainId") != "solana":
@@ -61,10 +83,11 @@ def main():
             )
 
             try:
-                pair_response = requests.get(pair_url, timeout=20)
+                pair_response = requests.get(
+                    pair_url, headers=HEADERS, timeout=20
+                )
                 pair_response.raise_for_status()
                 pairs = pair_response.json()
-
             except requests.RequestException as error:
                 print(f"Errore nel recupero delle coppie: {error}")
                 continue
@@ -73,50 +96,71 @@ def main():
                 continue
 
             for pair in pairs:
-                liquidity = pair.get("liquidity") or {}
-                liquidity_usd = liquidity.get("usd") or 0
-
-                if liquidity_usd < MIN_LIQUIDITY_USD:
+                if pair.get("chainId") != "solana":
                     continue
 
-                base_token = pair.get("baseToken") or {}
-                name = base_token.get("name", "N/D")
-                symbol = base_token.get("symbol", "N/D")
-                price = pair.get("priceUsd", "N/D")
-                pair_url = pair.get("url", "")
+                pair_id = pair.get("pairAddress")
+                if not pair_id or pair_id in seen_pairs:
+                    continue
+                seen_pairs.add(pair_id)
 
-                print(
-                    f"Token: {name} | "
-                    f"Simbolo: {symbol} | "
-                    f"Liquidità: ${liquidity_usd:,.0f} | "
-                    f"Prezzo: ${price} | "
-                    f"URL: {pair_url}"
+                liquidity = number(
+                    (pair.get("liquidity") or {}).get("usd")
                 )
+                if liquidity < MIN_LIQUIDITY_USD:
+                    continue
 
                 found += 1
+                volume = pair.get("volume") or {}
+                change = pair.get("priceChange") or {}
 
-                pair_id = pair.get("pairAddress") or pair_url
+                volume_5m = number(volume.get("m5"))
+                volume_1h = number(volume.get("h1"))
+                change_5m = number(change.get("m5"))
+                change_1h = number(change.get("h1"))
 
-                if pair_id and pair_id not in alerted:
+                base = pair.get("baseToken") or {}
+                name = base.get("name", "N/D")
+                symbol = base.get("symbol", "N/D")
+                price = pair.get("priceUsd", "N/D")
+                url = pair.get("url", "")
+
+                print(
+                    f"{symbol} | liquidità ${liquidity:,.0f} | "
+                    f"volume 5m ${volume_5m:,.0f} | "
+                    f"volume 1h ${volume_1h:,.0f} | "
+                    f"variazione 5m {change_5m:.2f}% | "
+                    f"variazione 1h {change_1h:.2f}%"
+                )
+
+                # Segnale preliminare: volume e prezzo in accelerazione.
+                volume_signal = (
+                    volume_5m >= MIN_VOLUME_5M_USD
+                    or volume_1h >= MIN_VOLUME_1H_USD
+                )
+                price_signal = (
+                    change_5m >= MIN_CHANGE_5M_PERCENT
+                    or change_1h >= MIN_CHANGE_1H_PERCENT
+                )
+
+                if volume_signal and price_signal:
+                    candidates += 1
                     message = (
-                        "Meme Pump Radar AI\n"
-                        f"Token: {name}\n"
-                        f"Simbolo: {symbol}\n"
-                        f"Liquidità: ${liquidity_usd:,.0f}\n"
+                        "Meme Pump Radar AI - Segnale preliminare\n"
+                        f"Token: {name} ({symbol})\n"
+                        f"Liquidità: ${liquidity:,.0f}\n"
                         f"Prezzo: ${price}\n"
-                        f"Link: {pair_url}"
+                        f"Volume 5m: ${volume_5m:,.0f}\n"
+                        f"Volume 1h: ${volume_1h:,.0f}\n"
+                        f"Variazione 5m: {change_5m:.2f}%\n"
+                        f"Variazione 1h: {change_1h:.2f}%\n"
+                        f"Link: {url}\n"
+                        "Nota: segnale automatico, non garanzia di rialzo."
                     )
-
                     send_telegram(message)
-                    alerted.add(pair_id)
 
-        print(f"\nCoppie trovate: {found}")
-
-        if found == 0:
-            print(
-                "Nessuna coppia trovata con liquidità "
-                "minima di 25.000 USD."
-            )
+        print(f"Coppie con liquidità >= $25.000: {found}")
+        print(f"Segnali preliminari: {candidates}")
 
     except requests.RequestException as error:
         print(f"Errore di connessione DexScreener: {error}")
