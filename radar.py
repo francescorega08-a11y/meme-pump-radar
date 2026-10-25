@@ -1,6 +1,34 @@
 
 import requests
+import os
 
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+
+def send_telegram(message):
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        print("Telegram non configurato.")
+        return
+
+    url = (
+        f"https://api.telegram.org/bot"
+        f"{TELEGRAM_BOT_TOKEN}/sendMessage"
+    )
+
+    try:
+        response = requests.post(
+            url,
+            data={
+                "chat_id": TELEGRAM_CHAT_ID,
+                "text": message,
+            },
+            timeout=15,
+        )
+        response.raise_for_status()
+        print("Notifica Telegram inviata.")
+    except requests.RequestException as error:
+        print(f"Errore Telegram: {error}")
 MIN_LIQUIDITY_USD = 25000
 DEXSCREENER_URL = "https://api.dexscreener.com/token-profiles/latest/v1"
 
