@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>Meme Pump Radar AI</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #141c2f;
+      --border: #293650;
+      --text: #edf2ff;
+      --muted: #95a3bd;
+      --green: #36e0a1;
+      --blue: #75a7ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(24px, 5vw, 34px);
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .status {
+      color: var(--green);
+      border: 1px solid #245c4c;
+      background: #102b28;
+      border-radius: 20px;
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .card, .section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .label {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    .value {
+      font-size: clamp(22px, 4vw, 30px);
+      font-weight: 700;
+    }
+
+    .green { color: var(--green); }
+    .blue { color: var(--blue); }
+
+    .section { margin-bottom: 18px; }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 16px;
+    }
+
+    .notice {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 540px;
+      font-size: 14px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 13px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .empty {
+      text-align: center;
+      color: var(--muted);
+      padding: 28px 12px;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+      padding: 14px 0;
+    }
+
+    @media (max-width: 650px) {
+      body { padding: 14px; }
+      .grid { grid-template-columns: 1fr; }
+      .card { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div>
+        <h1>⚡ Meme Pump Radar AI</h1>
+        <div class="subtitle">
+          Solana · Early signal monitoring
+        </div>
+      </div>
+      <div class="status">● Dashboard avviata</div>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <div class="label">Liquidità minima</div>
+        <div class="value">$25.000</div>
+      </div>
+      <div class="card">
+        <div class="label">Orizzonte di analisi</div>
+        <div class="value blue">30m – 2h</div>
+      </div>
+      <div class="card">
+        <div class="label">Modalità operativa</div>
+        <div class="value green">Solo alert</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>📡 Coppie Solana monitorate</h2>
+      <p class="notice">
+        In attesa di collegare i dati reali del radar.
+        Nessun token viene mostrato come segnale verificato
+        finché la dashboard non riceve i dati aggiornati.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Prezzo</th>
+              <th>Liquidità</th>
+              <th>Volume 24h</th>
+              <th>Segnale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5" class="empty">
+                Nessun dato collegato
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🔔 Monitoraggio alert</h2>
+      <p class="notice">
+        Gli alert Telegram sono gestiti dal radar esistente.
+        Il collegamento alla dashboard verrà configurato
+        in un passaggio successivo.
+      </p>
+    </section>
+
+    <footer>
+      Meme Pump Radar AI · Solana · Nessun acquisto automatico
+      <br>
+      I segnali sono informativi e non costituiscono
+      consigli finanziari.
+    </footer>
+  </main>
+</body>
+</html>
