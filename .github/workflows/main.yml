@@ -21,5 +21,8 @@ jobs:
       - name: Installa dipendenze
         run: pip install requests
 
-      - name: Esegui radar
+           - name: Esegui radar
         run: python radar.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
