@@ -62,4 +62,19 @@ def check_radar():
 
     pairs = data.get("pairs", [])
     alerted = load_alerted_pairs()
-    alerted_ids = {p.get("address") for p in alerted
+    alerted_ids = {p.get("address") for p in alerted if isinstance(p, dict)}
+
+    high_liquidity_count = 0
+    new_alerts_count = 0
+
+    for pair in pairs:
+        if pair.get("chainId") != "solana":
+            continue
+
+        pair_address = pair.get("pairAddress")
+        if not pair_address:
+            continue
+
+        liquidity = float(pair.get("liquidity", {}).get("usd", 0) or 0)
+        
+        
