@@ -1,145 +1,128 @@
-
 import os
-import json
 import requests
-from pathlib import Path
+import json
+from datetime import datetime
 
-MIN_LIQUIDITY_USD = 25_000
-DEXSCREENER_URL = "https://api.dexscreener.com/token-profiles/latest/v1"
-STATE_FILE = Path("alerted_pairs.json")
+# --- CONFIGURAZIONE FILTRI ANTICIPO (5-15 MINUTI) ---
+MIN_LIQUIDITY = 15000       # Soglia di liquidità iniziale (USD)
+MIN_VOLUME_5M = 12000       # Volume minimo negli ultimi 5 minuti (USD)
+MIN_CHANGE_5M = 10.0        # Variazione minima prezzo a 5 minuti (+10%)
+MAX_CHANGE_1H = 300.0       # Scarta i token che hanno già fatto +300% (evita di entrare in ritardo)
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
+JSON_FILE = "alerted_pairs.json"
 
-def load_alerted():
-    try:
-        return set(json.loads(STATE_FILE.read_text()))
-    except (FileNotFoundError, json.JSONDecodeError, OSError):
-        return set()
+def load_alerted_pairs():
+    if os.path.exists(JSON_FILE):
+        try:
+            with open(JSON_FILE, "r") as f:
+                return json.load(f)
+        except Exception:
+            return []
+    return []
 
+def save_alerted_pairs(pairs):
+    with open(JSON_FILE, "w") as f:
+        json.dump(pairs, f, indent=4)
 
-def save_alerted(alerted):
-    STATE_FILE.write_text(json.dumps(sorted(alerted), indent=2))
-
-
-def send_telegram(message):
+def send_telegram_message(message):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("Telegram non configurato.")
-        return False
-
+        print("Telegram token o chat ID non configurati.")
+        return
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-
+    payload = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": message,
+        "parse_mode": "HTML",
+        "disable_web_page_preview": False
+    }
     try:
-        response = requests.post(
-            url,
-            data={"chat_id": TELEGRAM_CHAT_ID, "text": message},
-            timeout=15,
-        )
-        response.raise_for_status()
-        print("Notifica Telegram inviata.")
-        return True
-    except requests.RequestException as error:
-        print(f"Errore Telegram: {error}")
-        return False
+        requests.post(url, json=payload, timeout=10)
+    except Exception as e:
+        print(f"Errore invio Telegram: {e}")
 
-
-def main():
-    print("Meme Pump Radar AI")
-    alerted = load_alerted()
-    found = 0
-    new_alerts = 0
-
+def check_radar():
+    print("Scansione segnali precoci su Solana in corso...")
+    
+    # Query verso Dexscreener per token su Solana
+    url = "https://api.dexscreener.com/latest/dex/search?q=solana"
     try:
-        response = requests.get(DEXSCREENER_URL, timeout=20)
-        response.raise_for_status()
-        tokens = response.json()
+        response = requests.get(url, timeout=10)
+        data = response.json()
+    except Exception as e:
+        print(f"Errore nella richiesta API: {e}")
+        return
 
-        for token in tokens:
-            if token.get("chainId") != "solana":
-                continue
+    pairs = data.get("pairs", [])
+    alerted = load_alerted_pairs()
+    alerted_ids = {p.get("address") for p in alerted if isinstance(p, dict)}
 
-            address = token.get("tokenAddress")
-            if not address:
-                continue
+    new_alerts = []
 
-            pair_url = (
-                "https://api.dexscreener.com/token-pairs/v1/solana/"
-                + address
+    for pair in pairs:
+        if pair.get("chainId") != "solana":
+            continue
+
+        pair_address = pair.get("pairAddress")
+        if pair_address in alerted_ids:
+            continue
+
+        liquidity = float(pair.get("liquidity", {}).get("usd", 0) or 0)
+        volume_5m = float(pair.get("volume", {}).get("m5", 0) or 0)
+        volume_1h = float(pair.get("volume", {}).get("h1", 0) or 0)
+        change_5m = float(pair.get("priceChange", {}).get("m5", 0) or 0)
+        change_1h = float(pair.get("priceChange", {}).get("h1", 0) or 0)
+        
+        token_name = pair.get("baseToken", {}).get("name", "N/D")
+        token_symbol = pair.get("baseToken", {}).get("symbol", "N/D")
+        token_address = pair.get("baseToken", {}).get("address", pair_address)
+        price_usd = pair.get("priceUsd", "0")
+        dex_url = pair.get("url", f"https://dexscreener.com/solana/{pair_address}")
+
+        # --- FILTRAGGIO DINAMICO PER ANTICIPARE IL PUMP ---
+        if (liquidity >= MIN_LIQUIDITY and 
+            volume_5m >= MIN_VOLUME_5M and 
+            change_5m >= MIN_CHANGE_5M and 
+            change_1h <= MAX_CHANGE_1H):
+
+            timestamp_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+
+            msg = (
+                f"🚨 <b>ALLERTA PRECOCE (5m Pump)</b> 🚨\n\n"
+                f"<b>Token:</b> {token_name} ({token_symbol})\n"
+                f"<b>Prezzo:</b> ${price_usd}\n"
+                f"<b>Liquidità:</b> ${liquidity:,.0f}\n"
+                f"<b>Vol 5m:</b> ${volume_5m:,.0f}\n"
+                f"<b>Vol 1h:</b> ${volume_1h:,.0f}\n"
+                f"<b>Variazione 5m:</b> +{change_5m:.2f}%\n"
+                f"<b>Variazione 1h:</b> +{change_1h:.2f}%\n\n"
+                f"🔗 <a href='{dex_url}'>Apri su Dexscreener</a>"
             )
 
-            try:
-                result = requests.get(pair_url, timeout=20)
-                result.raise_for_status()
-                pairs = result.json()
-            except requests.RequestException as error:
-                print(f"Errore coppie: {error}")
-                continue
+            send_telegram_message(msg)
 
-            if not isinstance(pairs, list):
-                continue
+            item = {
+                "name": token_name,
+                "symbol": token_symbol,
+                "address": token_address,
+                "liquidity": liquidity,
+                "volume": volume_5m,
+                "change_5m": change_5m,
+                "timestamp": timestamp_str
+            }
 
-            for pair in pairs:
-                if pair.get("chainId") != "solana":
-                    continue
+            new_alerts.append(item)
+            alerted.insert(0, item)
+            alerted_ids.add(pair_address)
 
-                liquidity = (pair.get("liquidity") or {}).get("usd") or 0
-                if liquidity < MIN_LIQUIDITY_USD:
-                    continue
-
-                pair_id = pair.get("pairAddress")
-                if not pair_id:
-                    continue
-
-                found += 1
-
-                if pair_id in alerted:
-                    continue
-
-                volume = pair.get("volume") or {}
-                change = pair.get("priceChange") or {}
-                base = pair.get("baseToken") or {}
-
-                volume_5m = float(volume.get("m5") or 0)
-                volume_1h = float(volume.get("h1") or 0)
-                change_5m = float(change.get("m5") or 0)
-                change_1h = float(change.get("h1") or 0)
-
-                volume_signal = volume_5m >= 5_000 or volume_1h >= 20_000
-                price_signal = change_5m >= 2 or change_1h >= 3
-
-                if not (volume_signal and price_signal):
-                    continue
-
-                name = base.get("name", "N/D")
-                symbol = base.get("symbol", "N/D")
-                price = pair.get("priceUsd", "N/D")
-                url = pair.get("url", "")
-
-                message = (
-                    "Meme Pump Radar AI - Segnale preliminare\n"
-                    f"Token: {name} ({symbol})\n"
-                    f"Liquidità: ${liquidity:,.0f}\n"
-                    f"Prezzo: ${price}\n"
-                    f"Volume 5m: ${volume_5m:,.0f}\n"
-                    f"Volume 1h: ${volume_1h:,.0f}\n"
-                    f"Variazione 5m: {change_5m:.2f}%\n"
-                    f"Variazione 1h: {change_1h:.2f}%\n"
-                    f"Link: {url}"
-                )
-
-                if send_telegram(message):
-                    alerted.add(pair_id)
-                    save_alerted(alerted)
-                    new_alerts += 1
-
-        print(f"Coppie con liquidità >= $25.000: {found}")
-        print(f"Nuovi alert inviati: {new_alerts}")
-        print(f"Coppie già segnalate memorizzate: {len(alerted)}")
-
-    except (requests.RequestException, ValueError, TypeError) as error:
-        print(f"Errore durante la ricerca: {error}")
-
+    if new_alerts:
+        # Salva massimo gli ultimi 50 segnali per mantenere pulita la dashboard
+        save_alerted_pairs(alerted[:50])
+        print(f"Trovati {len(new_alerts)} nuovi segnali precoci.")
+    else:
+        print("Nessun segnale precoce rilevato in questo ciclo.")
 
 if __name__ == "__main__":
-    main()
+    check_radar()
