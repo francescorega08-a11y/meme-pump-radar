@@ -9,16 +9,15 @@ from datetime import datetime, timezone
 
 import requests
 
-# ==================================================
+# ==========================================
 # MEME PUMP RADAR AI — SOLANA
-# Ricerca ampliata + diagnostica + alert Telegram
-# Nessun riepilogo Telegram. Nessun trading automatico.
-# ==================================================
+# Diagnostica mercato + alert Telegram
+# Nessun riepilogo. Nessun trading automatico.
+# ==========================================
 
 DEX_API = "https://api.dexscreener.com"
 TELEGRAM_API = "https://api.telegram.org"
 
-# FILTRI DI MERCATO
 MIN_LIQUIDITY_USD = 25_000
 MIN_VOLUME_5M_USD = 5_000
 MIN_VOLUME_1H_USD = 30_000
@@ -30,9 +29,9 @@ MIN_BUY_SELL_RATIO = 1.3
 MAX_ALERTS_PER_RUN = 10
 REQUEST_DELAY_SECONDS = 0.3
 TIMEOUT = 20
+DIAGNOSTIC_PAIRS = 15
 
 STATE_FILE = Path("radar_state.json")
-
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
@@ -43,7 +42,7 @@ logging.basicConfig(
 
 session = requests.Session()
 session.headers.update({
-    "User-Agent": "Meme-Pump-Radar-AI/6.0"
+    "User-Agent": "Meme-Pump-Radar-AI/7.0"
 })
 
 
@@ -61,7 +60,6 @@ def load_state():
 
     try:
         data = json.loads(STATE_FILE.read_text(encoding="utf-8"))
-
         if not isinstance(data, dict):
             return None
 
@@ -72,12 +70,9 @@ def load_state():
             return None
 
         return {
-            "active_pairs": [
-                x for x in active if isinstance(x, str)
-            ],
+            "active_pairs": [x for x in active if isinstance(x, str)],
             "volume_history": history,
         }
-
     except (OSError, ValueError):
         logging.exception("Impossibile leggere lo stato")
         return None
@@ -96,23 +91,9 @@ def save_state(active_pairs, history):
 
 
 def get_solana_pairs():
-    """Amplia le ricerche testuali di coppie Solana."""
-
     queries = [
-        "solana",
-        "pump",
-        "meme",
-        "dog",
-        "cat",
-        "frog",
-        "pepe",
-        "ai",
-        "inu",
-        "bonk",
-        "wif",
-        "trump",
-        "sol",
-        "launch",
+        "solana", "pump", "meme", "dog", "cat", "frog", "pepe",
+        "ai", "inu", "bonk", "wif", "trump", "sol", "launch",
     ]
 
     pairs_by_id = {}
@@ -126,8 +107,7 @@ def get_solana_pairs():
                 timeout=TIMEOUT,
             )
             response.raise_for_status()
-            data = response.json()
-            results = data.get("pairs")
+            results = response.json().get("pairs")
 
             if not isinstance(results, list):
                 continue
@@ -145,18 +125,13 @@ def get_solana_pairs():
                     pairs_by_id[pair_id] = pair
 
         except (requests.RequestException, ValueError) as exc:
-            logging.warning(
-                "Ricerca '%s' fallita: %s", query, exc
-            )
+            logging.warning("Ricerca '%s' fallita: %s", query, exc)
 
         time.sleep(REQUEST_DELAY_SECONDS)
 
     logging.info(
-        "Ricerca ampliata: query riuscite=%d/%d, "
-        "coppie Solana uniche=%d",
-        successful,
-        len(queries),
-        len(pairs_by_id),
+        "Ricerca ampliata: query riuscite=%d/%d, coppie Solana uniche=%d",
+        successful, len(queries), len(pairs_by_id),
     )
 
     if successful == 0:
@@ -165,9 +140,43 @@ def get_solana_pairs():
     return list(pairs_by_id.values())
 
 
-def evaluate_pair(pair, history, stats):
-    """Applica i filtri e registra il primo motivo di esclusione."""
+def log_market_diagnostics(pairs):
+    """Stampa le 15 coppie con liquidità più alta."""
+    ranked = sorted(
+        pairs,
+        key=lambda p: number((p.get("liquidity") or {}).get("usd")),
+        reverse=True,
+    )
 
+    logging.info(
+        "DIAGNOSTICA MERCATO: prime %d coppie per liquidità",
+        min(DIAGNOSTIC_PAIRS, len(ranked)),
+    )
+
+    for pair in ranked[:DIAGNOSTIC_PAIRS]:
+        base = pair.get("baseToken") or {}
+        volume = pair.get("volume") or {}
+        changes = pair.get("priceChange") or {}
+        txns = pair.get("txns") or {}
+        tx5 = txns.get("m5") or {}
+
+        logging.info(
+            "MERCATO | %s (%s) | liquidita=$%.0f | "
+            "volume5m=$%.0f | volume1h=$%.0f | "
+            "var5m=%+.2f%% | var1h=%+.2f%% | acquisti=%d | vendite=%d",
+            base.get("name", "?"),
+            base.get("symbol", "?"),
+            number((pair.get("liquidity") or {}).get("usd")),
+            number(volume.get("m5")),
+            number(volume.get("h1")),
+            number(changes.get("m5")),
+            number(changes.get("h1")),
+            int(number(tx5.get("buys"))),
+            int(number(tx5.get("sells"))),
+        )
+
+
+def evaluate_pair(pair, history, stats):
     liquidity = number((pair.get("liquidity") or {}).get("usd"))
     volume = pair.get("volume") or {}
     changes = pair.get("priceChange") or {}
@@ -178,36 +187,30 @@ def evaluate_pair(pair, history, stats):
     change_m5 = number(changes.get("m5"))
     change_h1 = number(changes.get("h1"))
 
-    tx_m5 = txns.get("m5") or {}
-    buys = int(number(tx_m5.get("buys")))
-    sells = int(number(tx_m5.get("sells")))
+    tx5 = txns.get("m5") or {}
+    buys = int(number(tx5.get("buys")))
+    sells = int(number(tx5.get("sells")))
 
     if liquidity < MIN_LIQUIDITY_USD:
         stats["liquidita"] += 1
         return None
-
     if vol_m5 < MIN_VOLUME_5M_USD:
         stats["volume_5m"] += 1
         return None
-
     if vol_h1 < MIN_VOLUME_1H_USD:
         stats["volume_1h"] += 1
         return None
-
     if not MIN_CHANGE_5M_PCT <= change_m5 <= MAX_CHANGE_5M_PCT:
         stats["variazione_5m"] += 1
         return None
-
     if change_h1 < MIN_CHANGE_1H_PCT:
         stats["variazione_1h"] += 1
         return None
-
     if buys + sells == 0:
         stats["transazioni_assenti"] += 1
         return None
 
-    ratio = buys / sells if sells > 0 else float("inf")
-
+    ratio = buys / sells if sells else float("inf")
     if ratio < MIN_BUY_SELL_RATIO:
         stats["rapporto_acquisti_vendite"] += 1
         return None
@@ -220,18 +223,15 @@ def evaluate_pair(pair, history, stats):
 
     acceleration = None
     if previous_volume > 0:
-        acceleration = (
-            (vol_m5 - previous_volume) / previous_volume
-        ) * 100
+        acceleration = (vol_m5 - previous_volume) / previous_volume * 100
 
-    score = 0
-    score += int(change_m5 >= 5)
-    score += int(change_h1 >= 8)
-    score += int(vol_m5 >= 15_000)
-    score += int(buys > sells)
-    score += int(vol_h1 >= 50_000)
-    score += int(
-        acceleration is not None and acceleration >= 20
+    score = (
+        int(change_m5 >= 5)
+        + int(change_h1 >= 8)
+        + int(vol_m5 >= 15_000)
+        + int(buys > sells)
+        + int(vol_h1 >= 50_000)
+        + int(acceleration is not None and acceleration >= 20)
     )
 
     base = pair.get("baseToken") or {}
@@ -277,23 +277,22 @@ def send_telegram(message):
             return False
 
         return True
-
     except (requests.RequestException, ValueError) as exc:
         logging.error("Invio Telegram fallito: %s", exc)
         return False
 
 
 def format_alert(item):
-    price = item["price"]
-    price_text = f"${price:.10f}" if price > 0 else "N/D"
-
-    ratio = item["ratio"]
-    ratio_text = "N/D" if math.isinf(ratio) else f"{ratio:.2f}:1"
-
+    price_text = (
+        f"${item['price']:.10f}" if item["price"] > 0 else "N/D"
+    )
+    ratio_text = (
+        "N/D" if math.isinf(item["ratio"])
+        else f"{item['ratio']:.2f}:1"
+    )
     acceleration = item["acceleration"]
     acceleration_text = (
-        "Storico insufficiente"
-        if acceleration is None
+        "Storico insufficiente" if acceleration is None
         else f"{acceleration:+.1f}% rispetto all'ultima osservazione"
     )
 
@@ -308,8 +307,7 @@ def format_alert(item):
         f"Variazione 1h: {item['change_h1']:+.2f}%\n"
         f"Acquisti/vendite: {item['buys']}/{item['sells']}\n"
         f"Rapporto acquisti/vendite: {ratio_text}\n"
-        f"Volume rispetto alla scansione precedente: "
-        f"{acceleration_text}\n"
+        f"Volume rispetto alla scansione precedente: {acceleration_text}\n"
         f"Radar score: {item['score']}/5\n\n"
         f"Grafico: {item['url']}\n\n"
         "⚠️ Segnale sperimentale, non consiglio finanziario.\n"
@@ -326,14 +324,14 @@ def main():
         return
 
     pairs = get_solana_pairs()
-
     if pairs is None:
         logging.error("Ricerca fallita: stato conservato")
         return
-
     if not pairs:
         logging.warning("Nessuna coppia trovata: stato conservato")
         return
+
+    log_market_diagnostics(pairs)
 
     history = state["volume_history"]
     previous_active = set(state["active_pairs"])
@@ -350,7 +348,6 @@ def main():
     }
 
     candidates = []
-
     for pair in pairs:
         item = evaluate_pair(pair, history, stats)
         if item:
@@ -364,10 +361,8 @@ def main():
     logging.info("DIAGNOSTICA FILTRI: %s", stats)
 
     current_active = {
-        item["pair_id"]
-        for item in candidates if item["pair_id"]
+        item["pair_id"] for item in candidates if item["pair_id"]
     }
-
     new_pumps = [
         item for item in candidates
         if item["pair_id"] not in previous_active
@@ -382,12 +377,10 @@ def main():
             logging.info("Alert inviato: %s", item["symbol"])
         else:
             failed_ids.add(item["pair_id"])
-
         time.sleep(REQUEST_DELAY_SECONDS)
 
     deferred_ids = {
-        item["pair_id"]
-        for item in new_pumps[MAX_ALERTS_PER_RUN:]
+        item["pair_id"] for item in new_pumps[MAX_ALERTS_PER_RUN:]
         if item["pair_id"]
     }
 
@@ -398,18 +391,15 @@ def main():
     next_active -= deferred_ids
 
     now = datetime.now(timezone.utc).isoformat()
-
     for pair in pairs:
         pair_id = pair.get("pairAddress")
-        if not pair_id:
-            continue
-
-        history[pair_id] = {
-            "volume_5m": number(
-                (pair.get("volume") or {}).get("m5")
-            ),
-            "observed_at": now,
-        }
+        if pair_id:
+            history[pair_id] = {
+                "volume_5m": number(
+                    (pair.get("volume") or {}).get("m5")
+                ),
+                "observed_at": now,
+            }
 
     if len(history) > 5000:
         history = dict(
@@ -428,13 +418,9 @@ def main():
     logging.info(
         "Scansione completata: coppie=%d, candidati=%d, "
         "nuovi_segnali=%d, alert_inviati=%d, falliti=%d",
-        len(pairs),
-        len(candidates),
-        len(new_pumps),
-        len(sent_ids),
-        len(failed_ids),
+        len(pairs), len(candidates), len(new_pumps),
+        len(sent_ids), len(failed_ids),
     )
-
     logging.info("Radar terminato")
 
 
