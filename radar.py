@@ -11,8 +11,8 @@ import requests
 
 # ==========================================
 # MEME PUMP RADAR AI — SOLANA
-# Diagnostica mercato + alert Telegram
-# Nessun riepilogo. Nessun trading automatico.
+# Ricerca meme coin + alert individuali
+# Nessun riepilogo Telegram. Nessun trading.
 # ==========================================
 
 DEX_API = "https://api.dexscreener.com"
@@ -32,8 +32,29 @@ TIMEOUT = 20
 DIAGNOSTIC_PAIRS = 15
 
 STATE_FILE = Path("radar_state.json")
+
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+# Mint ufficiale di Wrapped SOL su Solana.
+SOL_MINTS = {
+    "So11111111111111111111111111111111111111112",
+}
+
+QUERIES = [
+    "bonk",
+    "dogwifhat",
+    "popcat",
+    "pepe",
+    "pump",
+    "meme",
+    "frog",
+    "cat",
+    "inu",
+    "ai meme",
+    "solana meme",
+    "fair launch",
+]
 
 logging.basicConfig(
     level=logging.INFO,
@@ -42,7 +63,7 @@ logging.basicConfig(
 
 session = requests.Session()
 session.headers.update({
-    "User-Agent": "Meme-Pump-Radar-AI/7.0"
+    "User-Agent": "Meme-Pump-Radar-AI/8.0"
 })
 
 
@@ -60,6 +81,7 @@ def load_state():
 
     try:
         data = json.loads(STATE_FILE.read_text(encoding="utf-8"))
+
         if not isinstance(data, dict):
             return None
 
@@ -73,6 +95,7 @@ def load_state():
             "active_pairs": [x for x in active if isinstance(x, str)],
             "volume_history": history,
         }
+
     except (OSError, ValueError):
         logging.exception("Impossibile leggere lo stato")
         return None
@@ -91,15 +114,12 @@ def save_state(active_pairs, history):
 
 
 def get_solana_pairs():
-    queries = [
-        "solana", "pump", "meme", "dog", "cat", "frog", "pepe",
-        "ai", "inu", "bonk", "wif", "trump", "sol", "launch",
-    ]
+    """Cerca coppie Solana tramite termini mirati."""
 
     pairs_by_id = {}
     successful = 0
 
-    for query in queries:
+    for query in QUERIES:
         try:
             response = session.get(
                 f"{DEX_API}/latest/dex/search",
@@ -120,18 +140,36 @@ def get_solana_pairs():
                 if pair.get("chainId") != "solana":
                     continue
 
+                base = pair.get("baseToken") or {}
+                quote = pair.get("quoteToken") or {}
+
+                base_symbol = str(base.get("symbol") or "").upper()
+                base_address = str(base.get("address") or "")
+                quote_address = str(quote.get("address") or "")
+
+                # Escludi SOL come token di base, non le coppie
+                # in cui SOL è soltanto la valuta di quotazione.
+                if base_symbol in {"SOL", "WSOL"}:
+                    continue
+                if base_address in SOL_MINTS:
+                    continue
+
+                # Evita coppie senza identificativo.
                 pair_id = pair.get("pairAddress")
                 if pair_id:
                     pairs_by_id[pair_id] = pair
 
         except (requests.RequestException, ValueError) as exc:
-            logging.warning("Ricerca '%s' fallita: %s", query, exc)
+            logging.warning(
+                "Ricerca '%s' fallita: %s", query, exc
+            )
 
         time.sleep(REQUEST_DELAY_SECONDS)
 
     logging.info(
-        "Ricerca ampliata: query riuscite=%d/%d, coppie Solana uniche=%d",
-        successful, len(queries), len(pairs_by_id),
+        "Ricerca meme coin: query riuscite=%d/%d, "
+        "coppie Solana uniche dopo il filtro SOL=%d",
+        successful, len(QUERIES), len(pairs_by_id),
     )
 
     if successful == 0:
@@ -141,7 +179,6 @@ def get_solana_pairs():
 
 
 def log_market_diagnostics(pairs):
-    """Stampa le 15 coppie con liquidità più alta."""
     ranked = sorted(
         pairs,
         key=lambda p: number((p.get("liquidity") or {}).get("usd")),
@@ -157,13 +194,13 @@ def log_market_diagnostics(pairs):
         base = pair.get("baseToken") or {}
         volume = pair.get("volume") or {}
         changes = pair.get("priceChange") or {}
-        txns = pair.get("txns") or {}
-        tx5 = txns.get("m5") or {}
+        tx5 = (pair.get("txns") or {}).get("m5") or {}
 
         logging.info(
             "MERCATO | %s (%s) | liquidita=$%.0f | "
             "volume5m=$%.0f | volume1h=$%.0f | "
-            "var5m=%+.2f%% | var1h=%+.2f%% | acquisti=%d | vendite=%d",
+            "var5m=%+.2f%% | var1h=%+.2f%% | "
+            "acquisti=%d | vendite=%d",
             base.get("name", "?"),
             base.get("symbol", "?"),
             number((pair.get("liquidity") or {}).get("usd")),
@@ -180,14 +217,13 @@ def evaluate_pair(pair, history, stats):
     liquidity = number((pair.get("liquidity") or {}).get("usd"))
     volume = pair.get("volume") or {}
     changes = pair.get("priceChange") or {}
-    txns = pair.get("txns") or {}
+    tx5 = (pair.get("txns") or {}).get("m5") or {}
 
     vol_m5 = number(volume.get("m5"))
     vol_h1 = number(volume.get("h1"))
     change_m5 = number(changes.get("m5"))
     change_h1 = number(changes.get("h1"))
 
-    tx5 = txns.get("m5") or {}
     buys = int(number(tx5.get("buys")))
     sells = int(number(tx5.get("sells")))
 
@@ -277,6 +313,7 @@ def send_telegram(message):
             return False
 
         return True
+
     except (requests.RequestException, ValueError) as exc:
         logging.error("Invio Telegram fallito: %s", exc)
         return False
@@ -377,6 +414,7 @@ def main():
             logging.info("Alert inviato: %s", item["symbol"])
         else:
             failed_ids.add(item["pair_id"])
+
         time.sleep(REQUEST_DELAY_SECONDS)
 
     deferred_ids = {
@@ -391,6 +429,7 @@ def main():
     next_active -= deferred_ids
 
     now = datetime.now(timezone.utc).isoformat()
+
     for pair in pairs:
         pair_id = pair.get("pairAddress")
         if pair_id:
