@@ -3,11 +3,11 @@ import requests
 import json
 from datetime import datetime
 
-# --- CONFIGURAZIONE FILTRI REGOLATI PER MAGGIORE REATTIVITÀ ---
-MIN_LIQUIDITY = 10000       # Abbassata a $10,000 per catturare l'avvio
-MIN_VOLUME_5M = 5000        # Abbassato a $5,000 per rilevare i primi volumi
-MIN_CHANGE_5M = 5.0         # Abbassata a +5% per intercettare l'inizio impulso
-MAX_CHANGE_1H = 300.0       # Evita i token che hanno già completato il pump
+# --- CONFIGURAZIONE FILTRI BILANCIATI + ANTIPUMP ---
+MIN_LIQUIDITY = 15000       # Liquidità minima (USD)
+MIN_VOLUME_5M = 12000       # Volume minimo 5 minuti (USD)
+MIN_CHANGE_5M = 10.0        # Variazione prezzo 5 minuti (%)
+MAX_CHANGE_1H = 300.0       # SCARTA i token che hanno già fatto +300% (Anti-Pump)
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
@@ -44,7 +44,7 @@ def send_telegram_message(message):
         print(f"Errore invio Telegram: {e}")
 
 def check_radar():
-    print("Scansione segnali precoci e controllo social su Solana...")
+    print("Scansione in corso con filtri bilanciati e blocco anti-pump...")
     
     url = "https://api.dexscreener.com/latest/dex/search?q=solana"
     try:
@@ -87,6 +87,7 @@ def check_radar():
         social_status = "🌐 Social Trovati" if (socials or websites) else "⚠️ Nessun Social Ufficiale"
         twitter_search_url = f"https://twitter.com/search?q={token_address}&f=live"
 
+        # Applicazione filtri con blocco rigido sui token già esplosi
         if (liquidity >= MIN_LIQUIDITY and 
             volume_5m >= MIN_VOLUME_5M and 
             change_5m >= MIN_CHANGE_5M and 
@@ -95,7 +96,7 @@ def check_radar():
             timestamp_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
 
             msg = (
-                f"🚨 <b>ALLERTA PRECOCE + SOCIAL CHECK</b> 🚨\n\n"
+                f"🚨 <b>ALLERTA MEME COIN (Anti-Pump Attivo)</b> 🚨\n\n"
                 f"<b>Token:</b> {token_name} ({token_symbol})\n"
                 f"<b>Prezzo:</b> ${price_usd}\n"
                 f"<b>Liquidità:</b> ${liquidity:,.0f}\n"
