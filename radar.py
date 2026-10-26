@@ -11,13 +11,14 @@ import requests
 
 # ==========================================
 # MEME PUMP RADAR AI — SOLANA
-# Ricerca meme coin + alert individuali
-# Nessun riepilogo Telegram. Nessun trading.
+# Dati dashboard + alert individuali Telegram
+# Nessun riepilogo. Nessun trading automatico.
 # ==========================================
 
 DEX_API = "https://api.dexscreener.com"
 TELEGRAM_API = "https://api.telegram.org"
 
+# FILTRI ORIGINALI: NON MODIFICATI
 MIN_LIQUIDITY_USD = 25_000
 MIN_VOLUME_5M_USD = 5_000
 MIN_VOLUME_1H_USD = 30_000
@@ -33,27 +34,18 @@ DIAGNOSTIC_PAIRS = 15
 
 STATE_FILE = Path("radar_state.json")
 RADAR_DATA_FILE = Path("radar_data.json")
+
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-# Mint ufficiale di Wrapped SOL su Solana.
 SOL_MINTS = {
     "So11111111111111111111111111111111111111112",
 }
 
 QUERIES = [
-    "bonk",
-    "dogwifhat",
-    "popcat",
-    "pepe",
-    "pump",
-    "meme",
-    "frog",
-    "cat",
-    "inu",
-    "ai meme",
-    "solana meme",
-    "fair launch",
+    "bonk", "dogwifhat", "popcat", "pepe",
+    "pump", "meme", "frog", "cat", "inu",
+    "ai meme", "solana meme", "fair launch",
 ]
 
 logging.basicConfig(
@@ -107,14 +99,14 @@ def save_state(active_pairs, history):
         json.dumps({
             "active_pairs": sorted(active_pairs),
             "volume_history": history,
-        }, indent=2),
+        }, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
     temp.replace(STATE_FILE)
 
 
 def get_solana_pairs():
-    """Cerca coppie Solana tramite termini mirati."""
+    """Cerca coppie Solana su DexScreener."""
 
     pairs_by_id = {}
     successful = 0
@@ -141,34 +133,25 @@ def get_solana_pairs():
                     continue
 
                 base = pair.get("baseToken") or {}
-                quote = pair.get("quoteToken") or {}
-
                 base_symbol = str(base.get("symbol") or "").upper()
                 base_address = str(base.get("address") or "")
-                quote_address = str(quote.get("address") or "")
 
-                # Escludi SOL come token di base, non le coppie
-                # in cui SOL è soltanto la valuta di quotazione.
                 if base_symbol in {"SOL", "WSOL"}:
                     continue
                 if base_address in SOL_MINTS:
                     continue
 
-                # Evita coppie senza identificativo.
                 pair_id = pair.get("pairAddress")
                 if pair_id:
                     pairs_by_id[pair_id] = pair
 
         except (requests.RequestException, ValueError) as exc:
-            logging.warning(
-                "Ricerca '%s' fallita: %s", query, exc
-            )
+            logging.warning("Ricerca '%s' fallita: %s", query, exc)
 
         time.sleep(REQUEST_DELAY_SECONDS)
 
     logging.info(
-        "Ricerca meme coin: query riuscite=%d/%d, "
-        "coppie Solana uniche dopo il filtro SOL=%d",
+        "Query riuscite=%d/%d; coppie Solana=%d",
         successful, len(QUERIES), len(pairs_by_id),
     )
 
@@ -176,6 +159,67 @@ def get_solana_pairs():
         return None
 
     return list(pairs_by_id.values())
+
+
+def save_dashboard_data(pairs):
+    """Salva le coppie reali raccolte per il dashboard."""
+
+    tokens = []
+
+    for pair in pairs:
+        base = pair.get("baseToken") or {}
+        volume = pair.get("volume") or {}
+        changes = pair.get("priceChange") or {}
+        liquidity = pair.get("liquidity") or {}
+        tx5 = (pair.get("txns") or {}).get("m5") or {}
+
+        buys = int(number(tx5.get("buys")))
+        sells = int(number(tx5.get("sells")))
+
+        if sells:
+            ratio = buys / sells
+        elif buys:
+            ratio = 999999
+        else:
+            ratio = 0
+
+        created = number(pair.get("pairCreatedAt"))
+        age_days = (
+            max(0, (time.time() * 1000 - created) / 86400000)
+            if created > 0 else None
+        )
+
+        tokens.append({
+            "symbol": str(base.get("symbol") or "?"),
+            "name": str(base.get("name") or "Sconosciuto"),
+            "pairAddress": str(pair.get("pairAddress") or ""),
+            "liquidity": number(liquidity.get("usd")),
+            "volume5m": number(volume.get("m5")),
+            "volume1h": number(volume.get("h1")),
+            "change5m": number(changes.get("m5")),
+            "change1h": number(changes.get("h1")),
+            "buySellRatio": ratio,
+            "buys": buys,
+            "sells": sells,
+            "ageDays": age_days,
+            "price": number(pair.get("priceUsd")),
+            "url": str(pair.get("url") or ""),
+        })
+
+    payload = {
+        "updatedAt": datetime.now(timezone.utc).isoformat(),
+        "tokenCount": len(tokens),
+        "tokens": tokens,
+    }
+
+    temp = RADAR_DATA_FILE.with_suffix(".tmp")
+    temp.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    temp.replace(RADAR_DATA_FILE)
+
+    logging.info("Dashboard aggiornato: %d coppie", len(tokens))
 
 
 def log_market_diagnostics(pairs):
@@ -259,7 +303,9 @@ def evaluate_pair(pair, history, stats):
 
     acceleration = None
     if previous_volume > 0:
-        acceleration = (vol_m5 - previous_volume) / previous_volume * 100
+        acceleration = (
+            (vol_m5 - previous_volume) / previous_volume * 100
+        )
 
     score = (
         int(change_m5 >= 5)
@@ -364,11 +410,18 @@ def main():
     if pairs is None:
         logging.error("Ricerca fallita: stato conservato")
         return
+
     if not pairs:
         logging.warning("Nessuna coppia trovata: stato conservato")
         return
 
     log_market_diagnostics(pairs)
+
+    # Pubblica i dati per il dashboard a ogni scansione riuscita.
+    try:
+        save_dashboard_data(pairs)
+    except (OSError, TypeError, ValueError) as exc:
+        logging.exception("Salvataggio dashboard fallito: %s", exc)
 
     history = state["volume_history"]
     previous_active = set(state["active_pairs"])
