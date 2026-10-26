@@ -1,586 +1,135 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10131c">
-  <title>Meme Pump Radar AI</title>
-
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #10131c;
-      --panel: #191e2b;
-      --border: #2b3446;
-      --text: #f1f5ff;
-      --muted: #9ba8bd;
-      --green: #37dfa0;
-      --red: #ff7185;
-      --blue: #83a9ff;
-      --yellow: #ffd166;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont,
-        "Segoe UI", sans-serif;
-      font-size: 15px;
-    }
-
-    header {
-      padding: 22px 18px;
-      background: #151a27;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .wrap {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .brand {
-      color: var(--green);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 2px;
-    }
-
-    h1 { margin: 8px 0; font-size: clamp(25px, 5vw, 36px); }
-    h2 { margin-top: 0; font-size: 17px; }
-    p { line-height: 1.5; }
-    .muted { color: var(--muted); }
-
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 18px;
-    }
-
-    .status {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin: 12px 0;
-    }
-
-    .pill {
-      display: inline-block;
-      padding: 7px 10px;
-      border-radius: 8px;
-      background: #252d3d;
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .pill.green { color: var(--green); }
-    .pill.yellow { color: var(--yellow); }
-    .pill.red { color: var(--red); }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      margin: 18px 0;
-    }
-
-    .panel, .metric {
-      min-width: 0;
-      padding: 17px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: var(--panel);
-    }
-
-    .metric-label { color: var(--muted); font-size: 13px; }
-    .metric-value { margin-top: 10px; font-size: 25px; font-weight: 750; }
-
-    .filters {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 7px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    input, select, button {
-      width: 100%;
-      min-height: 44px;
-      border: 1px solid var(--border);
-      border-radius: 9px;
-      padding: 10px 12px;
-      background: #101521;
-      color: var(--text);
-      font: inherit;
-    }
-
-    input[type="checkbox"] {
-      width: 20px;
-      min-height: 20px;
-      accent-color: var(--green);
-    }
-
-    .check {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      min-height: 44px;
-      color: var(--text);
-    }
-
-    button {
-      background: var(--green);
-      color: #092319;
-      font-weight: 750;
-      border: 0;
-      cursor: pointer;
-    }
-
-    button.secondary {
-      background: #252d3d;
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-
-    .actions {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    .table-wrap { overflow-x: auto; }
-
-    table {
-      width: 100%;
-      min-width: 720px;
-      border-collapse: collapse;
-      text-align: left;
-    }
-
-    th, td {
-      padding: 13px 10px;
-      border-bottom: 1px solid var(--border);
-      white-space: nowrap;
-    }
-
-    th { color: var(--muted); font-size: 12px; font-weight: 600; }
-
-    td a { color: var(--blue); text-decoration: none; }
-    td a:hover { text-decoration: underline; }
-
-    .empty {
-      padding: 26px 8px;
-      color: var(--muted);
-      text-align: center;
-      white-space: normal;
-    }
-
-    .positive { color: var(--green); }
-    .negative { color: var(--red); }
-
-    .notice {
-      border-left: 3px solid var(--yellow);
-      padding: 10px 13px;
-      background: #242319;
-      color: #e5d9ac;
-      font-size: 13px;
-      line-height: 1.5;
-    }
-
-    footer {
-      padding: 24px 18px;
-      color: var(--muted);
-      text-align: center;
-      font-size: 12px;
-    }
-
-    @media (min-width: 760px) {
-      .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-      .filters { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    }
-
-    @media (max-width: 420px) {
-      .grid, .filters { grid-template-columns: 1fr; }
-      main { padding: 12px; }
-      .actions { grid-template-columns: 1fr; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Pump Radar - Solana</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 16px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 4px;
+            color: #38bdf8;
+        }
+        p.subtitle {
+            color: #94a3b8;
+            font-size: 0.85rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            background: #1e293b;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        th, td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #334155;
+        }
+        th {
+            background-color: #334155;
+            color: #cbd5e1;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #262f45;
+        }
+        .loading, .error {
+            text-align: center;
+            padding: 24px;
+            color: #94a3b8;
+        }
+        .error {
+            color: #f87171;
+        }
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <div class="wrap">
-      <div class="brand">SOLANA • MARKET RADAR</div>
-      <h1>🚀 Meme Pump Radar AI</h1>
-      <p class="muted">
-        Individuazione di segnali anticipati · Orizzonte 30 min–2 ore
-      </p>
-      <div class="status">
-        <span class="pill green">● Dashboard pronta</span>
-        <span class="pill yellow" id="dataStatus">Caricamento dati...</span>
-        <span class="pill">Acquisto automatico: disattivato</span>
-      </div>
+
+    <h1>🚀 Meme Pump Radar</h1>
+    <p class="subtitle">Monitoraggio in tempo reale Solana (Liquidity &gt; $25k)</p>
+
+    <div class="table-container">
+        <div id="content" class="loading">Caricamento dati in corso...</div>
     </div>
-  </header>
 
-  <main>
-    <section class="grid">
-      <div class="metric">
-        <div class="metric-label">Token rilevati</div>
-        <div class="metric-value" id="tokenCount">—</div>
-      </div>
-      <div class="metric">
-        <div class="metric-label">Sopra liquidità minima</div>
-        <div class="metric-value" id="liquidCount">—</div>
-      </div>
-      <div class="metric">
-        <div class="metric-label">Segnali da verificare</div>
-        <div class="metric-value" id="signalCount">—</div>
-      </div>
-      <div class="metric">
-        <div class="metric-label">Ultimo aggiornamento</div>
-        <div class="metric-value" style="font-size:17px" id="lastUpdate">—</div>
-      </div>
-    </section>
+    <script>
+        async function loadData() {
+            const container = document.getElementById('content');
+            try {
+                // Aggiungiamo un timestamp per evitare che Safari metta in cache il file JSON
+                const response = await fetch('alerted_pairs.json?t=' + new Date().getTime());
+                if (!response.ok) {
+                    throw new Error("File dei dati non ancora disponibile o vuoto.");
+                }
+                const data = await response.json();
 
-    <section class="panel">
-      <h2>⚙️ Filtri di ricerca</h2>
-      <p class="muted">Modifica i parametri e applicali ai dati disponibili.</p>
+                if (!data || data.length === 0) {
+                    container.innerHTML = `<div class="loading">Nessuna meme coin trovata al momento. Il radar è in ascolto...</div>`;
+                    return;
+                }
 
-      <div class="filters">
-        <div>
-          <label for="minLiquidity">Liquidità minima (USD)</label>
-          <input id="minLiquidity" type="number" min="0" step="1000" value="25000">
-        </div>
-        <div>
-          <label for="maxAge">Età massima coppia (giorni)</label>
-          <input id="maxAge" type="number" min="0" step="1" value="7">
-        </div>
-        <div>
-          <label for="minVolume">Volume minimo 5 min (USD)</label>
-          <input id="minVolume" type="number" min="0" step="500" value="3000">
-        </div>
-        <div>
-          <label for="minChange">Rialzo minimo 5 min (%)</label>
-          <input id="minChange" type="number" step="1" value="2">
-        </div>
-        <div>
-          <label for="maxChange">Rialzo massimo 5 min (%)</label>
-          <input id="maxChange" type="number" step="1" value="15">
-        </div>
-        <div>
-          <label for="minRatio">Rapporto acquisti/vendite</label>
-          <input id="minRatio" type="number" min="0" step="0.1" value="1.3">
-        </div>
-        <div>
-          <label for="sortBy">Ordina risultati</label>
-          <select id="sortBy">
-            <option value="volume">Volume 5 min</option>
-            <option value="change">Variazione prezzo</option>
-            <option value="liquidity">Liquidità</option>
-          </select>
-        </div>
-        <div>
-          <label class="check">
-            <input id="socialEnabled" type="checkbox" checked>
-            Considera segnali social, se disponibili
-          </label>
-        </div>
-        <div>
-          <label class="check">
-            <input id="telegramEnabled" type="checkbox" checked>
-            Abilita alert nel monitoraggio
-          </label>
-        </div>
-      </div>
+                let html = `
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Token / Nome</th>
+                                <th>Indirizzo / CA</th>
+                                <th>Liquidità ($)</th>
+                                <th>Volume</th>
+                                <th>Orario Segnale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
 
-      <div class="actions">
-        <button id="applyFilters" type="button">Applica filtri</button>
-        <button id="resetFilters" class="secondary" type="button">Ripristina valori iniziali</button>
-      </div>
-    </section>
+                // Itera sui dati (ipotizzando un array di oggetti o un formato simile salvato dal radar)
+                // Adatta le chiavi (es. name, address, liquidity) in base a come li salva il tuo script Python
+                data.forEach(item => {
+                    html += `
+                        <tr>
+                            <td><strong>${item.name || 'N/D'}</strong> (${item.symbol || 'N/D'})</td>
+                            <td><a href="https://solscan.io/token/${item.address}" target="_blank">${item.address ? item.address.slice(0, 6) + '...' + item.address.slice(-4) : 'N/D'}</a></td>
+                            <td>$${item.liquidity ? Number(item.liquidity).toLocaleString() : '0'}</td>
+                            <td>$${item.volume ? Number(item.volume).toLocaleString() : '0'}</td>
+                            <td>${item.timestamp || 'N/D'}</td>
+                        </tr>
+                    `;
+                });
 
-    <section class="panel" style="margin-top:16px">
-      <h2>📡 Token Solana monitorati</h2>
-      <p class="muted">
-        Coppie di mercato raccolte da DexScreener. I filtri della pagina
-        sono separati dalle regole degli alert Telegram.
-      </p>
+                html += `</tbody></table>`;
+                container.innerHTML = html;
 
-      <div class="notice" id="notice" role="status" aria-live="polite">
-        Caricamento del feed di mercato...
-      </div>
-
-      <div class="table-wrap" style="margin-top:12px">
-        <table>
-          <thead>
-            <tr>
-              <th>Token</th>
-              <th>Liquidità</th>
-              <th>Volume 5m</th>
-              <th>Prezzo 5m</th>
-              <th>Acquisti/vendite</th>
-              <th>Segnale</th>
-            </tr>
-          </thead>
-          <tbody id="tokenTable">
-            <tr><td colspan="6" class="empty">Caricamento dati reali...</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="panel" style="margin-top:16px">
-      <h2>🔔 Configurazione alert</h2>
-      <p class="muted">
-        Telegram viene gestito dal backend Python tramite GitHub Actions.
-        Le caselle di questa pagina non modificano la configurazione del bot.
-      </p>
-      <div class="check">
-        <input type="checkbox" checked disabled>
-        <span>Nessun acquisto automatico</span>
-      </div>
-      <div class="check">
-        <input type="checkbox" id="showRisk" checked>
-        <span>Mostra avvisi sui rischi</span>
-      </div>
-      <p class="muted" id="riskText">
-        I segnali sono indicatori informativi, non garanzie di rendimento.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    Meme Pump Radar AI · Solana · Dashboard sperimentale
-  </footer>
-
-  <script>
-    "use strict";
-
-    const initialValues = {
-      minLiquidity: 25000,
-      maxAge: 7,
-      minVolume: 3000,
-      minChange: 2,
-      maxChange: 15,
-      minRatio: 1.3
-    };
-
-    const $ = id => document.getElementById(id);
-
-    let marketData = [];
-    let lastDataUpdate = null;
-    let feedLoaded = false;
-
-    const money = value => "$" + Number(value || 0).toLocaleString("en-US", {
-      maximumFractionDigits: 2
-    });
-
-    function readFilters() {
-      return {
-        liquidity: Number($("minLiquidity").value),
-        age: Number($("maxAge").value),
-        volume: Number($("minVolume").value),
-        minChange: Number($("minChange").value),
-        maxChange: Number($("maxChange").value),
-        ratio: Number($("minRatio").value),
-        sort: $("sortBy").value
-      };
-    }
-
-    function validFilters(f) {
-      return Object.values({
-        liquidity: f.liquidity,
-        age: f.age,
-        volume: f.volume,
-        minChange: f.minChange,
-        maxChange: f.maxChange,
-        ratio: f.ratio
-      }).every(Number.isFinite)
-        && f.liquidity >= 0
-        && f.age >= 0
-        && f.volume >= 0
-        && f.ratio >= 0
-        && f.minChange <= f.maxChange;
-    }
-
-    function render() {
-      const f = readFilters();
-
-      if (!validFilters(f)) {
-        $("notice").textContent =
-          "Controlla i valori inseriti: i filtri non sono validi.";
-        return;
-      }
-
-      const results = marketData
-        .filter(t =>
-          Number.isFinite(t.ageDays) &&
-          t.liquidity >= f.liquidity &&
-          t.ageDays <= f.age &&
-          t.volume5m >= f.volume &&
-          t.change5m >= f.minChange &&
-          t.change5m <= f.maxChange &&
-          t.buySellRatio >= f.ratio
-        )
-        .sort((a, b) => {
-          if (f.sort === "change") return b.change5m - a.change5m;
-          if (f.sort === "liquidity") return b.liquidity - a.liquidity;
-          return b.volume5m - a.volume5m;
-        });
-
-      $("tokenCount").textContent = marketData.length;
-      $("liquidCount").textContent =
-        marketData.filter(t => t.liquidity >= f.liquidity).length;
-      $("signalCount").textContent = results.length;
-      $("lastUpdate").textContent = lastDataUpdate
-        ? new Date(lastDataUpdate).toLocaleTimeString("it-IT", {
-            hour: "2-digit",
-            minute: "2-digit"
-          })
-        : "Nessuno";
-
-      $("tokenTable").replaceChildren();
-
-      if (!results.length) {
-        const tr = document.createElement("tr");
-        const td = document.createElement("td");
-        td.colSpan = 6;
-        td.className = "empty";
-        td.textContent = feedLoaded
-          ? "Nessun token soddisfa tutti i filtri della dashboard."
-          : "Feed non disponibile: verifica radar_data.json e GitHub Pages.";
-        tr.appendChild(td);
-        $("tokenTable").appendChild(tr);
-      }
-
-      for (const t of results) {
-        const tr = document.createElement("tr");
-
-        const tokenCell = document.createElement("td");
-        if (t.url && /^https:\/\/dexscreener\.com\//i.test(t.url)) {
-          const link = document.createElement("a");
-          link.href = t.url;
-          link.target = "_blank";
-          link.rel = "noopener noreferrer";
-          link.textContent = `${t.symbol} (${t.name})`;
-          tokenCell.appendChild(link);
-        } else {
-          tokenCell.textContent = `${t.symbol} (${t.name})`;
-        }
-        tr.appendChild(tokenCell);
-
-        const values = [
-          money(t.liquidity),
-          money(t.volume5m),
-          (t.change5m >= 0 ? "+" : "") + t.change5m.toFixed(2) + "%",
-          `${t.buys}/${t.sells}`,
-          "Da verificare"
-        ];
-
-        for (const value of values) {
-          const td = document.createElement("td");
-          td.textContent = String(value);
-          tr.appendChild(td);
+            } catch (err) {
+                container.innerHTML = `<div class="error">In attesa del primo avvio del bot o file JSON non ancora generato.<br><small>${err.message}</small></div>`;
+            }
         }
 
-        tr.cells[3].className =
-          t.change5m >= 0 ? "positive" : "negative";
+        // Carica i dati all'avvio e aggiorna ogni 60 secondi
+        loadData();
+        setInterval(loadData, 60000);
+    </script>
 
-        $("tokenTable").appendChild(tr);
-      }
-
-      $("dataStatus").textContent = feedLoaded
-        ? "Feed reale caricato"
-        : "Feed non disponibile";
-      $("dataStatus").className = feedLoaded
-        ? "pill green"
-        : "pill yellow";
-
-      $("notice").textContent = feedLoaded
-        ? `Feed aggiornato: ${lastDataUpdate ? new Date(lastDataUpdate).toLocaleString("it-IT") : "data non disponibile"}. ${results.length} token corrispondono ai filtri della dashboard.`
-        : "Impossibile caricare i dati. Verifica che radar_data.json sia pubblicato accanto a index.html.";
-    }
-
-    async function loadMarketData() {
-      try {
-        const response = await fetch("./radar_data.json?t=" + Date.now(), {
-          cache: "no-store"
-        });
-
-        if (!response.ok) {
-          throw new Error("HTTP " + response.status);
-        }
-
-        const data = await response.json();
-
-        if (!data || !Array.isArray(data.tokens)) {
-          throw new Error("Formato radar_data.json non valido");
-        }
-
-        marketData = data.tokens
-          .filter(t => t && typeof t === "object")
-          .map(t => ({
-            symbol: String(t.symbol || "?"),
-            name: String(t.name || "Sconosciuto"),
-            liquidity: Number(t.liquidity) || 0,
-            volume5m: Number(t.volume5m) || 0,
-            volume1h: Number(t.volume1h) || 0,
-            change5m: Number(t.change5m) || 0,
-            change1h: Number(t.change1h) || 0,
-            buySellRatio: Number(t.buySellRatio) || 0,
-            buys: Number(t.buys) || 0,
-            sells: Number(t.sells) || 0,
-            ageDays: t.ageDays == null ? null : Number(t.ageDays),
-            price: Number(t.price) || 0,
-            url: String(t.url || "")
-          }))
-          .filter(t => Number.isFinite(t.ageDays));
-
-        lastDataUpdate = data.updatedAt || null;
-        feedLoaded = true;
-        render();
-      } catch (error) {
-        feedLoaded = false;
-        $("dataStatus").textContent = "Feed non disponibile";
-        $("dataStatus").className = "pill yellow";
-        $("notice").textContent =
-          "Errore nel caricamento di radar_data.json. " +
-          "Controlla che il file sia presente nella cartella pubblicata dal sito.";
-        console.error("Errore feed radar:", error);
-        render();
-      }
-    }
-
-    $("applyFilters").addEventListener("click", render);
-
-    $("resetFilters").addEventListener("click", () => {
-      for (const [id, value] of Object.entries(initialValues)) {
-        $(id).value = value;
-      }
-      $("sortBy").value = "volume";
-      $("socialEnabled").checked = true;
-      $("telegramEnabled").checked = true;
-      render();
-    });
-
-    $("showRisk").addEventListener("change", () => {
-      $("riskText").hidden = !$("showRisk").checked;
-    });
-
-    loadMarketData();
-    setInterval(loadMarketData, 30000);
-  </script>
 </body>
 </html>
