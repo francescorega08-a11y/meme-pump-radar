@@ -1,3 +1,4 @@
+
 name: Meme Pump Radar AI
 
 on:
@@ -36,21 +37,25 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python radar.py
 
-      - name: Salva lo stato del radar
+      - name: Salva stato e dati dashboard
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           if [ -f radar_state.json ]; then
             git add radar_state.json
-            if ! git diff --cached --quiet; then
-              git commit -m "Aggiorna stato Meme Pump Radar"
-              git push origin "HEAD:${GITHUB_REF_NAME}"
-            else
-              echo "Nessuna modifica allo stato."
-            fi
+          fi
+
+          if [ -f radar_data.json ]; then
+            git add radar_data.json
+          fi
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Aggiorna stato e dati Meme Pump Radar"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           else
-            echo "radar_state.json non presente: nessuno stato da salvare."
+            echo "Nessuna modifica ai dati."
           fi
