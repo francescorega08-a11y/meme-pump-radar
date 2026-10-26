@@ -4,7 +4,7 @@ name: Meme Pump Radar AI
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/2 * * * *"
+    - cron: "*/10 * * * *"
 
 permissions:
   contents: write
