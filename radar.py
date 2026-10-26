@@ -3,11 +3,11 @@ import requests
 import json
 from datetime import datetime
 
-# --- CONFIGURAZIONE FILTRI ANTICIPO (5-15 MINUTI) ---
-MIN_LIQUIDITY = 15000       # Soglia di liquidità iniziale (USD)
-MIN_VOLUME_5M = 12000       # Volume minimo negli ultimi 5 minuti (USD)
-MIN_CHANGE_5M = 10.0        # Variazione minima prezzo a 5 minuti (+10%)
-MAX_CHANGE_1H = 300.0       # Scarta i token che hanno già fatto +300%
+# --- CONFIGURAZIONE FILTRI REGOLATI PER MAGGIORE REATTIVITÀ ---
+MIN_LIQUIDITY = 10000       # Abbassata a $10,000 per catturare l'avvio
+MIN_VOLUME_5M = 5000        # Abbassato a $5,000 per rilevare i primi volumi
+MIN_CHANGE_5M = 5.0         # Abbassata a +5% per intercettare l'inizio impulso
+MAX_CHANGE_1H = 300.0       # Evita i token che hanno già completato il pump
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
@@ -80,15 +80,11 @@ def check_radar():
         price_usd = pair.get("priceUsd", "0")
         dex_url = pair.get("url", f"https://dexscreener.com/solana/{pair_address}")
 
-        # Controllo social presenti su Dexscreener
         info = pair.get("info", {})
         socials = info.get("socials", [])
         websites = info.get("websites", [])
         
-        has_twitter = any(s.get("type") == "twitter" for s in socials)
         social_status = "🌐 Social Trovati" if (socials or websites) else "⚠️ Nessun Social Ufficiale"
-
-        # Link diretto per cercare il contratto o il simbolo su X (Twitter)
         twitter_search_url = f"https://twitter.com/search?q={token_address}&f=live"
 
         if (liquidity >= MIN_LIQUIDITY and 
@@ -128,7 +124,7 @@ def check_radar():
 
     if new_alerts:
         save_alerted_pairs(alerted[:50])
-        print(f"Trovati {len(new_alerts)} nuovi segnali con controllo social.")
+        print(f"Trovati {len(new_alerts)} nuovi segnali.")
     else:
         print("Nessun segnale rilevato in questo ciclo.")
 
