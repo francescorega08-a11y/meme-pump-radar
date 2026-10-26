@@ -32,7 +32,7 @@ TIMEOUT = 20
 DIAGNOSTIC_PAIRS = 15
 
 STATE_FILE = Path("radar_state.json")
-
+RADAR_DATA_FILE = Path("radar_data.json")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
