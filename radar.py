@@ -9,16 +9,16 @@ from datetime import datetime, timezone
 
 import requests
 
-# ==========================================
+# ==================================================
 # MEME PUMP RADAR AI — SOLANA
-# Diagnostica filtri + alert Telegram
-# Nessun riepilogo Telegram. Nessun trading.
-# ==========================================
+# Ricerca ampliata + diagnostica + alert Telegram
+# Nessun riepilogo Telegram. Nessun trading automatico.
+# ==================================================
 
 DEX_API = "https://api.dexscreener.com"
 TELEGRAM_API = "https://api.telegram.org"
 
-# Filtri concordati
+# FILTRI DI MERCATO
 MIN_LIQUIDITY_USD = 25_000
 MIN_VOLUME_5M_USD = 8_000
 MIN_VOLUME_1H_USD = 30_000
@@ -43,7 +43,7 @@ logging.basicConfig(
 
 session = requests.Session()
 session.headers.update({
-    "User-Agent": "Meme-Pump-Radar-AI/5.0"
+    "User-Agent": "Meme-Pump-Radar-AI/6.0"
 })
 
 
@@ -96,11 +96,23 @@ def save_state(active_pairs, history):
 
 
 def get_solana_pairs():
+    """Amplia le ricerche testuali di coppie Solana."""
+
     queries = [
-        "solana meme",
-        "solana pump",
-        "solana dog",
-        "solana cat",
+        "solana",
+        "pump",
+        "meme",
+        "dog",
+        "cat",
+        "frog",
+        "pepe",
+        "ai",
+        "inu",
+        "bonk",
+        "wif",
+        "trump",
+        "sol",
+        "launch",
     ]
 
     pairs_by_id = {}
@@ -133,9 +145,19 @@ def get_solana_pairs():
                     pairs_by_id[pair_id] = pair
 
         except (requests.RequestException, ValueError) as exc:
-            logging.warning("Ricerca %s fallita: %s", query, exc)
+            logging.warning(
+                "Ricerca '%s' fallita: %s", query, exc
+            )
 
         time.sleep(REQUEST_DELAY_SECONDS)
+
+    logging.info(
+        "Ricerca ampliata: query riuscite=%d/%d, "
+        "coppie Solana uniche=%d",
+        successful,
+        len(queries),
+        len(pairs_by_id),
+    )
 
     if successful == 0:
         return None
@@ -144,7 +166,7 @@ def get_solana_pairs():
 
 
 def evaluate_pair(pair, history, stats):
-    """Restituisce il token solo se supera tutti i filtri."""
+    """Applica i filtri e registra il primo motivo di esclusione."""
 
     liquidity = number((pair.get("liquidity") or {}).get("usd"))
     volume = pair.get("volume") or {}
@@ -160,8 +182,6 @@ def evaluate_pair(pair, history, stats):
     buys = int(number(tx_m5.get("buys")))
     sells = int(number(tx_m5.get("sells")))
 
-    # Diagnostica sequenziale: ogni coppia viene conteggiata
-    # nel primo filtro che non supera.
     if liquidity < MIN_LIQUIDITY_USD:
         stats["liquidita"] += 1
         return None
@@ -210,7 +230,9 @@ def evaluate_pair(pair, history, stats):
     score += int(vol_m5 >= 15_000)
     score += int(buys > sells)
     score += int(vol_h1 >= 50_000)
-    score += int(acceleration is not None and acceleration >= 20)
+    score += int(
+        acceleration is not None and acceleration >= 20
+    )
 
     base = pair.get("baseToken") or {}
 
@@ -249,7 +271,12 @@ def send_telegram(message):
             timeout=TIMEOUT,
         )
         response.raise_for_status()
-        return response.json().get("ok") is True
+
+        if response.json().get("ok") is not True:
+            logging.error("Telegram ha rifiutato il messaggio")
+            return False
+
+        return True
 
     except (requests.RequestException, ValueError) as exc:
         logging.error("Invio Telegram fallito: %s", exc)
@@ -299,9 +326,11 @@ def main():
         return
 
     pairs = get_solana_pairs()
+
     if pairs is None:
         logging.error("Ricerca fallita: stato conservato")
         return
+
     if not pairs:
         logging.warning("Nessuna coppia trovata: stato conservato")
         return
@@ -335,7 +364,8 @@ def main():
     logging.info("DIAGNOSTICA FILTRI: %s", stats)
 
     current_active = {
-        item["pair_id"] for item in candidates if item["pair_id"]
+        item["pair_id"]
+        for item in candidates if item["pair_id"]
     }
 
     new_pumps = [
@@ -375,7 +405,9 @@ def main():
             continue
 
         history[pair_id] = {
-            "volume_5m": number((pair.get("volume") or {}).get("m5")),
+            "volume_5m": number(
+                (pair.get("volume") or {}).get("m5")
+            ),
             "observed_at": now,
         }
 
@@ -402,6 +434,7 @@ def main():
         len(sent_ids),
         len(failed_ids),
     )
+
     logging.info("Radar terminato")
 
 
