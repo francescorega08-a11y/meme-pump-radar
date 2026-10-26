@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meme Pump Radar AI</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #151d31;
+      --border: #293650;
+      --text: #edf3ff;
+      --muted: #9baac4;
+      --green: #35d49a;
+      --red: #ff657a;
+      --blue: #79aaff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    main { max-width: 1200px; margin: auto; }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    h1 { margin: 0; font-size: clamp(24px, 4vw, 36px); }
+    .subtitle { color: var(--muted); margin-top: 8px; }
+
+    .status {
+      padding: 9px 13px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .panel, .stat {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 16px;
+    }
+
+    .stat-label { color: var(--muted); font-size: 13px; }
+    .stat-value { font-size: 26px; font-weight: 700; margin-top: 8px; }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    input, select, button {
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 15px;
+    }
+
+    input { flex: 1; min-width: 180px; }
+    button { cursor: pointer; }
+    button:hover { border-color: var(--blue); }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 850px;
+      background: var(--panel);
+    }
+
+    th, td {
+      padding: 13px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    th { color: var(--muted); font-weight: 600; }
+    tr:last-child td { border-bottom: 0; }
+
+    .coin { font-weight: 700; }
+    .symbol { color: var(--muted); font-size: 12px; margin-top: 4px; }
+    .green { color: var(--green); }
+    .red { color: var(--red); }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 8px;
+      border-radius: 7px;
+      background: #173c35;
+      color: var(--green);
+      font-size: 12px;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    .message { color: var(--muted); padding: 22px 4px; }
+    .warning { color: #ffd27a; margin-top: 16px; font-size: 13px; }
+
+    @media (max-width: 600px) {
+      body { padding: 12px; }
+      .stats { grid-template-columns: 1fr; }
+      .stat-value { font-size: 23px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>🚀 Meme Pump Radar AI</h1>
+      <div class="subtitle">Monitoraggio meme coin su Solana</div>
+    </div>
+    <div class="status" id="status">⏳ Caricamento dati...</div>
+  </header>
+
+  <section class="stats">
+    <div class="stat">
+      <div class="stat-label">Coppie analizzate</div>
+      <div class="stat-value" id="scanned">—</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Segnali che rispettano i filtri</div>
+      <div class="stat-value green" id="qualified">—</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Ultimo aggiornamento</div>
+      <div class="stat-value" id="updated" style="font-size:16px">—</div>
+    </div>
+  </section>
+
+  <section class="toolbar">
+    <input id="search" type="search" placeholder="Cerca nome o simbolo...">
+    <select id="filter">
+      <option value="all">Tutte le coppie</option>
+      <option value="qualified">Solo segnali validi</option>
+    </select>
+    <button id="refresh">↻ Aggiorna</button>
+  </section>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Token</th>
+          <th>Prezzo USD</th>
+          <th>Liquidità</th>
+          <th>Volume 5m</th>
+          <th>Volume 1h</th>
+          <th>Variazione 5m</th>
+          <th>Variazione 1h</th>
+          <th>Acquisti/vendite</th>
+          <th>Segnale</th>
+        </tr>
+      </thead>
+      <tbody id="rows">
+        <tr><td colspan="9" class="message">In attesa dei dati del radar...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="warning">
+    I segnali sono automatici e non garantiscono rialzi. Verifica sempre liquidità,
+    volume, sicurezza del token e rischio di truffe prima di investire.
+  </p>
+</main>
+
+<script>
+  const DATA_URL = "./radar_data.json";
+  let pairs = [];
+
+  const money = value => "$" + Number(value || 0).toLocaleString("en-US", {
+    maximumFractionDigits: 2
+  });
+
+  const price = value => {
+    const n = Number(value || 0);
+    return "$" + n.toLocaleString("en-US", {
+      maximumFractionDigits: 10
+    });
+  };
+
+  const dateText = value => {
+    if (!value) return "Non disponibile";
+    const date = new Date(value);
+    return Number.isNaN(date.getTime())
+      ? "Non disponibile"
+      : date.toLocaleString("it-IT");
+  };
+
+  async function loadData() {
+    const status = document.getElementById("status");
+    status.textContent = "⏳ Aggiornamento...";
+
+    try {
+      const response = await fetch(DATA_URL + "?t=" + Date.now(), {
+        cache: "no-store"
+      });
+
+      if (!response.ok) {
+        throw new Error("File dati non ancora disponibile");
+      }
+
+      const data = await response.json();
+      pairs = Array.isArray(data.pairs) ? data.pairs : [];
+
+      document.getElementById("scanned").textContent =
+        data.pairs_scanned ?? pairs.length;
+
+      document.getElementById("qualified").textContent =
+        data.qualified_count ?? pairs.filter(p => p.qualified).length;
+
+      document.getElementById("updated").textContent =
+        dateText(data.updated_at);
+
+      status.textContent = "🟢 Dati caricati";
+      renderRows();
+    } catch (error) {
+      status.textContent = "🟠 Dati non disponibili";
+      document.getElementById("rows").innerHTML =
+        '<tr><td colspan="9" class="message">' +
+        'Nessun dato disponibile. Controlla che il radar abbia completato ' +
+        'almeno una scansione e che radar_data.json sia pubblicato.</td></tr>';
+    }
+  }
+
+  function renderRows() {
+    const query = document.getElementById("search").value.trim().toLowerCase();
+    const filter = document.getElementById("filter").value;
+
+    const visible = pairs.filter(p => {
+      const matchesText =
+        (p.name || "").toLowerCase().includes(query) ||
+        (p.symbol || "").toLowerCase().includes(query);
+
+      return matchesText &&
+        (filter === "all" || p.qualified === true);
+    }).sort((a, b) => Number(b.qualified) - Number(a.qualified) ||
+      Number(b.volume_5m || 0) - Number(a.volume_5m || 0));
+
+    const rows = document.getElementById("rows");
+
+    if (!visible.length) {
+      rows.innerHTML =
+        '<tr><td colspan="9" class="message">Nessuna coppia trovata.</td></tr>';
+      return;
+    }
+
+    rows.innerHTML = visible.map(p => {
+      const change5 = Number(p.change_5m || 0);
+      const change1 = Number(p.change_1h || 0);
+      const safeUrl = /^https:\/\/dexscreener\.com\//i.test(p.url || "")
+        ? p.url : "";
+
+      return `
+        <tr>
+          <td>
+            <div class="coin">${escapeHTML(p.name || "Sconosciuto")}</div>
+            <div class="symbol">${escapeHTML(p.symbol || "?")}</div>
+            ${safeUrl ? `<a href="${safeUrl}" target="_blank" rel="noopener">Apri su Dexscreener ↗</a>` : ""}
+          </td>
+          <td>${price(p.price_usd)}</td>
+          <td>${money(p.liquidity_usd)}</td>
+          <td>${money(p.volume_5m)}</td>
+          <td>${money(p.volume_1h)}</td>
+          <td class="${change5 >= 0 ? "green" : "red"}">${change5.toFixed(2)}%</td>
+          <td class="${change1 >= 0 ? "green" : "red"}">${change1.toFixed(2)}%</td>
+          <td>${Number(p.buy_sell_ratio || 0).toFixed(2)}</td>
+          <td>${p.qualified ? '<span class="badge">✓ Valido</span>' : "—"}</td>
+        </tr>`;
+    }).join("");
+  }
+
+  function escapeHTML(value) {
+    return String(value).replace(/[&<>"']/g, char => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    })[char]);
+  }
+
+  document.getElementById("search").addEventListener("input", renderRows);
+  document.getElementById("filter").addEventListener("change", renderRows);
+  document.getElementById("refresh").addEventListener("click", loadData);
+
+  loadData();
+  setInterval(loadData, 60000);
+</script>
+</body>
+</html>
