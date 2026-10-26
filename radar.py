@@ -3,19 +3,22 @@ import os
 import json
 import time
 import logging
+import math
 from pathlib import Path
+from datetime import datetime, timezone
 
 import requests
 
-# ==========================================
+# ==================================================
 # MEME PUMP RADAR AI — SOLANA
-# Alert individuali Telegram.
-# Nessun trading automatico.
-# ==========================================
+# DexScreener + Telegram + monitoraggio momentum
+# Nessun acquisto automatico. Nessun riepilogo Telegram.
+# ==================================================
 
 DEX_API = "https://api.dexscreener.com"
+TELEGRAM_API = "https://api.telegram.org"
 
-# FILTRI PRINCIPALI
+# FILTRI DI MERCATO
 MIN_LIQUIDITY_USD = 25_000
 MIN_VOLUME_5M_USD = 8_000
 MIN_VOLUME_1H_USD = 30_000
@@ -26,11 +29,17 @@ MIN_CHANGE_1H_PCT = 3.0
 
 MIN_BUY_SELL_RATIO = 1.3
 
+# L'accelerazione del volume aumenta il punteggio,
+# ma non è un requisito obbligatorio.
+VOLUME_ACCELERATION_BONUS_PCT = 20.0
+
 # LIMITI OPERATIVI
 MAX_ALERTS_PER_RUN = 10
 REQUEST_DELAY_SECONDS = 0.3
 TIMEOUT = 20
 
+# Stato locale: deve essere persistito tra le esecuzioni
+# di GitHub Actions per ricordare scansioni precedenti.
 STATE_FILE = Path("radar_state.json")
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
@@ -43,61 +52,70 @@ logging.basicConfig(
 
 session = requests.Session()
 session.headers.update({
-    "User-Agent": "Meme-Pump-Radar-AI/3.0"
+    "User-Agent": "Meme-Pump-Radar-AI/4.0"
 })
 
 
 def number(value, default=0.0):
+    """Converte numeri, rifiutando valori non finiti."""
     try:
         result = float(value)
-        if not (result == result):
-            return default
-        if result in (float("inf"), float("-inf")):
-            return default
-        return result
+        return result if math.isfinite(result) else default
     except (TypeError, ValueError, OverflowError):
         return default
 
 
 def load_state():
-    """Carica le coppie già notificate."""
+    """Carica token già notificati e osservazioni precedenti."""
+    if not STATE_FILE.exists():
+        return {"active_pairs": [], "volume_history": {}}
+
     try:
-        data = json.loads(
-            STATE_FILE.read_text(encoding="utf-8")
-        )
+        data = json.loads(STATE_FILE.read_text(encoding="utf-8"))
+
+        if not isinstance(data, dict):
+            raise ValueError("Stato non valido")
+
         active = data.get("active_pairs", [])
+        history = data.get("volume_history", {})
 
         if not isinstance(active, list):
-            return None
+            raise ValueError("active_pairs non valido")
+
+        if not isinstance(history, dict):
+            raise ValueError("volume_history non valido")
 
         return {
-            item for item in active
-            if isinstance(item, str)
+            "active_pairs": [
+                item for item in active
+                if isinstance(item, str)
+            ],
+            "volume_history": history,
         }
 
-    except FileNotFoundError:
-        return set()
-    except (json.JSONDecodeError, OSError) as exc:
-        logging.error("Errore lettura stato: %s", exc)
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        logging.error("Stato non leggibile: %s", exc)
         return None
 
 
-def save_state(active_pairs):
+def save_state(active_pairs, volume_history):
     """Salva lo stato in modo atomico."""
     temp_file = STATE_FILE.with_suffix(".tmp")
 
+    payload = {
+        "active_pairs": sorted(active_pairs),
+        "volume_history": volume_history,
+    }
+
     temp_file.write_text(
-        json.dumps(
-            {"active_pairs": sorted(active_pairs)},
-            indent=2,
-        ),
+        json.dumps(payload, indent=2),
         encoding="utf-8",
     )
     temp_file.replace(STATE_FILE)
 
 
 def get_solana_pairs():
-    """Cerca coppie Solana su DexScreener."""
+    """Cerca coppie Solana con le ricerche DexScreener."""
     queries = [
         "solana meme",
         "solana pump",
@@ -127,6 +145,7 @@ def get_solana_pairs():
             for pair in results:
                 if not isinstance(pair, dict):
                     continue
+
                 if pair.get("chainId") != "solana":
                     continue
 
@@ -136,19 +155,43 @@ def get_solana_pairs():
 
         except (requests.RequestException, ValueError) as exc:
             logging.warning(
-                "Ricerca %s fallita: %s", query, exc
+                "Ricerca DexScreener %s fallita: %s",
+                query,
+                exc,
             )
 
         time.sleep(REQUEST_DELAY_SECONDS)
 
+    # None significa che tutte le richieste sono fallite.
+    # Una lista vuota significa che le ricerche sono riuscite
+    # ma non hanno restituito coppie utilizzabili.
     if successful_queries == 0:
         return None
 
     return list(pairs_by_id.values())
 
 
-def evaluate_pair(pair):
-    """Applica filtri di mercato e calcola un punteggio."""
+def volume_acceleration(pair_id, volume_5m, history):
+    """
+    Confronta il volume 5m con l'ultima osservazione salvata.
+
+    È un indicatore approssimativo: le finestre mobili possono
+    sovrapporsi e non rappresentano volumi indipendenti.
+    """
+    previous = history.get(pair_id, {})
+    previous_volume = number(previous.get("volume_5m"), 0)
+
+    if previous_volume <= 0:
+        return None
+
+    return (
+        (volume_5m - previous_volume)
+        / previous_volume
+    ) * 100.0
+
+
+def evaluate_pair(pair, history):
+    """Applica i filtri e calcola un punteggio indicativo."""
     liquidity = number(
         (pair.get("liquidity") or {}).get("usd")
     )
@@ -164,10 +207,10 @@ def evaluate_pair(pair):
     change_h1 = number(changes.get("h1"))
 
     tx_m5 = transactions.get("m5") or {}
+
     buys_m5 = int(number(tx_m5.get("buys")))
     sells_m5 = int(number(tx_m5.get("sells")))
 
-    # Filtri obbligatori
     if liquidity < MIN_LIQUIDITY_USD:
         return None
 
@@ -177,30 +220,28 @@ def evaluate_pair(pair):
     if vol_h1 < MIN_VOLUME_1H_USD:
         return None
 
-    if not (
-        MIN_CHANGE_5M_PCT
-        <= change_m5
-        <= MAX_CHANGE_5M_PCT
-    ):
+    if not MIN_CHANGE_5M_PCT <= change_m5 <= MAX_CHANGE_5M_PCT:
         return None
 
     if change_h1 < MIN_CHANGE_1H_PCT:
         return None
 
-    # Rapporto tra conteggio acquisti e vendite.
-    # Se non ci sono vendite, il rapporto è considerato
-    # favorevole solo se sono presenti acquisti.
-    if sells_m5 > 0:
-        buy_sell_ratio = buys_m5 / sells_m5
-    elif buys_m5 > 0:
-        buy_sell_ratio = float("inf")
-    else:
-        buy_sell_ratio = 0.0
-
-    if buy_sell_ratio < MIN_BUY_SELL_RATIO:
+    # Evita di considerare un rapporto favorevole quando
+    # non sono disponibili transazioni sufficienti.
+    if buys_m5 + sells_m5 == 0:
         return None
 
-    # Punteggio indicativo su 5 punti.
+    ratio = buys_m5 / sells_m5 if sells_m5 else float("inf")
+
+    if ratio < MIN_BUY_SELL_RATIO:
+        return None
+
+    pair_id = pair.get("pairAddress", "")
+    acceleration = volume_acceleration(
+        pair_id, vol_m5, history
+    )
+
+    # Punteggio su 5: non è una probabilità di pump.
     score = 0
     score += int(change_m5 >= 5)
     score += int(change_h1 >= 8)
@@ -208,10 +249,16 @@ def evaluate_pair(pair):
     score += int(buys_m5 > sells_m5)
     score += int(vol_h1 >= 50_000)
 
+    if (
+        acceleration is not None
+        and acceleration >= VOLUME_ACCELERATION_BONUS_PCT
+    ):
+        score = min(score + 1, 5)
+
     base = pair.get("baseToken") or {}
 
     return {
-        "pair_id": pair.get("pairAddress", ""),
+        "pair_id": pair_id,
         "name": base.get("name") or "Sconosciuto",
         "symbol": base.get("symbol") or "?",
         "price": number(pair.get("priceUsd")),
@@ -222,21 +269,21 @@ def evaluate_pair(pair):
         "change_h1": change_h1,
         "buys_m5": buys_m5,
         "sells_m5": sells_m5,
-        "buy_sell_ratio": buy_sell_ratio,
+        "ratio": ratio,
+        "acceleration": acceleration,
         "score": score,
         "url": pair.get("url") or "",
     }
 
 
 def send_telegram(message):
-    """Invia un singolo alert Telegram."""
+    """Invia un alert individuale e verifica la risposta."""
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
         logging.error("Segreti Telegram mancanti.")
         return False
 
     endpoint = (
-        f"https://api.telegram.org/"
-        f"bot{TELEGRAM_TOKEN}/sendMessage"
+        f"{TELEGRAM_API}/bot{TELEGRAM_TOKEN}/sendMessage"
     )
 
     try:
@@ -250,30 +297,35 @@ def send_telegram(message):
             timeout=TIMEOUT,
         )
         response.raise_for_status()
+        data = response.json()
 
-        if not response.json().get("ok"):
-            logging.error("Telegram ha rifiutato l'alert.")
+        if not data.get("ok"):
+            logging.error("Telegram non ha accettato l'alert.")
             return False
 
         return True
 
     except (requests.RequestException, ValueError) as exc:
-        logging.error("Invio Telegram fallito: %s", exc)
+        logging.error("Errore invio Telegram: %s", exc)
         return False
 
 
 def format_alert(item):
-    """Formatta l'alert di un singolo token."""
-    ratio = item["buy_sell_ratio"]
-    ratio_text = (
-        "N/A" if ratio == float("inf")
-        else f"{ratio:.2f}:1"
-    )
-
+    """Formatta un alert per un singolo token."""
     price = item["price"]
     price_text = (
         f"${price:.10f}" if price > 0
         else "Non disponibile"
+    )
+
+    ratio = item["ratio"]
+    ratio_text = "N/D" if math.isinf(ratio) else f"{ratio:.2f}:1"
+
+    acceleration = item["acceleration"]
+    acceleration_text = (
+        "In attesa di storico"
+        if acceleration is None
+        else f"{acceleration:+.1f}% rispetto all'ultima osservazione"
     )
 
     return (
@@ -285,9 +337,11 @@ def format_alert(item):
         f"Volume 1h: ${item['vol_h1']:,.0f}\n"
         f"Variazione 5m: {item['change_m5']:+.2f}%\n"
         f"Variazione 1h: {item['change_h1']:+.2f}%\n"
-        f"Acquisti/vendite 5m: "
+        f"Acquisti/vendite: "
         f"{item['buys_m5']}/{item['sells_m5']}\n"
         f"Rapporto acquisti/vendite: {ratio_text}\n"
+        f"Volume 5m vs osservazione precedente: "
+        f"{acceleration_text}\n"
         f"Radar score: {item['score']}/5\n\n"
         f"Grafico: {item['url']}\n\n"
         "⚠️ Segnale sperimentale, non consiglio finanziario.\n"
@@ -298,11 +352,19 @@ def format_alert(item):
 def main():
     logging.info("Avvio Meme Pump Radar AI.")
 
+    state = load_state()
+    if state is None:
+        logging.error(
+            "Stato non valido: scansione interrotta "
+            "per evitare notifiche duplicate."
+        )
+        return
+
     pairs = get_solana_pairs()
 
     if pairs is None:
         logging.error(
-            "Ricerca DexScreener fallita. Stato conservato."
+            "Ricerche DexScreener fallite. Stato conservato."
         )
         return
 
@@ -312,18 +374,13 @@ def main():
         )
         return
 
-    previous_active = load_state()
-
-    if previous_active is None:
-        logging.error(
-            "Stato non valido. Scansione interrotta."
-        )
-        return
+    previous_active = set(state["active_pairs"])
+    history = state["volume_history"]
 
     candidates = []
 
     for pair in pairs:
-        item = evaluate_pair(pair)
+        item = evaluate_pair(pair, history)
         if item:
             candidates.append(item)
 
@@ -347,47 +404,75 @@ def main():
         if item["pair_id"] not in previous_active
     ]
 
-    alerts_sent = 0
+    sent_ids = set()
     failed_ids = set()
-    attempted_ids = set()
 
     for item in new_pumps[:MAX_ALERTS_PER_RUN]:
-        pair_id = item["pair_id"]
-        attempted_ids.add(pair_id)
-
         if send_telegram(format_alert(item)):
-            alerts_sent += 1
-            logging.info(
-                "Alert inviato: %s", item["symbol"]
-            )
+            sent_ids.add(item["pair_id"])
+            logging.info("Alert inviato: %s", item["symbol"])
         else:
-            failed_ids.add(pair_id)
+            failed_ids.add(item["pair_id"])
 
         time.sleep(REQUEST_DELAY_SECONDS)
 
-    # Non segnare come notificati gli alert falliti
-    # né quelli rimasti oltre il limite per esecuzione.
     deferred_ids = {
         item["pair_id"]
         for item in new_pumps[MAX_ALERTS_PER_RUN:]
         if item["pair_id"]
     }
 
-    state_to_save = current_active - failed_ids - deferred_ids
+    # I token già attivi restano attivi; i nuovi entrano
+    # nello stato solo se il loro alert è stato inviato.
+    next_active = (
+        previous_active.intersection(current_active)
+        | sent_ids
+    )
+
+    # I segnali falliti e quelli oltre il limite restano
+    # non notificati e possono essere ritentati.
+    next_active -= failed_ids
+    next_active -= deferred_ids
+
+    # Aggiorna le osservazioni per le coppie viste.
+    now = datetime.now(timezone.utc).isoformat()
+
+    for pair in pairs:
+        pair_id = pair.get("pairAddress")
+        if not pair_id:
+            continue
+
+        vol = number((pair.get("volume") or {}).get("m5"))
+
+        history[pair_id] = {
+            "volume_5m": vol,
+            "observed_at": now,
+        }
+
+    # Limita la crescita dello storico: conserva le
+    # osservazioni più recenti, fino a 5.000 coppie.
+    if len(history) > 5000:
+        history = dict(
+            sorted(
+                history.items(),
+                key=lambda entry: entry[1].get("observed_at", ""),
+                reverse=True,
+            )[:5000]
+        )
 
     try:
-        save_state(state_to_save)
+        save_state(next_active, history)
     except OSError as exc:
-        logging.error("Salvataggio stato fallito: %s", exc)
+        logging.error("Errore salvataggio stato: %s", exc)
 
-    # Nessun riepilogo Telegram: log solo in GitHub Actions.
+    # Solo log interni a GitHub Actions. Nessun riepilogo Telegram.
     logging.info(
-        "Scansione completata: coppie=%s, candidati=%s, "
-        "nuovi_segnali=%s, alert_inviati=%s, falliti=%s",
+        "Scansione completata: coppie=%d, candidati=%d, "
+        "nuovi_segnali=%d, alert_inviati=%d, falliti=%d",
         len(pairs),
         len(candidates),
         len(new_pumps),
-        alerts_sent,
+        len(sent_ids),
         len(failed_ids),
     )
 
