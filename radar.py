@@ -9,28 +9,30 @@ import requests
 
 # ==========================================
 # MEME PUMP RADAR AI — SOLANA
-# Monitoraggio e alert Telegram.
+# Alert individuali Telegram.
 # Nessun trading automatico.
 # ==========================================
 
 DEX_API = "https://api.dexscreener.com"
 
-# Filtri di mercato
+# FILTRI PRINCIPALI
 MIN_LIQUIDITY_USD = 25_000
-MIN_VOLUME_5M_USD = 5_000
-MIN_VOLUME_1H_USD = 20_000
-MIN_CHANGE_5M_PCT = 3.0
-MIN_CHANGE_1H_PCT = 5.0
+MIN_VOLUME_5M_USD = 8_000
+MIN_VOLUME_1H_USD = 30_000
 
-# Limiti operativi
+MIN_CHANGE_5M_PCT = 2.0
+MAX_CHANGE_5M_PCT = 12.0
+MIN_CHANGE_1H_PCT = 3.0
+
+MIN_BUY_SELL_RATIO = 1.3
+
+# LIMITI OPERATIVI
 MAX_ALERTS_PER_RUN = 10
 REQUEST_DELAY_SECONDS = 0.3
 TIMEOUT = 20
 
-# Stato persistente
 STATE_FILE = Path("radar_state.json")
 
-# Segreti configurati in GitHub Actions
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
@@ -41,62 +43,61 @@ logging.basicConfig(
 
 session = requests.Session()
 session.headers.update({
-    "User-Agent": "Meme-Pump-Radar-AI/2.0"
+    "User-Agent": "Meme-Pump-Radar-AI/3.0"
 })
 
 
 def number(value, default=0.0):
-    """Converte un valore in numero in modo sicuro."""
     try:
         result = float(value)
-        return result if result == result else default
+        if not (result == result):
+            return default
+        if result in (float("inf"), float("-inf")):
+            return default
+        return result
     except (TypeError, ValueError, OverflowError):
         return default
 
 
 def load_state():
-    """Carica gli identificativi delle coppie già attive."""
+    """Carica le coppie già notificate."""
     try:
         data = json.loads(
             STATE_FILE.read_text(encoding="utf-8")
         )
+        active = data.get("active_pairs", [])
 
-        pairs = data.get("active_pairs", [])
-
-        if not isinstance(pairs, list):
-            logging.warning("Formato dello stato non valido.")
+        if not isinstance(active, list):
             return None
 
-        return set(
-            item for item in pairs
+        return {
+            item for item in active
             if isinstance(item, str)
-        )
+        }
 
     except FileNotFoundError:
         return set()
-
     except (json.JSONDecodeError, OSError) as exc:
-        logging.error("Stato non leggibile: %s", exc)
+        logging.error("Errore lettura stato: %s", exc)
         return None
 
 
 def save_state(active_pairs):
-    """Salva lo stato solo dopo una scansione valida."""
-    temporary_file = STATE_FILE.with_suffix(".tmp")
+    """Salva lo stato in modo atomico."""
+    temp_file = STATE_FILE.with_suffix(".tmp")
 
-    temporary_file.write_text(
+    temp_file.write_text(
         json.dumps(
             {"active_pairs": sorted(active_pairs)},
             indent=2,
         ),
         encoding="utf-8",
     )
-
-    temporary_file.replace(STATE_FILE)
+    temp_file.replace(STATE_FILE)
 
 
 def get_solana_pairs():
-    """Recupera coppie Solana attraverso la ricerca DexScreener."""
+    """Cerca coppie Solana su DexScreener."""
     queries = [
         "solana meme",
         "solana pump",
@@ -115,15 +116,10 @@ def get_solana_pairs():
                 timeout=TIMEOUT,
             )
             response.raise_for_status()
-
             data = response.json()
-            results = data.get("pairs")
 
+            results = data.get("pairs")
             if not isinstance(results, list):
-                logging.warning(
-                    "Risposta non valida per la ricerca %s",
-                    query,
-                )
                 continue
 
             successful_queries += 1
@@ -131,25 +127,20 @@ def get_solana_pairs():
             for pair in results:
                 if not isinstance(pair, dict):
                     continue
-
                 if pair.get("chainId") != "solana":
                     continue
 
                 pair_id = pair.get("pairAddress")
-
                 if pair_id:
                     pairs_by_id[pair_id] = pair
 
         except (requests.RequestException, ValueError) as exc:
             logging.warning(
-                "Errore nella ricerca %s: %s",
-                query,
-                exc,
+                "Ricerca %s fallita: %s", query, exc
             )
 
         time.sleep(REQUEST_DELAY_SECONDS)
 
-    # Se tutte le ricerche falliscono, non aggiornare lo stato.
     if successful_queries == 0:
         return None
 
@@ -157,13 +148,15 @@ def get_solana_pairs():
 
 
 def evaluate_pair(pair):
-    """Applica i filtri di liquidità, volume e variazione."""
-    liquidity_data = pair.get("liquidity") or {}
+    """Applica filtri di mercato e calcola un punteggio."""
+    liquidity = number(
+        (pair.get("liquidity") or {}).get("usd")
+    )
+
     volume = pair.get("volume") or {}
     changes = pair.get("priceChange") or {}
     transactions = pair.get("txns") or {}
 
-    liquidity = number(liquidity_data.get("usd"))
     vol_m5 = number(volume.get("m5"))
     vol_h1 = number(volume.get("h1"))
 
@@ -171,7 +164,6 @@ def evaluate_pair(pair):
     change_h1 = number(changes.get("h1"))
 
     tx_m5 = transactions.get("m5") or {}
-
     buys_m5 = int(number(tx_m5.get("buys")))
     sells_m5 = int(number(tx_m5.get("sells")))
 
@@ -185,16 +177,33 @@ def evaluate_pair(pair):
     if vol_h1 < MIN_VOLUME_1H_USD:
         return None
 
-    if change_m5 < MIN_CHANGE_5M_PCT:
+    if not (
+        MIN_CHANGE_5M_PCT
+        <= change_m5
+        <= MAX_CHANGE_5M_PCT
+    ):
         return None
 
     if change_h1 < MIN_CHANGE_1H_PCT:
         return None
 
-    # Punteggio indicativo: massimo 5 punti
+    # Rapporto tra conteggio acquisti e vendite.
+    # Se non ci sono vendite, il rapporto è considerato
+    # favorevole solo se sono presenti acquisti.
+    if sells_m5 > 0:
+        buy_sell_ratio = buys_m5 / sells_m5
+    elif buys_m5 > 0:
+        buy_sell_ratio = float("inf")
+    else:
+        buy_sell_ratio = 0.0
+
+    if buy_sell_ratio < MIN_BUY_SELL_RATIO:
+        return None
+
+    # Punteggio indicativo su 5 punti.
     score = 0
     score += int(change_m5 >= 5)
-    score += int(change_h1 >= 10)
+    score += int(change_h1 >= 8)
     score += int(vol_m5 >= 15_000)
     score += int(buys_m5 > sells_m5)
     score += int(vol_h1 >= 50_000)
@@ -213,17 +222,16 @@ def evaluate_pair(pair):
         "change_h1": change_h1,
         "buys_m5": buys_m5,
         "sells_m5": sells_m5,
+        "buy_sell_ratio": buy_sell_ratio,
         "score": score,
         "url": pair.get("url") or "",
     }
 
 
 def send_telegram(message):
-    """Invia un alert individuale e verifica la risposta."""
+    """Invia un singolo alert Telegram."""
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
-        logging.error(
-            "Configurazione Telegram mancante nei segreti."
-        )
+        logging.error("Segreti Telegram mancanti.")
         return False
 
     endpoint = (
@@ -241,12 +249,10 @@ def send_telegram(message):
             },
             timeout=TIMEOUT,
         )
-
         response.raise_for_status()
-        result = response.json()
 
-        if not result.get("ok"):
-            logging.error("Telegram ha rifiutato il messaggio.")
+        if not response.json().get("ok"):
+            logging.error("Telegram ha rifiutato l'alert.")
             return False
 
         return True
@@ -257,10 +263,16 @@ def send_telegram(message):
 
 
 def format_alert(item):
-    """Crea il messaggio Telegram per un singolo token."""
+    """Formatta l'alert di un singolo token."""
+    ratio = item["buy_sell_ratio"]
+    ratio_text = (
+        "N/A" if ratio == float("inf")
+        else f"{ratio:.2f}:1"
+    )
+
+    price = item["price"]
     price_text = (
-        f"${item['price']:.10f}"
-        if item["price"] > 0
+        f"${price:.10f}" if price > 0
         else "Non disponibile"
     )
 
@@ -275,6 +287,7 @@ def format_alert(item):
         f"Variazione 1h: {item['change_h1']:+.2f}%\n"
         f"Acquisti/vendite 5m: "
         f"{item['buys_m5']}/{item['sells_m5']}\n"
+        f"Rapporto acquisti/vendite: {ratio_text}\n"
         f"Radar score: {item['score']}/5\n\n"
         f"Grafico: {item['url']}\n\n"
         "⚠️ Segnale sperimentale, non consiglio finanziario.\n"
@@ -285,44 +298,35 @@ def format_alert(item):
 def main():
     logging.info("Avvio Meme Pump Radar AI.")
 
-    # 1. Recupera le coppie
     pairs = get_solana_pairs()
 
     if pairs is None:
         logging.error(
-            "Tutte le ricerche DexScreener sono fallite. "
-            "Stato conservato."
+            "Ricerca DexScreener fallita. Stato conservato."
         )
         return
 
     if not pairs:
         logging.warning(
-            "Nessuna coppia Solana trovata. "
-            "Stato conservato."
+            "Nessuna coppia trovata. Stato conservato."
         )
         return
 
-    # Se lo stato esistente è corrotto, non inviare alert
-    # potenzialmente duplicati e non sovrascriverlo.
     previous_active = load_state()
 
     if previous_active is None:
         logging.error(
-            "Stato non affidabile: scansione interrotta "
-            "per evitare alert duplicati."
+            "Stato non valido. Scansione interrotta."
         )
         return
 
-    # 2. Applica i filtri
     candidates = []
 
     for pair in pairs:
         item = evaluate_pair(pair)
-
         if item:
             candidates.append(item)
 
-    # Ordina per punteggio, volume e liquidità
     candidates.sort(
         key=lambda item: (
             item["score"],
@@ -338,93 +342,53 @@ def main():
         if item["pair_id"]
     }
 
-    # 3. Individua i nuovi ingressi nei filtri
     new_pumps = [
         item for item in candidates
         if item["pair_id"] not in previous_active
     ]
 
-    # 4. Invia esclusivamente alert individuali.
-    # Nessun riepilogo automatico Telegram.
     alerts_sent = 0
-    failed_alerts = 0
+    failed_ids = set()
+    attempted_ids = set()
 
     for item in new_pumps[:MAX_ALERTS_PER_RUN]:
+        pair_id = item["pair_id"]
+        attempted_ids.add(pair_id)
+
         if send_telegram(format_alert(item)):
             alerts_sent += 1
             logging.info(
-                "Alert inviato: %s (%s)",
-                item["symbol"],
-                item["pair_id"],
+                "Alert inviato: %s", item["symbol"]
             )
         else:
-            failed_alerts += 1
+            failed_ids.add(pair_id)
 
         time.sleep(REQUEST_DELAY_SECONDS)
 
-    # Se restano alert non inviati, non marcarli come
-    # già notificati: saranno riprovati alla prossima scansione.
-    successfully_alerted_ids = {
-        item["pair_id"]
-        for item in new_pumps[:MAX_ALERTS_PER_RUN]
-        if item["pair_id"]
-    }
-
-    if failed_alerts:
-        failed_ids = {
-            item["pair_id"]
-            for item in new_pumps[:MAX_ALERTS_PER_RUN]
-            if item["pair_id"]
-        }
-
-        # Conserva gli elementi che non sono stati notificati.
-        failed_ids = {
-            item["pair_id"]
-            for item in new_pumps[:MAX_ALERTS_PER_RUN]
-            if item["pair_id"]
-        }
-
-        # Rimuovi dal nuovo stato i candidati per cui
-        # l'invio è fallito, così da ritentare.
-        # Il mapping degli esiti è ricostruito nel ciclo
-        # seguente nelle versioni future se necessario.
-        # Per ora, conserva i candidati già attivi.
-        logging.warning(
-            "Alcuni alert non sono stati inviati: %s",
-            failed_alerts,
-        )
-
-    # Evita di perdere i nuovi segnali oltre il limite
-    # massimo di invii per esecuzione.
+    # Non segnare come notificati gli alert falliti
+    # né quelli rimasti oltre il limite per esecuzione.
     deferred_ids = {
         item["pair_id"]
         for item in new_pumps[MAX_ALERTS_PER_RUN:]
         if item["pair_id"]
     }
 
-    state_to_save = current_active - deferred_ids
+    state_to_save = current_active - failed_ids - deferred_ids
 
     try:
         save_state(state_to_save)
     except OSError as exc:
-        logging.error(
-            "Impossibile salvare lo stato: %s",
-            exc,
-        )
+        logging.error("Salvataggio stato fallito: %s", exc)
 
-    # Statistiche solo nei log GitHub Actions, mai su Telegram.
+    # Nessun riepilogo Telegram: log solo in GitHub Actions.
     logging.info(
-        "Scansione completata. "
-        "Coppie analizzate: %s | "
-        "Token nei filtri: %s | "
-        "Nuovi segnali: %s | "
-        "Alert inviati: %s | "
-        "Invii falliti: %s",
+        "Scansione completata: coppie=%s, candidati=%s, "
+        "nuovi_segnali=%s, alert_inviati=%s, falliti=%s",
         len(pairs),
         len(candidates),
         len(new_pumps),
         alerts_sent,
-        failed_alerts,
+        len(failed_ids),
     )
 
     logging.info("Radar terminato.")
