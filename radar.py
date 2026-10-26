@@ -7,7 +7,7 @@ from datetime import datetime
 MIN_LIQUIDITY = 15000       # Soglia di liquidità iniziale (USD)
 MIN_VOLUME_5M = 12000       # Volume minimo negli ultimi 5 minuti (USD)
 MIN_CHANGE_5M = 10.0        # Variazione minima prezzo a 5 minuti (+10%)
-MAX_CHANGE_1H = 300.0       # Scarta i token che hanno già fatto +300% (evita di entrare in ritardo)
+MAX_CHANGE_1H = 300.0       # Scarta i token che hanno già fatto +300%
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
@@ -36,7 +36,7 @@ def send_telegram_message(message):
         "chat_id": TELEGRAM_CHAT_ID,
         "text": message,
         "parse_mode": "HTML",
-        "disable_web_page_preview": False
+        "disable_web_page_preview": True
     }
     try:
         requests.post(url, json=payload, timeout=10)
@@ -44,9 +44,8 @@ def send_telegram_message(message):
         print(f"Errore invio Telegram: {e}")
 
 def check_radar():
-    print("Scansione segnali precoci su Solana in corso...")
+    print("Scansione segnali precoci e controllo social su Solana...")
     
-    # Query verso Dexscreener per token su Solana
     url = "https://api.dexscreener.com/latest/dex/search?q=solana"
     try:
         response = requests.get(url, timeout=10)
@@ -81,7 +80,17 @@ def check_radar():
         price_usd = pair.get("priceUsd", "0")
         dex_url = pair.get("url", f"https://dexscreener.com/solana/{pair_address}")
 
-        # --- FILTRAGGIO DINAMICO PER ANTICIPARE IL PUMP ---
+        # Controllo social presenti su Dexscreener
+        info = pair.get("info", {})
+        socials = info.get("socials", [])
+        websites = info.get("websites", [])
+        
+        has_twitter = any(s.get("type") == "twitter" for s in socials)
+        social_status = "🌐 Social Trovati" if (socials or websites) else "⚠️ Nessun Social Ufficiale"
+
+        # Link diretto per cercare il contratto o il simbolo su X (Twitter)
+        twitter_search_url = f"https://twitter.com/search?q={token_address}&f=live"
+
         if (liquidity >= MIN_LIQUIDITY and 
             volume_5m >= MIN_VOLUME_5M and 
             change_5m >= MIN_CHANGE_5M and 
@@ -90,15 +99,15 @@ def check_radar():
             timestamp_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
 
             msg = (
-                f"🚨 <b>ALLERTA PRECOCE (5m Pump)</b> 🚨\n\n"
+                f"🚨 <b>ALLERTA PRECOCE + SOCIAL CHECK</b> 🚨\n\n"
                 f"<b>Token:</b> {token_name} ({token_symbol})\n"
                 f"<b>Prezzo:</b> ${price_usd}\n"
                 f"<b>Liquidità:</b> ${liquidity:,.0f}\n"
                 f"<b>Vol 5m:</b> ${volume_5m:,.0f}\n"
-                f"<b>Vol 1h:</b> ${volume_1h:,.0f}\n"
-                f"<b>Variazione 5m:</b> +{change_5m:.2f}%\n"
-                f"<b>Variazione 1h:</b> +{change_1h:.2f}%\n\n"
-                f"🔗 <a href='{dex_url}'>Apri su Dexscreener</a>"
+                f"<b>Var 5m:</b> +{change_5m:.2f}% | <b>Var 1h:</b> +{change_1h:.2f}%\n"
+                f"<b>Stato:</b> {social_status}\n\n"
+                f"🔗 <a href='{dex_url}'>Grafico Dexscreener</a>\n"
+                f"🐦 <a href='{twitter_search_url}'>Cerca su X (Ultime)</a>"
             )
 
             send_telegram_message(msg)
@@ -118,11 +127,10 @@ def check_radar():
             alerted_ids.add(pair_address)
 
     if new_alerts:
-        # Salva massimo gli ultimi 50 segnali per mantenere pulita la dashboard
         save_alerted_pairs(alerted[:50])
-        print(f"Trovati {len(new_alerts)} nuovi segnali precoci.")
+        print(f"Trovati {len(new_alerts)} nuovi segnali con controllo social.")
     else:
-        print("Nessun segnale precoce rilevato in questo ciclo.")
+        print("Nessun segnale rilevato in questo ciclo.")
 
 if __name__ == "__main__":
     check_radar()
