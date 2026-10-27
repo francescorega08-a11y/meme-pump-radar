@@ -10,6 +10,7 @@ import requests
 DEX_API = "https://api.dexscreener.com"
 TELEGRAM_API = "https://api.telegram.org"
 
+# FILTRI DEL RADAR — NON MODIFICARE LE SOGLIE
 MIN_LIQUIDITY_USD = 25_000
 MIN_VOLUME_5M_USD = 8_000
 MIN_VOLUME_1H_USD = 30_000
@@ -17,6 +18,9 @@ MIN_CHANGE_5M_PCT = 2.0
 MAX_CHANGE_5M_PCT = 12.0
 MIN_CHANGE_1H_PCT = 3.0
 MIN_BUY_SELL_RATIO = 1.3
+
+# RIEPILOGO TELEGRAM OGNI 15 MINUTI
+SUMMARY_INTERVAL_SECONDS = 900
 
 MAX_ALERTS_PER_RUN = 10
 TIMEOUT = 20
@@ -93,7 +97,11 @@ def get_solana_pairs():
                     pairs_by_id[pair_id] = pair
 
         except requests.RequestException as exc:
-            logging.warning("Ricerca '%s' fallita: %s", query, exc)
+            logging.warning(
+                "Ricerca '%s' fallita: %s",
+                query,
+                exc
+            )
 
     return list(pairs_by_id.values())
 
@@ -102,6 +110,7 @@ def evaluate_pair(pair):
     liquidity = number(
         (pair.get("liquidity") or {}).get("usd")
     )
+
     volume = pair.get("volume") or {}
     change = pair.get("priceChange") or {}
     txns = pair.get("txns") or {}
@@ -115,8 +124,6 @@ def evaluate_pair(pair):
     buys = number(txns_5m.get("buys"))
     sells = number(txns_5m.get("sells"))
 
-    # Se non ci sono vendite, il rapporto non è definito.
-    # Evitiamo di considerarlo automaticamente un segnale valido.
     if sells <= 0:
         ratio = 0.0
     else:
@@ -127,7 +134,9 @@ def evaluate_pair(pair):
         "volume_5m": volume_5m >= MIN_VOLUME_5M_USD,
         "volume_1h": volume_1h >= MIN_VOLUME_1H_USD,
         "variazione_5m": (
-            MIN_CHANGE_5M_PCT <= change_5m <= MAX_CHANGE_5M_PCT
+            MIN_CHANGE_5M_PCT
+            <= change_5m
+            <= MAX_CHANGE_5M_PCT
         ),
         "variazione_1h": change_1h >= MIN_CHANGE_1H_PCT,
         "rapporto_acquisti": ratio >= MIN_BUY_SELL_RATIO,
@@ -135,7 +144,7 @@ def evaluate_pair(pair):
 
     base = pair.get("baseToken") or {}
 
-    result = {
+    return {
         "pair_id": pair.get("pairAddress"),
         "name": base.get("name") or "Sconosciuto",
         "symbol": base.get("symbol") or "?",
@@ -155,12 +164,12 @@ def evaluate_pair(pair):
         "checks": checks,
     }
 
-    return result
-
 
 def send_telegram(message):
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
-        logging.warning("Credenziali Telegram non configurate.")
+        logging.warning(
+            "Credenziali Telegram non configurate."
+        )
         return False
 
     try:
@@ -173,6 +182,7 @@ def send_telegram(message):
             },
             timeout=TIMEOUT,
         )
+
         response.raise_for_status()
         return response.json().get("ok") is True
 
@@ -191,10 +201,12 @@ def format_alert(item):
         f"Volume 1h: ${item['volume_1h']:,.0f}\n"
         f"Variazione 5m: {item['change_5m']:.2f}%\n"
         f"Variazione 1h: {item['change_1h']:.2f}%\n"
-        f"Acquisti/vendite 5m: {item['buy_sell_ratio']:.2f}\n\n"
+        f"Acquisti/vendite 5m: "
+        f"{item['buy_sell_ratio']:.2f}\n\n"
         f"DEX: {item['url']}\n"
         f"Token address: {item['token_address']}\n\n"
-        "Segnale automatico da verificare: non è una garanzia di rialzo."
+        "Segnale automatico da verificare: "
+        "non è una garanzia di rialzo."
     )
 
 
@@ -205,12 +217,22 @@ def main():
     if not isinstance(state, dict):
         state = {}
 
-    already_alerted = set(state.get("alerted_pairs", []))
+    already_alerted = set(
+        state.get("alerted_pairs", [])
+    )
+
     pairs = get_solana_pairs()
 
-    logging.info("Coppie Solana raccolte: %d", len(pairs))
+    logging.info(
+        "Coppie Solana raccolte: %d",
+        len(pairs)
+    )
 
-    results = [evaluate_pair(pair) for pair in pairs]
+    results = [
+        evaluate_pair(pair)
+        for pair in pairs
+    ]
+
     results = [
         item for item in results
         if item["pair_id"]
@@ -254,7 +276,6 @@ def main():
             already_alerted.add(item["pair_id"])
             sent_count += 1
 
-    # Conserva gli ultimi 1.000 ID per limitare la crescita del file.
     state["alerted_pairs"] = list(already_alerted)[-1000:]
     state["last_run"] = now
     state["last_pairs_scanned"] = len(results)
@@ -262,6 +283,47 @@ def main():
     state["last_alerts_sent"] = sent_count
 
     save_json(STATE_FILE, state)
+
+    # Controlla se è ora di inviare il riepilogo.
+    last_summary = state.get("last_summary_at")
+    send_summary = not last_summary
+
+    if last_summary:
+        try:
+            previous = datetime.fromisoformat(last_summary)
+            current = datetime.fromisoformat(now)
+
+            send_summary = (
+                current - previous
+            ).total_seconds() >= SUMMARY_INTERVAL_SECONDS
+
+        except (TypeError, ValueError):
+            send_summary = True
+
+    if send_summary:
+        summary = (
+            "🟢 MEME PUMP RADAR AI — RIEPILOGO\n\n"
+            "Stato: scansione completata\n"
+            f"Ultima scansione UTC: {now}\n"
+            f"Coppie analizzate: {len(results)}\n"
+            f"Segnali validi: {len(qualified)}\n"
+            f"Avvisi inviati in questa scansione: {sent_count}\n\n"
+            "Scansione prevista ogni 5 minuti.\n"
+            "Riepilogo previsto ogni 15 minuti.\n"
+            "Liquidità minima: $25.000\n"
+            "Volume minimo 5m: $8.000\n\n"
+            "Il riepilogo conferma questa scansione, "
+            "non garantisce le successive."
+        )
+
+        if send_telegram(summary):
+            state["last_summary_at"] = now
+            save_json(STATE_FILE, state)
+            logging.info("Riepilogo Telegram inviato.")
+        else:
+            logging.warning(
+                "Riepilogo non inviato; verrà ritentato."
+            )
 
     logging.info(
         "Fine scansione: coppie=%d, segnali=%d, alert_inviati=%d",
