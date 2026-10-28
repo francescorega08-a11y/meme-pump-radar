@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-28T08:40:31.175911+00:00",
-  "pairs_scanned": 135,
+  "updated_at": "2026-10-28T08:41:15.416390+00:00",
+  "pairs_scanned": 136,
   "qualified_count": 0,
   "alerts_sent": 0,
   "pairs": [
@@ -23,7 +23,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 71465.1,
+      "age_minutes": 71465.8,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -58,7 +58,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 235629.5,
+      "age_minutes": 235630.2,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -93,7 +93,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 67.4,
+      "age_minutes": 68.2,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -120,15 +120,15 @@
       "price_usd": 2.848e-06,
       "liquidity_usd": 0.0,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 106.88,
+      "volume_1h_usd": 101.87,
       "change_5m_pct": 0.0,
-      "change_1h_pct": -6.62,
+      "change_1h_pct": -6.32,
       "buys_5m": 0,
       "sells_5m": 0,
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 61.8,
+      "age_minutes": 62.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -163,7 +163,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 307.5,
+      "age_minutes": 308.2,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -198,7 +198,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1205.2,
+      "age_minutes": 1206.0,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -208,6 +208,41 @@
         "variazione_1h": false,
         "variazione_1h_max": true,
         "rapporto_acquisti_vendite": false,
+        "accelerazione_volume": false,
+        "transazioni_5m": false,
+        "eta_minima": true
+      },
+      "qualified": false
+    },
+    {
+      "name": "MemeCartel",
+      "symbol": "CARTEL",
+      "token_address": "HjAegua4wchmwKEQcqamJRe3vie9n3KhGL8sbgFYpump",
+      "pair_address": "5zTZV3ktTL1NDH4xCpDNT73pZHx2VGVZaVcGSPR4LBM",
+      "quote_symbol": "SOL",
+      "dex": "pumpfun",
+      "url": "https://dexscreener.com/solana/5ztzv3kttl1ndh4xcpdnt73pzhx2vgvzavcgspr4lbm",
+      "price_usd": 1.192e-05,
+      "liquidity_usd": 0.0,
+      "volume_5m_usd": 10.15,
+      "volume_1h_usd": 1247.74,
+      "change_5m_pct": 0.75,
+      "change_1h_pct": -1.73,
+      "buys_5m": 1,
+      "sells_5m": 0,
+      "transactions_5m": 1,
+      "buy_sell_ratio": "infinito",
+      "volume_acceleration": 0.1,
+      "age_minutes": 1014.6,
+      "checks": {
+        "liquidita": false,
+        "volume_5m": false,
+        "volume_1h": false,
+        "variazione_5m_min": false,
+        "variazione_5m_max": true,
+        "variazione_1h": false,
+        "variazione_1h_max": true,
+        "rapporto_acquisti_vendite": true,
         "accelerazione_volume": false,
         "transazioni_5m": false,
         "eta_minima": true
@@ -233,7 +268,7 @@
       "transactions_5m": 2,
       "buy_sell_ratio": 1.0,
       "volume_acceleration": 0.25,
-      "age_minutes": 173.9,
+      "age_minutes": 174.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -250,37 +285,37 @@
       "qualified": false
     },
     {
-      "name": "MemeCartel",
-      "symbol": "CARTEL",
-      "token_address": "HjAegua4wchmwKEQcqamJRe3vie9n3KhGL8sbgFYpump",
-      "pair_address": "5zTZV3ktTL1NDH4xCpDNT73pZHx2VGVZaVcGSPR4LBM",
+      "name": "The Meme",
+      "symbol": "MEME",
+      "token_address": "9i5D9pKETnCaZM7PLzV7FKXNqHvcBKT4BKWrBKymeme",
+      "pair_address": "8XaescxsRnsELv8sBEDu8RMta1hLEHtDmXL8SXFACyYt",
       "quote_symbol": "SOL",
       "dex": "pumpfun",
-      "url": "https://dexscreener.com/solana/5ztzv3kttl1ndh4xcpdnt73pzhx2vgvzavcgspr4lbm",
-      "price_usd": 1.183e-05,
+      "url": "https://dexscreener.com/solana/8xaescxsrnselv8sbedu8rmta1hlehtdmxl8sxfacyyt",
+      "price_usd": 3.824e-06,
       "liquidity_usd": 0.0,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 1237.59,
-      "change_5m_pct": 0.0,
-      "change_1h_pct": -2.46,
-      "buys_5m": 0,
-      "sells_5m": 0,
-      "transactions_5m": 0,
-      "buy_sell_ratio": 0.0,
-      "volume_acceleration": 0.0,
-      "age_minutes": 1013.9,
+      "volume_5m_usd": 915.16,
+      "volume_1h_usd": 915.16,
+      "change_5m_pct": 26.77,
+      "change_1h_pct": 26.77,
+      "buys_5m": 8,
+      "sells_5m": 3,
+      "transactions_5m": 11,
+      "buy_sell_ratio": 2.67,
+      "volume_acceleration": 12.0,
+      "age_minutes": 1.3,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
         "volume_1h": false,
-        "variazione_5m_min": false,
-        "variazione_5m_max": true,
-        "variazione_1h": false,
+        "variazione_5m_min": true,
+        "variazione_5m_max": false,
+        "variazione_1h": true,
         "variazione_1h_max": true,
-        "rapporto_acquisti_vendite": false,
-        "accelerazione_volume": false,
-        "transazioni_5m": false,
-        "eta_minima": true
+        "rapporto_acquisti_vendite": true,
+        "accelerazione_volume": true,
+        "transazioni_5m": true,
+        "eta_minima": false
       },
       "qualified": false
     },
@@ -303,7 +338,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 56421.6,
+      "age_minutes": 56422.4,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -338,7 +373,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 561.4,
+      "age_minutes": 562.1,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -373,7 +408,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": "infinito",
       "volume_acceleration": 10.9,
-      "age_minutes": 892249.7,
+      "age_minutes": 892250.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -408,7 +443,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 847043.4,
+      "age_minutes": 847044.1,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -443,7 +478,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 541.8,
+      "age_minutes": 542.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -478,7 +513,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 848952.3,
+      "age_minutes": 848953.0,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -513,7 +548,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 5411.8,
+      "age_minutes": 5412.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -548,7 +583,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 646.9,
+      "age_minutes": 647.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -583,7 +618,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 867.8,
+      "age_minutes": 868.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -618,7 +653,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 41027.5,
+      "age_minutes": 41028.3,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -653,7 +688,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 140677.9,
+      "age_minutes": 140678.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -688,7 +723,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 18180.0,
+      "age_minutes": 18180.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -723,7 +758,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 138763.6,
+      "age_minutes": 138764.3,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -758,7 +793,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 2972.4,
+      "age_minutes": 2973.2,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -793,7 +828,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 133168.3,
+      "age_minutes": 133169.0,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -828,7 +863,7 @@
       "transactions_5m": 43,
       "buy_sell_ratio": 1.69,
       "volume_acceleration": 0.53,
-      "age_minutes": 1968.6,
+      "age_minutes": 1969.3,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -863,7 +898,7 @@
       "transactions_5m": 14,
       "buy_sell_ratio": 0.75,
       "volume_acceleration": 0.65,
-      "age_minutes": 986.9,
+      "age_minutes": 987.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -898,7 +933,7 @@
       "transactions_5m": 25,
       "buy_sell_ratio": 2.12,
       "volume_acceleration": 0.79,
-      "age_minutes": 807.0,
+      "age_minutes": 807.8,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -933,7 +968,7 @@
       "transactions_5m": 3,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.11,
-      "age_minutes": 24187.4,
+      "age_minutes": 24188.1,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -968,7 +1003,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 58404.8,
+      "age_minutes": 58405.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1003,7 +1038,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 96021.2,
+      "age_minutes": 96021.9,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1038,7 +1073,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 6695.4,
+      "age_minutes": 6696.1,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1073,7 +1108,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 13047.5,
+      "age_minutes": 13048.3,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1108,7 +1143,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1020274.9,
+      "age_minutes": 1020275.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1143,7 +1178,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 50160.7,
+      "age_minutes": 50161.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1178,7 +1213,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 31053.1,
+      "age_minutes": 31053.9,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1213,7 +1248,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 618723.9,
+      "age_minutes": 618724.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1248,7 +1283,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1297347.9,
+      "age_minutes": 1297348.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1283,7 +1318,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 95867.0,
+      "age_minutes": 95867.8,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1318,7 +1353,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1056880.4,
+      "age_minutes": 1056881.2,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1353,7 +1388,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1245309.0,
+      "age_minutes": 1245309.8,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1388,7 +1423,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 138758.8,
+      "age_minutes": 138759.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1423,7 +1458,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 131846.3,
+      "age_minutes": 131847.0,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1458,7 +1493,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 136488.9,
+      "age_minutes": 136489.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1493,7 +1528,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 27006.7,
+      "age_minutes": 27007.4,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1528,7 +1563,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1429759.1,
+      "age_minutes": 1429759.9,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1563,7 +1598,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 643.5,
+      "age_minutes": 644.3,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1598,7 +1633,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1306.0,
+      "age_minutes": 1306.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1633,7 +1668,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 136489.5,
+      "age_minutes": 136490.3,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1668,7 +1703,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 137795.1,
+      "age_minutes": 137795.9,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1703,7 +1738,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1385.4,
+      "age_minutes": 1386.1,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1738,7 +1773,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1385.0,
+      "age_minutes": 1385.8,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1773,7 +1808,7 @@
       "transactions_5m": 11,
       "buy_sell_ratio": 0.38,
       "volume_acceleration": 1.13,
-      "age_minutes": 91933.2,
+      "age_minutes": 91933.9,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -1808,7 +1843,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1009.9,
+      "age_minutes": 1010.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1843,7 +1878,7 @@
       "transactions_5m": 26,
       "buy_sell_ratio": 0.37,
       "volume_acceleration": 1.66,
-      "age_minutes": 494.8,
+      "age_minutes": 495.6,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -1878,7 +1913,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 937.2,
+      "age_minutes": 938.0,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1913,7 +1948,7 @@
       "transactions_5m": 9,
       "buy_sell_ratio": 0.8,
       "volume_acceleration": 0.28,
-      "age_minutes": 134887.8,
+      "age_minutes": 134888.5,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -1948,7 +1983,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 560304.2,
+      "age_minutes": 560305.0,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1983,7 +2018,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1492660.5,
+      "age_minutes": 1492661.3,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2018,7 +2053,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 247393.5,
+      "age_minutes": 247394.3,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2053,7 +2088,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 602936.4,
+      "age_minutes": 602937.2,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2088,7 +2123,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 286126.6,
+      "age_minutes": 286127.4,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2123,7 +2158,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1998032.7,
+      "age_minutes": 1998033.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2158,7 +2193,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1544885.3,
+      "age_minutes": 1544886.1,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2193,7 +2228,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 620529.4,
+      "age_minutes": 620530.1,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2228,7 +2263,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 49740.1,
+      "age_minutes": 49740.8,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2263,7 +2298,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 49739.2,
+      "age_minutes": 49739.9,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2298,7 +2333,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1168.5,
+      "age_minutes": 1169.3,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2333,7 +2368,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 56823.7,
+      "age_minutes": 56824.4,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2368,7 +2403,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 116321.2,
+      "age_minutes": 116322.0,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2392,23 +2427,23 @@
       "quote_symbol": "SOL",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/6cfzubpujrwymb5doxuajrweht91ext6tqe2pgemzk2w",
-      "price_usd": 0.0009475,
-      "liquidity_usd": 81637.43,
-      "volume_5m_usd": 206.52,
-      "volume_1h_usd": 2907.96,
-      "change_5m_pct": 1.34,
-      "change_1h_pct": 6.78,
-      "buys_5m": 22,
-      "sells_5m": 11,
-      "transactions_5m": 33,
-      "buy_sell_ratio": 2.0,
-      "volume_acceleration": 0.85,
-      "age_minutes": 3271.1,
+      "price_usd": 0.0009411,
+      "liquidity_usd": 81475.08,
+      "volume_5m_usd": 212.77,
+      "volume_1h_usd": 2917.57,
+      "change_5m_pct": -0.44,
+      "change_1h_pct": 7.51,
+      "buys_5m": 26,
+      "sells_5m": 10,
+      "transactions_5m": 36,
+      "buy_sell_ratio": 2.6,
+      "volume_acceleration": 0.88,
+      "age_minutes": 3271.8,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
         "volume_1h": false,
-        "variazione_5m_min": true,
+        "variazione_5m_min": false,
         "variazione_5m_max": true,
         "variazione_1h": true,
         "variazione_1h_max": true,
@@ -2438,7 +2473,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 907374.2,
+      "age_minutes": 907374.9,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2473,7 +2508,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 292670.6,
+      "age_minutes": 292671.4,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2508,7 +2543,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 165262.5,
+      "age_minutes": 165263.2,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2543,7 +2578,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1354.4,
+      "age_minutes": 1355.1,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2570,9 +2605,9 @@
       "price_usd": 6.383e-06,
       "liquidity_usd": 0.0,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 214.33,
+      "volume_1h_usd": 202.24,
       "change_5m_pct": 0.0,
-      "change_1h_pct": -8.33,
+      "change_1h_pct": -7.89,
       "buys_5m": 0,
       "sells_5m": 0,
       "transactions_5m": 0,
@@ -2613,7 +2648,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 103023.8,
+      "age_minutes": 103024.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2648,7 +2683,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 184524.9,
+      "age_minutes": 184525.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2683,7 +2718,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 20983.1,
+      "age_minutes": 20983.9,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2718,7 +2753,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 25493.0,
+      "age_minutes": 25493.8,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2753,7 +2788,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 925339.8,
+      "age_minutes": 925340.5,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2788,7 +2823,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1003012.5,
+      "age_minutes": 1003013.3,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2823,7 +2858,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 3.87,
-      "age_minutes": 29561.7,
+      "age_minutes": 29562.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2858,7 +2893,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 166259.3,
+      "age_minutes": 166260.0,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2893,7 +2928,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1020197.2,
+      "age_minutes": 1020198.0,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2928,7 +2963,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 11592.7,
+      "age_minutes": 11593.4,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2963,7 +2998,42 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 80963.3,
+      "age_minutes": 80964.1,
+      "checks": {
+        "liquidita": false,
+        "volume_5m": false,
+        "volume_1h": false,
+        "variazione_5m_min": false,
+        "variazione_5m_max": true,
+        "variazione_1h": false,
+        "variazione_1h_max": true,
+        "rapporto_acquisti_vendite": false,
+        "accelerazione_volume": false,
+        "transazioni_5m": false,
+        "eta_minima": true
+      },
+      "qualified": false
+    },
+    {
+      "name": "The Sheeple Flock",
+      "symbol": "SHEEPLE",
+      "token_address": "TVvnJTedD3WgAPede2xUmRjweJqNdhCEgyjtKv3rCq4",
+      "pair_address": "GYrcae6FgKQ1p6rTSZMYrnov9ebYm8h4SLZJ59GBB7kB",
+      "quote_symbol": "HQ",
+      "dex": "meteora",
+      "url": "https://dexscreener.com/solana/gyrcae6fgkq1p6rtszmyrnov9ebym8h4slzj59gbb7kb",
+      "price_usd": 0.0007423,
+      "liquidity_usd": 199.89,
+      "volume_5m_usd": 0.0,
+      "volume_1h_usd": 0.0,
+      "change_5m_pct": 0.0,
+      "change_1h_pct": 0.0,
+      "buys_5m": 0,
+      "sells_5m": 0,
+      "transactions_5m": 0,
+      "buy_sell_ratio": 0.0,
+      "volume_acceleration": 0.0,
+      "age_minutes": 59716.8,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2998,7 +3068,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 897776.7,
+      "age_minutes": 897777.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3033,7 +3103,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 58466.5,
+      "age_minutes": 58467.2,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3068,7 +3138,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": "infinito",
       "volume_acceleration": 12.0,
-      "age_minutes": 490034.8,
+      "age_minutes": 490035.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3079,41 +3149,6 @@
         "variazione_1h_max": true,
         "rapporto_acquisti_vendite": true,
         "accelerazione_volume": true,
-        "transazioni_5m": false,
-        "eta_minima": true
-      },
-      "qualified": false
-    },
-    {
-      "name": "The Sheeple Flock",
-      "symbol": "SHEEPLE",
-      "token_address": "TVvnJTedD3WgAPede2xUmRjweJqNdhCEgyjtKv3rCq4",
-      "pair_address": "GYrcae6FgKQ1p6rTSZMYrnov9ebYm8h4SLZJ59GBB7kB",
-      "quote_symbol": "HQ",
-      "dex": "meteora",
-      "url": "https://dexscreener.com/solana/gyrcae6fgkq1p6rtszmyrnov9ebym8h4slzj59gbb7kb",
-      "price_usd": 0.0007423,
-      "liquidity_usd": 199.89,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.0,
-      "change_5m_pct": 0.0,
-      "change_1h_pct": 0.0,
-      "buys_5m": 0,
-      "sells_5m": 0,
-      "transactions_5m": 0,
-      "buy_sell_ratio": 0.0,
-      "volume_acceleration": 0.0,
-      "age_minutes": 59716.1,
-      "checks": {
-        "liquidita": false,
-        "volume_5m": false,
-        "volume_1h": false,
-        "variazione_5m_min": false,
-        "variazione_5m_max": true,
-        "variazione_1h": false,
-        "variazione_1h_max": true,
-        "rapporto_acquisti_vendite": false,
-        "accelerazione_volume": false,
         "transazioni_5m": false,
         "eta_minima": true
       },
@@ -3138,7 +3173,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 89761.9,
+      "age_minutes": 89762.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3173,7 +3208,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 580277.0,
+      "age_minutes": 580277.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3208,7 +3243,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 97018.6,
+      "age_minutes": 97019.4,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3234,16 +3269,16 @@
       "url": "https://dexscreener.com/solana/57vsjsvtykiadvmmhowvn28k2yp4h46jvbopiv3oza4k",
       "price_usd": 5.114e-05,
       "liquidity_usd": 40626.07,
-      "volume_5m_usd": 19.71,
+      "volume_5m_usd": 12.65,
       "volume_1h_usd": 35.71,
-      "change_5m_pct": 0.22,
+      "change_5m_pct": -0.13,
       "change_1h_pct": 0.11,
       "buys_5m": 0,
-      "sells_5m": 4,
-      "transactions_5m": 4,
+      "sells_5m": 2,
+      "transactions_5m": 2,
       "buy_sell_ratio": 0.0,
-      "volume_acceleration": 6.62,
-      "age_minutes": 55781.2,
+      "volume_acceleration": 4.25,
+      "age_minutes": 55781.9,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3278,7 +3313,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 10428.8,
+      "age_minutes": 10429.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3304,16 +3339,16 @@
       "url": "https://dexscreener.com/solana/5upyuvpf835gfnahzfabg4c3bw6gpk6asbth3wpe1ntp",
       "price_usd": 5.147e-05,
       "liquidity_usd": 34697.37,
-      "volume_5m_usd": 19.8,
+      "volume_5m_usd": 12.72,
       "volume_1h_usd": 35.88,
-      "change_5m_pct": 0.23,
+      "change_5m_pct": 0.15,
       "change_1h_pct": 0.37,
-      "buys_5m": 4,
+      "buys_5m": 2,
       "sells_5m": 0,
-      "transactions_5m": 4,
+      "transactions_5m": 2,
       "buy_sell_ratio": "infinito",
-      "volume_acceleration": 6.62,
-      "age_minutes": 55781.2,
+      "volume_acceleration": 4.25,
+      "age_minutes": 55781.9,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3348,7 +3383,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1102523.7,
+      "age_minutes": 1102524.4,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3383,7 +3418,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 602979.0,
+      "age_minutes": 602979.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3418,7 +3453,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 138758.5,
+      "age_minutes": 138759.3,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3453,7 +3488,7 @@
       "transactions_5m": 22,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 1.55,
-      "age_minutes": 771497.2,
+      "age_minutes": 771498.0,
       "checks": {
         "liquidita": true,
         "volume_5m": true,
@@ -3488,7 +3523,7 @@
       "transactions_5m": 20,
       "buy_sell_ratio": 0.67,
       "volume_acceleration": 0.98,
-      "age_minutes": 2019940.1,
+      "age_minutes": 2019940.9,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3523,7 +3558,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 562446.3,
+      "age_minutes": 562447.1,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3558,7 +3593,7 @@
       "transactions_5m": 3,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.29,
-      "age_minutes": 767245.1,
+      "age_minutes": 767245.9,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3593,7 +3628,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 583809.1,
+      "age_minutes": 583809.8,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3628,7 +3663,7 @@
       "transactions_5m": 6,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 2.01,
-      "age_minutes": 771096.6,
+      "age_minutes": 771097.3,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3663,7 +3698,7 @@
       "transactions_5m": 21,
       "buy_sell_ratio": "infinito",
       "volume_acceleration": 5.86,
-      "age_minutes": 673489.4,
+      "age_minutes": 673490.1,
       "checks": {
         "liquidita": true,
         "volume_5m": true,
@@ -3698,7 +3733,7 @@
       "transactions_5m": 20,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 3.84,
-      "age_minutes": 769873.0,
+      "age_minutes": 769873.8,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3733,7 +3768,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 7.54,
-      "age_minutes": 75919.5,
+      "age_minutes": 75920.3,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3768,7 +3803,7 @@
       "transactions_5m": 3,
       "buy_sell_ratio": 0.5,
       "volume_acceleration": 4.8,
-      "age_minutes": 755860.9,
+      "age_minutes": 755861.7,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3803,7 +3838,7 @@
       "transactions_5m": 3,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 1.1,
-      "age_minutes": 678125.9,
+      "age_minutes": 678126.6,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3838,7 +3873,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.31,
-      "age_minutes": 403897.0,
+      "age_minutes": 403897.7,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3873,7 +3908,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 513568.0,
+      "age_minutes": 513568.8,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3908,7 +3943,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 792859.4,
+      "age_minutes": 792860.1,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3943,7 +3978,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 401467.1,
+      "age_minutes": 401467.8,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3978,7 +4013,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 258868.7,
+      "age_minutes": 258869.5,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4013,7 +4048,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 116428.7,
+      "age_minutes": 116429.4,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -4048,7 +4083,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 557963.8,
+      "age_minutes": 557964.6,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -4083,7 +4118,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 266221.2,
+      "age_minutes": 266222.0,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -4118,7 +4153,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 93415.5,
+      "age_minutes": 93416.3,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4153,7 +4188,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1279781.8,
+      "age_minutes": 1279782.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4188,7 +4223,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1423571.3,
+      "age_minutes": 1423572.1,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4223,7 +4258,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 869389.2,
+      "age_minutes": 869389.9,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4258,7 +4293,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1377535.9,
+      "age_minutes": 1377536.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4293,7 +4328,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1000397.4,
+      "age_minutes": 1000398.1,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4328,7 +4363,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 46494.9,
+      "age_minutes": 46495.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4363,7 +4398,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1072272.3,
+      "age_minutes": 1072273.0,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4398,7 +4433,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 15536.5,
+      "age_minutes": 15537.2,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4433,7 +4468,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 546866.8,
+      "age_minutes": 546867.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4468,7 +4503,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 55533.5,
+      "age_minutes": 55534.2,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4503,7 +4538,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 52378.2,
+      "age_minutes": 52379.0,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4538,7 +4573,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 56825.5,
+      "age_minutes": 56826.2,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4573,7 +4608,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 38.9,
+      "age_minutes": 39.7,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4608,7 +4643,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 49431.3,
+      "age_minutes": 49432.1,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4643,7 +4678,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 4653.1,
+      "age_minutes": 4653.9,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4678,7 +4713,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 6170.8,
+      "age_minutes": 6171.6,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4713,7 +4748,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 902.1,
+      "age_minutes": 902.9,
       "checks": {
         "liquidita": false,
         "volume_5m": false,
