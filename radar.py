@@ -10,18 +10,18 @@ import requests
 DEX_API = "https://api.dexscreener.com"
 TELEGRAM_API = "https://api.telegram.org"
 
-# FILTRI PRINCIPALI
+# FILTRI PIU' PERMISSIVI
 MIN_LIQUIDITY_USD = 25_000
-MIN_VOLUME_5M_USD = 5_000
-MIN_VOLUME_1H_USD = 30_000
-MIN_CHANGE_5M_PCT = 2.0
-MAX_CHANGE_5M_PCT = 12.0
-MIN_CHANGE_1H_PCT = 3.0
-MIN_BUY_SELL_RATIO = 1.3
+MIN_VOLUME_5M_USD = 3_000
+MIN_VOLUME_1H_USD = 20_000
+MIN_CHANGE_5M_PCT = 1.0
+MAX_CHANGE_5M_PCT = 10.0
+MIN_CHANGE_1H_PCT = 2.0
+MIN_BUY_SELL_RATIO = 1.2
 
-# NUOVI FILTRI
-MIN_VOLUME_ACCELERATION = 1.2
-MIN_TXNS_5M = 10
+# ACCELERAZIONE E CONTROLLI
+MIN_VOLUME_ACCELERATION = 1.1
+MIN_TXNS_5M = 5
 MAX_CHANGE_1H_PCT = 100.0
 MIN_TOKEN_AGE_MINUTES = 5
 
@@ -52,7 +52,7 @@ def number(value, default=0.0):
         if result != result or abs(result) == float("inf"):
             return default
         return result
-    except (TypeError, ValueError):
+    except (TypeError, ValueError, OverflowError):
         return default
 
 
@@ -103,7 +103,9 @@ def get_solana_pairs():
                     pairs_by_id[pair_id] = pair
 
         except (requests.RequestException, ValueError) as exc:
-            logging.warning("Ricerca '%s' fallita: %s", query, exc)
+            logging.warning(
+                "Ricerca '%s' fallita: %s", query, exc
+            )
 
     return list(pairs_by_id.values())
 
@@ -127,13 +129,10 @@ def evaluate_pair(pair):
     sells = int(number(txns_5m.get("sells")))
     total_txns = buys + sells
 
-    # Evita di considerare un rapporto affidabile
-    # quando non ci sono vendite o transazioni.
     ratio = buys / sells if sells > 0 else 0.0
 
-    # Stima dell'accelerazione rispetto alla media
-    # teorica del volume per intervalli di 5 minuti
-    # nell'ultima ora.
+    # Stima dell'attivita' recente rispetto alla media oraria.
+    # Non e' una misura storica esatta dell'accelerazione.
     average_5m = volume_1h / 12 if volume_1h > 0 else 0
     acceleration = (
         volume_5m / average_5m
@@ -145,7 +144,7 @@ def evaluate_pair(pair):
     pair_id = pair.get("pairAddress") or ""
     price_usd = number(pair.get("priceUsd"))
 
-    # Età della coppia, se Dexscreener la fornisce.
+    # Eta' della coppia, se disponibile.
     created_at = pair.get("pairCreatedAt")
     age_minutes = None
 
@@ -158,10 +157,11 @@ def evaluate_pair(pair):
             age_minutes = (
                 datetime.now(timezone.utc) - created
             ).total_seconds() / 60
-        except (ValueError, TypeError, OSError, OverflowError):
+        except (
+            ValueError, TypeError, OSError, OverflowError
+        ):
             age_minutes = None
 
-    # Controlli di qualità dei dati e rischio di base.
     checks = {
         "liquidita": liquidity >= MIN_LIQUIDITY_USD,
         "volume_5m": volume_5m >= MIN_VOLUME_5M_USD,
@@ -183,14 +183,16 @@ def evaluate_pair(pair):
         "accelerazione_volume": (
             acceleration >= MIN_VOLUME_ACCELERATION
         ),
-        "eta_coppia": (
-            age_minutes is None
-            or age_minutes >= MIN_TOKEN_AGE_MINUTES
+        # Se l'eta' non e' disponibile, non la consideriamo
+        # una verifica superata: segnaliamo il dato mancante.
+        "eta_disponibile": age_minutes is not None,
+        "eta_minima": (
+            age_minutes is not None
+            and age_minutes >= MIN_TOKEN_AGE_MINUTES
         ),
     }
 
-    # Punteggio informativo su 100.
-    # Il punteggio non è una probabilità di rialzo.
+    # Punteggio indicativo su 100, non probabilita' di rialzo.
     score = 0
 
     if liquidity >= MIN_LIQUIDITY_USD:
@@ -199,14 +201,16 @@ def evaluate_pair(pair):
         score += 10
     if volume_1h >= MIN_VOLUME_1H_USD:
         score += 10
-    if acceleration >= 1.2:
+    if acceleration >= 1.1:
         score += 15
     if acceleration >= 2.0:
         score += 5
-    if MIN_CHANGE_5M_PCT <= change_5m <= 8.0:
+
+    if MIN_CHANGE_5M_PCT <= change_5m <= 5.0:
         score += 10
-    elif 8.0 < change_5m <= MAX_CHANGE_5M_PCT:
+    elif 5.0 < change_5m <= MAX_CHANGE_5M_PCT:
         score += 5
+
     if MIN_CHANGE_1H_PCT <= change_1h <= 30.0:
         score += 10
     if ratio >= MIN_BUY_SELL_RATIO:
@@ -216,11 +220,9 @@ def evaluate_pair(pair):
     if age_minutes is not None and age_minutes >= MIN_TOKEN_AGE_MINUTES:
         score += 5
 
-    # Segnale valido solo se tutti i controlli essenziali
-    # sono superati.
+    # Un segnale viene inviato solo se supera tutti i controlli.
     qualified = all(checks.values())
 
-    # Il punteggio aiuta a ordinare i segnali validi.
     return {
         "pair_id": pair_id,
         "name": base.get("name") or "Sconosciuto",
@@ -251,7 +253,9 @@ def evaluate_pair(pair):
 
 def send_telegram(message):
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
-        logging.warning("Credenziali Telegram non configurate.")
+        logging.warning(
+            "Credenziali Telegram non configurate."
+        )
         return False
 
     try:
@@ -273,11 +277,6 @@ def send_telegram(message):
 
 
 def format_alert(item):
-    failed_checks = [
-        name for name, passed in item["checks"].items()
-        if not passed
-    ]
-
     age = (
         f"{item['age_minutes']:.0f} minuti"
         if item["age_minutes"] is not None
@@ -289,7 +288,7 @@ def format_alert(item):
         f"Token: {item['name']} ({item['symbol']})\n"
         f"Punteggio: {item['score']}/100\n"
         f"Prezzo: ${item['price_usd']:.10f}\n"
-        f"Liquidità: ${item['liquidity_usd']:,.0f}\n"
+        f"Liquidita': ${item['liquidity_usd']:,.0f}\n"
         f"Volume 5m: ${item['volume_5m']:,.0f}\n"
         f"Volume 1h: ${item['volume_1h']:,.0f}\n"
         f"Accelerazione volume: "
@@ -298,12 +297,12 @@ def format_alert(item):
         f"Variazione 1h: {item['change_1h']:.2f}%\n"
         f"Acquisti/vendite: {item['buy_sell_ratio']:.2f}\n"
         f"Transazioni 5m: {item['total_txns_5m']}\n"
-        f"Età coppia: {age}\n\n"
+        f"Eta' coppia: {age}\n\n"
         f"DEX: {item['url']}\n"
         f"Token address: {item['token_address']}\n\n"
-        "Controlli automatici superati. "
-        "Non è una verifica completa del contratto "
-        "né una garanzia di rialzo."
+        "Filtri automatici superati. "
+        "La sicurezza del contratto non e' verificata "
+        "completamente e non e' garantito un rialzo."
     )
 
 
@@ -317,14 +316,9 @@ def main():
     already_alerted = set(state.get("alerted_pairs", []))
 
     pairs = get_solana_pairs()
-
     logging.info("Coppie Solana raccolte: %d", len(pairs))
 
-    results = [
-        evaluate_pair(pair)
-        for pair in pairs
-    ]
-
+    results = [evaluate_pair(pair) for pair in pairs]
     results = [item for item in results if item["pair_id"]]
 
     now = datetime.now(timezone.utc).isoformat()
@@ -332,10 +326,16 @@ def main():
     for item in results:
         item["updated_at"] = now
 
-    qualified = [item for item in results if item["qualified"]]
+    qualified = [
+        item for item in results if item["qualified"]
+    ]
 
     qualified.sort(
-        key=lambda item: (item["score"], item["volume_5m"]),
+        key=lambda item: (
+            item["score"],
+            item["volume_5m"],
+            item["liquidity_usd"]
+        ),
         reverse=True
     )
 
@@ -365,7 +365,6 @@ def main():
     state["last_qualified_count"] = len(qualified)
     state["last_alerts_sent"] = sent_count
 
-    # Determina se è ora di inviare il riepilogo.
     last_summary = state.get("last_summary_at")
     send_summary = not last_summary
 
@@ -386,20 +385,23 @@ def main():
             f"Ultima scansione UTC: {now}\n"
             f"Coppie analizzate: {len(results)}\n"
             f"Segnali validi: {len(qualified)}\n"
-            f"Avvisi inviati: {sent_count}\n\n"
-            f"Liquidità minima: ${MIN_LIQUIDITY_USD:,.0f}\n"
+            f"Avvisi inviati in questa scansione: {sent_count}\n\n"
+            f"Liquidita' minima: ${MIN_LIQUIDITY_USD:,.0f}\n"
             f"Volume minimo 5m: ${MIN_VOLUME_5M_USD:,.0f}\n"
+            f"Volume minimo 1h: ${MIN_VOLUME_1H_USD:,.0f}\n"
             f"Accelerazione minima: {MIN_VOLUME_ACCELERATION:.1f}x\n"
             f"Transazioni minime 5m: {MIN_TXNS_5M}\n\n"
-            "I controlli non garantiscono la sicurezza "
-            "del token o un futuro rialzo."
+            "I segnali automatici non garantiscono "
+            "la sicurezza o un futuro rialzo."
         )
 
         if send_telegram(summary):
             state["last_summary_at"] = now
             logging.info("Riepilogo Telegram inviato.")
         else:
-            logging.warning("Riepilogo non inviato; verrà ritentato.")
+            logging.warning(
+                "Riepilogo non inviato; verra' ritentato."
+            )
 
     save_json(STATE_FILE, state)
 
