@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
   <title>Meme Pump Radar AI</title>
   <style>
     :root {
@@ -16,6 +17,7 @@
       --green: #35d49a;
       --red: #ff657a;
       --blue: #79aaff;
+      --yellow: #ffd27a;
     }
 
     * { box-sizing: border-box; }
@@ -28,7 +30,7 @@
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
-    main { max-width: 1200px; margin: auto; }
+    main { max-width: 1300px; margin: auto; }
 
     header {
       display: flex;
@@ -40,19 +42,24 @@
     }
 
     h1 { margin: 0; font-size: clamp(24px, 4vw, 36px); }
-    .subtitle { color: var(--muted); margin-top: 8px; }
+    h2 { font-size: 19px; }
+
+    .subtitle, .muted {
+      color: var(--muted);
+      font-size: 13px;
+    }
 
     .status {
       padding: 9px 13px;
       border: 1px solid var(--border);
       border-radius: 20px;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .stats {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
       gap: 12px;
       margin-bottom: 20px;
     }
@@ -65,22 +72,28 @@
     }
 
     .stat-label { color: var(--muted); font-size: 13px; }
-    .stat-value { font-size: 26px; font-weight: 700; margin-top: 8px; }
+    .stat-value {
+      font-size: 25px;
+      font-weight: 700;
+      margin-top: 8px;
+      overflow-wrap: anywhere;
+    }
 
     .toolbar {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-bottom: 15px;
+      margin: 15px 0;
     }
 
     input, select, button {
-      background: var(--panel);
+      background: var(--bg);
       color: var(--text);
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 12px;
-      font-size: 15px;
+      font-size: 14px;
+      min-height: 42px;
     }
 
     input { flex: 1; min-width: 180px; }
@@ -90,22 +103,22 @@
     .table-wrap {
       overflow-x: auto;
       border: 1px solid var(--border);
-      border-radius: 14px;
+      border-radius: 12px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 850px;
+      min-width: 1000px;
       background: var(--panel);
     }
 
     th, td {
-      padding: 13px 12px;
+      padding: 12px;
       text-align: left;
       border-bottom: 1px solid var(--border);
       white-space: nowrap;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     th { color: var(--muted); font-weight: 600; }
@@ -120,19 +133,48 @@
       display: inline-block;
       padding: 5px 8px;
       border-radius: 7px;
-      background: #173c35;
-      color: var(--green);
-      font-size: 12px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .valid { background: #173c35; color: var(--green); }
+    .invalid { background: #40351a; color: var(--yellow); }
+
+    .message {
+      color: var(--muted);
+      padding: 22px 12px;
+      white-space: normal;
+      line-height: 1.5;
+    }
+
+    .error {
+      color: var(--red);
+      background: #351b2b;
+      padding: 14px;
+      border-radius: 10px;
+      white-space: pre-wrap;
+    }
+
+    .warning {
+      color: var(--yellow);
+      margin-top: 16px;
+      font-size: 13px;
+      line-height: 1.5;
     }
 
     a { color: var(--blue); text-decoration: none; }
-    .message { color: var(--muted); padding: 22px 4px; }
-    .warning { color: #ffd27a; margin-top: 16px; font-size: 13px; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      font-size: 12px;
+      padding: 20px 0;
+    }
 
     @media (max-width: 600px) {
       body { padding: 12px; }
-      .stats { grid-template-columns: 1fr; }
-      .stat-value { font-size: 23px; }
+      .stat-value { font-size: 22px; }
     }
   </style>
 </head>
@@ -141,88 +183,286 @@
   <header>
     <div>
       <h1>🚀 Meme Pump Radar AI</h1>
-      <div class="subtitle">Monitoraggio meme coin su Solana</div>
+      <p class="subtitle">Monitoraggio segnali meme coin su Solana</p>
     </div>
     <div class="status" id="status">⏳ Caricamento dati...</div>
   </header>
 
   <section class="stats">
     <div class="stat">
-      <div class="stat-label">Coppie analizzate</div>
+      <div class="stat-label">Coppie scansionate</div>
       <div class="stat-value" id="scanned">—</div>
     </div>
     <div class="stat">
-      <div class="stat-label">Segnali che rispettano i filtri</div>
+      <div class="stat-label">Coppie verificate</div>
+      <div class="stat-value" id="verified">—</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Segnali qualificati</div>
       <div class="stat-value green" id="qualified">—</div>
     </div>
     <div class="stat">
-      <div class="stat-label">Ultimo aggiornamento</div>
-      <div class="stat-value" id="updated" style="font-size:16px">—</div>
+      <div class="stat-label">Alert inviati</div>
+      <div class="stat-value" id="alerts">—</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Liquidità minima</div>
+      <div class="stat-value" id="minLiquidity">—</div>
     </div>
   </section>
 
-  <section class="toolbar">
-    <input id="search" type="search" placeholder="Cerca nome o simbolo...">
-    <select id="filter">
-      <option value="all">Tutte le coppie</option>
-      <option value="qualified">Solo segnali validi</option>
-    </select>
-    <button id="refresh">↻ Aggiorna</button>
+  <section class="panel">
+    <h2>📊 Coppie rilevate</h2>
+    <p class="muted" id="updated">In attesa dei dati...</p>
+
+    <div class="toolbar">
+      <input id="search" type="search"
+        placeholder="Cerca nome, simbolo o indirizzo..."
+        aria-label="Cerca token">
+
+      <select id="filter" aria-label="Filtra coppie">
+        <option value="all">Tutte le coppie</option>
+        <option value="qualified">Solo qualificate</option>
+        <option value="unqualified">Non qualificate</option>
+      </select>
+
+      <select id="sort" aria-label="Ordina coppie">
+        <option value="score">Ordina per punteggio</option>
+        <option value="volume">Ordina per volume 5m</option>
+        <option value="liquidity">Ordina per liquidità</option>
+      </select>
+
+      <button id="refresh">↻ Aggiorna</button>
+    </div>
+
+    <div id="message" class="message">Lettura dei dati del radar...</div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Token</th>
+            <th>DEX</th>
+            <th>Prezzo USD</th>
+            <th>Liquidità</th>
+            <th>Volume 5m</th>
+            <th>Volume 1h</th>
+            <th>Variazione 5m</th>
+            <th>Variazione 1h</th>
+            <th>Acquisti / vendite 5m</th>
+            <th>Score</th>
+            <th>Segnale</th>
+          </tr>
+        </thead>
+        <tbody id="rows">
+          <tr>
+            <td colspan="11" class="message">Caricamento...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Token</th>
-          <th>Prezzo USD</th>
-          <th>Liquidità</th>
-          <th>Volume 5m</th>
-          <th>Volume 1h</th>
-          <th>Variazione 5m</th>
-          <th>Variazione 1h</th>
-          <th>Acquisti/vendite</th>
-          <th>Segnale</th>
-        </tr>
-      </thead>
-      <tbody id="rows">
-        <tr><td colspan="9" class="message">In attesa dei dati del radar...</td></tr>
-      </tbody>
-    </table>
-  </div>
-
   <p class="warning">
-    I segnali sono automatici e non garantiscono rialzi. Verifica sempre liquidità,
-    volume, sicurezza del token e rischio di truffe prima di investire.
+    I segnali sono automatici e non garantiscono rialzi.
+    Controlla liquidità, volumi e sicurezza del token prima di investire.
   </p>
+
+  <footer>
+    Meme Pump Radar AI · Dati informativi, non consigli finanziari.
+  </footer>
 </main>
 
 <script>
+"use strict";
+
+(() => {
   const DATA_URL = "./radar_data.json";
   let pairs = [];
+  let radarData = {};
 
-  const money = value => "$" + Number(value || 0).toLocaleString("en-US", {
-    maximumFractionDigits: 2
-  });
+  const $ = id => document.getElementById(id);
 
-  const price = value => {
-    const n = Number(value || 0);
+  function numeric(value) {
+    if (value === null || value === undefined || value === "") {
+      return null;
+    }
+    const result = Number(value);
+    return Number.isFinite(result) ? result : null;
+  }
+
+  function compact(value) {
+    const n = numeric(value);
+    if (n === null) return "N/D";
+    return n.toLocaleString("it-IT", { maximumFractionDigits: 2 });
+  }
+
+  function money(value) {
+    const n = numeric(value);
+    if (n === null) return "N/D";
+    return "$" + n.toLocaleString("en-US", {
+      maximumFractionDigits: n < 0.01 ? 8 : 2
+    });
+  }
+
+  function price(value) {
+    const n = numeric(value);
+    if (n === null) return "N/D";
     return "$" + n.toLocaleString("en-US", {
       maximumFractionDigits: 10
     });
-  };
+  }
 
-  const dateText = value => {
-    if (!value) return "Non disponibile";
+  function percent(value) {
+    const n = numeric(value);
+    if (n === null) return "N/D";
+    return (n > 0 ? "+" : "") + n.toFixed(2) + "%";
+  }
+
+  function dateText(value) {
+    if (!value) return "Data non disponibile";
     const date = new Date(value);
     return Number.isNaN(date.getTime())
-      ? "Non disponibile"
+      ? "Data non disponibile"
       : date.toLocaleString("it-IT");
-  };
+  }
+
+  function normalizePair(p) {
+    return {
+      ...p,
+      volume_5m_usd: p.volume_5m_usd ?? p.volume_5m,
+      volume_1h_usd: p.volume_1h_usd ?? p.volume_1h,
+      price_change_5m_pct: p.price_change_5m_pct ?? p.change_5m,
+      price_change_1h_pct: p.price_change_1h_pct ?? p.change_1h,
+      dex_url: p.dex_url ?? p.url,
+      buy_sell_ratio_5m: p.buy_sell_ratio_5m ?? p.buy_sell_ratio
+    };
+  }
+
+  function makeCell(text, className) {
+    const td = document.createElement("td");
+    td.textContent = text;
+    if (className) td.className = className;
+    return td;
+  }
+
+  function makeTokenCell(pair) {
+    const td = document.createElement("td");
+    const link = document.createElement("a");
+    const validUrl = typeof pair.dex_url === "string" &&
+      /^https:\/\/dexscreener\.com\//i.test(pair.dex_url);
+
+    link.textContent = (pair.name || "Sconosciuto") +
+      " (" + (pair.symbol || "?") + ")";
+    link.href = validUrl ? pair.dex_url : "#";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.className = "coin";
+    td.appendChild(link);
+
+    const address = document.createElement("div");
+    address.className = "symbol";
+    address.textContent = pair.pair_address
+      ? String(pair.pair_address).slice(0, 10) + "..."
+      : "";
+    td.appendChild(address);
+
+    return td;
+  }
+
+  function renderRows() {
+    const query = $("search").value.trim().toLowerCase();
+    const filter = $("filter").value;
+    const sort = $("sort").value;
+
+    let visible = pairs.filter(p => {
+      const searchText = [
+        p.name, p.symbol, p.pair_address, p.token_address, p.dex_id
+      ].join(" ").toLowerCase();
+
+      if (query && !searchText.includes(query)) return false;
+      if (filter === "qualified" && p.qualified !== true) return false;
+      if (filter === "unqualified" && p.qualified === true) return false;
+      return true;
+    });
+
+    visible.sort((a, b) => {
+      if (sort === "volume") {
+        return (numeric(b.volume_5m_usd) || 0) -
+          (numeric(a.volume_5m_usd) || 0);
+      }
+      if (sort === "liquidity") {
+        return (numeric(b.liquidity_usd) || 0) -
+          (numeric(a.liquidity_usd) || 0);
+      }
+      return (numeric(b.score) || 0) - (numeric(a.score) || 0);
+    });
+
+    const tbody = $("rows");
+    tbody.replaceChildren();
+
+    if (!visible.length) {
+      const tr = document.createElement("tr");
+      const td = makeCell("Nessuna coppia trovata con questi filtri.");
+      td.colSpan = 11;
+      td.className = "message";
+      tr.appendChild(td);
+      tbody.appendChild(tr);
+    } else {
+      visible.forEach(p => {
+        const tr = document.createElement("tr");
+
+        tr.appendChild(makeTokenCell(p));
+        tr.appendChild(makeCell(p.dex_id || "N/D"));
+        tr.appendChild(makeCell(price(p.price_usd)));
+        tr.appendChild(makeCell(money(p.liquidity_usd)));
+        tr.appendChild(makeCell(money(p.volume_5m_usd)));
+        tr.appendChild(makeCell(money(p.volume_1h_usd)));
+
+        const change5 = numeric(p.price_change_5m_pct);
+        const change1 = numeric(p.price_change_1h_pct);
+
+        tr.appendChild(makeCell(
+          percent(p.price_change_5m_pct),
+          change5 > 0 ? "green" : change5 < 0 ? "red" : ""
+        ));
+
+        tr.appendChild(makeCell(
+          percent(p.price_change_1h_pct),
+          change1 > 0 ? "green" : change1 < 0 ? "red" : ""
+        ));
+
+        tr.appendChild(makeCell(
+          compact(p.buys_5m) + " / " + compact(p.sells_5m)
+        ));
+
+        tr.appendChild(makeCell(
+          compact(p.score) + " / " + compact(radarData.max_score ?? 9)
+        ));
+
+        const statusCell = document.createElement("td");
+        const badge = document.createElement("span");
+        badge.className = "badge " +
+          (p.qualified === true ? "valid" : "invalid");
+        badge.textContent = p.qualified === true
+          ? "✓ QUALIFICATA" : "NON qualificata";
+        statusCell.appendChild(badge);
+        tr.appendChild(statusCell);
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    $("message").textContent =
+      "Visualizzate " + visible.length + " di " + pairs.length + " coppie.";
+
+    $("status").textContent = "🟢 Dati caricati";
+  }
 
   async function loadData() {
-    const status = document.getElementById("status");
-    status.textContent = "⏳ Aggiornamento...";
+    $("status").textContent = "⏳ Aggiornamento...";
+    $("message").className = "message";
+    $("message").textContent = "Lettura di radar_data.json...";
 
     try {
       const response = await fetch(DATA_URL + "?t=" + Date.now(), {
@@ -230,95 +470,71 @@
       });
 
       if (!response.ok) {
-        throw new Error("File dati non ancora disponibile");
+        throw new Error("Il file JSON ha risposto con HTTP " + response.status);
       }
 
       const data = await response.json();
-      pairs = Array.isArray(data.pairs) ? data.pairs : [];
 
-      document.getElementById("scanned").textContent =
-        data.pairs_scanned ?? pairs.length;
+      if (!data || typeof data !== "object") {
+        throw new Error("Il contenuto JSON non è un oggetto valido.");
+      }
 
-      document.getElementById("qualified").textContent =
-        data.qualified_count ?? pairs.filter(p => p.qualified).length;
+      const source = Array.isArray(data.results)
+        ? data.results
+        : Array.isArray(data.pairs)
+          ? data.pairs
+          : [];
 
-      document.getElementById("updated").textContent =
-        dateText(data.updated_at);
+      radarData = data;
+      pairs = source.map(normalizePair);
 
-      status.textContent = "🟢 Dati caricati";
+      $("scanned").textContent = compact(data.pairs_scanned ?? pairs.length);
+      $("verified").textContent = compact(data.api_verified_count);
+      $("qualified").textContent = compact(
+        data.qualified_count ??
+        pairs.filter(p => p.qualified === true).length
+      );
+      $("alerts").textContent = compact(data.alerts_sent);
+      $("minLiquidity").textContent = money(data.min_liquidity_usd);
+
+      const timestamp =
+        data.scanned_at || data.updated_at || data.generated_at;
+
+      $("updated").textContent = dateText(timestamp);
+
       renderRows();
+
+      $("message").textContent =
+        "JSON letto correttamente: " + pairs.length + " coppie trovate.";
+
     } catch (error) {
-      status.textContent = "🟠 Dati non disponibili";
-      document.getElementById("rows").innerHTML =
-        '<tr><td colspan="9" class="message">' +
-        'Nessun dato disponibile. Controlla che il radar abbia completato ' +
-        'almeno una scansione e che radar_data.json sia pubblicato.</td></tr>';
+      $("status").textContent = "🟠 Dati non disponibili";
+      $("message").className = "error";
+      $("message").textContent =
+        "Non riesco a leggere radar_data.json.\n\n" +
+        "Dettaglio: " + error.message +
+        "\n\nVerifica che il file sia pubblicato nella stessa cartella " +
+        "di index.html e che GitHub Pages sia attivo.";
+
+      const tbody = $("rows");
+      tbody.replaceChildren();
+      const tr = document.createElement("tr");
+      const td = makeCell("Dati non disponibili. Controlla il messaggio qui sopra.");
+      td.colSpan = 11;
+      td.className = "message";
+      tr.appendChild(td);
+      tbody.appendChild(tr);
     }
   }
 
-  function renderRows() {
-    const query = document.getElementById("search").value.trim().toLowerCase();
-    const filter = document.getElementById("filter").value;
-
-    const visible = pairs.filter(p => {
-      const matchesText =
-        (p.name || "").toLowerCase().includes(query) ||
-        (p.symbol || "").toLowerCase().includes(query);
-
-      return matchesText &&
-        (filter === "all" || p.qualified === true);
-    }).sort((a, b) => Number(b.qualified) - Number(a.qualified) ||
-      Number(b.volume_5m || 0) - Number(a.volume_5m || 0));
-
-    const rows = document.getElementById("rows");
-
-    if (!visible.length) {
-      rows.innerHTML =
-        '<tr><td colspan="9" class="message">Nessuna coppia trovata.</td></tr>';
-      return;
-    }
-
-    rows.innerHTML = visible.map(p => {
-      const change5 = Number(p.change_5m || 0);
-      const change1 = Number(p.change_1h || 0);
-      const safeUrl = /^https:\/\/dexscreener\.com\//i.test(p.url || "")
-        ? p.url : "";
-
-      return `
-        <tr>
-          <td>
-            <div class="coin">${escapeHTML(p.name || "Sconosciuto")}</div>
-            <div class="symbol">${escapeHTML(p.symbol || "?")}</div>
-            ${safeUrl ? `<a href="${safeUrl}" target="_blank" rel="noopener">Apri su Dexscreener ↗</a>` : ""}
-          </td>
-          <td>${price(p.price_usd)}</td>
-          <td>${money(p.liquidity_usd)}</td>
-          <td>${money(p.volume_5m)}</td>
-          <td>${money(p.volume_1h)}</td>
-          <td class="${change5 >= 0 ? "green" : "red"}">${change5.toFixed(2)}%</td>
-          <td class="${change1 >= 0 ? "green" : "red"}">${change1.toFixed(2)}%</td>
-          <td>${Number(p.buy_sell_ratio || 0).toFixed(2)}</td>
-          <td>${p.qualified ? '<span class="badge">✓ Valido</span>' : "—"}</td>
-        </tr>`;
-    }).join("");
-  }
-
-  function escapeHTML(value) {
-    return String(value).replace(/[&<>"']/g, char => ({
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;",
-      "'": "&#39;"
-    })[char]);
-  }
-
-  document.getElementById("search").addEventListener("input", renderRows);
-  document.getElementById("filter").addEventListener("change", renderRows);
-  document.getElementById("refresh").addEventListener("click", loadData);
+  $("search").addEventListener("input", renderRows);
+  $("filter").addEventListener("change", renderRows);
+  $("sort").addEventListener("change", renderRows);
+  $("refresh").addEventListener("click", loadData);
 
   loadData();
   setInterval(loadData, 60000);
+})();
 </script>
 </body>
 </html>
