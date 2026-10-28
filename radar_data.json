@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-28T08:09:15.267043+00:00",
-  "pairs_scanned": 138,
+  "updated_at": "2026-10-28T08:10:26.937680+00:00",
+  "pairs_scanned": 137,
   "qualified_count": 0,
   "pairs": [
     {
@@ -21,7 +21,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 844511.4,
+      "age_minutes": 844512.6,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -38,7 +38,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "C3hbHDcL3RWkjSc1DMFZ4d3Tcvg7zmwQNtgUftWsemP7",
@@ -47,18 +47,18 @@
       "token_address": "28ZHuzqJwtg97KhJzuUwypC82vMCKuZa629FaCmrpump",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/c3hbhdcl3rwkjsc1dmfz4d3tcvg7zmwqntguftwsemp7",
-      "price_usd": 2.381e-06,
-      "liquidity_usd": 2669.23,
+      "price_usd": 2.34e-06,
+      "liquidity_usd": 2632.23,
       "volume_5m": 0.0,
       "volume_1h": 0.34,
       "volume_acceleration": 0.0,
-      "change_5m": 0.0,
-      "change_1h": 0.12,
+      "change_5m": -1.71,
+      "change_1h": -1.59,
       "buys_5m": 0,
-      "sells_5m": 0,
-      "total_txns_5m": 0,
+      "sells_5m": 1,
+      "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 71433.8,
+      "age_minutes": 71435.0,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -75,7 +75,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Ff2tdCV3LGnmKSrZpoLWWa4DgBaVBhjUeYcB6KnL1Xxe",
@@ -95,7 +95,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 235598.2,
+      "age_minutes": 235599.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -112,7 +112,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "4iBiEEKQviFmhq6JUYupHeYyTdUCrjKQZajMxwXhne1W",
@@ -132,7 +132,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 69830.8,
+      "age_minutes": 69832.0,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -149,7 +149,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "HxJYRHBiYhJaVreoDRFpUtXxQvLnZUi6yYucejNRc9KR",
@@ -169,7 +169,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 30.5,
+      "age_minutes": 31.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -186,7 +186,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "6Ak8i8uL1MHF8AiEByHFsoNF1yBaVr2dwyDH5F1PaS5c",
@@ -206,7 +206,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 36.2,
+      "age_minutes": 37.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -223,7 +223,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "3WbrvzEaEkymoJ5wTdUHHiuCZq7VZhs46zYiEYBr3Cz1",
@@ -243,7 +243,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 276.2,
+      "age_minutes": 277.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -260,7 +260,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "4Uhf89Anh7cm3Geg6HTsrC24k4MZ6d9tabTvdWRiJhBv",
@@ -280,7 +280,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1174.0,
+      "age_minutes": 1175.1,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -297,7 +297,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "5zTZV3ktTL1NDH4xCpDNT73pZHx2VGVZaVcGSPR4LBM",
@@ -317,7 +317,7 @@
       "sells_5m": 1,
       "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 982.6,
+      "age_minutes": 983.8,
       "score": 15,
       "qualified": false,
       "checks": {
@@ -334,7 +334,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "45iJBgJkgAKZT3P8oV3Tgb253hTPKv256TgMsMqSdJ2X",
@@ -345,16 +345,53 @@
       "url": "https://dexscreener.com/solana/45ijbgjkgakzt3p8ov3tgb253htpkv256tgmsmqsdj2x",
       "price_usd": 3.722e-06,
       "liquidity_usd": 0.0,
-      "volume_5m": 153.99,
+      "volume_5m": 18.81,
       "volume_1h": 350.31,
-      "volume_acceleration": 5.27,
-      "change_5m": 7.03,
+      "volume_acceleration": 0.64,
+      "change_5m": -1.04,
       "change_1h": 1.46,
-      "buys_5m": 3,
+      "buys_5m": 0,
       "sells_5m": 3,
-      "total_txns_5m": 6,
-      "buy_sell_ratio": 1.0,
-      "age_minutes": 142.6,
+      "total_txns_5m": 3,
+      "buy_sell_ratio": 0.0,
+      "age_minutes": 143.8,
+      "score": 5,
+      "qualified": false,
+      "checks": {
+        "liquidita": false,
+        "volume_5m": false,
+        "volume_1h": false,
+        "prezzo_disponibile": true,
+        "indirizzo_disponibile": true,
+        "variazione_5m": false,
+        "variazione_1h": false,
+        "rapporto_acquisti": false,
+        "transazioni_sufficienti": false,
+        "accelerazione_volume": false,
+        "eta_disponibile": true,
+        "eta_minima": true
+      },
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
+    },
+    {
+      "pair_id": "GqcpXXoK5apqQKv4LNG572DV2G8Bxg2WZXw3gKPSWPmi",
+      "name": "neath the truth ",
+      "symbol": "Solana ",
+      "token_address": "AARYePwa2r1oSBfjWt5AbC5RgCRkRd2549FeYRX2pump",
+      "dex": "pumpfun",
+      "url": "https://dexscreener.com/solana/gqcpxxok5apqqkv4lng572dv2g8bxg2wzxw3gkpswpmi",
+      "price_usd": 4.968e-06,
+      "liquidity_usd": 0.0,
+      "volume_5m": 75.87,
+      "volume_1h": 191.63,
+      "volume_acceleration": 4.75,
+      "change_5m": -3.58,
+      "change_1h": 2.5,
+      "buys_5m": 0,
+      "sells_5m": 1,
+      "total_txns_5m": 1,
+      "buy_sell_ratio": 0.0,
+      "age_minutes": 25463.0,
       "score": 35,
       "qualified": false,
       "checks": {
@@ -363,15 +400,15 @@
         "volume_1h": false,
         "prezzo_disponibile": true,
         "indirizzo_disponibile": true,
-        "variazione_5m": true,
-        "variazione_1h": false,
+        "variazione_5m": false,
+        "variazione_1h": true,
         "rapporto_acquisti": false,
-        "transazioni_sufficienti": true,
+        "transazioni_sufficienti": false,
         "accelerazione_volume": true,
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Hw51F5EJLBUabhcDH9x7ptYs9qrwyGbuZSUsZpoZDLtd",
@@ -391,7 +428,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 56390.4,
+      "age_minutes": 56391.5,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -408,7 +445,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "7nREPpix9S5HN6yJaStwDCPFPMiYgoYECwoPXBFsNmyE",
@@ -428,7 +465,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 530.1,
+      "age_minutes": 531.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -445,7 +482,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "EG39azdncmUi8hRbttmPnc85pTq8UBgBYhsKsZaF7NzC",
@@ -465,7 +502,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 892218.5,
+      "age_minutes": 892219.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -482,7 +519,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Ba5CycTKVWTsZDxyratXLUu9xkAreM6JK1FksofXRngY",
@@ -502,7 +539,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 847012.1,
+      "age_minutes": 847013.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -519,7 +556,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "2jQuwHcehjj31JYdJuEMkCKm8EkgQJQSkCMoVX2U31br",
@@ -539,7 +576,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 510.6,
+      "age_minutes": 511.8,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -556,7 +593,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Z8fSrET5aRktyXyaAnhi78Ph7oHBZVVQJL5d8frpfsy",
@@ -576,7 +613,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 848921.0,
+      "age_minutes": 848922.2,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -593,7 +630,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "6MJFA8T8BcThBdw6oDQgMuSeDuWFrHRrFd7SYTyWkUWg",
@@ -613,7 +650,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 5380.5,
+      "age_minutes": 5381.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -630,7 +667,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "8SGs2sVBgT4rWbfB3CReqZWtxzqEV3hQKRhySo7MkwDT",
@@ -650,7 +687,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 615.6,
+      "age_minutes": 616.8,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -667,7 +704,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "9F3H2FjCb4RXgT6kgZkhhUMEb9MQ2bctRtKH5uRbqZHd",
@@ -687,7 +724,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 836.5,
+      "age_minutes": 837.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -704,7 +741,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "A4scNy86WYAhtpR6YTztzN4QTFniN6Z2rkL4KZeWc6sA",
@@ -724,7 +761,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 40996.3,
+      "age_minutes": 40997.4,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -741,7 +778,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "9T6ER6czSwpvVGKCdgp1rgi8uqD34eXzGyGhKHny6CX7",
@@ -761,7 +798,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 140646.7,
+      "age_minutes": 140647.9,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -778,7 +815,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "GJZuCLTRqvip1CJXpqWy3oQZA5Pp6pLK9W33ZZtcJZ6p",
@@ -798,7 +835,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 18148.7,
+      "age_minutes": 18149.9,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -815,7 +852,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "HyYWmBTgWoVdwSDK4AwXBww2XuKNWcU7jLkhVHPB7c8v",
@@ -835,7 +872,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 138732.3,
+      "age_minutes": 138733.5,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -852,7 +889,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "ADoGkkpFz2VTPqx9FqaVLpf2zwhmDUgqr8PK5zE5XUVc",
@@ -872,7 +909,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 2941.2,
+      "age_minutes": 2942.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -889,7 +926,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "CuWBVpAqa9v1gaSjfMeSZAjgbRxqbuK6MEfShxiXAw6v",
@@ -909,7 +946,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 133137.0,
+      "age_minutes": 133138.2,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -926,7 +963,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "EZtwXZFmNS9sJjGVyCH35i6e3oywSDJDEQL9cBzGFDap",
@@ -935,18 +972,18 @@
       "token_address": "9v4airX4Vt45ADFg3QQG9pXX68LkX9Big4GiYEuJpump",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/eztwxzfmns9sjjgvych35i6e3oywsdjdeql9cbzgfdap",
-      "price_usd": 0.005151,
-      "liquidity_usd": 205788.21,
-      "volume_5m": 4624.54,
-      "volume_1h": 69140.15,
-      "volume_acceleration": 0.8,
+      "price_usd": 0.005112,
+      "liquidity_usd": 204998.97,
+      "volume_5m": 4372.01,
+      "volume_1h": 69064.61,
+      "volume_acceleration": 0.76,
       "change_5m": 0.65,
-      "change_1h": -9.01,
-      "buys_5m": 27,
-      "sells_5m": 18,
-      "total_txns_5m": 45,
+      "change_1h": -10.32,
+      "buys_5m": 24,
+      "sells_5m": 16,
+      "total_txns_5m": 40,
       "buy_sell_ratio": 1.5,
-      "age_minutes": 1937.3,
+      "age_minutes": 1938.5,
       "score": 60,
       "qualified": false,
       "checks": {
@@ -963,7 +1000,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "DSfhT8Bngd6YnBv41QF8DbEspfH2DKczGA9ptJ5GqgEd",
@@ -972,18 +1009,18 @@
       "token_address": "9vifzf3mNYXjAbTczZQbtSz4k1AM8Xhms7LvqUXjKdog",
       "dex": "pumpfun",
       "url": "https://dexscreener.com/solana/dsfht8bngd6ynbv41qf8dbespfh2dkczga9ptj5gqged",
-      "price_usd": 2.81e-05,
+      "price_usd": 2.812e-05,
       "liquidity_usd": 0.0,
-      "volume_5m": 256.8,
-      "volume_1h": 4290.95,
+      "volume_5m": 257.77,
+      "volume_1h": 4291.93,
       "volume_acceleration": 0.72,
-      "change_5m": -4.53,
-      "change_1h": 3.38,
-      "buys_5m": 1,
+      "change_5m": -3.55,
+      "change_1h": 3.44,
+      "buys_5m": 2,
       "sells_5m": 5,
-      "total_txns_5m": 6,
-      "buy_sell_ratio": 0.2,
-      "age_minutes": 955.7,
+      "total_txns_5m": 7,
+      "buy_sell_ratio": 0.4,
+      "age_minutes": 956.9,
       "score": 20,
       "qualified": false,
       "checks": {
@@ -1000,7 +1037,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "HAUVBmNthCFmG9SRXMvZ1GAXNpU955hkPdSAsC2cx4C8",
@@ -1009,19 +1046,19 @@
       "token_address": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8",
-      "price_usd": 0.002137,
-      "liquidity_usd": 125406.92,
-      "volume_5m": 1577.92,
-      "volume_1h": 26633.62,
-      "volume_acceleration": 0.71,
-      "change_5m": -0.64,
-      "change_1h": 11.24,
-      "buys_5m": 13,
+      "price_usd": 0.002135,
+      "liquidity_usd": 125342.38,
+      "volume_5m": 912.8,
+      "volume_1h": 26833.12,
+      "volume_acceleration": 0.41,
+      "change_5m": 0.23,
+      "change_1h": 11.25,
+      "buys_5m": 10,
       "sells_5m": 9,
-      "total_txns_5m": 22,
-      "buy_sell_ratio": 1.44,
-      "age_minutes": 775.8,
-      "score": 60,
+      "total_txns_5m": 19,
+      "buy_sell_ratio": 1.11,
+      "age_minutes": 777.0,
+      "score": 50,
       "qualified": false,
       "checks": {
         "liquidita": true,
@@ -1031,13 +1068,50 @@
         "indirizzo_disponibile": true,
         "variazione_5m": false,
         "variazione_1h": true,
+        "rapporto_acquisti": false,
+        "transazioni_sufficienti": true,
+        "accelerazione_volume": false,
+        "eta_disponibile": true,
+        "eta_minima": true
+      },
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
+    },
+    {
+      "pair_id": "6iep3EgqksbZwgzMBCyAJtiVtVYkCgL9BnPBEwLR8AGQ",
+      "name": "Doge Pepe",
+      "symbol": "DOPE",
+      "token_address": "33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "dex": "pumpswap",
+      "url": "https://dexscreener.com/solana/6iep3egqksbzwgzmbcyajtivtvykcgl9bnpbewlr8agq",
+      "price_usd": 0.00225,
+      "liquidity_usd": 200270.42,
+      "volume_5m": 109.79,
+      "volume_1h": 6558.27,
+      "volume_acceleration": 0.2,
+      "change_5m": 1.11,
+      "change_1h": -0.14,
+      "buys_5m": 3,
+      "sells_5m": 2,
+      "total_txns_5m": 5,
+      "buy_sell_ratio": 1.5,
+      "age_minutes": 24157.3,
+      "score": 50,
+      "qualified": false,
+      "checks": {
+        "liquidita": true,
+        "volume_5m": false,
+        "volume_1h": false,
+        "prezzo_disponibile": true,
+        "indirizzo_disponibile": true,
+        "variazione_5m": true,
+        "variazione_1h": false,
         "rapporto_acquisti": true,
         "transazioni_sufficienti": true,
         "accelerazione_volume": false,
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "GdiMr6woVwGZ3pzY5bEAHGjQN1yrM8LAF3faysSKAxoB",
@@ -1057,7 +1131,7 @@
       "sells_5m": 10,
       "total_txns_5m": 10,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 14527.0,
+      "age_minutes": 14528.2,
       "score": 30,
       "qualified": false,
       "checks": {
@@ -1074,44 +1148,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
-    },
-    {
-      "pair_id": "6iep3EgqksbZwgzMBCyAJtiVtVYkCgL9BnPBEwLR8AGQ",
-      "name": "Doge Pepe",
-      "symbol": "DOPE",
-      "token_address": "33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
-      "dex": "pumpswap",
-      "url": "https://dexscreener.com/solana/6iep3egqksbzwgzmbcyajtivtvykcgl9bnpbewlr8agq",
-      "price_usd": 0.00225,
-      "liquidity_usd": 200270.42,
-      "volume_5m": 145.82,
-      "volume_1h": 7344.92,
-      "volume_acceleration": 0.24,
-      "change_5m": 0.03,
-      "change_1h": -0.52,
-      "buys_5m": 4,
-      "sells_5m": 4,
-      "total_txns_5m": 8,
-      "buy_sell_ratio": 1.0,
-      "age_minutes": 24156.1,
-      "score": 30,
-      "qualified": false,
-      "checks": {
-        "liquidita": true,
-        "volume_5m": false,
-        "volume_1h": false,
-        "prezzo_disponibile": true,
-        "indirizzo_disponibile": true,
-        "variazione_5m": false,
-        "variazione_1h": false,
-        "rapporto_acquisti": false,
-        "transazioni_sufficienti": true,
-        "accelerazione_volume": false,
-        "eta_disponibile": true,
-        "eta_minima": true
-      },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "9Hr6NXw5WSffxNQnqxwZyhRw81uz3PpB7RF9J3i9nMt1",
@@ -1131,7 +1168,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 58373.6,
+      "age_minutes": 58374.8,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1148,7 +1185,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "26m4MzwCDCJttwkt43mddiojwvwGkZwfXeAoSCRw85ML",
@@ -1168,7 +1205,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 95989.9,
+      "age_minutes": 95991.1,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1185,7 +1222,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "DY8kvC8f8G9fdV9ZWgsRkeMT27o1ZUmMWqF1nB3YyMFu",
@@ -1205,7 +1242,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 6664.1,
+      "age_minutes": 6665.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1222,7 +1259,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "6zKvsBEa4HDfzUCatGCZ2zvPLtPHjTvB4eSXsiWmWYMy",
@@ -1242,7 +1279,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 13016.3,
+      "age_minutes": 13017.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1259,7 +1296,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "98YWYqybg1ua8Mhok37Tps4JnowdbsynKCFYVbqgRq14",
@@ -1279,7 +1316,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1020243.7,
+      "age_minutes": 1020244.8,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1296,7 +1333,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "3W62iAK7LY1LCuRAKrsvDbbwfAszkoyTQt8apKNToPyc",
@@ -1316,7 +1353,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 50129.5,
+      "age_minutes": 50130.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1333,7 +1370,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "BmozogdAak3HwBEX4RAbVMoAE46nQE1L2PFsuGm3jEca",
@@ -1353,7 +1390,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 31021.9,
+      "age_minutes": 31023.1,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1370,7 +1407,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "GerGm1amASyEm8j41hU9HucAtSk3UwrA2Ggh5J1KGbuW",
@@ -1390,7 +1427,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 618692.7,
+      "age_minutes": 618693.9,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1407,7 +1444,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "8p3hFKLBuAZTS65v5KuzrVyCenPFaj5Zigb2ZJdZmhLa",
@@ -1427,7 +1464,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1297316.6,
+      "age_minutes": 1297317.8,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1444,7 +1481,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "9BVkQ3ETDLmtW3BAN3MHc41buDq8e2jctyYzp3Hx1ugT",
@@ -1464,7 +1501,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 95835.8,
+      "age_minutes": 95837.0,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1481,7 +1518,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "5eePVVCWP5fsrvLo3cMx1Vb8qvdFLKoc3E7B3h9zmPhu",
@@ -1501,7 +1538,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1056849.2,
+      "age_minutes": 1056850.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1518,7 +1555,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "HwekY5YPt2gSfQmouhQK5ATNgDp7pg4bqtWwvCAtjLaM",
@@ -1538,7 +1575,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1245277.8,
+      "age_minutes": 1245278.9,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1555,7 +1592,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "DZDQdYsj5hbd6xneMGpxM7aaeGLVkHDLXKPpxwjDLCw3",
@@ -1575,7 +1612,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 138727.5,
+      "age_minutes": 138728.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1592,7 +1629,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "5qaf4iYFYqsssMn3CrtHWcdWCDBpuB4QGXSRGJ93azB8",
@@ -1612,7 +1649,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 131815.0,
+      "age_minutes": 131816.2,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1629,7 +1666,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "6DZwnaSiFjnUbvrEJoHQESzAeet6MJRtrS19bgQ1uU8i",
@@ -1649,7 +1686,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 136457.7,
+      "age_minutes": 136458.9,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1666,7 +1703,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "CZCZt31BjAFEJvohxyjn2Rz19qvYCbVYdtBro8o9A62J",
@@ -1686,7 +1723,7 @@
       "sells_5m": 1,
       "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 26975.4,
+      "age_minutes": 26976.6,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -1703,7 +1740,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "A6TDxXNTYTNYig5jXGLDvJiR5LuS8xESRNSkgTim2E3z",
@@ -1723,7 +1760,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1429727.9,
+      "age_minutes": 1429729.0,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1740,7 +1777,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Chmb6SyRKLcBvxTacVnukcJ9BwRKy4SmcFqxGWAp8hTq",
@@ -1760,7 +1797,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 612.3,
+      "age_minutes": 613.5,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1777,7 +1814,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "DwNJv6kerYpW7NWNNdoMESx3CQSZ1KLxmDzGPgigLKXT",
@@ -1797,7 +1834,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1274.7,
+      "age_minutes": 1275.9,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1814,7 +1851,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "H6TjuhAMr6vvh57zDCcfoR1hzjEzs43mhFNE9sjUAobW",
@@ -1834,7 +1871,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 136458.3,
+      "age_minutes": 136459.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1851,7 +1888,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "3cfckgGv57vNBwwQxUXFzau2GLPVzXxFy2tKrT4qgjc5",
@@ -1871,7 +1908,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 137763.9,
+      "age_minutes": 137765.1,
       "score": 15,
       "qualified": false,
       "checks": {
@@ -1888,7 +1925,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "ACwxc6Dufs5YBDserjSdKkTT6V8Js4WceAhTFc1t6ncr",
@@ -1908,7 +1945,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1354.1,
+      "age_minutes": 1355.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1925,7 +1962,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "9CPGgmU7UE952exnGkdYarzJkKtnRYceMu2V4M93wKb5",
@@ -1945,7 +1982,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1353.8,
+      "age_minutes": 1355.0,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -1962,7 +1999,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "5E3dXLXGwmTDCokA51WYYaKttjFZBwqCoyUHBUi5gt2m",
@@ -1971,19 +2008,19 @@
       "token_address": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
-      "price_usd": 0.004538,
-      "liquidity_usd": 212237.9,
-      "volume_5m": 716.71,
-      "volume_1h": 12028.1,
-      "volume_acceleration": 0.72,
-      "change_5m": 0.66,
-      "change_1h": 3.02,
+      "price_usd": 0.004491,
+      "liquidity_usd": 211141.6,
+      "volume_5m": 660.27,
+      "volume_1h": 12343.31,
+      "volume_acceleration": 0.64,
+      "change_5m": 0.33,
+      "change_1h": 2.02,
       "buys_5m": 3,
-      "sells_5m": 3,
-      "total_txns_5m": 6,
-      "buy_sell_ratio": 1.0,
-      "age_minutes": 91901.9,
-      "score": 40,
+      "sells_5m": 2,
+      "total_txns_5m": 5,
+      "buy_sell_ratio": 1.5,
+      "age_minutes": 91903.1,
+      "score": 50,
       "qualified": false,
       "checks": {
         "liquidita": true,
@@ -1993,13 +2030,13 @@
         "indirizzo_disponibile": true,
         "variazione_5m": false,
         "variazione_1h": true,
-        "rapporto_acquisti": false,
+        "rapporto_acquisti": true,
         "transazioni_sufficienti": true,
         "accelerazione_volume": false,
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "6ua6DxTngSFsn6VCDcxdkLS4G1vwe8Q9W4M1ANRMXmGo",
@@ -2011,16 +2048,16 @@
       "price_usd": 9.033e-06,
       "liquidity_usd": 0.0,
       "volume_5m": 29.89,
-      "volume_1h": 459.8,
-      "volume_acceleration": 0.78,
+      "volume_1h": 383.54,
+      "volume_acceleration": 0.94,
       "change_5m": 1.44,
-      "change_1h": 1.25,
+      "change_1h": 4.09,
       "buys_5m": 2,
       "sells_5m": 0,
       "total_txns_5m": 2,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 3104.1,
-      "score": 15,
+      "age_minutes": 3105.3,
+      "score": 25,
       "qualified": false,
       "checks": {
         "liquidita": false,
@@ -2029,14 +2066,14 @@
         "prezzo_disponibile": true,
         "indirizzo_disponibile": true,
         "variazione_5m": true,
-        "variazione_1h": false,
+        "variazione_1h": true,
         "rapporto_acquisti": false,
         "transazioni_sufficienti": false,
         "accelerazione_volume": false,
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "4ocvQcj69k4gBVDPGbTzouQxRdn9uvvuXvXxaxsBWwnY",
@@ -2047,17 +2084,17 @@
       "url": "https://dexscreener.com/solana/4ocvqcj69k4gbvdpgbtzouqxrdn9uvvuxvxxaxsbwwny",
       "price_usd": 6.073e-06,
       "liquidity_usd": 0.0,
-      "volume_5m": 89.61,
+      "volume_5m": 38.7,
       "volume_1h": 408.17,
-      "volume_acceleration": 2.63,
-      "change_5m": 4.1,
+      "volume_acceleration": 1.14,
+      "change_5m": 2.08,
       "change_1h": -1.19,
-      "buys_5m": 2,
+      "buys_5m": 1,
       "sells_5m": 0,
-      "total_txns_5m": 2,
+      "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 978.6,
-      "score": 35,
+      "age_minutes": 979.8,
+      "score": 30,
       "qualified": false,
       "checks": {
         "liquidita": false,
@@ -2073,7 +2110,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "4j3TQ21o45ipb4zDmBfQs4CcXwCyH6qEZfTQGBhdWwUw",
@@ -2082,18 +2119,18 @@
       "token_address": "2HcvsX12NyuLnhDXoU6yWL2XLcr3snCTQ7RhqVmZuCgr",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/4j3tq21o45ipb4zdmbfqs4ccxwcyh6qezftqgbhdwwuw",
-      "price_usd": 0.0001411,
-      "liquidity_usd": 34012.55,
-      "volume_5m": 1825.51,
-      "volume_1h": 23499.98,
-      "volume_acceleration": 0.93,
-      "change_5m": -8.22,
-      "change_1h": -18.66,
-      "buys_5m": 19,
-      "sells_5m": 10,
-      "total_txns_5m": 29,
-      "buy_sell_ratio": 1.9,
-      "age_minutes": 463.6,
+      "price_usd": 0.0001361,
+      "liquidity_usd": 33324.42,
+      "volume_5m": 1579.45,
+      "volume_1h": 23965.67,
+      "volume_acceleration": 0.79,
+      "change_5m": -9.51,
+      "change_1h": -22.34,
+      "buys_5m": 20,
+      "sells_5m": 11,
+      "total_txns_5m": 31,
+      "buy_sell_ratio": 1.82,
+      "age_minutes": 464.7,
       "score": 50,
       "qualified": false,
       "checks": {
@@ -2110,7 +2147,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "EtPmdgqbdf9cdHurnM3U7Hj3LRL5JC4kPPZtvD1pynfB",
@@ -2121,16 +2158,16 @@
       "url": "https://dexscreener.com/solana/etpmdgqbdf9cdhurnm3u7hj3lrl5jc4kppztvd1pynfb",
       "price_usd": 1.944e-06,
       "liquidity_usd": 0.0,
-      "volume_5m": 0.19,
+      "volume_5m": 0.1,
       "volume_1h": 56.83,
-      "volume_acceleration": 0.04,
-      "change_5m": -0.04,
+      "volume_acceleration": 0.02,
+      "change_5m": -0.02,
       "change_1h": 0.32,
       "buys_5m": 0,
-      "sells_5m": 2,
-      "total_txns_5m": 2,
+      "sells_5m": 1,
+      "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 906.0,
+      "age_minutes": 907.2,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2147,7 +2184,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "B6f6wVsQHHC1ARt9WmkU5MX1X3YJtBMQXF8BdZXe7YKQ",
@@ -2167,7 +2204,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 560273.0,
+      "age_minutes": 560274.2,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2184,7 +2221,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "At1STaUFZCjwySXfACrDwo5ADnc2Qyj2DmBuSrNK7BxB",
@@ -2204,7 +2241,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1492629.3,
+      "age_minutes": 1492630.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2221,7 +2258,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "D1koh7pHuKwrQf6yU83L5P28LLk2ERFij5RcwfwtUg8n",
@@ -2241,7 +2278,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 247362.3,
+      "age_minutes": 247363.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2258,7 +2295,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "BdN45NJP5GSMU8XYo1CuPEBJV49kwYPihfbS4Cu7wVET",
@@ -2278,7 +2315,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 602905.2,
+      "age_minutes": 602906.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2295,7 +2332,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "66oUZ5QdQoAEGpeEofzLEBxt2CG3RYjXhjVasuatBSjX",
@@ -2304,18 +2341,18 @@
       "token_address": "3kM6vNo8WeCd7DY3EZBjPuFQ9h8gi3Bm5T8rFPQq1WBt",
       "dex": "meteora",
       "url": "https://dexscreener.com/solana/66ouz5qdqoaegpeeofzlebxt2cg3ryjxhjvasuatbsjx",
-      "price_usd": 1.885e-07,
-      "liquidity_usd": 5.38,
+      "price_usd": 1.861e-07,
+      "liquidity_usd": 5.34,
       "volume_5m": 0.0,
-      "volume_1h": 0.04,
+      "volume_1h": 0.05,
       "volume_acceleration": 0.0,
-      "change_5m": 0.0,
-      "change_1h": -3.56,
-      "buys_5m": 0,
+      "change_5m": -1.27,
+      "change_1h": -4.79,
+      "buys_5m": 1,
       "sells_5m": 0,
-      "total_txns_5m": 0,
+      "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 286095.4,
+      "age_minutes": 286096.6,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2332,7 +2369,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "HWn3KxK4ppKtrPZddP5U8moeTqWgPfiGPifv9P213bKu",
@@ -2352,7 +2389,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1998001.5,
+      "age_minutes": 1998002.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2369,7 +2406,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "3Sy9A1aPECsk6FebTywW2sJFWa7w4NDfMNzhCtLHanSQ",
@@ -2389,7 +2426,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1544854.1,
+      "age_minutes": 1544855.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2406,7 +2443,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "BsmAzgukjjJKtDCSNimi8y4D2gvaxR4AwKi3QabCGdD4",
@@ -2426,7 +2463,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 620498.1,
+      "age_minutes": 620499.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2443,7 +2480,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Dd3LBNcvFzWks83vfwk5zQX3zK8LGPdshm42HoQ4HCyS",
@@ -2463,7 +2500,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 49708.8,
+      "age_minutes": 49710.0,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2480,7 +2517,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "CxnvdhAMsN58bvARAvrWvBYmX2CKJwjnxSPfUfnZTLdi",
@@ -2500,7 +2537,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 49707.9,
+      "age_minutes": 49709.1,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2517,7 +2554,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "76ZqCg2ZCYZQZpFVG225ZQXdk8gdXn52dUfcoKbojLWU",
@@ -2537,7 +2574,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1137.3,
+      "age_minutes": 1138.5,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2554,7 +2591,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "8V79sJMPkRuX2EmzBS8uKmfDrCLAbszboC4eJ5Kowvc5",
@@ -2563,18 +2600,18 @@
       "token_address": "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT",
       "dex": "raydium",
       "url": "https://dexscreener.com/solana/8v79sjmpkrux2emzbs8ukmfdrclabszboc4ej5kowvc5",
-      "price_usd": 0.001199,
-      "liquidity_usd": 130594.08,
-      "volume_5m": 0.0,
-      "volume_1h": 1162.04,
-      "volume_acceleration": 0.0,
-      "change_5m": 0.0,
-      "change_1h": 2.24,
-      "buys_5m": 0,
+      "price_usd": 0.00121,
+      "liquidity_usd": 131691.62,
+      "volume_5m": 6.59,
+      "volume_1h": 1168.64,
+      "volume_acceleration": 0.07,
+      "change_5m": 0.85,
+      "change_1h": 3.11,
+      "buys_5m": 1,
       "sells_5m": 0,
-      "total_txns_5m": 0,
+      "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 56792.4,
+      "age_minutes": 56793.6,
       "score": 35,
       "qualified": false,
       "checks": {
@@ -2591,7 +2628,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "HDt4asuvNjWn1Y5mV2R3sPXf54hC911ANYihU8HtmK7z",
@@ -2611,7 +2648,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 907342.9,
+      "age_minutes": 907344.1,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -2628,7 +2665,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "6CFZUBpujRWymB5doXuAjrweHT91Ext6TQe2pGEmzk2W",
@@ -2637,18 +2674,18 @@
       "token_address": "7rTNgVdQ1Sa28usQ6CZdbWaYqaQpRNDnwcnEbpmpump",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/6cfzubpujrwymb5doxuajrweht91ext6tqe2pgemzk2w",
-      "price_usd": 0.0009071,
-      "liquidity_usd": 79605.58,
-      "volume_5m": 204.07,
-      "volume_1h": 2916.64,
-      "volume_acceleration": 0.84,
-      "change_5m": 0.49,
-      "change_1h": 5.75,
-      "buys_5m": 20,
-      "sells_5m": 14,
+      "price_usd": 0.0009184,
+      "liquidity_usd": 80107.88,
+      "volume_5m": 199.55,
+      "volume_1h": 2907.85,
+      "volume_acceleration": 0.82,
+      "change_5m": 0.35,
+      "change_1h": 5.66,
+      "buys_5m": 19,
+      "sells_5m": 15,
       "total_txns_5m": 34,
-      "buy_sell_ratio": 1.43,
-      "age_minutes": 3239.8,
+      "buy_sell_ratio": 1.27,
+      "age_minutes": 3241.0,
       "score": 50,
       "qualified": false,
       "checks": {
@@ -2665,7 +2702,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "GBzd5ooMFkYtYgzUMKfzyaEJpvzxvm5FK4FDJcpVJJcH",
@@ -2685,7 +2722,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 292639.4,
+      "age_minutes": 292640.6,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -2702,7 +2739,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "8LVi23yKtg2daMhyNYBoggnFLnPHrhLkveU2irqVSCgG",
@@ -2722,7 +2759,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 165231.2,
+      "age_minutes": 165232.4,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -2739,7 +2776,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "7QToaLuBuUdhi4LHBV8LAozuWXN4YWv2TfyLthcDavAp",
@@ -2759,7 +2796,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1323.1,
+      "age_minutes": 1324.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2776,7 +2813,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "CzR1WZufHW2dKrSqfBnV7e36SXKSqdzfjQjQs2xmPqAm",
@@ -2813,7 +2850,7 @@
         "eta_disponibile": false,
         "eta_minima": false
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "AQUcQke8J8A7zP8ZiowCejF2ACQwFT4tnpAH94dqwBeR",
@@ -2833,7 +2870,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 102992.6,
+      "age_minutes": 102993.8,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2850,44 +2887,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
-    },
-    {
-      "pair_id": "CnNsKyR7gkvGMZ98hcF7asFrEWLQMnPUfLgKSkHN1cB2",
-      "name": "grailsolana.fun",
-      "symbol": "GRAIL",
-      "token_address": "7UFokX44CSScACAYkHPtBHWPodbrKTj8oWiA5PT5pump",
-      "dex": "pumpfun",
-      "url": "https://dexscreener.com/solana/cnnskyr7gkvgmz98hcf7asfrewlqmnpuflgkskhn1cb2",
-      "price_usd": 2.868e-06,
-      "liquidity_usd": 0.0,
-      "volume_5m": 116.13,
-      "volume_1h": 3284.54,
-      "volume_acceleration": 0.42,
-      "change_5m": -7.13,
-      "change_1h": -19.07,
-      "buys_5m": 0,
-      "sells_5m": 5,
-      "total_txns_5m": 5,
-      "buy_sell_ratio": 0.0,
-      "age_minutes": 7.7,
-      "score": 10,
-      "qualified": false,
-      "checks": {
-        "liquidita": false,
-        "volume_5m": false,
-        "volume_1h": false,
-        "prezzo_disponibile": true,
-        "indirizzo_disponibile": true,
-        "variazione_5m": false,
-        "variazione_1h": false,
-        "rapporto_acquisti": false,
-        "transazioni_sufficienti": true,
-        "accelerazione_volume": false,
-        "eta_disponibile": true,
-        "eta_minima": true
-      },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "9rUBZffF8WtFXhVYFJSzfo1AjaTmqgZFSRmhN1NiE4vX",
@@ -2907,7 +2907,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 184493.7,
+      "age_minutes": 184494.8,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2924,7 +2924,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "AHKpFpEP9r7ednvDCm5Kj3LLCEFLvWCe2oaexFp4oaH8",
@@ -2944,7 +2944,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 20951.9,
+      "age_minutes": 20953.1,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -2961,28 +2961,28 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
-      "pair_id": "GqcpXXoK5apqQKv4LNG572DV2G8Bxg2WZXw3gKPSWPmi",
-      "name": "neath the truth ",
-      "symbol": "Solana ",
-      "token_address": "AARYePwa2r1oSBfjWt5AbC5RgCRkRd2549FeYRX2pump",
+      "pair_id": "CnNsKyR7gkvGMZ98hcF7asFrEWLQMnPUfLgKSkHN1cB2",
+      "name": "grailsolana.fun",
+      "symbol": "GRAIL",
+      "token_address": "7UFokX44CSScACAYkHPtBHWPodbrKTj8oWiA5PT5pump",
       "dex": "pumpfun",
-      "url": "https://dexscreener.com/solana/gqcpxxok5apqqkv4lng572dv2g8bxg2wzxw3gkpswpmi",
-      "price_usd": 5.152e-06,
+      "url": "https://dexscreener.com/solana/cnnskyr7gkvgmz98hcf7asfrewlqmnpuflgkskhn1cb2",
+      "price_usd": 2.868e-06,
       "liquidity_usd": 0.0,
-      "volume_5m": 0.0,
-      "volume_1h": 115.76,
-      "volume_acceleration": 0.0,
-      "change_5m": 0.0,
-      "change_1h": 6.31,
+      "volume_5m": 47.78,
+      "volume_1h": 3284.54,
+      "volume_acceleration": 0.17,
+      "change_5m": -3.01,
+      "change_1h": -19.07,
       "buys_5m": 0,
-      "sells_5m": 0,
-      "total_txns_5m": 0,
+      "sells_5m": 1,
+      "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 25461.8,
-      "score": 15,
+      "age_minutes": 8.8,
+      "score": 5,
       "qualified": false,
       "checks": {
         "liquidita": false,
@@ -2991,43 +2991,6 @@
         "prezzo_disponibile": true,
         "indirizzo_disponibile": true,
         "variazione_5m": false,
-        "variazione_1h": true,
-        "rapporto_acquisti": false,
-        "transazioni_sufficienti": false,
-        "accelerazione_volume": false,
-        "eta_disponibile": true,
-        "eta_minima": true
-      },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
-    },
-    {
-      "pair_id": "AZraGCefMoFLhEjwb8NV5915PEBCfAYhQbcGg9xRq4Cf",
-      "name": "sol plumber",
-      "symbol": "Plumber",
-      "token_address": "xdHTKojHsKuEFnYM5dwChmnZwSWoqBs8v5nGhJDpump",
-      "dex": "pumpfun",
-      "url": "https://dexscreener.com/solana/azragcefmoflhejwb8nv5915pebcfayhqbcgg9xrq4cf",
-      "price_usd": 0.0,
-      "liquidity_usd": 0.0,
-      "volume_5m": 0.0,
-      "volume_1h": 0.0,
-      "volume_acceleration": 0.0,
-      "change_5m": 0.0,
-      "change_1h": 0.0,
-      "buys_5m": 0,
-      "sells_5m": 1,
-      "total_txns_5m": 1,
-      "buy_sell_ratio": 0.0,
-      "age_minutes": 723.1,
-      "score": 5,
-      "qualified": false,
-      "checks": {
-        "liquidita": false,
-        "volume_5m": false,
-        "volume_1h": false,
-        "prezzo_disponibile": false,
-        "indirizzo_disponibile": true,
-        "variazione_5m": false,
         "variazione_1h": false,
         "rapporto_acquisti": false,
         "transazioni_sufficienti": false,
@@ -3035,7 +2998,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "3RZcRvdU4osDJKDmhCyKqhU5eF8F8Lsy9BDghAM8RmvA",
@@ -3055,7 +3018,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 925308.5,
+      "age_minutes": 925309.7,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -3072,7 +3035,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "5iKtVxj3dCkQ8hUws7NxZQjZWkHigWY8JoSg3Rguxk5g",
@@ -3092,7 +3055,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1002981.3,
+      "age_minutes": 1002982.5,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -3109,7 +3072,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "7uQNr3qvET7GcVbA4bbpwevfaP4L3sttrJhxDugYgq41",
@@ -3129,7 +3092,7 @@
       "sells_5m": 1,
       "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 29530.5,
+      "age_minutes": 29531.7,
       "score": 20,
       "qualified": false,
       "checks": {
@@ -3146,7 +3109,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "DawKJTuktzLRH2pBGRjimvXM8U4ntRV74bSgDXGRjpgg",
@@ -3166,7 +3129,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 166228.0,
+      "age_minutes": 166229.2,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3183,7 +3146,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "J61feDAJ3UyYL7gFUeoJN7E2koYz6th88t6wPC5n2HJw",
@@ -3203,7 +3166,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1020166.0,
+      "age_minutes": 1020167.2,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3220,7 +3183,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "45HEnojStLUZWqambgtkcXBnWCAdi2H9KMZGiaddyuH8",
@@ -3240,7 +3203,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 11561.4,
+      "age_minutes": 11562.6,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3257,7 +3220,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "HXVzYPgCuyBq8SkhPvmqzgrAvbHmUW17rvQHfa7Hfzqu",
@@ -3277,7 +3240,7 @@
       "sells_5m": 2,
       "total_txns_5m": 2,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 80932.1,
+      "age_minutes": 80933.2,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -3294,7 +3257,44 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
+    },
+    {
+      "pair_id": "AZraGCefMoFLhEjwb8NV5915PEBCfAYhQbcGg9xRq4Cf",
+      "name": "sol plumber",
+      "symbol": "Plumber",
+      "token_address": "xdHTKojHsKuEFnYM5dwChmnZwSWoqBs8v5nGhJDpump",
+      "dex": "pumpfun",
+      "url": "https://dexscreener.com/solana/azragcefmoflhejwb8nv5915pebcfayhqbcgg9xrq4cf",
+      "price_usd": 0.0,
+      "liquidity_usd": 0.0,
+      "volume_5m": 0.0,
+      "volume_1h": 0.0,
+      "volume_acceleration": 0.0,
+      "change_5m": 0.0,
+      "change_1h": 0.0,
+      "buys_5m": 0,
+      "sells_5m": 1,
+      "total_txns_5m": 1,
+      "buy_sell_ratio": 0.0,
+      "age_minutes": 724.3,
+      "score": 5,
+      "qualified": false,
+      "checks": {
+        "liquidita": false,
+        "volume_5m": false,
+        "volume_1h": false,
+        "prezzo_disponibile": false,
+        "indirizzo_disponibile": true,
+        "variazione_5m": false,
+        "variazione_1h": false,
+        "rapporto_acquisti": false,
+        "transazioni_sufficienti": false,
+        "accelerazione_volume": false,
+        "eta_disponibile": true,
+        "eta_minima": true
+      },
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "52ARYW51BtS1hAHim2dimn9U7PgHiWYtc3qCEafQCpfG",
@@ -3314,7 +3314,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 897745.5,
+      "age_minutes": 897746.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3331,7 +3331,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "8pgzsHp2AJq7t7G8zGBUFBSLkWek15wfC5Zw8njfgnGx",
@@ -3351,7 +3351,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 58435.2,
+      "age_minutes": 58436.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3368,7 +3368,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "35D3jMscgvtnQHP7fHPrSu9ifEBqhgjtJz3iuhUTFjiC",
@@ -3388,7 +3388,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 490003.6,
+      "age_minutes": 490004.8,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3405,7 +3405,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "GYrcae6FgKQ1p6rTSZMYrnov9ebYm8h4SLZJ59GBB7kB",
@@ -3425,7 +3425,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 59684.8,
+      "age_minutes": 59686.0,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3442,7 +3442,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "4cS5JwMxdCzK7btMNAeevgsPmo9vraor8Q6hLjLmCs8a",
@@ -3462,7 +3462,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 89730.7,
+      "age_minutes": 89731.9,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3479,7 +3479,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "FiAvfZFE7JkcXY8k4sj1HznQzFV3Xe14c7gNAXbhdb3k",
@@ -3499,7 +3499,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 580245.7,
+      "age_minutes": 580246.9,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3516,7 +3516,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "CzKnEVjhVkmDzbUQhz4xbLfaAY4YMnPHZ1J5rCVxvjQ2",
@@ -3536,7 +3536,7 @@
       "sells_5m": 3,
       "total_txns_5m": 3,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 96987.4,
+      "age_minutes": 96988.6,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -3553,7 +3553,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Gs43M1UavqJN9rJ36rEqaPpUBezjmZ2tc2PGdg1cE1Mk",
@@ -3573,7 +3573,7 @@
       "sells_5m": 0,
       "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 10397.5,
+      "age_minutes": 10398.7,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -3590,7 +3590,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "2VbVHpPHHKY57ZRjabaADg67dgie77ebyPBShXTLwcCt",
@@ -3610,7 +3610,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1102492.4,
+      "age_minutes": 1102493.6,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3627,7 +3627,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "6wMnQ3mAcp28s5uCGL3zLSpHXk6yNdSmocHnG3axRNFC",
@@ -3642,12 +3642,12 @@
       "volume_1h": 0.0,
       "volume_acceleration": 0.0,
       "change_5m": 0.0,
-      "change_1h": 0.82,
+      "change_1h": 0.0,
       "buys_5m": 0,
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 602947.7,
+      "age_minutes": 602948.9,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3664,7 +3664,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "3dwetgq9UTyVY6h7VhuC3FBmNbZUuKstXLFC3NZToU3K",
@@ -3684,7 +3684,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 138727.3,
+      "age_minutes": 138728.5,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -3701,7 +3701,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Q2sPHPdUWFMg7M7wwrQKLrn619cAucfRsmhVJffodSp",
@@ -3711,23 +3711,23 @@
       "dex": "raydium",
       "url": "https://dexscreener.com/solana/q2sphpduwfmg7m7wwrqklrn619caucfrsmhvjffodsp",
       "price_usd": 0.1682,
-      "liquidity_usd": 4195676.63,
-      "volume_5m": 1508.77,
-      "volume_1h": 23623.36,
-      "volume_acceleration": 0.77,
-      "change_5m": -0.11,
-      "change_1h": 0.69,
+      "liquidity_usd": 4195675.48,
+      "volume_5m": 277.62,
+      "volume_1h": 15869.0,
+      "volume_acceleration": 0.21,
+      "change_5m": 0.0,
+      "change_1h": 1.02,
       "buys_5m": 0,
-      "sells_5m": 11,
-      "total_txns_5m": 11,
+      "sells_5m": 7,
+      "total_txns_5m": 7,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 771466.0,
-      "score": 40,
+      "age_minutes": 771467.2,
+      "score": 30,
       "qualified": false,
       "checks": {
         "liquidita": true,
         "volume_5m": false,
-        "volume_1h": true,
+        "volume_1h": false,
         "prezzo_disponibile": true,
         "indirizzo_disponibile": true,
         "variazione_5m": false,
@@ -3738,7 +3738,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "5zpyutJu9ee6jFymDGoK7F6S5Kczqtc9FomP3ueKuyA9",
@@ -3747,18 +3747,18 @@
       "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
       "dex": "orca",
       "url": "https://dexscreener.com/solana/5zpyutju9ee6jfymdgok7f6s5kczqtc9fomp3uekuya9",
-      "price_usd": 3.083e-06,
-      "liquidity_usd": 310725.32,
-      "volume_5m": 622.79,
-      "volume_1h": 3780.6,
-      "volume_acceleration": 1.98,
-      "change_5m": 0.23,
-      "change_1h": 0.83,
-      "buys_5m": 9,
-      "sells_5m": 23,
-      "total_txns_5m": 32,
-      "buy_sell_ratio": 0.39,
-      "age_minutes": 2019908.9,
+      "price_usd": 3.08e-06,
+      "liquidity_usd": 310529.52,
+      "volume_5m": 370.57,
+      "volume_1h": 3749.44,
+      "volume_acceleration": 1.19,
+      "change_5m": 0.05,
+      "change_1h": 0.7,
+      "buys_5m": 6,
+      "sells_5m": 11,
+      "total_txns_5m": 17,
+      "buy_sell_ratio": 0.55,
+      "age_minutes": 2019910.0,
       "score": 45,
       "qualified": false,
       "checks": {
@@ -3775,7 +3775,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "7dNW2mhCtqoZcDuyRbj5LMoeFsS9TpaCdSkk4qMstGPm",
@@ -3795,7 +3795,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 562415.1,
+      "age_minutes": 562416.3,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -3812,7 +3812,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "J28smrHeDLYHPZCJLVHExsiMifEDswFHobHpEQrYHdjL",
@@ -3832,7 +3832,7 @@
       "sells_5m": 0,
       "total_txns_5m": 1,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 767213.9,
+      "age_minutes": 767215.1,
       "score": 45,
       "qualified": false,
       "checks": {
@@ -3849,7 +3849,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "6sEkZ73vph5AFYmQTzaV6H5vAQQLZ2C8WqeCQ6MhLqFk",
@@ -3869,7 +3869,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 583777.8,
+      "age_minutes": 583779.0,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -3886,7 +3886,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "8ztFxjFPfVUtEf4SLSapcFj8GW2dxyUA9no2bLPq7H7V",
@@ -3897,53 +3897,16 @@
       "url": "https://dexscreener.com/solana/8ztfxjfpfvutef4slsapcfj8gw2dxyua9no2blpq7h7v",
       "price_usd": 0.1679,
       "liquidity_usd": 401298.88,
-      "volume_5m": 557.52,
+      "volume_5m": 0.0,
       "volume_1h": 6197.79,
-      "volume_acceleration": 1.08,
-      "change_5m": -0.6,
-      "change_1h": 0.88,
-      "buys_5m": 0,
-      "sells_5m": 5,
-      "total_txns_5m": 5,
-      "buy_sell_ratio": 0.0,
-      "age_minutes": 771065.3,
-      "score": 30,
-      "qualified": false,
-      "checks": {
-        "liquidita": true,
-        "volume_5m": false,
-        "volume_1h": false,
-        "prezzo_disponibile": true,
-        "indirizzo_disponibile": true,
-        "variazione_5m": false,
-        "variazione_1h": false,
-        "rapporto_acquisti": false,
-        "transazioni_sufficienti": true,
-        "accelerazione_volume": false,
-        "eta_disponibile": true,
-        "eta_minima": true
-      },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
-    },
-    {
-      "pair_id": "31p1hptjhFo6ZD8oBqkfutNXQKGGPyi7YcEAfsyKW777",
-      "name": "Bonk",
-      "symbol": "Bonk",
-      "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-      "dex": "meteora",
-      "url": "https://dexscreener.com/solana/31p1hptjhfo6zd8obqkfutnxqkggpyi7yceafsykw777",
-      "price_usd": 3.078e-06,
-      "liquidity_usd": 274405.24,
-      "volume_5m": 0.99,
-      "volume_1h": 4975.82,
       "volume_acceleration": 0.0,
       "change_5m": 0.0,
-      "change_1h": 0.4,
-      "buys_5m": 2,
+      "change_1h": 0.88,
+      "buys_5m": 0,
       "sells_5m": 0,
-      "total_txns_5m": 2,
+      "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 673458.1,
+      "age_minutes": 771066.5,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -3960,7 +3923,44 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
+    },
+    {
+      "pair_id": "31p1hptjhFo6ZD8oBqkfutNXQKGGPyi7YcEAfsyKW777",
+      "name": "Bonk",
+      "symbol": "Bonk",
+      "token_address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+      "dex": "meteora",
+      "url": "https://dexscreener.com/solana/31p1hptjhfo6zd8obqkfutnxqkggpyi7yceafsykw777",
+      "price_usd": 3.078e-06,
+      "liquidity_usd": 274405.24,
+      "volume_5m": 0.0,
+      "volume_1h": 4975.82,
+      "volume_acceleration": 0.0,
+      "change_5m": 0.0,
+      "change_1h": 0.4,
+      "buys_5m": 0,
+      "sells_5m": 0,
+      "total_txns_5m": 0,
+      "buy_sell_ratio": 0.0,
+      "age_minutes": 673459.3,
+      "score": 25,
+      "qualified": false,
+      "checks": {
+        "liquidita": true,
+        "volume_5m": false,
+        "volume_1h": false,
+        "prezzo_disponibile": true,
+        "indirizzo_disponibile": true,
+        "variazione_5m": false,
+        "variazione_1h": false,
+        "rapporto_acquisti": false,
+        "transazioni_sufficienti": false,
+        "accelerazione_volume": false,
+        "eta_disponibile": true,
+        "eta_minima": true
+      },
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "FZuTAARDYJapX7HqniQEzzDboNY8RT4FXCrakVFJap2R",
@@ -3980,7 +3980,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 75888.3,
+      "age_minutes": 75889.4,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -3997,7 +3997,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "HsQGWEh3ib6w59rBh5n1jXmi8VXFBqKEjxozL6PGfcgb",
@@ -4009,15 +4009,15 @@
       "price_usd": 0.1688,
       "liquidity_usd": 756150.46,
       "volume_5m": 0.0,
-      "volume_1h": 5979.71,
+      "volume_1h": 5870.38,
       "volume_acceleration": 0.0,
       "change_5m": 0.0,
-      "change_1h": 1.29,
+      "change_1h": 1.31,
       "buys_5m": 0,
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 769841.8,
+      "age_minutes": 769843.0,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -4034,7 +4034,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "9Ux4vtd8juEH4NMF4ae3tXYpKBdeCUUipX8z3EficKme",
@@ -4054,7 +4054,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 755829.7,
+      "age_minutes": 755830.8,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -4071,7 +4071,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "6MHj1z5BgC1UiTNEWrnJfbGtQPuPdh2qgdWkemGxT2c5",
@@ -4082,17 +4082,17 @@
       "url": "https://dexscreener.com/solana/6mhj1z5bgc1uitnewrnjfbgtqpupdh2qgdwkemgxt2c5",
       "price_usd": 0.0001987,
       "liquidity_usd": 93329.2,
-      "volume_5m": 7.38,
+      "volume_5m": 0.0,
       "volume_1h": 53.29,
-      "volume_acceleration": 1.66,
-      "change_5m": -0.03,
+      "volume_acceleration": 0.0,
+      "change_5m": 0.0,
       "change_1h": 0.17,
       "buys_5m": 0,
-      "sells_5m": 1,
-      "total_txns_5m": 1,
+      "sells_5m": 0,
+      "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 513536.8,
-      "score": 40,
+      "age_minutes": 513537.9,
+      "score": 25,
       "qualified": false,
       "checks": {
         "liquidita": true,
@@ -4104,11 +4104,11 @@
         "variazione_1h": false,
         "rapporto_acquisti": false,
         "transazioni_sufficienti": false,
-        "accelerazione_volume": true,
+        "accelerazione_volume": false,
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "8ujpQXxnnWvRohU2oCe3eaSzoL7paU2uj3fEn4Zp72US",
@@ -4128,7 +4128,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 678094.6,
+      "age_minutes": 678095.8,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -4145,7 +4145,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "3rwERVY1J7oBztfLbydtMMRgj7UM26YsWCgVf2rmep21",
@@ -4165,7 +4165,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 403865.7,
+      "age_minutes": 403866.9,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -4182,7 +4182,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Hv1i8WrxEhL8djBuxhFGJxXTt4qEupywWKFSgGB5A7w6",
@@ -4202,7 +4202,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 792828.1,
+      "age_minutes": 792829.3,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -4219,7 +4219,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "FQd8z3Dy6NRxZgx152SUmYL9AyyqAbYCPtSmy4spEgnH",
@@ -4239,7 +4239,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 401435.8,
+      "age_minutes": 401437.0,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -4256,44 +4256,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
-    },
-    {
-      "pair_id": "Dmryq83qiuGuRjd36QkY5Y2cEFZajqrhuXW8kYVG1z2E",
-      "name": "NeverZero",
-      "symbol": "NEVERZERO",
-      "token_address": "7MsJCvDi5t5U3Ya2UAs5bR75VJyVMr2FKdzGmeg2rise",
-      "dex": "rise",
-      "url": "https://dexscreener.com/solana/dmryq83qiugurjd36qky5y2cefzajqrhuxw8kyvg1z2e",
-      "price_usd": 0.5427,
-      "liquidity_usd": 26580696.64,
-      "volume_5m": 0.0,
-      "volume_1h": 4154.71,
-      "volume_acceleration": 0.0,
-      "change_5m": 0.0,
-      "change_1h": 0.33,
-      "buys_5m": 0,
-      "sells_5m": 0,
-      "total_txns_5m": 0,
-      "buy_sell_ratio": 0.0,
-      "age_minutes": 282775.9,
-      "score": 25,
-      "qualified": false,
-      "checks": {
-        "liquidita": true,
-        "volume_5m": false,
-        "volume_1h": false,
-        "prezzo_disponibile": true,
-        "indirizzo_disponibile": true,
-        "variazione_5m": false,
-        "variazione_1h": false,
-        "rapporto_acquisti": false,
-        "transazioni_sufficienti": false,
-        "accelerazione_volume": false,
-        "eta_disponibile": true,
-        "eta_minima": true
-      },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "F2kgF28qFnE5uWwsZ1iWfNkCvVBcgwLLdeNFGQN2yXAq",
@@ -4313,7 +4276,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 258837.5,
+      "age_minutes": 258838.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4330,7 +4293,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "61Z2epy6bm9UwrgAqjT6a2UoQaiKnQDcBXywpQcxGu6K",
@@ -4350,7 +4313,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 116397.4,
+      "age_minutes": 116398.6,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -4367,7 +4330,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "52Vhd46eXAVJc1KwHWn9ZhHtALycSMj1bjZVZkL8ug6q",
@@ -4387,7 +4350,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 557932.6,
+      "age_minutes": 557933.8,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -4404,7 +4367,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "9Kfaag7ZkrNmXYeuQ2ymJKZnsvbeaiSrMpjZ1MDiV7ny",
@@ -4424,7 +4387,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 266190.0,
+      "age_minutes": 266191.1,
       "score": 25,
       "qualified": false,
       "checks": {
@@ -4441,7 +4404,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "7SLs5vdmdokduqc5VXsy9UsfKAiSjv82jv5urvV6GNPa",
@@ -4461,7 +4424,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 93384.3,
+      "age_minutes": 93385.5,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4478,7 +4441,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Fz2pYazumRbB3QkbisktVbmUyrVs9JEAiNDDX6EsRKbQ",
@@ -4498,7 +4461,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1279750.6,
+      "age_minutes": 1279751.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4515,7 +4478,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "Ac5TNq4oYcxdvJPi5y4Evnks8PvTZkvMQA52wwGY7d9F",
@@ -4535,7 +4498,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1423540.1,
+      "age_minutes": 1423541.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4552,7 +4515,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "859F85a2th4H9C8oZvRWvDggnYVfqipGBVzY1a1HvEw6",
@@ -4572,7 +4535,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 869357.9,
+      "age_minutes": 869359.1,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4589,7 +4552,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "8nx826bes2iHNwq5P2xuCkFWYTELye4qb6bkFYj5Ty1p",
@@ -4609,7 +4572,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1377504.6,
+      "age_minutes": 1377505.8,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4626,7 +4589,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "EHDNaigPAm9LqhHJEAokh1ieVUATSe7nG8ZBAbZa67dU",
@@ -4646,7 +4609,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1000366.1,
+      "age_minutes": 1000367.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4663,7 +4626,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "EuDAiu3ZeWQ6tZomufzVeK7TsLnmyDra3VrU4syhpgHh",
@@ -4683,7 +4646,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 46463.6,
+      "age_minutes": 46464.8,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4700,7 +4663,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "2HZaC5WjLXdkbbUwkcaieqmEoqkxki5516iLvwzwCEiS",
@@ -4720,7 +4683,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1072241.0,
+      "age_minutes": 1072242.2,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4737,7 +4700,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "FvVvfwEKN9rn3edkeZuJ25ANtJ5ZaA4Gs1jAqLotYhRE",
@@ -4757,7 +4720,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 15505.2,
+      "age_minutes": 15506.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4774,7 +4737,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "6Vm3LE4S8pVv2QKfGNNdNLadJVgn5zTPXMnqcv3BEQxP",
@@ -4794,7 +4757,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 546835.6,
+      "age_minutes": 546836.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4811,7 +4774,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "AsrheTT6GBSvfyEV98iKh5WQaUSb2CistBAvurtzJ8xf",
@@ -4831,7 +4794,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 55502.2,
+      "age_minutes": 55503.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4848,7 +4811,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "DY21GKppugdjnr5BXrJ7QsKr7h1csA2F8nB4BQnNwu39",
@@ -4868,7 +4831,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 52347.0,
+      "age_minutes": 52348.2,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4885,7 +4848,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "5pjPaiBpxxXcKv9GQuzoktwq4v1PPQBwpHPAQT9c5W45",
@@ -4905,7 +4868,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 1417.3,
+      "age_minutes": 1418.5,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4922,7 +4885,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "5gUmYBx3hSKQM6hs7owKdG1UJ8623GDERv5ugWgKjUzQ",
@@ -4942,7 +4905,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 56794.2,
+      "age_minutes": 56795.4,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4959,7 +4922,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "2GozbeCqiV7oqgD5FwcjHCGwhj2v81QBNdz5uDUAkN7R",
@@ -4979,7 +4942,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 49400.1,
+      "age_minutes": 49401.3,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -4996,7 +4959,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "7ir3F6Wbxmdv7Twjf5WghxphLyRN2Duhvaig7JbyS31n",
@@ -5016,7 +4979,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 4621.9,
+      "age_minutes": 4623.1,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -5033,7 +4996,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "B5d7JXzeVnnrhZDmEgJbPaibhpSkJmu5LgpGF65cGaF5",
@@ -5053,7 +5016,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 6139.6,
+      "age_minutes": 6140.7,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -5070,7 +5033,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     },
     {
       "pair_id": "8ydiFSB44Ar7t1W1BCzzdqyVUaVpMrgckxwA5AmxLTx7",
@@ -5090,7 +5053,7 @@
       "sells_5m": 0,
       "total_txns_5m": 0,
       "buy_sell_ratio": 0.0,
-      "age_minutes": 870.9,
+      "age_minutes": 872.1,
       "score": 5,
       "qualified": false,
       "checks": {
@@ -5107,7 +5070,7 @@
         "eta_disponibile": true,
         "eta_minima": true
       },
-      "updated_at": "2026-10-28T08:09:15.267043+00:00"
+      "updated_at": "2026-10-28T08:10:26.937680+00:00"
     }
   ]
 }
