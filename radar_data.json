@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T09:18:32.770271+00:00",
+  "updated_at": "2026-10-28T09:19:27.969978+00:00",
   "pairs_scanned": 136,
   "qualified_count": 0,
   "alerts_sent": 0,
@@ -28,7 +28,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 266259.0,
+      "age_minutes": 266259.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -45,7 +45,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:19.138265+00:00",
+      "scanned_at": "2026-10-28T09:19:14.335511+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -72,7 +72,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 41065.3,
+      "age_minutes": 41066.2,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -89,7 +89,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:19.238468+00:00",
+      "scanned_at": "2026-10-28T09:19:14.435719+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -116,7 +116,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": -0.49,
-      "age_minutes": 771535.1,
+      "age_minutes": 771536.0,
       "score": 1,
       "checks": {
         "volume_5m": false,
@@ -129,11 +129,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 0.8009729178026107,
-        "transaction_growth_ratio": 0.0,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:19.338675+00:00",
+      "scanned_at": "2026-10-28T09:19:14.535905+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -160,7 +160,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": -0.59,
-      "age_minutes": 755898.7,
+      "age_minutes": 755899.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -177,7 +177,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:19.438908+00:00",
+      "scanned_at": "2026-10-28T09:19:14.636135+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -204,7 +204,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": -0.66,
-      "age_minutes": 769910.9,
+      "age_minutes": 769911.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -217,11 +217,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 0.8184272502115518,
+        "volume_growth_ratio": 1.0,
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:19.539102+00:00",
+      "scanned_at": "2026-10-28T09:19:14.736388+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -248,7 +248,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.61,
-      "age_minutes": 767282.9,
+      "age_minutes": 767283.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -265,7 +265,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:19.639306+00:00",
+      "scanned_at": "2026-10-28T09:19:14.836629+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -292,7 +292,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": -0.27,
-      "age_minutes": 771134.4,
+      "age_minutes": 771135.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -305,11 +305,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 0.8560107269065721,
+        "volume_growth_ratio": 1.0,
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:19.739517+00:00",
+      "scanned_at": "2026-10-28T09:19:14.936876+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -336,7 +336,7 @@
       "buy_sell_ratio_5m": 0.64,
       "price_change_5m_pct": 0.37,
       "price_change_1h_pct": 0.6,
-      "age_minutes": 2019977.9,
+      "age_minutes": 2019978.9,
       "score": 1,
       "checks": {
         "volume_5m": false,
@@ -349,11 +349,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 1.0085951028577478,
-        "transaction_growth_ratio": 0.8214285714285714,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 0.64
       },
-      "scanned_at": "2026-10-28T09:18:19.839717+00:00",
+      "scanned_at": "2026-10-28T09:19:15.037113+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -380,7 +380,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.33,
-      "age_minutes": 673527.2,
+      "age_minutes": 673528.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -397,7 +397,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:19.939945+00:00",
+      "scanned_at": "2026-10-28T09:19:15.137334+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -424,7 +424,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.67,
-      "age_minutes": 562484.2,
+      "age_minutes": 562485.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -441,7 +441,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:20.040150+00:00",
+      "scanned_at": "2026-10-28T09:19:15.237571+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -468,7 +468,7 @@
       "buy_sell_ratio_5m": 1.33,
       "price_change_5m_pct": 0.13,
       "price_change_1h_pct": -1.56,
-      "age_minutes": 91971.0,
+      "age_minutes": 91971.9,
       "score": 3,
       "checks": {
         "volume_5m": false,
@@ -481,11 +481,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 0.9913687876700068,
-        "transaction_growth_ratio": 0.7,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 1.33
       },
-      "scanned_at": "2026-10-28T09:18:20.140361+00:00",
+      "scanned_at": "2026-10-28T09:19:15.337785+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -512,7 +512,7 @@
       "buy_sell_ratio_5m": 3.0,
       "price_change_5m_pct": -3.77,
       "price_change_1h_pct": 5.51,
-      "age_minutes": 24225.2,
+      "age_minutes": 24226.1,
       "score": 4,
       "checks": {
         "volume_5m": true,
@@ -525,11 +525,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 1.029207974440474,
-        "transaction_growth_ratio": 1.0666666666666667,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 3.0
       },
-      "scanned_at": "2026-10-28T09:18:20.240558+00:00",
+      "scanned_at": "2026-10-28T09:19:15.438013+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -556,7 +556,7 @@
       "buy_sell_ratio_5m": 1.71,
       "price_change_5m_pct": 0.41,
       "price_change_1h_pct": -7.99,
-      "age_minutes": 2006.4,
+      "age_minutes": 2007.3,
       "score": 4,
       "checks": {
         "volume_5m": true,
@@ -569,11 +569,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 1.0064621972473393,
-        "transaction_growth_ratio": 1.0952380952380953,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 1.71
       },
-      "scanned_at": "2026-10-28T09:18:20.340729+00:00",
+      "scanned_at": "2026-10-28T09:19:15.538222+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -600,7 +600,7 @@
       "buy_sell_ratio_5m": 1.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.03,
-      "age_minutes": 583846.9,
+      "age_minutes": 583847.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -613,11 +613,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 1.0026843235504652,
+        "volume_growth_ratio": 1.0,
         "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 1
       },
-      "scanned_at": "2026-10-28T09:18:20.440928+00:00",
+      "scanned_at": "2026-10-28T09:19:15.638447+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -644,7 +644,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.15,
       "price_change_1h_pct": 7.91,
-      "age_minutes": 56861.5,
+      "age_minutes": 56862.4,
       "score": 1,
       "checks": {
         "volume_5m": false,
@@ -661,7 +661,7 @@
         "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 0.0
       },
-      "scanned_at": "2026-10-28T09:18:20.541147+00:00",
+      "scanned_at": "2026-10-28T09:19:15.738688+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -688,7 +688,7 @@
       "buy_sell_ratio_5m": 2.0,
       "price_change_5m_pct": 0.89,
       "price_change_1h_pct": 16.09,
-      "age_minutes": 844.9,
+      "age_minutes": 845.8,
       "score": 4,
       "checks": {
         "volume_5m": true,
@@ -701,11 +701,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 1.060550645848059,
-        "transaction_growth_ratio": 1.173913043478261,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 2.0
       },
-      "scanned_at": "2026-10-28T09:18:20.641316+00:00",
+      "scanned_at": "2026-10-28T09:19:15.838905+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -732,7 +732,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": -0.05,
-      "age_minutes": 403934.8,
+      "age_minutes": 403935.7,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -749,7 +749,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:20.741529+00:00",
+      "scanned_at": "2026-10-28T09:19:15.939201+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -776,7 +776,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.87,
-      "age_minutes": 678163.7,
+      "age_minutes": 678164.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -793,7 +793,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:20.841754+00:00",
+      "scanned_at": "2026-10-28T09:19:16.039452+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -820,7 +820,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 513605.8,
+      "age_minutes": 513606.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -837,7 +837,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:20.941976+00:00",
+      "scanned_at": "2026-10-28T09:19:16.139673+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -850,21 +850,21 @@
       "token_address": "7rTNgVdQ1Sa28usQ6CZdbWaYqaQpRNDnwcnEbpmpump",
       "quote_symbol": "SOL",
       "url": "https://dexscreener.com/solana/6cfzubpujrwymb5doxuajrweht91ext6tqe2pgemzk2w",
-      "price_usd": 0.001043,
-      "liquidity_usd": 85678.29,
-      "volume_5m_usd": 196.64,
-      "volume_1h_usd": 4756.36,
-      "volume_24h_usd": 63829.62,
-      "buys_5m": 22,
-      "sells_5m": 13,
+      "price_usd": 0.001057,
+      "liquidity_usd": 86244.67,
+      "volume_5m_usd": 173.9,
+      "volume_1h_usd": 4741.87,
+      "volume_24h_usd": 63822.16,
+      "buys_5m": 21,
+      "sells_5m": 14,
       "transactions_5m": 35,
-      "buys_1h": 296,
-      "sells_1h": 196,
+      "buys_1h": 298,
+      "sells_1h": 194,
       "transactions_1h": 492,
-      "buy_sell_ratio_5m": 1.69,
-      "price_change_5m_pct": 0.77,
-      "price_change_1h_pct": 12.91,
-      "age_minutes": 3308.9,
+      "buy_sell_ratio_5m": 1.5,
+      "price_change_5m_pct": 0.69,
+      "price_change_1h_pct": 15.74,
+      "age_minutes": 3309.8,
       "score": 2,
       "checks": {
         "volume_5m": false,
@@ -877,11 +877,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 0.9951210122853411,
-        "transaction_growth_ratio": 0.9722222222222222,
-        "buy_sell_ratio_5m": 1.69
+        "volume_growth_ratio": 0.9969535527167834,
+        "transaction_growth_ratio": 1.0,
+        "buy_sell_ratio_5m": 1.5
       },
-      "scanned_at": "2026-10-28T09:18:21.042192+00:00",
+      "scanned_at": "2026-10-28T09:19:16.239927+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -908,7 +908,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 907412.0,
+      "age_minutes": 907412.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -925,7 +925,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:21.142414+00:00",
+      "scanned_at": "2026-10-28T09:19:16.340168+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -952,7 +952,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.89,
-      "age_minutes": 116466.5,
+      "age_minutes": 116467.5,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -969,7 +969,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:21.242623+00:00",
+      "scanned_at": "2026-10-28T09:19:16.440401+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -996,7 +996,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.31,
-      "age_minutes": 75957.4,
+      "age_minutes": 75958.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1013,7 +1013,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:21.342835+00:00",
+      "scanned_at": "2026-10-28T09:19:16.540621+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -1040,7 +1040,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.11,
-      "age_minutes": 55819.0,
+      "age_minutes": 55820.0,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1057,7 +1057,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:21.443051+00:00",
+      "scanned_at": "2026-10-28T09:19:16.640842+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -1084,7 +1084,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 292708.5,
+      "age_minutes": 292709.4,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1101,7 +1101,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:21.543264+00:00",
+      "scanned_at": "2026-10-28T09:19:16.741098+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -1128,7 +1128,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 558001.7,
+      "age_minutes": 558002.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1145,7 +1145,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:21.643477+00:00",
+      "scanned_at": "2026-10-28T09:19:16.841344+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -1172,7 +1172,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 925377.6,
+      "age_minutes": 925378.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1189,7 +1189,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:21.743716+00:00",
+      "scanned_at": "2026-10-28T09:19:16.941580+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -1216,7 +1216,7 @@
       "buy_sell_ratio_5m": 1.0,
       "price_change_5m_pct": -1.39,
       "price_change_1h_pct": -2.49,
-      "age_minutes": 532.7,
+      "age_minutes": 533.6,
       "score": 1,
       "checks": {
         "volume_5m": false,
@@ -1229,11 +1229,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 1.0051388822698968,
-        "transaction_growth_ratio": 1.0909090909090908,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 1.0
       },
-      "scanned_at": "2026-10-28T09:18:21.843979+00:00",
+      "scanned_at": "2026-10-28T09:19:17.041789+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -1260,7 +1260,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1003050.4,
+      "age_minutes": 1003051.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1277,7 +1277,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:21.944177+00:00",
+      "scanned_at": "2026-10-28T09:19:17.142023+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -1304,7 +1304,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 165300.4,
+      "age_minutes": 165301.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1321,7 +1321,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:22.044385+00:00",
+      "scanned_at": "2026-10-28T09:19:17.242255+00:00",
       "liquidity_ok": true,
       "age_ok": false,
       "qualified": false
@@ -1348,7 +1348,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.37,
-      "age_minutes": 1020235.1,
+      "age_minutes": 1020236.0,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1365,7 +1365,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:22.144603+00:00",
+      "scanned_at": "2026-10-28T09:19:17.342436+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1392,7 +1392,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1080563.4,
+      "age_minutes": 1080564.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1409,7 +1409,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:22.244818+00:00",
+      "scanned_at": "2026-10-28T09:19:17.442676+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1436,7 +1436,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1046353.1,
+      "age_minutes": 1046354.0,
       "score": 1,
       "checks": {
         "volume_5m": false,
@@ -1449,11 +1449,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": null,
-        "transaction_growth_ratio": null,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 0.0
       },
-      "scanned_at": "2026-10-28T09:18:22.345047+00:00",
+      "scanned_at": "2026-10-28T09:19:17.542916+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1480,7 +1480,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": -3.06,
       "price_change_1h_pct": -1.0,
-      "age_minutes": 29599.6,
+      "age_minutes": 29600.5,
       "score": 1,
       "checks": {
         "volume_5m": false,
@@ -1497,7 +1497,7 @@
         "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 0.0
       },
-      "scanned_at": "2026-10-28T09:18:22.445265+00:00",
+      "scanned_at": "2026-10-28T09:19:17.643157+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1524,7 +1524,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": -0.35,
-      "age_minutes": 58442.7,
+      "age_minutes": 58443.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1541,7 +1541,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:22.545466+00:00",
+      "scanned_at": "2026-10-28T09:19:17.743395+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1568,7 +1568,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1492698.4,
+      "age_minutes": 1492699.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1585,7 +1585,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:22.645670+00:00",
+      "scanned_at": "2026-10-28T09:19:17.843621+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1612,7 +1612,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 96059.0,
+      "age_minutes": 96059.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1629,7 +1629,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:22.745894+00:00",
+      "scanned_at": "2026-10-28T09:19:17.943838+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1656,7 +1656,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1279819.7,
+      "age_minutes": 1279820.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1673,7 +1673,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:22.846086+00:00",
+      "scanned_at": "2026-10-28T09:19:18.044045+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1700,7 +1700,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 258906.6,
+      "age_minutes": 258907.5,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1717,7 +1717,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:22.946286+00:00",
+      "scanned_at": "2026-10-28T09:19:18.144280+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1744,7 +1744,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 580314.9,
+      "age_minutes": 580315.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1761,7 +1761,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:23.046464+00:00",
+      "scanned_at": "2026-10-28T09:19:18.244521+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1777,18 +1777,18 @@
       "price_usd": 2.147e-05,
       "liquidity_usd": 10687.44,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 17.51,
+      "volume_1h_usd": 17.04,
       "volume_24h_usd": 497.42,
       "buys_5m": 0,
       "sells_5m": 0,
       "transactions_5m": 0,
-      "buys_1h": 4,
+      "buys_1h": 3,
       "sells_1h": 1,
-      "transactions_1h": 5,
+      "transactions_1h": 4,
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
-      "price_change_1h_pct": 1.62,
-      "age_minutes": 97056.5,
+      "price_change_1h_pct": -0.41,
+      "age_minutes": 97057.4,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1801,11 +1801,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 1.0,
+        "volume_growth_ratio": 0.9731581953169616,
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:23.146682+00:00",
+      "scanned_at": "2026-10-28T09:19:18.344707+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1832,7 +1832,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1423609.2,
+      "age_minutes": 1423610.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1849,7 +1849,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:23.246949+00:00",
+      "scanned_at": "2026-10-28T09:19:18.444954+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1876,7 +1876,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 618761.8,
+      "age_minutes": 618762.7,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1893,7 +1893,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:23.347164+00:00",
+      "scanned_at": "2026-10-28T09:19:18.545173+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1920,7 +1920,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 869427.1,
+      "age_minutes": 869428.0,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1937,7 +1937,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:23.447376+00:00",
+      "scanned_at": "2026-10-28T09:19:18.645393+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -1964,7 +1964,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 1.29,
-      "age_minutes": 892287.6,
+      "age_minutes": 892288.5,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -1981,7 +1981,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:23.547549+00:00",
+      "scanned_at": "2026-10-28T09:19:18.745618+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2008,7 +2008,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 49469.2,
+      "age_minutes": 49470.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2025,7 +2025,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:23.647753+00:00",
+      "scanned_at": "2026-10-28T09:19:18.845830+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2052,7 +2052,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1377573.8,
+      "age_minutes": 1377574.7,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2069,7 +2069,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:23.747973+00:00",
+      "scanned_at": "2026-10-28T09:19:18.946094+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2096,7 +2096,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1297385.8,
+      "age_minutes": 1297386.7,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2113,7 +2113,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:23.848197+00:00",
+      "scanned_at": "2026-10-28T09:19:19.046338+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2140,7 +2140,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1000435.2,
+      "age_minutes": 1000436.2,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2157,7 +2157,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:23.948435+00:00",
+      "scanned_at": "2026-10-28T09:19:19.146555+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2184,7 +2184,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 560342.1,
+      "age_minutes": 560343.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2201,7 +2201,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:24.048633+00:00",
+      "scanned_at": "2026-10-28T09:19:19.246779+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2228,7 +2228,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 235667.4,
+      "age_minutes": 235668.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2245,7 +2245,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:24.148863+00:00",
+      "scanned_at": "2026-10-28T09:19:19.347010+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2272,7 +2272,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1056918.3,
+      "age_minutes": 1056919.2,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2289,7 +2289,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:24.249105+00:00",
+      "scanned_at": "2026-10-28T09:19:19.447262+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2316,7 +2316,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1072310.2,
+      "age_minutes": 1072311.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2333,7 +2333,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:24.349318+00:00",
+      "scanned_at": "2026-10-28T09:19:19.547488+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2360,7 +2360,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 546904.7,
+      "age_minutes": 546905.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2377,7 +2377,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:24.449533+00:00",
+      "scanned_at": "2026-10-28T09:19:19.647726+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2404,7 +2404,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 602974.3,
+      "age_minutes": 602975.2,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2421,7 +2421,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:24.549745+00:00",
+      "scanned_at": "2026-10-28T09:19:19.747956+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2448,7 +2448,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 848990.2,
+      "age_minutes": 848991.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2465,7 +2465,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:24.650011+00:00",
+      "scanned_at": "2026-10-28T09:19:19.848190+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2492,7 +2492,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 847081.3,
+      "age_minutes": 847082.2,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2509,7 +2509,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:24.750199+00:00",
+      "scanned_at": "2026-10-28T09:19:19.948422+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2536,7 +2536,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1245346.9,
+      "age_minutes": 1245347.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2553,7 +2553,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:24.850418+00:00",
+      "scanned_at": "2026-10-28T09:19:20.048653+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2580,7 +2580,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 52416.1,
+      "age_minutes": 52417.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2597,7 +2597,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:24.950622+00:00",
+      "scanned_at": "2026-10-28T09:19:20.148920+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2624,7 +2624,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 998759.1,
+      "age_minutes": 998760.0,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2641,7 +2641,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:25.050787+00:00",
+      "scanned_at": "2026-10-28T09:19:20.249165+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2668,7 +2668,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 46532.8,
+      "age_minutes": 46533.7,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2685,7 +2685,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:25.150984+00:00",
+      "scanned_at": "2026-10-28T09:19:20.349391+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2712,7 +2712,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 95905.0,
+      "age_minutes": 95905.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2729,7 +2729,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:25.251154+00:00",
+      "scanned_at": "2026-10-28T09:19:20.449634+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2756,7 +2756,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": -0.06,
       "price_change_1h_pct": 0.38,
-      "age_minutes": 71503.0,
+      "age_minutes": 71503.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2769,11 +2769,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 1.0999999999999999,
-        "transaction_growth_ratio": null,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 0.0
       },
-      "scanned_at": "2026-10-28T09:18:25.351329+00:00",
+      "scanned_at": "2026-10-28T09:19:20.549878+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2800,7 +2800,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 55571.4,
+      "age_minutes": 55572.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2817,7 +2817,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:25.451544+00:00",
+      "scanned_at": "2026-10-28T09:19:20.650132+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2844,7 +2844,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 15574.4,
+      "age_minutes": 15575.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2861,7 +2861,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:25.551744+00:00",
+      "scanned_at": "2026-10-28T09:19:20.750376+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2888,7 +2888,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 56459.5,
+      "age_minutes": 56460.4,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2905,7 +2905,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:25.651972+00:00",
+      "scanned_at": "2026-10-28T09:19:20.850593+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2932,7 +2932,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 5449.7,
+      "age_minutes": 5450.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2949,7 +2949,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:25.752195+00:00",
+      "scanned_at": "2026-10-28T09:19:20.950844+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -2976,7 +2976,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 56863.4,
+      "age_minutes": 56864.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -2993,7 +2993,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:25.852425+00:00",
+      "scanned_at": "2026-10-28T09:19:21.051108+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3020,7 +3020,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1020312.8,
+      "age_minutes": 1020313.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3037,7 +3037,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:25.952648+00:00",
+      "scanned_at": "2026-10-28T09:19:21.151352+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3064,7 +3064,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 247431.4,
+      "age_minutes": 247432.4,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3081,7 +3081,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:26.052856+00:00",
+      "scanned_at": "2026-10-28T09:19:21.251578+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3108,7 +3108,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 886666.8,
+      "age_minutes": 886667.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3125,7 +3125,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:26.153065+00:00",
+      "scanned_at": "2026-10-28T09:19:21.351791+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3152,7 +3152,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 93453.5,
+      "age_minutes": 93454.4,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3169,7 +3169,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:26.253256+00:00",
+      "scanned_at": "2026-10-28T09:19:21.452004+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3196,7 +3196,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 897814.7,
+      "age_minutes": 897815.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3213,7 +3213,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:26.353465+00:00",
+      "scanned_at": "2026-10-28T09:19:21.552255+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3240,7 +3240,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 50198.7,
+      "age_minutes": 50199.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3257,7 +3257,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:26.453647+00:00",
+      "scanned_at": "2026-10-28T09:19:21.652483+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3284,7 +3284,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.15,
-      "age_minutes": 1998070.7,
+      "age_minutes": 1998071.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3301,7 +3301,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:26.553899+00:00",
+      "scanned_at": "2026-10-28T09:19:21.752723+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3328,7 +3328,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": -0.31,
-      "age_minutes": 490072.8,
+      "age_minutes": 490073.7,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3345,7 +3345,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:26.654114+00:00",
+      "scanned_at": "2026-10-28T09:19:21.852944+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3372,7 +3372,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 59754.0,
+      "age_minutes": 59754.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3389,7 +3389,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:26.754306+00:00",
+      "scanned_at": "2026-10-28T09:19:21.953211+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3416,7 +3416,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 58504.4,
+      "age_minutes": 58505.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3433,7 +3433,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:26.854505+00:00",
+      "scanned_at": "2026-10-28T09:19:22.053459+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3460,7 +3460,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1102561.6,
+      "age_minutes": 1102562.5,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3477,7 +3477,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:26.954719+00:00",
+      "scanned_at": "2026-10-28T09:19:22.153709+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3504,7 +3504,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.3,
-      "age_minutes": 1544923.3,
+      "age_minutes": 1544924.2,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3521,7 +3521,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:27.054952+00:00",
+      "scanned_at": "2026-10-28T09:19:22.253939+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3534,38 +3534,38 @@
       "token_address": "CSRRgTwf9o5KLgguS2M16aEAhV5PUUzfshrAAQ8opump",
       "quote_symbol": "HQ",
       "url": "https://dexscreener.com/solana/hxvzypgcuybq8skhpvmqzgravbhmuw17rvqhfa7hfzqu",
-      "price_usd": 0.0033,
-      "liquidity_usd": 115.83,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.37,
-      "volume_24h_usd": 186.04,
-      "buys_5m": 0,
+      "price_usd": 0.003309,
+      "liquidity_usd": 115.99,
+      "volume_5m_usd": 0.07,
+      "volume_1h_usd": 0.45,
+      "volume_24h_usd": 186.12,
+      "buys_5m": 1,
       "sells_5m": 0,
-      "transactions_5m": 0,
-      "buys_1h": 4,
+      "transactions_5m": 1,
+      "buys_1h": 5,
       "sells_1h": 0,
-      "transactions_1h": 4,
-      "buy_sell_ratio_5m": 0.0,
-      "price_change_5m_pct": 0.0,
-      "price_change_1h_pct": 0.31,
-      "age_minutes": 81001.3,
-      "score": 0,
+      "transactions_1h": 5,
+      "buy_sell_ratio_5m": 1.0,
+      "price_change_5m_pct": 0.29,
+      "price_change_1h_pct": 0.6,
+      "age_minutes": 81002.2,
+      "score": 4,
       "checks": {
         "volume_5m": false,
         "volume_1h": false,
-        "volume_in_crescita": false,
+        "volume_in_crescita": true,
         "attivita_in_crescita": false,
         "pressione_acquisti": false,
-        "accelerazione_volume": false,
-        "movimento_iniziale": false,
+        "accelerazione_volume": true,
+        "movimento_iniziale": true,
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 1.0,
+        "volume_growth_ratio": 1.2162162162162162,
         "transaction_growth_ratio": null,
-        "buy_sell_ratio_5m": 0
+        "buy_sell_ratio_5m": 1
       },
-      "scanned_at": "2026-10-28T09:18:27.155184+00:00",
+      "scanned_at": "2026-10-28T09:19:22.354166+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3592,7 +3592,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 89799.9,
+      "age_minutes": 89800.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3609,7 +3609,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:27.255407+00:00",
+      "scanned_at": "2026-10-28T09:19:22.454350+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3636,7 +3636,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 31091.1,
+      "age_minutes": 31092.0,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3653,7 +3653,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:27.355606+00:00",
+      "scanned_at": "2026-10-28T09:19:22.554583+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3680,7 +3680,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 27044.6,
+      "age_minutes": 27045.5,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3697,7 +3697,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:27.455844+00:00",
+      "scanned_at": "2026-10-28T09:19:22.654839+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3724,7 +3724,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 6208.8,
+      "age_minutes": 6209.7,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3741,7 +3741,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:27.556054+00:00",
+      "scanned_at": "2026-10-28T09:19:22.755090+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3768,7 +3768,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 138796.5,
+      "age_minutes": 138797.4,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3785,7 +3785,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:27.656272+00:00",
+      "scanned_at": "2026-10-28T09:19:22.855329+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3812,7 +3812,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": -8.15,
-      "age_minutes": 579.8,
+      "age_minutes": 580.7,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3826,10 +3826,10 @@
       },
       "growth": {
         "volume_growth_ratio": 1.0,
-        "transaction_growth_ratio": 0.0,
+        "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:27.756494+00:00",
+      "scanned_at": "2026-10-28T09:19:22.955560+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3856,7 +3856,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 620567.3,
+      "age_minutes": 620568.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3873,7 +3873,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:27.856717+00:00",
+      "scanned_at": "2026-10-28T09:19:23.055820+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3900,7 +3900,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 136526.9,
+      "age_minutes": 136527.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3917,7 +3917,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:27.956939+00:00",
+      "scanned_at": "2026-10-28T09:19:23.156088+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3944,7 +3944,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 138796.7,
+      "age_minutes": 138797.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -3961,7 +3961,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:28.057159+00:00",
+      "scanned_at": "2026-10-28T09:19:23.256303+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -3988,7 +3988,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 131884.2,
+      "age_minutes": 131885.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4005,7 +4005,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:28.157394+00:00",
+      "scanned_at": "2026-10-28T09:19:23.356487+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4032,7 +4032,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 286164.6,
+      "age_minutes": 286165.5,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4049,7 +4049,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:28.257612+00:00",
+      "scanned_at": "2026-10-28T09:19:23.456698+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4076,7 +4076,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 603016.9,
+      "age_minutes": 603017.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4093,7 +4093,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:28.357831+00:00",
+      "scanned_at": "2026-10-28T09:19:23.556914+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4120,7 +4120,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 4691.1,
+      "age_minutes": 4692.0,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4137,7 +4137,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:28.458045+00:00",
+      "scanned_at": "2026-10-28T09:19:23.657172+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4164,7 +4164,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 3010.4,
+      "age_minutes": 3011.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4181,7 +4181,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:28.558273+00:00",
+      "scanned_at": "2026-10-28T09:19:23.757385+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4208,7 +4208,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1429797.1,
+      "age_minutes": 1429798.0,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4225,7 +4225,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:28.658499+00:00",
+      "scanned_at": "2026-10-28T09:19:23.857630+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4252,7 +4252,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 105.4,
+      "age_minutes": 106.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4269,7 +4269,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:28.758753+00:00",
+      "scanned_at": "2026-10-28T09:19:23.957840+00:00",
       "liquidity_ok": false,
       "age_ok": true,
       "qualified": false
@@ -4296,7 +4296,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 99.7,
+      "age_minutes": 100.7,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4313,7 +4313,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:28.858970+00:00",
+      "scanned_at": "2026-10-28T09:19:24.058109+00:00",
       "liquidity_ok": false,
       "age_ok": true,
       "qualified": false
@@ -4340,7 +4340,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 345.4,
+      "age_minutes": 346.4,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4357,7 +4357,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:28.959144+00:00",
+      "scanned_at": "2026-10-28T09:19:24.158332+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4384,7 +4384,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1243.2,
+      "age_minutes": 1244.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4401,7 +4401,51 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:29.059357+00:00",
+      "scanned_at": "2026-10-28T09:19:24.258546+00:00",
+      "liquidity_ok": false,
+      "age_ok": false,
+      "qualified": false
+    },
+    {
+      "pair_address": "45iJBgJkgAKZT3P8oV3Tgb253hTPKv256TgMsMqSdJ2X",
+      "dex": "pumpfun",
+      "token_name": "The Meme Virus",
+      "token_symbol": "VIRUS",
+      "token_address": "BY6jnzjbQ1eVYtGsDpWx9BKFNeTQLHmv77Qj3SG7pump",
+      "quote_symbol": "SOL",
+      "url": "https://dexscreener.com/solana/45ijbgjkgakzt3p8ov3tgb253htpkv256tgmsmqsdj2x",
+      "price_usd": 3.669e-06,
+      "liquidity_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "volume_1h_usd": 23.81,
+      "volume_24h_usd": 140819.03,
+      "buys_5m": 0,
+      "sells_5m": 1,
+      "transactions_5m": 1,
+      "buys_1h": 2,
+      "sells_1h": 11,
+      "transactions_1h": 13,
+      "buy_sell_ratio_5m": 0.0,
+      "price_change_5m_pct": 0.09,
+      "price_change_1h_pct": -0.27,
+      "age_minutes": 212.8,
+      "score": 1,
+      "checks": {
+        "volume_5m": false,
+        "volume_1h": false,
+        "volume_in_crescita": false,
+        "attivita_in_crescita": false,
+        "pressione_acquisti": false,
+        "accelerazione_volume": false,
+        "movimento_iniziale": true,
+        "liquidita_in_crescita": false
+      },
+      "growth": {
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": null,
+        "buy_sell_ratio_5m": 0.0
+      },
+      "scanned_at": "2026-10-28T09:19:24.358757+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4417,18 +4461,18 @@
       "price_usd": 1.231e-05,
       "liquidity_usd": 0.0,
       "volume_5m_usd": 214.66,
-      "volume_1h_usd": 771.77,
+      "volume_1h_usd": 738.65,
       "volume_24h_usd": 51605.5,
       "buys_5m": 0,
       "sells_5m": 3,
       "transactions_5m": 3,
       "buys_1h": 10,
-      "sells_1h": 9,
-      "transactions_1h": 19,
+      "sells_1h": 8,
+      "transactions_1h": 18,
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": -6.28,
-      "price_change_1h_pct": 3.07,
-      "age_minutes": 1051.9,
+      "price_change_1h_pct": 4.18,
+      "age_minutes": 1052.8,
       "score": 1,
       "checks": {
         "volume_5m": false,
@@ -4441,11 +4485,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 1.0,
-        "transaction_growth_ratio": 0.75,
+        "volume_growth_ratio": 0.9570856602355624,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 0.0
       },
-      "scanned_at": "2026-10-28T09:18:29.159569+00:00",
+      "scanned_at": "2026-10-28T09:19:24.458986+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4472,7 +4516,7 @@
       "buy_sell_ratio_5m": 1.0,
       "price_change_5m_pct": 0.38,
       "price_change_1h_pct": 0.39,
-      "age_minutes": 1392.4,
+      "age_minutes": 1393.3,
       "score": 2,
       "checks": {
         "volume_5m": false,
@@ -4485,55 +4529,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 0.625,
-        "transaction_growth_ratio": null,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 1
       },
-      "scanned_at": "2026-10-28T09:18:29.259780+00:00",
-      "liquidity_ok": false,
-      "age_ok": false,
-      "qualified": false
-    },
-    {
-      "pair_address": "45iJBgJkgAKZT3P8oV3Tgb253hTPKv256TgMsMqSdJ2X",
-      "dex": "pumpfun",
-      "token_name": "The Meme Virus",
-      "token_symbol": "VIRUS",
-      "token_address": "BY6jnzjbQ1eVYtGsDpWx9BKFNeTQLHmv77Qj3SG7pump",
-      "quote_symbol": "SOL",
-      "url": "https://dexscreener.com/solana/45ijbgjkgakzt3p8ov3tgb253htpkv256tgmsmqsdj2x",
-      "price_usd": 3.666e-06,
-      "liquidity_usd": 0.0,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 23.81,
-      "volume_24h_usd": 140819.02,
-      "buys_5m": 0,
-      "sells_5m": 0,
-      "transactions_5m": 0,
-      "buys_1h": 2,
-      "sells_1h": 10,
-      "transactions_1h": 12,
-      "buy_sell_ratio_5m": 0.0,
-      "price_change_5m_pct": 0.0,
-      "price_change_1h_pct": -0.36,
-      "age_minutes": 211.8,
-      "score": 0,
-      "checks": {
-        "volume_5m": false,
-        "volume_1h": false,
-        "volume_in_crescita": false,
-        "attivita_in_crescita": false,
-        "pressione_acquisti": false,
-        "accelerazione_volume": false,
-        "movimento_iniziale": false,
-        "liquidita_in_crescita": false
-      },
-      "growth": {
-        "volume_growth_ratio": 1.0,
-        "transaction_growth_ratio": null,
-        "buy_sell_ratio_5m": 0
-      },
-      "scanned_at": "2026-10-28T09:18:29.359993+00:00",
+      "scanned_at": "2026-10-28T09:19:24.559227+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4560,7 +4560,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 599.4,
+      "age_minutes": 600.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4577,7 +4577,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:29.460207+00:00",
+      "scanned_at": "2026-10-28T09:19:24.659461+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4604,7 +4604,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 684.9,
+      "age_minutes": 685.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4621,7 +4621,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:29.560417+00:00",
+      "scanned_at": "2026-10-28T09:19:24.759704+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4648,7 +4648,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 905.7,
+      "age_minutes": 906.7,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4665,7 +4665,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:29.660600+00:00",
+      "scanned_at": "2026-10-28T09:19:24.859923+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4692,7 +4692,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 140715.9,
+      "age_minutes": 140716.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4709,7 +4709,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:29.760788+00:00",
+      "scanned_at": "2026-10-28T09:19:24.960173+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4736,7 +4736,7 @@
       "buy_sell_ratio_5m": 1.0,
       "price_change_5m_pct": 0.12,
       "price_change_1h_pct": -4.95,
-      "age_minutes": 18218.0,
+      "age_minutes": 18218.9,
       "score": 1,
       "checks": {
         "volume_5m": false,
@@ -4753,7 +4753,7 @@
         "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 1
       },
-      "scanned_at": "2026-10-28T09:18:29.860980+00:00",
+      "scanned_at": "2026-10-28T09:19:25.060409+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4780,7 +4780,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 138801.6,
+      "age_minutes": 138802.5,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4797,7 +4797,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:29.961212+00:00",
+      "scanned_at": "2026-10-28T09:19:25.160636+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4824,7 +4824,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 133206.3,
+      "age_minutes": 133207.2,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4841,7 +4841,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:30.061380+00:00",
+      "scanned_at": "2026-10-28T09:19:25.260863+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4868,24 +4868,24 @@
       "buy_sell_ratio_5m": 3.0,
       "price_change_5m_pct": 0.49,
       "price_change_1h_pct": -5.39,
-      "age_minutes": 1024.9,
-      "score": 2,
+      "age_minutes": 1025.8,
+      "score": 1,
       "checks": {
         "volume_5m": false,
         "volume_1h": false,
         "volume_in_crescita": false,
-        "attivita_in_crescita": true,
+        "attivita_in_crescita": false,
         "pressione_acquisti": false,
         "accelerazione_volume": false,
         "movimento_iniziale": true,
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 0.9160495264145728,
-        "transaction_growth_ratio": 1.5,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 3
       },
-      "scanned_at": "2026-10-28T09:18:30.161595+00:00",
+      "scanned_at": "2026-10-28T09:19:25.361100+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4912,7 +4912,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": -2.17,
       "price_change_1h_pct": -2.27,
-      "age_minutes": 14596.2,
+      "age_minutes": 14597.2,
       "score": 1,
       "checks": {
         "volume_5m": false,
@@ -4925,11 +4925,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": null,
-        "transaction_growth_ratio": null,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 0.0
       },
-      "scanned_at": "2026-10-28T09:18:30.261784+00:00",
+      "scanned_at": "2026-10-28T09:19:25.461319+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -4946,7 +4946,7 @@
       "liquidity_usd": 0.0,
       "volume_5m_usd": 0.0,
       "volume_1h_usd": 217.47,
-      "volume_24h_usd": 10114.91,
+      "volume_24h_usd": 10110.51,
       "buys_5m": 0,
       "sells_5m": 0,
       "transactions_5m": 0,
@@ -4956,7 +4956,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 6.54,
-      "age_minutes": 6733.4,
+      "age_minutes": 6734.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -4973,7 +4973,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:30.361983+00:00",
+      "scanned_at": "2026-10-28T09:19:25.561576+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5000,7 +5000,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 13085.5,
+      "age_minutes": 13086.4,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5017,7 +5017,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:30.462168+00:00",
+      "scanned_at": "2026-10-28T09:19:25.661819+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5044,7 +5044,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 681.5,
+      "age_minutes": 682.5,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5061,7 +5061,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:30.562389+00:00",
+      "scanned_at": "2026-10-28T09:19:25.762095+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5088,7 +5088,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1344.0,
+      "age_minutes": 1344.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5105,7 +5105,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:30.662563+00:00",
+      "scanned_at": "2026-10-28T09:19:25.862337+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5132,7 +5132,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 136527.5,
+      "age_minutes": 136528.4,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5149,7 +5149,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:30.762758+00:00",
+      "scanned_at": "2026-10-28T09:19:25.962571+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5176,7 +5176,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 137833.1,
+      "age_minutes": 137834.1,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5193,7 +5193,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:30.862942+00:00",
+      "scanned_at": "2026-10-28T09:19:26.062798+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5220,7 +5220,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1423.4,
+      "age_minutes": 1424.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5237,7 +5237,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:30.963140+00:00",
+      "scanned_at": "2026-10-28T09:19:26.163038+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5264,7 +5264,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 1423.1,
+      "age_minutes": 1424.0,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5281,7 +5281,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:31.063339+00:00",
+      "scanned_at": "2026-10-28T09:19:26.263300+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5308,7 +5308,7 @@
       "buy_sell_ratio_5m": 2.0,
       "price_change_5m_pct": -0.15,
       "price_change_1h_pct": 6.24,
-      "age_minutes": 3173.4,
+      "age_minutes": 3174.3,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5321,11 +5321,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": null,
-        "transaction_growth_ratio": null,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 2
       },
-      "scanned_at": "2026-10-28T09:18:31.163561+00:00",
+      "scanned_at": "2026-10-28T09:19:26.363511+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5352,7 +5352,7 @@
       "buy_sell_ratio_5m": 1.0,
       "price_change_5m_pct": 1.37,
       "price_change_1h_pct": 24.15,
-      "age_minutes": 1047.9,
+      "age_minutes": 1048.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5369,7 +5369,7 @@
         "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 1
       },
-      "scanned_at": "2026-10-28T09:18:31.263791+00:00",
+      "scanned_at": "2026-10-28T09:19:26.463731+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5396,7 +5396,7 @@
       "buy_sell_ratio_5m": 1.5,
       "price_change_5m_pct": -6.62,
       "price_change_1h_pct": -14.12,
-      "age_minutes": 975.3,
+      "age_minutes": 976.2,
       "score": 2,
       "checks": {
         "volume_5m": false,
@@ -5409,11 +5409,11 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 0.9693793857650597,
-        "transaction_growth_ratio": 0.8333333333333334,
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 1.5
       },
-      "scanned_at": "2026-10-28T09:18:31.363948+00:00",
+      "scanned_at": "2026-10-28T09:19:26.563976+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5426,6 +5426,50 @@
       "token_address": "3v39wuiJ4kGzsmd1w4DCFDWfGC2ScaJ9mXfZJaXvoREV",
       "quote_symbol": "TOAD",
       "url": "https://dexscreener.com/solana/dd3lbncvfzwks83vfwk5zqx3zk8lgpdshm42hoq4hcys",
+      "price_usd": 0.0,
+      "liquidity_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "volume_1h_usd": 0.0,
+      "volume_24h_usd": 0.0,
+      "buys_5m": 0,
+      "sells_5m": 0,
+      "transactions_5m": 0,
+      "buys_1h": 0,
+      "sells_1h": 0,
+      "transactions_1h": 0,
+      "buy_sell_ratio_5m": 0.0,
+      "price_change_5m_pct": 0.0,
+      "price_change_1h_pct": 0.0,
+      "age_minutes": 49779.0,
+      "score": 0,
+      "checks": {
+        "volume_5m": false,
+        "volume_1h": false,
+        "volume_in_crescita": false,
+        "attivita_in_crescita": false,
+        "pressione_acquisti": false,
+        "accelerazione_volume": false,
+        "movimento_iniziale": false,
+        "liquidita_in_crescita": false
+      },
+      "growth": {
+        "volume_growth_ratio": null,
+        "transaction_growth_ratio": null,
+        "buy_sell_ratio_5m": 0
+      },
+      "scanned_at": "2026-10-28T09:19:26.664191+00:00",
+      "liquidity_ok": false,
+      "age_ok": false,
+      "qualified": false
+    },
+    {
+      "pair_address": "CxnvdhAMsN58bvARAvrWvBYmX2CKJwjnxSPfUfnZTLdi",
+      "dex": "meteora",
+      "token_name": "Luminous Solana Router",
+      "token_symbol": "LSR",
+      "token_address": "3jS313hFd479YBszbGkuoxJwG6zoq6XApMM2nWm28REV",
+      "quote_symbol": "TOAD",
+      "url": "https://dexscreener.com/solana/cxnvdhamsn58bvaravrwvbymx2ckjwjnxspfufnztldi",
       "price_usd": 0.0,
       "liquidity_usd": 0.0,
       "volume_5m_usd": 0.0,
@@ -5457,51 +5501,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:31.464163+00:00",
-      "liquidity_ok": false,
-      "age_ok": false,
-      "qualified": false
-    },
-    {
-      "pair_address": "CxnvdhAMsN58bvARAvrWvBYmX2CKJwjnxSPfUfnZTLdi",
-      "dex": "meteora",
-      "token_name": "Luminous Solana Router",
-      "token_symbol": "LSR",
-      "token_address": "3jS313hFd479YBszbGkuoxJwG6zoq6XApMM2nWm28REV",
-      "quote_symbol": "TOAD",
-      "url": "https://dexscreener.com/solana/cxnvdhamsn58bvaravrwvbymx2ckjwjnxspfufnztldi",
-      "price_usd": 0.0,
-      "liquidity_usd": 0.0,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.0,
-      "volume_24h_usd": 0.0,
-      "buys_5m": 0,
-      "sells_5m": 0,
-      "transactions_5m": 0,
-      "buys_1h": 0,
-      "sells_1h": 0,
-      "transactions_1h": 0,
-      "buy_sell_ratio_5m": 0.0,
-      "price_change_5m_pct": 0.0,
-      "price_change_1h_pct": 0.0,
-      "age_minutes": 49777.2,
-      "score": 0,
-      "checks": {
-        "volume_5m": false,
-        "volume_1h": false,
-        "volume_in_crescita": false,
-        "attivita_in_crescita": false,
-        "pressione_acquisti": false,
-        "accelerazione_volume": false,
-        "movimento_iniziale": false,
-        "liquidita_in_crescita": false
-      },
-      "growth": {
-        "volume_growth_ratio": null,
-        "transaction_growth_ratio": null,
-        "buy_sell_ratio_5m": 0
-      },
-      "scanned_at": "2026-10-28T09:18:31.564385+00:00",
+      "scanned_at": "2026-10-28T09:19:26.764408+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5528,7 +5528,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.05,
-      "age_minutes": 1206.6,
+      "age_minutes": 1207.5,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5545,7 +5545,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:31.664598+00:00",
+      "scanned_at": "2026-10-28T09:19:26.864623+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5589,7 +5589,7 @@
         "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 4
       },
-      "scanned_at": "2026-10-28T09:18:31.764818+00:00",
+      "scanned_at": "2026-10-28T09:19:26.964861+00:00",
       "liquidity_ok": false,
       "age_ok": true,
       "qualified": false
@@ -5616,7 +5616,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 103061.9,
+      "age_minutes": 103062.8,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5633,7 +5633,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:31.865008+00:00",
+      "scanned_at": "2026-10-28T09:19:27.065188+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5660,7 +5660,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 184562.9,
+      "age_minutes": 184563.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5673,11 +5673,55 @@
         "liquidita_in_crescita": false
       },
       "growth": {
-        "volume_growth_ratio": 0.0,
+        "volume_growth_ratio": null,
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:31.965239+00:00",
+      "scanned_at": "2026-10-28T09:19:27.165429+00:00",
+      "liquidity_ok": false,
+      "age_ok": false,
+      "qualified": false
+    },
+    {
+      "pair_address": "AHKpFpEP9r7ednvDCm5Kj3LLCEFLvWCe2oaexFp4oaH8",
+      "dex": "pumpfun",
+      "token_name": "LayoWifHelmet",
+      "token_symbol": "LayoWif",
+      "token_address": "AfiznkNprkjL6o2PXJinfCUjx79KE6iwUTrebkQvpump",
+      "quote_symbol": "HQ",
+      "url": "https://dexscreener.com/solana/ahkpfpep9r7ednvdcm5kj3llceflvwce2oaexfp4oah8",
+      "price_usd": 0.0,
+      "liquidity_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "volume_1h_usd": 0.0,
+      "volume_24h_usd": 0.0,
+      "buys_5m": 0,
+      "sells_5m": 0,
+      "transactions_5m": 0,
+      "buys_1h": 0,
+      "sells_1h": 0,
+      "transactions_1h": 0,
+      "buy_sell_ratio_5m": 0.0,
+      "price_change_5m_pct": 0.0,
+      "price_change_1h_pct": 0.0,
+      "age_minutes": 21022.1,
+      "score": 0,
+      "checks": {
+        "volume_5m": false,
+        "volume_1h": false,
+        "volume_in_crescita": false,
+        "attivita_in_crescita": false,
+        "pressione_acquisti": false,
+        "accelerazione_volume": false,
+        "movimento_iniziale": false,
+        "liquidita_in_crescita": false
+      },
+      "growth": {
+        "volume_growth_ratio": null,
+        "transaction_growth_ratio": null,
+        "buy_sell_ratio_5m": 0
+      },
+      "scanned_at": "2026-10-28T09:19:27.265659+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5704,7 +5748,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": -1.0,
       "price_change_1h_pct": -15.73,
-      "age_minutes": 34.2,
+      "age_minutes": 35.2,
       "score": 1,
       "checks": {
         "volume_5m": false,
@@ -5721,95 +5765,7 @@
         "transaction_growth_ratio": 1.0,
         "buy_sell_ratio_5m": 0.0
       },
-      "scanned_at": "2026-10-28T09:18:32.065464+00:00",
-      "liquidity_ok": false,
-      "age_ok": true,
-      "qualified": false
-    },
-    {
-      "pair_address": "AHKpFpEP9r7ednvDCm5Kj3LLCEFLvWCe2oaexFp4oaH8",
-      "dex": "pumpfun",
-      "token_name": "LayoWifHelmet",
-      "token_symbol": "LayoWif",
-      "token_address": "AfiznkNprkjL6o2PXJinfCUjx79KE6iwUTrebkQvpump",
-      "quote_symbol": "HQ",
-      "url": "https://dexscreener.com/solana/ahkpfpep9r7ednvdcm5kj3llceflvwce2oaexfp4oah8",
-      "price_usd": 0.0,
-      "liquidity_usd": 0.0,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.0,
-      "volume_24h_usd": 0.0,
-      "buys_5m": 0,
-      "sells_5m": 0,
-      "transactions_5m": 0,
-      "buys_1h": 0,
-      "sells_1h": 0,
-      "transactions_1h": 0,
-      "buy_sell_ratio_5m": 0.0,
-      "price_change_5m_pct": 0.0,
-      "price_change_1h_pct": 0.0,
-      "age_minutes": 21021.2,
-      "score": 0,
-      "checks": {
-        "volume_5m": false,
-        "volume_1h": false,
-        "volume_in_crescita": false,
-        "attivita_in_crescita": false,
-        "pressione_acquisti": false,
-        "accelerazione_volume": false,
-        "movimento_iniziale": false,
-        "liquidita_in_crescita": false
-      },
-      "growth": {
-        "volume_growth_ratio": null,
-        "transaction_growth_ratio": null,
-        "buy_sell_ratio_5m": 0
-      },
-      "scanned_at": "2026-10-28T09:18:32.165726+00:00",
-      "liquidity_ok": false,
-      "age_ok": false,
-      "qualified": false
-    },
-    {
-      "pair_address": "9dhpJ7RbCqZMS5boemGY8NcKWxAwoSBz42ok5rfroLM5",
-      "dex": "pumpfun",
-      "token_name": "solanaman",
-      "token_symbol": "solanaman",
-      "token_address": "7iwiHyK27bov6SMgzWWh5pKT1ZteBrrFu7p1jWDUpump",
-      "quote_symbol": "SOL",
-      "url": "https://dexscreener.com/solana/9dhpj7rbcqzms5boemgy8nckwxawosbz42ok5rfrolm5",
-      "price_usd": 2.868e-06,
-      "liquidity_usd": 0.0,
-      "volume_5m_usd": 0.6,
-      "volume_1h_usd": 41.09,
-      "volume_24h_usd": 41.09,
-      "buys_5m": 1,
-      "sells_5m": 1,
-      "transactions_5m": 2,
-      "buys_1h": 2,
-      "sells_1h": 2,
-      "transactions_1h": 4,
-      "buy_sell_ratio_5m": 1.0,
-      "price_change_5m_pct": 0.12,
-      "price_change_1h_pct": -1.22,
-      "age_minutes": 16.0,
-      "score": 1,
-      "checks": {
-        "volume_5m": false,
-        "volume_1h": false,
-        "volume_in_crescita": false,
-        "attivita_in_crescita": false,
-        "pressione_acquisti": false,
-        "accelerazione_volume": false,
-        "movimento_iniziale": true,
-        "liquidita_in_crescita": false
-      },
-      "growth": {
-        "volume_growth_ratio": 1.0,
-        "transaction_growth_ratio": 1.0,
-        "buy_sell_ratio_5m": 1.0
-      },
-      "scanned_at": "2026-10-28T09:18:32.265941+00:00",
+      "scanned_at": "2026-10-28T09:19:27.365898+00:00",
       "liquidity_ok": false,
       "age_ok": true,
       "qualified": false
@@ -5824,38 +5780,82 @@
       "url": "https://dexscreener.com/solana/gqcpxxok5apqqkv4lng572dv2g8bxg2wzxw3gkpswpmi",
       "price_usd": 5.167e-06,
       "liquidity_usd": 0.0,
-      "volume_5m_usd": 93.09,
+      "volume_5m_usd": 0.0,
       "volume_1h_usd": 110.74,
       "volume_24h_usd": 658.19,
-      "buys_5m": 2,
+      "buys_5m": 0,
       "sells_5m": 0,
-      "transactions_5m": 2,
+      "transactions_5m": 0,
       "buys_1h": 2,
       "sells_1h": 1,
       "transactions_1h": 3,
-      "buy_sell_ratio_5m": 2.0,
-      "price_change_5m_pct": 0.6,
+      "buy_sell_ratio_5m": 0.0,
+      "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 4.01,
-      "age_minutes": 25531.1,
-      "score": 2,
+      "age_minutes": 25532.0,
+      "score": 0,
       "checks": {
         "volume_5m": false,
         "volume_1h": false,
         "volume_in_crescita": false,
         "attivita_in_crescita": false,
         "pressione_acquisti": false,
-        "accelerazione_volume": true,
+        "accelerazione_volume": false,
+        "movimento_iniziale": false,
+        "liquidita_in_crescita": false
+      },
+      "growth": {
+        "volume_growth_ratio": 1.0,
+        "transaction_growth_ratio": 0.0,
+        "buy_sell_ratio_5m": 0
+      },
+      "scanned_at": "2026-10-28T09:19:27.466125+00:00",
+      "liquidity_ok": false,
+      "age_ok": false,
+      "qualified": false
+    },
+    {
+      "pair_address": "9dhpJ7RbCqZMS5boemGY8NcKWxAwoSBz42ok5rfroLM5",
+      "dex": "pumpfun",
+      "token_name": "solanaman",
+      "token_symbol": "solanaman",
+      "token_address": "7iwiHyK27bov6SMgzWWh5pKT1ZteBrrFu7p1jWDUpump",
+      "quote_symbol": "SOL",
+      "url": "https://dexscreener.com/solana/9dhpj7rbcqzms5boemgy8nckwxawosbz42ok5rfrolm5",
+      "price_usd": 2.868e-06,
+      "liquidity_usd": 0.0,
+      "volume_5m_usd": 0.3,
+      "volume_1h_usd": 41.09,
+      "volume_24h_usd": 41.09,
+      "buys_5m": 0,
+      "sells_5m": 1,
+      "transactions_5m": 1,
+      "buys_1h": 2,
+      "sells_1h": 2,
+      "transactions_1h": 4,
+      "buy_sell_ratio_5m": 0.0,
+      "price_change_5m_pct": 0.13,
+      "price_change_1h_pct": -1.22,
+      "age_minutes": 16.9,
+      "score": 1,
+      "checks": {
+        "volume_5m": false,
+        "volume_1h": false,
+        "volume_in_crescita": false,
+        "attivita_in_crescita": false,
+        "pressione_acquisti": false,
+        "accelerazione_volume": false,
         "movimento_iniziale": true,
         "liquidita_in_crescita": false
       },
       "growth": {
         "volume_growth_ratio": 1.0,
-        "transaction_growth_ratio": 1.0,
-        "buy_sell_ratio_5m": 2
+        "transaction_growth_ratio": 0.5,
+        "buy_sell_ratio_5m": 0.0
       },
-      "scanned_at": "2026-10-28T09:18:32.366166+00:00",
+      "scanned_at": "2026-10-28T09:19:27.566365+00:00",
       "liquidity_ok": false,
-      "age_ok": false,
+      "age_ok": true,
       "qualified": false
     },
     {
@@ -5880,7 +5880,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 11630.7,
+      "age_minutes": 11631.6,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5897,7 +5897,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:32.466403+00:00",
+      "scanned_at": "2026-10-28T09:19:27.666616+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5924,7 +5924,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 160631.0,
+      "age_minutes": 160631.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5941,7 +5941,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:32.566645+00:00",
+      "scanned_at": "2026-10-28T09:19:27.766874+00:00",
       "liquidity_ok": false,
       "age_ok": false,
       "qualified": false
@@ -5968,7 +5968,7 @@
       "buy_sell_ratio_5m": 0.0,
       "price_change_5m_pct": 0.0,
       "price_change_1h_pct": 0.0,
-      "age_minutes": 76.9,
+      "age_minutes": 77.9,
       "score": 0,
       "checks": {
         "volume_5m": false,
@@ -5985,7 +5985,7 @@
         "transaction_growth_ratio": null,
         "buy_sell_ratio_5m": 0
       },
-      "scanned_at": "2026-10-28T09:18:32.666868+00:00",
+      "scanned_at": "2026-10-28T09:19:27.867137+00:00",
       "liquidity_ok": false,
       "age_ok": true,
       "qualified": false
