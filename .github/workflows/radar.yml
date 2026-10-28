@@ -3,6 +3,7 @@ name: Meme Pump Radar AI
 
 on:
   workflow_dispatch:
+
   schedule:
     - cron: "*/15 * * * *"
 
@@ -16,7 +17,7 @@ concurrency:
 jobs:
   radar:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Scarica repository
@@ -28,7 +29,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: "pip"
 
       - name: Installa dipendenze
         run: |
