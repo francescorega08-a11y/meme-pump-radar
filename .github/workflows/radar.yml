@@ -1,45 +1,7 @@
 
-name: Meme Pump Radar AI
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "*/15 * * * *"
-
-permissions:
-  contents: write
-
-concurrency:
-  group: meme-pump-radar-main
-  cancel-in-progress: false
-
-jobs:
-  radar:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Scarica il repository
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Configura Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Installa dipendenze
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
-
-      - name: Avvia il radar
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python radar.py
-
       - name: Salva i dati del radar
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -52,4 +14,7 @@ jobs:
           fi
 
           git commit -m "Aggiorna stato e dati del radar"
+
+          git pull --rebase origin main
+
           git push origin HEAD:main
