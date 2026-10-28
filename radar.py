@@ -1,414 +1,447 @@
 
 import os
 import json
-import logging
-from pathlib import Path
+import time
 from datetime import datetime, timezone
 
 import requests
 
-DEX_API = "https://api.dexscreener.com"
-TELEGRAM_API = "https://api.telegram.org"
+# ============================================================
+# CONFIGURAZIONE
+# ============================================================
 
-# FILTRI PIU' PERMISSIVI
 MIN_LIQUIDITY_USD = 25_000
+
 MIN_VOLUME_5M_USD = 3_000
 MIN_VOLUME_1H_USD = 20_000
+
 MIN_CHANGE_5M_PCT = 1.0
 MAX_CHANGE_5M_PCT = 10.0
 MIN_CHANGE_1H_PCT = 2.0
-MIN_BUY_SELL_RATIO = 1.2
+MAX_CHANGE_1H_PCT = 100.0
 
-# ACCELERAZIONE E CONTROLLI
+MIN_BUY_SELL_RATIO = 1.2
 MIN_VOLUME_ACCELERATION = 1.1
 MIN_TXNS_5M = 5
-MAX_CHANGE_1H_PCT = 100.0
+
 MIN_TOKEN_AGE_MINUTES = 5
 
-SUMMARY_INTERVAL_SECONDS = 900
-MAX_ALERTS_PER_RUN = 10
-TIMEOUT = 20
+SUMMARY_INTERVAL_MINUTES = 15
 
-STATE_FILE = Path("radar_state.json")
-DATA_FILE = Path("radar_data.json")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+STATE_FILE = "radar_state.json"
+DATA_FILE = "radar_data.json"
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(message)s"
-)
+DEX_SEARCH_URL = "https://api.dexscreener.com/latest/dex/search"
 
-session = requests.Session()
-session.headers.update({
-    "User-Agent": "Meme-Pump-Radar-AI/1.0"
-})
+SEARCH_TERMS = [
+    "solana meme",
+    "solana dog",
+    "solana cat",
+    "solana pepe",
+    "solana pump",
+    "solana bonk",
+    "solana ai",
+]
+
+HEADERS = {
+    "User-Agent": "MemePumpRadarAI/1.0"
+}
 
 
-def number(value, default=0.0):
+# ============================================================
+# FUNZIONI DI SUPPORTO
+# ============================================================
+
+def now_utc():
+    return datetime.now(timezone.utc)
+
+
+def iso_now():
+    return now_utc().isoformat()
+
+
+def safe_float(value, default=0.0):
     try:
-        result = float(value)
-        if result != result or abs(result) == float("inf"):
+        if value is None:
             return default
-        return result
-    except (TypeError, ValueError, OverflowError):
+        return float(value)
+    except (TypeError, ValueError):
         return default
 
 
 def load_json(path, default):
     try:
-        with path.open("r", encoding="utf-8") as file:
+        with open(path, "r", encoding="utf-8") as file:
             return json.load(file)
-    except (OSError, ValueError):
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
         return default
 
 
 def save_json(path, data):
-    temp_path = path.with_suffix(path.suffix + ".tmp")
-    with temp_path.open("w", encoding="utf-8") as file:
+    with open(path, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=2, ensure_ascii=False)
-    temp_path.replace(path)
-
-
-def get_solana_pairs():
-    queries = [
-        "solana meme",
-        "solana dog",
-        "solana cat",
-        "solana pepe",
-        "solana pump",
-        "solana bonk",
-        "solana ai",
-    ]
-
-    pairs_by_id = {}
-
-    for query in queries:
-        try:
-            response = session.get(
-                f"{DEX_API}/latest/dex/search",
-                params={"q": query},
-                timeout=TIMEOUT
-            )
-            response.raise_for_status()
-            pairs = response.json().get("pairs") or []
-
-            for pair in pairs:
-                if pair.get("chainId") != "solana":
-                    continue
-
-                pair_id = pair.get("pairAddress")
-                if pair_id:
-                    pairs_by_id[pair_id] = pair
-
-        except (requests.RequestException, ValueError) as exc:
-            logging.warning(
-                "Ricerca '%s' fallita: %s", query, exc
-            )
-
-    return list(pairs_by_id.values())
-
-
-def evaluate_pair(pair):
-    liquidity = number(
-        (pair.get("liquidity") or {}).get("usd")
-    )
-
-    volume = pair.get("volume") or {}
-    change = pair.get("priceChange") or {}
-    txns = pair.get("txns") or {}
-
-    volume_5m = number(volume.get("m5"))
-    volume_1h = number(volume.get("h1"))
-    change_5m = number(change.get("m5"))
-    change_1h = number(change.get("h1"))
-
-    txns_5m = txns.get("m5") or {}
-    buys = int(number(txns_5m.get("buys")))
-    sells = int(number(txns_5m.get("sells")))
-    total_txns = buys + sells
-
-    ratio = buys / sells if sells > 0 else 0.0
-
-    # Stima dell'attivita' recente rispetto alla media oraria.
-    # Non e' una misura storica esatta dell'accelerazione.
-    average_5m = volume_1h / 12 if volume_1h > 0 else 0
-    acceleration = (
-        volume_5m / average_5m
-        if average_5m > 0 else 0.0
-    )
-
-    base = pair.get("baseToken") or {}
-    token_address = base.get("address") or ""
-    pair_id = pair.get("pairAddress") or ""
-    price_usd = number(pair.get("priceUsd"))
-
-    # Eta' della coppia, se disponibile.
-    created_at = pair.get("pairCreatedAt")
-    age_minutes = None
-
-    if created_at:
-        try:
-            created = datetime.fromtimestamp(
-                float(created_at) / 1000,
-                tz=timezone.utc
-            )
-            age_minutes = (
-                datetime.now(timezone.utc) - created
-            ).total_seconds() / 60
-        except (
-            ValueError, TypeError, OSError, OverflowError
-        ):
-            age_minutes = None
-
-    checks = {
-        "liquidita": liquidity >= MIN_LIQUIDITY_USD,
-        "volume_5m": volume_5m >= MIN_VOLUME_5M_USD,
-        "volume_1h": volume_1h >= MIN_VOLUME_1H_USD,
-        "prezzo_disponibile": price_usd > 0,
-        "indirizzo_disponibile": bool(token_address),
-        "variazione_5m": (
-            MIN_CHANGE_5M_PCT
-            <= change_5m
-            <= MAX_CHANGE_5M_PCT
-        ),
-        "variazione_1h": (
-            MIN_CHANGE_1H_PCT
-            <= change_1h
-            <= MAX_CHANGE_1H_PCT
-        ),
-        "rapporto_acquisti": ratio >= MIN_BUY_SELL_RATIO,
-        "transazioni_sufficienti": total_txns >= MIN_TXNS_5M,
-        "accelerazione_volume": (
-            acceleration >= MIN_VOLUME_ACCELERATION
-        ),
-        # Se l'eta' non e' disponibile, non la consideriamo
-        # una verifica superata: segnaliamo il dato mancante.
-        "eta_disponibile": age_minutes is not None,
-        "eta_minima": (
-            age_minutes is not None
-            and age_minutes >= MIN_TOKEN_AGE_MINUTES
-        ),
-    }
-
-    # Punteggio indicativo su 100, non probabilita' di rialzo.
-    score = 0
-
-    if liquidity >= MIN_LIQUIDITY_USD:
-        score += 20
-    if volume_5m >= MIN_VOLUME_5M_USD:
-        score += 10
-    if volume_1h >= MIN_VOLUME_1H_USD:
-        score += 10
-    if acceleration >= 1.1:
-        score += 15
-    if acceleration >= 2.0:
-        score += 5
-
-    if MIN_CHANGE_5M_PCT <= change_5m <= 5.0:
-        score += 10
-    elif 5.0 < change_5m <= MAX_CHANGE_5M_PCT:
-        score += 5
-
-    if MIN_CHANGE_1H_PCT <= change_1h <= 30.0:
-        score += 10
-    if ratio >= MIN_BUY_SELL_RATIO:
-        score += 10
-    if total_txns >= MIN_TXNS_5M:
-        score += 5
-    if age_minutes is not None and age_minutes >= MIN_TOKEN_AGE_MINUTES:
-        score += 5
-
-    # Un segnale viene inviato solo se supera tutti i controlli.
-    qualified = all(checks.values())
-
-    return {
-        "pair_id": pair_id,
-        "name": base.get("name") or "Sconosciuto",
-        "symbol": base.get("symbol") or "?",
-        "token_address": token_address,
-        "dex": pair.get("dexId") or "",
-        "url": pair.get("url") or "",
-        "price_usd": price_usd,
-        "liquidity_usd": liquidity,
-        "volume_5m": volume_5m,
-        "volume_1h": volume_1h,
-        "volume_acceleration": round(acceleration, 2),
-        "change_5m": change_5m,
-        "change_1h": change_1h,
-        "buys_5m": buys,
-        "sells_5m": sells,
-        "total_txns_5m": total_txns,
-        "buy_sell_ratio": round(ratio, 2),
-        "age_minutes": (
-            round(age_minutes, 1)
-            if age_minutes is not None else None
-        ),
-        "score": score,
-        "qualified": qualified,
-        "checks": checks,
-    }
 
 
 def send_telegram(message):
-    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
-        logging.warning(
-            "Credenziali Telegram non configurate."
-        )
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        print("Telegram non configurato: messaggio non inviato.")
+        print(message)
         return False
 
+    url = (
+        f"https://api.telegram.org/"
+        f"bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    )
+
     try:
-        response = session.post(
-            f"{TELEGRAM_API}/bot{TELEGRAM_TOKEN}/sendMessage",
+        response = requests.post(
+            url,
             json={
                 "chat_id": TELEGRAM_CHAT_ID,
                 "text": message,
                 "disable_web_page_preview": True,
             },
-            timeout=TIMEOUT,
+            timeout=20,
         )
         response.raise_for_status()
-        return response.json().get("ok") is True
 
-    except (requests.RequestException, ValueError) as exc:
-        logging.error("Invio Telegram fallito: %s", exc)
+        result = response.json()
+        if not result.get("ok"):
+            print("Errore Telegram:", result)
+            return False
+
+        return True
+
+    except requests.RequestException as error:
+        print("Errore invio Telegram:", error)
         return False
 
 
-def format_alert(item):
-    age = (
-        f"{item['age_minutes']:.0f} minuti"
-        if item["age_minutes"] is not None
-        else "non disponibile"
+# ============================================================
+# RACCOLTA COPPIE SOLANA DA DEXSCREENER
+# ============================================================
+
+def get_solana_pairs():
+    pairs_by_address = {}
+
+    for term in SEARCH_TERMS:
+        try:
+            response = requests.get(
+                DEX_SEARCH_URL,
+                params={"q": term},
+                headers=HEADERS,
+                timeout=25,
+            )
+            response.raise_for_status()
+
+            payload = response.json()
+            pairs = payload.get("pairs") or []
+
+            for pair in pairs:
+                if pair.get("chainId") != "solana":
+                    continue
+
+                address = pair.get("pairAddress")
+                if not address:
+                    continue
+
+                pairs_by_address[address] = pair
+
+            print(
+                f"Ricerca '{term}': "
+                f"{len(pairs)} risultati ricevuti"
+            )
+
+        except (requests.RequestException, ValueError) as error:
+            print(f"Errore ricerca '{term}': {error}")
+
+        # Evita di inviare troppe richieste tutte insieme.
+        time.sleep(0.25)
+
+    return list(pairs_by_address.values())
+
+
+# ============================================================
+# ANALISI DELLA SINGOLA COPPIA
+# ============================================================
+
+def evaluate_pair(pair):
+    base = pair.get("baseToken") or {}
+    quote = pair.get("quoteToken") or {}
+    liquidity = pair.get("liquidity") or {}
+    volume = pair.get("volume") or {}
+    price_change = pair.get("priceChange") or {}
+    transactions = pair.get("txns") or {}
+
+    name = base.get("name") or "Sconosciuto"
+    symbol = base.get("symbol") or "???"
+    token_address = base.get("address") or ""
+    pair_address = pair.get("pairAddress") or ""
+
+    dex_id = pair.get("dexId") or "DEX"
+    pair_url = pair.get("url") or (
+        f"https://dexscreener.com/solana/{pair_address}"
+    )
+
+    liquidity_usd = safe_float(liquidity.get("usd"))
+    volume_5m = safe_float(volume.get("m5"))
+    volume_1h = safe_float(volume.get("h1"))
+
+    change_5m = safe_float(price_change.get("m5"))
+    change_1h = safe_float(price_change.get("h1"))
+
+    txns_5m = transactions.get("m5") or {}
+    buys_5m = int(safe_float(txns_5m.get("buys")))
+    sells_5m = int(safe_float(txns_5m.get("sells")))
+    total_txns_5m = buys_5m + sells_5m
+
+    # Evita divisioni per zero.
+    if sells_5m > 0:
+        buy_sell_ratio = buys_5m / sells_5m
+    elif buys_5m > 0:
+        buy_sell_ratio = float("inf")
+    else:
+        buy_sell_ratio = 0.0
+
+    # Indicatore approssimativo: confronta il volume degli ultimi
+    # 5 minuti con un dodicesimo del volume dell'ultima ora.
+    average_5m_volume = volume_1h / 12 if volume_1h > 0 else 0
+
+    if average_5m_volume > 0:
+        volume_acceleration = volume_5m / average_5m_volume
+    else:
+        volume_acceleration = 0.0
+
+    # L'età può non essere disponibile per alcune coppie.
+    created_at = pair.get("pairCreatedAt")
+    age_minutes = None
+
+    if created_at:
+        try:
+            created_timestamp = float(created_at) / 1000
+            age_minutes = max(
+                0,
+                (now_utc().timestamp() - created_timestamp) / 60,
+            )
+        except (TypeError, ValueError, OverflowError):
+            age_minutes = None
+
+    # ========================================================
+    # FILTRI
+    # ========================================================
+
+    checks = {
+        "liquidita": liquidity_usd >= MIN_LIQUIDITY_USD,
+        "volume_5m": volume_5m >= MIN_VOLUME_5M_USD,
+        "volume_1h": volume_1h >= MIN_VOLUME_1H_USD,
+        "variazione_5m_min": change_5m >= MIN_CHANGE_5M_PCT,
+        "variazione_5m_max": change_5m <= MAX_CHANGE_5M_PCT,
+        "variazione_1h": change_1h >= MIN_CHANGE_1H_PCT,
+        "variazione_1h_max": change_1h <= MAX_CHANGE_1H_PCT,
+        "rapporto_acquisti_vendite": (
+            buy_sell_ratio >= MIN_BUY_SELL_RATIO
+        ),
+        "accelerazione_volume": (
+            volume_acceleration >= MIN_VOLUME_ACCELERATION
+        ),
+        "transazioni_5m": total_txns_5m >= MIN_TXNS_5M,
+
+        # FIX: se l'età non è disponibile, non scartare la coppia
+        # solo per l'assenza del timestamp. Se è disponibile,
+        # deve comunque avere almeno MIN_TOKEN_AGE_MINUTES.
+        "eta_minima": (
+            age_minutes is None
+            or age_minutes >= MIN_TOKEN_AGE_MINUTES
+        ),
+    }
+
+    qualified = all(checks.values())
+
+    return {
+        "name": name,
+        "symbol": symbol,
+        "token_address": token_address,
+        "pair_address": pair_address,
+        "quote_symbol": quote.get("symbol") or "",
+        "dex": dex_id,
+        "url": pair_url,
+        "price_usd": safe_float(pair.get("priceUsd")),
+        "liquidity_usd": round(liquidity_usd, 2),
+        "volume_5m_usd": round(volume_5m, 2),
+        "volume_1h_usd": round(volume_1h, 2),
+        "change_5m_pct": round(change_5m, 2),
+        "change_1h_pct": round(change_1h, 2),
+        "buys_5m": buys_5m,
+        "sells_5m": sells_5m,
+        "transactions_5m": total_txns_5m,
+        "buy_sell_ratio": (
+            round(buy_sell_ratio, 2)
+            if buy_sell_ratio != float("inf")
+            else "infinito"
+        ),
+        "volume_acceleration": round(volume_acceleration, 2),
+        "age_minutes": (
+            round(age_minutes, 1)
+            if age_minutes is not None
+            else None
+        ),
+        "checks": checks,
+        "qualified": qualified,
+    }
+
+
+# ============================================================
+# FORMATO MESSAGGI TELEGRAM
+# ============================================================
+
+def format_alert(token):
+    ratio = token["buy_sell_ratio"]
+    ratio_text = (
+        "∞" if ratio == "infinito" else str(ratio)
+    )
+
+    age = token["age_minutes"]
+    age_text = (
+        f"{age} minuti" if age is not None else "non disponibile"
     )
 
     return (
         "🚨 MEME PUMP RADAR AI\n\n"
-        f"Token: {item['name']} ({item['symbol']})\n"
-        f"Punteggio: {item['score']}/100\n"
-        f"Prezzo: ${item['price_usd']:.10f}\n"
-        f"Liquidita': ${item['liquidity_usd']:,.0f}\n"
-        f"Volume 5m: ${item['volume_5m']:,.0f}\n"
-        f"Volume 1h: ${item['volume_1h']:,.0f}\n"
-        f"Accelerazione volume: "
-        f"{item['volume_acceleration']:.2f}x\n"
-        f"Variazione 5m: {item['change_5m']:.2f}%\n"
-        f"Variazione 1h: {item['change_1h']:.2f}%\n"
-        f"Acquisti/vendite: {item['buy_sell_ratio']:.2f}\n"
-        f"Transazioni 5m: {item['total_txns_5m']}\n"
-        f"Eta' coppia: {age}\n\n"
-        f"DEX: {item['url']}\n"
-        f"Token address: {item['token_address']}\n\n"
-        "Filtri automatici superati. "
-        "La sicurezza del contratto non e' verificata "
-        "completamente e non e' garantito un rialzo."
+        f"🪙 {token['name']} ({token['symbol']})\n"
+        f"💵 Prezzo: ${token['price_usd']:.10f}\n"
+        f"💧 Liquidità: ${token['liquidity_usd']:,.0f}\n"
+        f"📊 Volume 5m: ${token['volume_5m_usd']:,.0f}\n"
+        f"📈 Volume 1h: ${token['volume_1h_usd']:,.0f}\n"
+        f"⚡ Variazione 5m: {token['change_5m_pct']}%\n"
+        f"📈 Variazione 1h: {token['change_1h_pct']}%\n"
+        f"🟢 Acquisti 5m: {token['buys_5m']}\n"
+        f"🔴 Vendite 5m: {token['sells_5m']}\n"
+        f"⚖️ Rapporto buy/sell: {ratio_text}\n"
+        f"🔥 Accelerazione volume: "
+        f"{token['volume_acceleration']}x\n"
+        f"⏱️ Età coppia: {age_text}\n"
+        f"🏦 DEX: {token['dex']}\n\n"
+        f"🔗 {token['url']}\n\n"
+        "⚠️ Segnale automatico, non garanzia di rialzo. "
+        "Controlla liquidità, sicurezza e rischio prima "
+        "di prendere qualsiasi decisione."
     )
 
+
+def format_summary(pairs_scanned, qualified_count, alerts_sent):
+    return (
+        "📡 MEME PUMP RADAR AI — RIEPILOGO\n\n"
+        f"🔎 Coppie analizzate: {pairs_scanned}\n"
+        f"✅ Coppie che superano i filtri: {qualified_count}\n"
+        f"📨 Nuovi alert inviati: {alerts_sent}\n"
+        f"🕒 Ora UTC: {iso_now()}\n\n"
+        "Il bot è stato eseguito. Questo riepilogo non "
+        "significa che siano necessariamente presenti "
+        "opportunità valide."
+    )
+
+
+# ============================================================
+# ESECUZIONE PRINCIPALE
+# ============================================================
 
 def main():
-    logging.info("Avvio Meme Pump Radar AI")
+    print("=" * 55)
+    print("MEME PUMP RADAR AI")
+    print("Avvio:", iso_now())
+    print("=" * 55)
 
-    state = load_json(STATE_FILE, {})
-    if not isinstance(state, dict):
-        state = {}
-
-    already_alerted = set(state.get("alerted_pairs", []))
-
-    pairs = get_solana_pairs()
-    logging.info("Coppie Solana raccolte: %d", len(pairs))
-
-    results = [evaluate_pair(pair) for pair in pairs]
-    results = [item for item in results if item["pair_id"]]
-
-    now = datetime.now(timezone.utc).isoformat()
-
-    for item in results:
-        item["updated_at"] = now
-
-    qualified = [
-        item for item in results if item["qualified"]
-    ]
-
-    qualified.sort(
-        key=lambda item: (
-            item["score"],
-            item["volume_5m"],
-            item["liquidity_usd"]
-        ),
-        reverse=True
+    state = load_json(
+        STATE_FILE,
+        {
+            "alerted_pairs": [],
+            "last_summary_timestamp": 0,
+        },
     )
 
-    save_json(DATA_FILE, {
-        "updated_at": now,
-        "pairs_scanned": len(results),
-        "qualified_count": len(qualified),
-        "pairs": results,
-    })
+    alerted_pairs = set(state.get("alerted_pairs", []))
+    last_summary_timestamp = safe_float(
+        state.get("last_summary_timestamp"), 0
+    )
 
-    sent_count = 0
+    pairs = get_solana_pairs()
+    analyzed = []
+    qualified = []
 
-    for item in qualified:
-        if item["pair_id"] in already_alerted:
+    for pair in pairs:
+        try:
+            token = evaluate_pair(pair)
+            analyzed.append(token)
+
+            if token["qualified"]:
+                qualified.append(token)
+
+        except Exception as error:
+            print("Errore analisi coppia:", error)
+
+    alerts_sent = 0
+    new_alerted_pairs = set(alerted_pairs)
+
+    for token in qualified:
+        pair_address = token["pair_address"]
+
+        if not pair_address or pair_address in alerted_pairs:
             continue
 
-        if sent_count >= MAX_ALERTS_PER_RUN:
-            break
+        message = format_alert(token)
 
-        if send_telegram(format_alert(item)):
-            already_alerted.add(item["pair_id"])
-            sent_count += 1
+        if send_telegram(message):
+            alerts_sent += 1
+            new_alerted_pairs.add(pair_address)
 
-    state["alerted_pairs"] = list(already_alerted)[-1000:]
-    state["last_run"] = now
-    state["last_pairs_scanned"] = len(results)
-    state["last_qualified_count"] = len(qualified)
-    state["last_alerts_sent"] = sent_count
+    current_timestamp = time.time()
+    summary_interval = SUMMARY_INTERVAL_MINUTES * 60
 
-    last_summary = state.get("last_summary_at")
-    send_summary = not last_summary
-
-    if last_summary:
-        try:
-            previous = datetime.fromisoformat(last_summary)
-            current = datetime.fromisoformat(now)
-            send_summary = (
-                current - previous
-            ).total_seconds() >= SUMMARY_INTERVAL_SECONDS
-        except (TypeError, ValueError):
-            send_summary = True
-
-    if send_summary:
-        summary = (
-            "🟢 MEME PUMP RADAR AI — RIEPILOGO\n\n"
-            "Stato: scansione completata\n"
-            f"Ultima scansione UTC: {now}\n"
-            f"Coppie analizzate: {len(results)}\n"
-            f"Segnali validi: {len(qualified)}\n"
-            f"Avvisi inviati in questa scansione: {sent_count}\n\n"
-            f"Liquidita' minima: ${MIN_LIQUIDITY_USD:,.0f}\n"
-            f"Volume minimo 5m: ${MIN_VOLUME_5M_USD:,.0f}\n"
-            f"Volume minimo 1h: ${MIN_VOLUME_1H_USD:,.0f}\n"
-            f"Accelerazione minima: {MIN_VOLUME_ACCELERATION:.1f}x\n"
-            f"Transazioni minime 5m: {MIN_TXNS_5M}\n\n"
-            "I segnali automatici non garantiscono "
-            "la sicurezza o un futuro rialzo."
+    if (
+        current_timestamp - last_summary_timestamp
+        >= summary_interval
+    ):
+        summary = format_summary(
+            pairs_scanned=len(analyzed),
+            qualified_count=len(qualified),
+            alerts_sent=alerts_sent,
         )
 
         if send_telegram(summary):
-            state["last_summary_at"] = now
-            logging.info("Riepilogo Telegram inviato.")
-        else:
-            logging.warning(
-                "Riepilogo non inviato; verra' ritentato."
-            )
+            last_summary_timestamp = current_timestamp
 
-    save_json(STATE_FILE, state)
+    # Mantiene uno storico limitato per evitare che il file cresca
+    # senza limiti.
+    saved_alerts = list(new_alerted_pairs)[-2000:]
 
-    logging.info(
-        "Fine scansione: coppie=%d, segnali=%d, alert_inviati=%d",
-        len(results), len(qualified), sent_count
+    save_json(
+        STATE_FILE,
+        {
+            "alerted_pairs": saved_alerts,
+            "last_summary_timestamp": last_summary_timestamp,
+            "updated_at": iso_now(),
+        },
     )
+
+    save_json(
+        DATA_FILE,
+        {
+            "updated_at": iso_now(),
+            "pairs_scanned": len(analyzed),
+            "qualified_count": len(qualified),
+            "alerts_sent": alerts_sent,
+            "pairs": analyzed,
+            "qualified_pairs": qualified,
+        },
+    )
+
+    print("Coppie analizzate:", len(analyzed))
+    print("Coppie che superano i filtri:", len(qualified))
+    print("Nuovi alert inviati:", alerts_sent)
+    print("Fine esecuzione:", iso_now())
 
 
 if __name__ == "__main__":
