@@ -1,116 +1,14 @@
 {
-  "updated_at": "2026-10-28T09:51:06.342071+00:00",
+  "updated_at": "2026-10-28T09:52:44.238339+00:00",
   "network": "solana",
-  "pairs_scanned": 139,
-  "api_verified_count": 139,
+  "pairs_scanned": 137,
+  "api_verified_count": 137,
   "api_verification_failed_count": 0,
-  "qualified_count": 2,
-  "alerts_sent": 2,
+  "qualified_count": 0,
+  "alerts_sent": 0,
   "min_liquidity_usd": 25000,
   "min_score": 6,
   "pairs": [
-    {
-      "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-      "symbol": "USELESS",
-      "name": "USELESS COIN",
-      "pair_address": "Q2sPHPdUWFMg7M7wwrQKLrn619cAucfRsmhVJffodSp",
-      "dex_id": "raydium",
-      "url": "https://dexscreener.com/solana/q2sphpduwfmg7m7wwrqklrn619caucfrsmhvjffodsp",
-      "price_usd": 0.1663,
-      "liquidity_usd": 4180844.13,
-      "volume_5m_usd": 3898.28,
-      "volume_1h_usd": 10570.64,
-      "buys_5m": 4,
-      "sells_5m": 5,
-      "txns_5m": 9,
-      "txns_1h": 45,
-      "price_change_5m_pct": 0.44,
-      "price_change_1h_pct": -0.26,
-      "pair_created_at": 1746886996000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": true,
-      "score": 7,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 5m almeno $1.000"
-        },
-        {
-          "points": 1,
-          "reason": "Volume 1h almeno $10.000"
-        },
-        {
-          "points": 2,
-          "reason": "Volume 1h in aumento di almeno il 20%"
-        },
-        {
-          "points": 1,
-          "reason": "Transazioni 5m in aumento di almeno il 20%"
-        },
-        {
-          "points": 1,
-          "reason": "Volume 5m superiore alla media oraria stimata"
-        },
-        {
-          "points": 1,
-          "reason": "Movimento prezzo positivo senza forte estensione"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:57.265695+00:00",
-      "last_alert_epoch": 1793181057.265723
-    },
-    {
-      "token_address": "2HcvsX12NyuLnhDXoU6yWL2XLcr3snCTQ7RhqVmZuCgr",
-      "symbol": "INVISIBLE",
-      "name": "Invisible Cat",
-      "pair_address": "4j3TQ21o45ipb4zDmBfQs4CcXwCyH6qEZfTQGBhdWwUw",
-      "dex_id": "pumpswap",
-      "url": "https://dexscreener.com/solana/4j3tq21o45ipb4zdmbfqs4ccxwcyh6qezftqgbhdwwuw",
-      "price_usd": 0.0001713,
-      "liquidity_usd": 37753.7,
-      "volume_5m_usd": 3695.98,
-      "volume_1h_usd": 16148.54,
-      "buys_5m": 8,
-      "sells_5m": 9,
-      "txns_5m": 17,
-      "txns_1h": 244,
-      "price_change_5m_pct": 1.12,
-      "price_change_1h_pct": 10.82,
-      "pair_created_at": 1793147142000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": true,
-      "score": 7,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 5m almeno $1.000"
-        },
-        {
-          "points": 1,
-          "reason": "Volume 1h almeno $10.000"
-        },
-        {
-          "points": 2,
-          "reason": "Volume 1h in aumento di almeno il 20%"
-        },
-        {
-          "points": 1,
-          "reason": "Transazioni 5m in aumento di almeno il 20%"
-        },
-        {
-          "points": 1,
-          "reason": "Volume 5m superiore alla media oraria stimata"
-        },
-        {
-          "points": 1,
-          "reason": "Movimento prezzo positivo senza forte estensione"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:43.567792+00:00",
-      "last_alert_epoch": 1793181043.5678217
-    },
     {
       "token_address": "7gPBGhQToUGnJfLf4W26m4EGZh8MqeeqwoLsUWhLpump",
       "symbol": "Spidcat",
@@ -118,16 +16,16 @@
       "pair_address": "Z6myMKbjzFQpFA4qa5LCPn75eFtG6ATEr1zcLyX9pqK",
       "dex_id": "pumpfun",
       "url": "https://dexscreener.com/solana/z6mymkbjzfqpfa4qa5lcpn75eftg6ater1zclyx9pqk",
-      "price_usd": 5.869e-06,
+      "price_usd": 5.816e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 5082.84,
-      "volume_1h_usd": 5082.84,
-      "buys_5m": 45,
-      "sells_5m": 22,
-      "txns_5m": 67,
-      "txns_1h": 67,
-      "price_change_5m_pct": 51.28,
-      "price_change_1h_pct": 51.28,
+      "volume_5m_usd": 4873.45,
+      "volume_1h_usd": 6803.81,
+      "buys_5m": 56,
+      "sells_5m": 30,
+      "txns_5m": 86,
+      "txns_1h": 100,
+      "price_change_5m_pct": 20.4,
+      "price_change_1h_pct": 49.92,
       "pair_created_at": 1793180794000,
       "verified": true,
       "verification_error": null,
@@ -155,31 +53,31 @@
           "reason": "Volume 5m superiore alla media oraria stimata"
         }
       ],
-      "updated_at": "2026-10-28T09:50:44.830744+00:00",
+      "updated_at": "2026-10-28T09:52:27.439497+00:00",
       "last_alert_epoch": 0
     },
     {
-      "token_address": "38Y1dhjDuyeYDAqREq3HdhtZR77VomBVBqTMpQiTgXc5",
-      "symbol": "Sunpepe",
-      "name": "Sunpepe",
-      "pair_address": "9EbmN8rCYrhgZvqmDxjXBCLMVcH2BT4AF15akGWk7u4a",
-      "dex_id": "pumpfun",
-      "url": "https://dexscreener.com/solana/9ebmn8rcyrhgzvqmdxjxbclmvch2bt4af15akgwk7u4a",
-      "price_usd": 2.206e-05,
-      "liquidity_usd": null,
-      "volume_5m_usd": 45452.67,
-      "volume_1h_usd": 107324.02,
-      "buys_5m": 661,
-      "sells_5m": 402,
-      "txns_5m": 1063,
-      "txns_1h": 2402,
-      "price_change_5m_pct": 5.82,
-      "price_change_1h_pct": 468.0,
-      "pair_created_at": 1793180414000,
+      "token_address": "2HcvsX12NyuLnhDXoU6yWL2XLcr3snCTQ7RhqVmZuCgr",
+      "symbol": "INVISIBLE",
+      "name": "Invisible Cat",
+      "pair_address": "4j3TQ21o45ipb4zDmBfQs4CcXwCyH6qEZfTQGBhdWwUw",
+      "dex_id": "pumpswap",
+      "url": "https://dexscreener.com/solana/4j3tq21o45ipb4zdmbfqs4ccxwcyh6qezftqgbhdwwuw",
+      "price_usd": 0.0001717,
+      "liquidity_usd": 37842.84,
+      "volume_5m_usd": 3595.22,
+      "volume_1h_usd": 16179.95,
+      "buys_5m": 11,
+      "sells_5m": 8,
+      "txns_5m": 19,
+      "txns_1h": 248,
+      "price_change_5m_pct": 5.44,
+      "price_change_1h_pct": 6.74,
+      "pair_created_at": 1793147142000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
-      "score": 6,
+      "score": 5,
       "score_details": [
         {
           "points": 1,
@@ -190,8 +88,94 @@
           "reason": "Volume 1h almeno $10.000"
         },
         {
-          "points": 2,
-          "reason": "Volume 1h in aumento di almeno il 20%"
+          "points": 1,
+          "reason": "Pressione acquisti superiore alle vendite"
+        },
+        {
+          "points": 1,
+          "reason": "Volume 5m superiore alla media oraria stimata"
+        },
+        {
+          "points": 1,
+          "reason": "Movimento prezzo positivo senza forte estensione"
+        }
+      ],
+      "updated_at": "2026-10-28T09:52:27.626311+00:00",
+      "last_alert_epoch": 1793181043.5678217
+    },
+    {
+      "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+      "symbol": "USELESS",
+      "name": "USELESS COIN",
+      "pair_address": "Q2sPHPdUWFMg7M7wwrQKLrn619cAucfRsmhVJffodSp",
+      "dex_id": "raydium",
+      "url": "https://dexscreener.com/solana/q2sphpduwfmg7m7wwrqklrn619caucfrsmhvjffodsp",
+      "price_usd": 0.1666,
+      "liquidity_usd": 4186355.62,
+      "volume_5m_usd": 3992.71,
+      "volume_1h_usd": 10667.05,
+      "buys_5m": 3,
+      "sells_5m": 7,
+      "txns_5m": 10,
+      "txns_1h": 47,
+      "price_change_5m_pct": 0.41,
+      "price_change_1h_pct": -0.13,
+      "pair_created_at": 1746886996000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 4,
+      "score_details": [
+        {
+          "points": 1,
+          "reason": "Volume 5m almeno $1.000"
+        },
+        {
+          "points": 1,
+          "reason": "Volume 1h almeno $10.000"
+        },
+        {
+          "points": 1,
+          "reason": "Volume 5m superiore alla media oraria stimata"
+        },
+        {
+          "points": 1,
+          "reason": "Movimento prezzo positivo senza forte estensione"
+        }
+      ],
+      "updated_at": "2026-10-28T09:52:37.412006+00:00",
+      "last_alert_epoch": 1793181057.265723
+    },
+    {
+      "token_address": "33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "symbol": "DOPE",
+      "name": "Doge Pepe",
+      "pair_address": "6iep3EgqksbZwgzMBCyAJtiVtVYkCgL9BnPBEwLR8AGQ",
+      "dex_id": "pumpswap",
+      "url": "https://dexscreener.com/solana/6iep3egqksbzwgzmbcyajtivtvykcgl9bnpbewlr8agq",
+      "price_usd": 0.002413,
+      "liquidity_usd": 208085.76,
+      "volume_5m_usd": 559.75,
+      "volume_1h_usd": 15515.8,
+      "buys_5m": 4,
+      "sells_5m": 3,
+      "txns_5m": 7,
+      "txns_1h": 132,
+      "price_change_5m_pct": 0.08,
+      "price_change_1h_pct": -4.85,
+      "pair_created_at": 1791725588000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 4,
+      "score_details": [
+        {
+          "points": 1,
+          "reason": "Volume 1h almeno $10.000"
+        },
+        {
+          "points": 1,
+          "reason": "Transazioni 5m in aumento di almeno il 20%"
         },
         {
           "points": 1,
@@ -199,30 +183,73 @@
         },
         {
           "points": 1,
-          "reason": "Volume 5m superiore alla media oraria stimata"
+          "reason": "Movimento prezzo positivo senza forte estensione"
         }
       ],
-      "updated_at": "2026-10-28T09:50:47.677324+00:00",
+      "updated_at": "2026-10-28T09:52:22.721635+00:00",
       "last_alert_epoch": 0
     },
     {
-      "token_address": "89ngGGtJmmC73yQmpSAzMXSnCW1WB2QEEC1TeJMzkz11",
-      "symbol": "TREPE",
-      "name": "TRON PEPE",
-      "pair_address": "76ZqCg2ZCYZQZpFVG225ZQXdk8gdXn52dUfcoKbojLWU",
+      "token_address": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+      "symbol": "JOB",
+      "name": "DogWifJob",
+      "pair_address": "HAUVBmNthCFmG9SRXMvZ1GAXNpU955hkPdSAsC2cx4C8",
+      "dex_id": "pumpswap",
+      "url": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8",
+      "price_usd": 0.002791,
+      "liquidity_usd": 144142.57,
+      "volume_5m_usd": 3497.38,
+      "volume_1h_usd": 35340.33,
+      "buys_5m": 21,
+      "sells_5m": 12,
+      "txns_5m": 33,
+      "txns_1h": 484,
+      "price_change_5m_pct": -4.91,
+      "price_change_1h_pct": 24.38,
+      "pair_created_at": 1793128408000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 4,
+      "score_details": [
+        {
+          "points": 1,
+          "reason": "Volume 5m almeno $1.000"
+        },
+        {
+          "points": 1,
+          "reason": "Volume 1h almeno $10.000"
+        },
+        {
+          "points": 1,
+          "reason": "Transazioni 5m in aumento di almeno il 20%"
+        },
+        {
+          "points": 1,
+          "reason": "Pressione acquisti superiore alle vendite"
+        }
+      ],
+      "updated_at": "2026-10-28T09:52:22.534439+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "38Y1dhjDuyeYDAqREq3HdhtZR77VomBVBqTMpQiTgXc5",
+      "symbol": "Sunpepe",
+      "name": "Sunpepe",
+      "pair_address": "9EbmN8rCYrhgZvqmDxjXBCLMVcH2BT4AF15akGWk7u4a",
       "dex_id": "pumpfun",
-      "url": "https://dexscreener.com/solana/76zqcg2zcyzqzpfvg225zqxdk8gdxn52dufcokbojlwu",
-      "price_usd": 5.538e-06,
+      "url": "https://dexscreener.com/solana/9ebmn8rcyrhgzvqmdxjxbclmvch2bt4af15akgwk7u4a",
+      "price_usd": 2.629e-05,
       "liquidity_usd": null,
-      "volume_5m_usd": 8856.29,
-      "volume_1h_usd": 15776.18,
-      "buys_5m": 104,
-      "sells_5m": 85,
-      "txns_5m": 189,
-      "txns_1h": 333,
-      "price_change_5m_pct": -34.31,
-      "price_change_1h_pct": 44.34,
-      "pair_created_at": 1793106718000,
+      "volume_5m_usd": 43136.13,
+      "volume_1h_usd": 115856.85,
+      "buys_5m": 644,
+      "sells_5m": 348,
+      "txns_5m": 992,
+      "txns_1h": 2625,
+      "price_change_5m_pct": 70.34,
+      "price_change_1h_pct": 577.0,
+      "pair_created_at": 1793180414000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
@@ -245,183 +272,27 @@
           "reason": "Volume 5m superiore alla media oraria stimata"
         }
       ],
-      "updated_at": "2026-10-28T09:50:47.941259+00:00",
+      "updated_at": "2026-10-28T09:52:30.225475+00:00",
       "last_alert_epoch": 0
     },
     {
-      "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
-      "symbol": "USELESS",
-      "name": "USELESS COIN",
-      "pair_address": "9Ux4vtd8juEH4NMF4ae3tXYpKBdeCUUipX8z3EficKme",
-      "dex_id": "meteora",
-      "url": "https://dexscreener.com/solana/9ux4vtd8jueh4nmf4ae3txypkbdecuuipx8z3efickme",
-      "price_usd": 0.1662,
-      "liquidity_usd": 1357375.92,
-      "volume_5m_usd": 0.07,
-      "volume_1h_usd": 0.4,
-      "buys_5m": 2,
-      "sells_5m": 0,
-      "txns_5m": 2,
-      "txns_1h": 5,
-      "price_change_5m_pct": 0.2,
-      "price_change_1h_pct": -0.2,
-      "pair_created_at": 1747825176000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 3,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Transazioni 5m in aumento di almeno il 20%"
-        },
-        {
-          "points": 1,
-          "reason": "Volume 5m superiore alla media oraria stimata"
-        },
-        {
-          "points": 1,
-          "reason": "Movimento prezzo positivo senza forte estensione"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:59.857021+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-      "symbol": "GATO",
-      "name": "GTA6CAT",
-      "pair_address": "5E3dXLXGwmTDCokA51WYYaKttjFZBwqCoyUHBUi5gt2m",
-      "dex_id": "pumpswap",
-      "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
-      "price_usd": 0.00417,
-      "liquidity_usd": 203891.36,
-      "volume_5m_usd": 590.98,
-      "volume_1h_usd": 30667.27,
-      "buys_5m": 6,
-      "sells_5m": 4,
-      "txns_5m": 10,
-      "txns_1h": 200,
-      "price_change_5m_pct": 0.31,
-      "price_change_1h_pct": -4.72,
-      "pair_created_at": 1787660841000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 3,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 1h almeno $10.000"
-        },
-        {
-          "points": 1,
-          "reason": "Pressione acquisti superiore alle vendite"
-        },
-        {
-          "points": 1,
-          "reason": "Movimento prezzo positivo senza forte estensione"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:43.129354+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "9v4airX4Vt45ADFg3QQG9pXX68LkX9Big4GiYEuJpump",
-      "symbol": "CHICO",
-      "name": "GTA6DOG",
-      "pair_address": "EZtwXZFmNS9sJjGVyCH35i6e3oywSDJDEQL9cBzGFDap",
-      "dex_id": "pumpswap",
-      "url": "https://dexscreener.com/solana/eztwxzfmns9sjjgvych35i6e3oywsdjdeql9cbzgfdap",
-      "price_usd": 0.004492,
-      "liquidity_usd": 192786.56,
-      "volume_5m_usd": 4469.9,
-      "volume_1h_usd": 64008.24,
-      "buys_5m": 25,
-      "sells_5m": 19,
-      "txns_5m": 44,
-      "txns_1h": 688,
-      "price_change_5m_pct": -0.21,
-      "price_change_1h_pct": -9.73,
-      "pair_created_at": 1793058715000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 3,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 5m almeno $1.000"
-        },
-        {
-          "points": 1,
-          "reason": "Volume 1h almeno $10.000"
-        },
-        {
-          "points": 1,
-          "reason": "Pressione acquisti superiore alle vendite"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:36.832366+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
-      "symbol": "JOB",
-      "name": "DogWifJob",
-      "pair_address": "HAUVBmNthCFmG9SRXMvZ1GAXNpU955hkPdSAsC2cx4C8",
-      "dex_id": "pumpswap",
-      "url": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8",
-      "price_usd": 0.002926,
-      "liquidity_usd": 147488.8,
-      "volume_5m_usd": 1079.12,
-      "volume_1h_usd": 32937.21,
-      "buys_5m": 18,
-      "sells_5m": 5,
-      "txns_5m": 23,
-      "txns_1h": 476,
-      "price_change_5m_pct": 1.63,
-      "price_change_1h_pct": 28.72,
-      "pair_created_at": 1793128408000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 3,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 5m almeno $1.000"
-        },
-        {
-          "points": 1,
-          "reason": "Volume 1h almeno $10.000"
-        },
-        {
-          "points": 1,
-          "reason": "Pressione acquisti superiore alle vendite"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:37.001269+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "FZAEGkZxMpZN8v2XMZGyoAJH89r3aHJRAikwZXcWZz9R",
-      "symbol": "MOGZCAT",
-      "name": "Mogzcat",
-      "pair_address": "4ocvQcj69k4gBVDPGbTzouQxRdn9uvvuXvXxaxsBWwnY",
+      "token_address": "EHnUqHd7FpayU7hVJLXWiUq4PzNmqFwvUCKnDbGJDwp3",
+      "symbol": "MCAT",
+      "name": "Mog Cat",
+      "pair_address": "4UonxyCx3pCxvt342zkZ4irFKouFYErZtfKLqQbfPBn1",
       "dex_id": "meteoradbc",
-      "url": "https://dexscreener.com/solana/4ocvqcj69k4gbvdpgbtzouqxrdn9uvvuxvxxaxsbwwny",
-      "price_usd": 1.001e-05,
+      "url": "https://dexscreener.com/solana/4uonxycx3pcxvt342zkz4irfkoufyerztfklqqbfpbn1",
+      "price_usd": 6.311e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 836.39,
-      "volume_1h_usd": 1972.39,
-      "buys_5m": 16,
-      "sells_5m": 0,
-      "txns_5m": 16,
-      "txns_1h": 40,
-      "price_change_5m_pct": 31.71,
-      "price_change_1h_pct": 69.98,
-      "pair_created_at": 1793116239000,
+      "volume_5m_usd": 532.68,
+      "volume_1h_usd": 1151.48,
+      "buys_5m": 10,
+      "sells_5m": 1,
+      "txns_5m": 11,
+      "txns_1h": 27,
+      "price_change_5m_pct": 20.62,
+      "price_change_1h_pct": 32.97,
+      "pair_created_at": 1793113840000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
@@ -440,7 +311,46 @@
           "reason": "Volume 5m superiore alla media oraria stimata"
         }
       ],
-      "updated_at": "2026-10-28T09:50:44.308898+00:00",
+      "updated_at": "2026-10-28T09:52:28.018461+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "89ngGGtJmmC73yQmpSAzMXSnCW1WB2QEEC1TeJMzkz11",
+      "symbol": "TREPE",
+      "name": "TRON PEPE",
+      "pair_address": "76ZqCg2ZCYZQZpFVG225ZQXdk8gdXn52dUfcoKbojLWU",
+      "dex_id": "pumpfun",
+      "url": "https://dexscreener.com/solana/76zqcg2zcyzqzpfvg225zqxdk8gdxn52dufcokbojlwu",
+      "price_usd": 5.33e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 4676.67,
+      "volume_1h_usd": 16352.25,
+      "buys_5m": 70,
+      "sells_5m": 59,
+      "txns_5m": 129,
+      "txns_1h": 361,
+      "price_change_5m_pct": -45.37,
+      "price_change_1h_pct": 39.34,
+      "pair_created_at": 1793106718000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 3,
+      "score_details": [
+        {
+          "points": 1,
+          "reason": "Volume 5m almeno $1.000"
+        },
+        {
+          "points": 1,
+          "reason": "Volume 1h almeno $10.000"
+        },
+        {
+          "points": 1,
+          "reason": "Volume 5m superiore alla media oraria stimata"
+        }
+      ],
+      "updated_at": "2026-10-28T09:52:30.423575+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -450,16 +360,16 @@
       "pair_address": "5D8t3CUDvQ8XMX3vPTtfx3P5YBjun2qmfzvVxFGYX5aL",
       "dex_id": "pumpfun",
       "url": "https://dexscreener.com/solana/5d8t3cudvq8xmx3vpttfx3p5ybjun2qmfzvvxfgyx5al",
-      "price_usd": 6.03e-06,
+      "price_usd": 5.86e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 16326.58,
-      "volume_1h_usd": 37065.31,
-      "buys_5m": 258,
-      "sells_5m": 220,
-      "txns_5m": 478,
-      "txns_1h": 795,
-      "price_change_5m_pct": -36.54,
-      "price_change_1h_pct": 55.22,
+      "volume_5m_usd": 10450.36,
+      "volume_1h_usd": 37971.02,
+      "buys_5m": 172,
+      "sells_5m": 162,
+      "txns_5m": 334,
+      "txns_1h": 837,
+      "price_change_5m_pct": -41.84,
+      "price_change_1h_pct": 50.86,
       "pair_created_at": 1793180639000,
       "verified": true,
       "verification_error": null,
@@ -479,46 +389,7 @@
           "reason": "Volume 5m superiore alla media oraria stimata"
         }
       ],
-      "updated_at": "2026-10-28T09:50:48.188931+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "3RoXBaP3tbXFUQSpt1wRZBPGZHronBWwA1nLerfhpump",
-      "symbol": "PTW",
-      "name": "Pepe Taped Wall",
-      "pair_address": "77r13jrbWRkcnYkGzgG78dwFokd9fdvimWQ6dnFGE8bF",
-      "dex_id": "pumpfun",
-      "url": "https://dexscreener.com/solana/77r13jrbwrkcnykgzgg78dwfokd9fdvimwq6dnfge8bf",
-      "price_usd": 4.018e-06,
-      "liquidity_usd": null,
-      "volume_5m_usd": 1722.79,
-      "volume_1h_usd": 1722.79,
-      "buys_5m": 17,
-      "sells_5m": 12,
-      "txns_5m": 29,
-      "txns_1h": 29,
-      "price_change_5m_pct": 15.76,
-      "price_change_1h_pct": 15.76,
-      "pair_created_at": 1793180865000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 3,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 5m almeno $1.000"
-        },
-        {
-          "points": 1,
-          "reason": "Pressione acquisti superiore alle vendite"
-        },
-        {
-          "points": 1,
-          "reason": "Volume 5m superiore alla media oraria stimata"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:48.743675+00:00",
+      "updated_at": "2026-10-28T09:52:30.649630+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -528,16 +399,16 @@
       "pair_address": "xYp5LP1SogUSTXwBVrJ7VueDCLV71A3JDTdgEMFzfHg",
       "dex_id": "pumpfun",
       "url": "https://dexscreener.com/solana/xyp5lp1sogustxwbvrj7vuedclv71a3jdtdgemfzfhg",
-      "price_usd": 4.625e-06,
+      "price_usd": 4.395e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 1774.95,
-      "volume_1h_usd": 1947.76,
-      "buys_5m": 20,
-      "sells_5m": 13,
-      "txns_5m": 33,
-      "txns_1h": 35,
-      "price_change_5m_pct": 44.75,
-      "price_change_1h_pct": 54.14,
+      "volume_5m_usd": 1898.82,
+      "volume_1h_usd": 2287.05,
+      "buys_5m": 19,
+      "sells_5m": 15,
+      "txns_5m": 34,
+      "txns_1h": 40,
+      "price_change_5m_pct": 36.16,
+      "price_change_1h_pct": 46.49,
       "pair_created_at": null,
       "verified": true,
       "verification_error": null,
@@ -557,7 +428,7 @@
           "reason": "Volume 5m superiore alla media oraria stimata"
         }
       ],
-      "updated_at": "2026-10-28T09:50:48.987259+00:00",
+      "updated_at": "2026-10-28T09:52:30.847251+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -567,16 +438,16 @@
       "pair_address": "5zpyutJu9ee6jFymDGoK7F6S5Kczqtc9FomP3ueKuyA9",
       "dex_id": "orca",
       "url": "https://dexscreener.com/solana/5zpyutju9ee6jfymdgok7f6s5kczqtc9fomp3uekuya9",
-      "price_usd": 3.107e-06,
-      "liquidity_usd": 312910.84,
-      "volume_5m_usd": 231.81,
-      "volume_1h_usd": 3923.12,
-      "buys_5m": 2,
-      "sells_5m": 38,
-      "txns_5m": 40,
-      "txns_1h": 368,
-      "price_change_5m_pct": 0.09,
-      "price_change_1h_pct": 0.45,
+      "price_usd": 3.11e-06,
+      "liquidity_usd": 313180.09,
+      "volume_5m_usd": 296.97,
+      "volume_1h_usd": 3989.57,
+      "buys_5m": 5,
+      "sells_5m": 46,
+      "txns_5m": 51,
+      "txns_1h": 378,
+      "price_change_5m_pct": 0.21,
+      "price_change_1h_pct": 0.57,
       "pair_created_at": 1671980424000,
       "verified": true,
       "verification_error": null,
@@ -592,27 +463,27 @@
           "reason": "Movimento prezzo positivo senza forte estensione"
         }
       ],
-      "updated_at": "2026-10-28T09:50:57.599376+00:00",
+      "updated_at": "2026-10-28T09:52:37.602562+00:00",
       "last_alert_epoch": 0
     },
     {
-      "token_address": "33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
-      "symbol": "DOPE",
-      "name": "Doge Pepe",
-      "pair_address": "6iep3EgqksbZwgzMBCyAJtiVtVYkCgL9BnPBEwLR8AGQ",
+      "token_address": "9v4airX4Vt45ADFg3QQG9pXX68LkX9Big4GiYEuJpump",
+      "symbol": "CHICO",
+      "name": "GTA6DOG",
+      "pair_address": "EZtwXZFmNS9sJjGVyCH35i6e3oywSDJDEQL9cBzGFDap",
       "dex_id": "pumpswap",
-      "url": "https://dexscreener.com/solana/6iep3egqksbzwgzmbcyajtivtvykcgl9bnpbewlr8agq",
-      "price_usd": 0.002366,
-      "liquidity_usd": 205904.69,
-      "volume_5m_usd": 454.07,
-      "volume_1h_usd": 15417.38,
-      "buys_5m": 1,
-      "sells_5m": 3,
-      "txns_5m": 4,
-      "txns_1h": 132,
-      "price_change_5m_pct": -1.86,
-      "price_change_1h_pct": -6.59,
-      "pair_created_at": 1791725588000,
+      "url": "https://dexscreener.com/solana/eztwxzfmns9sjjgvych35i6e3oywsdjdeql9cbzgfdap",
+      "price_usd": 0.004412,
+      "liquidity_usd": 191044.46,
+      "volume_5m_usd": 4925.9,
+      "volume_1h_usd": 64943.64,
+      "buys_5m": 26,
+      "sells_5m": 24,
+      "txns_5m": 50,
+      "txns_1h": 695,
+      "price_change_5m_pct": -1.52,
+      "price_change_1h_pct": -10.57,
+      "pair_created_at": 1793058715000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
@@ -620,14 +491,49 @@
       "score_details": [
         {
           "points": 1,
-          "reason": "Volume 1h almeno $10.000"
+          "reason": "Volume 5m almeno $1.000"
         },
         {
           "points": 1,
-          "reason": "Transazioni 5m in aumento di almeno il 20%"
+          "reason": "Volume 1h almeno $10.000"
         }
       ],
-      "updated_at": "2026-10-28T09:50:48.433066+00:00",
+      "updated_at": "2026-10-28T09:52:22.154770+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT",
+      "symbol": "FEELSGOOD",
+      "name": "Feels Good Man",
+      "pair_address": "8V79sJMPkRuX2EmzBS8uKmfDrCLAbszboC4eJ5Kowvc5",
+      "dex_id": "raydium",
+      "url": "https://dexscreener.com/solana/8v79sjmpkrux2emzbs8ukmfdrclabszboc4ej5kowvc5",
+      "price_usd": 0.001318,
+      "liquidity_usd": 139330.51,
+      "volume_5m_usd": 222.44,
+      "volume_1h_usd": 3188.85,
+      "buys_5m": 3,
+      "sells_5m": 0,
+      "txns_5m": 3,
+      "txns_1h": 25,
+      "price_change_5m_pct": 0.77,
+      "price_change_1h_pct": 7.48,
+      "pair_created_at": 1789767410000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 2,
+      "score_details": [
+        {
+          "points": 1,
+          "reason": "Transazioni 5m in aumento di almeno il 20%"
+        },
+        {
+          "points": 1,
+          "reason": "Movimento prezzo positivo senza forte estensione"
+        }
+      ],
+      "updated_at": "2026-10-28T09:52:31.055461+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -662,7 +568,7 @@
           "reason": "Movimento prezzo positivo senza forte estensione"
         }
       ],
-      "updated_at": "2026-10-28T09:51:00.107465+00:00",
+      "updated_at": "2026-10-28T09:52:39.494681+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -672,16 +578,16 @@
       "pair_address": "6CFZUBpujRWymB5doXuAjrweHT91Ext6TQe2pGEmzk2W",
       "dex_id": "pumpswap",
       "url": "https://dexscreener.com/solana/6cfzubpujrwymb5doxuajrweht91ext6tqe2pgemzk2w",
-      "price_usd": 0.001091,
-      "liquidity_usd": 87757.45,
-      "volume_5m_usd": 185.42,
-      "volume_1h_usd": 4706.99,
-      "buys_5m": 21,
-      "sells_5m": 13,
-      "txns_5m": 34,
-      "txns_1h": 488,
-      "price_change_5m_pct": 0.4,
-      "price_change_1h_pct": 14.24,
+      "price_usd": 0.001094,
+      "liquidity_usd": 87850.22,
+      "volume_5m_usd": 183.57,
+      "volume_1h_usd": 4694.79,
+      "buys_5m": 23,
+      "sells_5m": 10,
+      "txns_5m": 33,
+      "txns_1h": 486,
+      "price_change_5m_pct": 1.63,
+      "price_change_1h_pct": 16.08,
       "pair_created_at": 1792980567000,
       "verified": true,
       "verification_error": null,
@@ -697,62 +603,27 @@
           "reason": "Movimento prezzo positivo senza forte estensione"
         }
       ],
-      "updated_at": "2026-10-28T09:50:49.520314+00:00",
+      "updated_at": "2026-10-28T09:52:31.252897+00:00",
       "last_alert_epoch": 0
     },
     {
-      "token_address": "BqVHWpwUDgMik5gbTciFfozadpE2oZth5bxCDrgbDt52",
-      "symbol": "OPOS",
-      "name": "Only Possible On Solana",
-      "pair_address": "2VbVHpPHHKY57ZRjabaADg67dgie77ebyPBShXTLwcCt",
-      "dex_id": "meteora",
-      "url": "https://dexscreener.com/solana/2vbvhpphhky57zrjabaadg67dgie77ebypbshxtlwcct",
-      "price_usd": 0.174,
-      "liquidity_usd": 185.5,
-      "volume_5m_usd": 0.25,
-      "volume_1h_usd": 0.25,
-      "buys_5m": 0,
-      "sells_5m": 1,
-      "txns_5m": 1,
-      "txns_1h": 1,
-      "price_change_5m_pct": 0.58,
-      "price_change_1h_pct": 0.58,
-      "pair_created_at": 1727025411000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 2,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 5m superiore alla media oraria stimata"
-        },
-        {
-          "points": 1,
-          "reason": "Movimento prezzo positivo senza forte estensione"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:56.248425+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "8oeFEZJCdrvqattYvEQW3DSq7Ex5CNQ6S8o3TmcbCqC1",
-      "symbol": "SUNDOG",
-      "name": "Sundog",
-      "pair_address": "ENtdh2CRiY2RQSX6vQEjiFQKnnVx3UFfvfYfncQqHmhL",
+      "token_address": "9dXPgyPVpfxVYRtsBYaENQF7qAPEtWQXykQeQxr9pump",
+      "symbol": "Solanaween",
+      "name": "Solanaween",
+      "pair_address": "CzR1WZufHW2dKrSqfBnV7e36SXKSqdzfjQjQs2xmPqAm",
       "dex_id": "pumpfun",
-      "url": "https://dexscreener.com/solana/entdh2criy2rqsx6vqejifqknnvx3uffvfyfncqqhmhl",
-      "price_usd": 4.559e-06,
+      "url": "https://dexscreener.com/solana/czr1wzufhw2dkrsqfbnv7e36sxksqdzfjqjqs2xmpqam",
+      "price_usd": 6.104e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 7900.32,
-      "volume_1h_usd": 7900.32,
-      "buys_5m": 102,
-      "sells_5m": 88,
-      "txns_5m": 190,
-      "txns_1h": 190,
-      "price_change_5m_pct": 17.18,
-      "price_change_1h_pct": 17.18,
-      "pair_created_at": 1793180786000,
+      "volume_5m_usd": 151.67,
+      "volume_1h_usd": 223.73,
+      "buys_5m": 1,
+      "sells_5m": 2,
+      "txns_5m": 3,
+      "txns_1h": 15,
+      "price_change_5m_pct": -4.6,
+      "price_change_1h_pct": -5.16,
+      "pair_created_at": null,
       "verified": true,
       "verification_error": null,
       "qualified": false,
@@ -760,14 +631,49 @@
       "score_details": [
         {
           "points": 1,
-          "reason": "Volume 5m almeno $1.000"
+          "reason": "Transazioni 5m in aumento di almeno il 20%"
         },
         {
           "points": 1,
           "reason": "Volume 5m superiore alla media oraria stimata"
         }
       ],
-      "updated_at": "2026-10-28T09:50:37.486272+00:00",
+      "updated_at": "2026-10-28T09:52:18.590762+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "9vifzf3mNYXjAbTczZQbtSz4k1AM8Xhms7LvqUXjKdog",
+      "symbol": "DOG",
+      "name": "contract address dog",
+      "pair_address": "DSfhT8Bngd6YnBv41QF8DbEspfH2DKczGA9ptJ5GqgEd",
+      "dex_id": "pumpfun",
+      "url": "https://dexscreener.com/solana/dsfht8bngd6ynbv41qf8dbespfh2dkczga9ptj5gqged",
+      "price_usd": 2.448e-05,
+      "liquidity_usd": null,
+      "volume_5m_usd": 425.21,
+      "volume_1h_usd": 937.54,
+      "buys_5m": 1,
+      "sells_5m": 3,
+      "txns_5m": 4,
+      "txns_1h": 49,
+      "price_change_5m_pct": -7.77,
+      "price_change_1h_pct": -10.58,
+      "pair_created_at": 1793117615000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 2,
+      "score_details": [
+        {
+          "points": 1,
+          "reason": "Transazioni 5m in aumento di almeno il 20%"
+        },
+        {
+          "points": 1,
+          "reason": "Volume 5m superiore alla media oraria stimata"
+        }
+      ],
+      "updated_at": "2026-10-28T09:52:22.353069+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -777,16 +683,16 @@
       "pair_address": "2amYmjb1k9Q1XWrvbVaGpsaYtgxA7uAdijNLjEHUYcjs",
       "dex_id": "pumpfun",
       "url": "https://dexscreener.com/solana/2amymjb1k9q1xwrvbvagpsaytgxa7uadijnljehuycjs",
-      "price_usd": 9.071e-06,
+      "price_usd": 9.473e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 8008.68,
-      "volume_1h_usd": 91611.61,
-      "buys_5m": 96,
-      "sells_5m": 116,
-      "txns_5m": 212,
-      "txns_1h": 2429,
-      "price_change_5m_pct": -32.24,
-      "price_change_1h_pct": 134.0,
+      "volume_5m_usd": 4798.95,
+      "volume_1h_usd": 92001.85,
+      "buys_5m": 81,
+      "sells_5m": 85,
+      "txns_5m": 166,
+      "txns_1h": 2442,
+      "price_change_5m_pct": 44.09,
+      "price_change_1h_pct": 144.0,
       "pair_created_at": 1793179257000,
       "verified": true,
       "verification_error": null,
@@ -802,27 +708,27 @@
           "reason": "Volume 1h almeno $10.000"
         }
       ],
-      "updated_at": "2026-10-28T09:50:43.366532+00:00",
+      "updated_at": "2026-10-28T09:52:27.253269+00:00",
       "last_alert_epoch": 0
     },
     {
-      "token_address": "EHnUqHd7FpayU7hVJLXWiUq4PzNmqFwvUCKnDbGJDwp3",
-      "symbol": "MCAT",
-      "name": "Mog Cat",
-      "pair_address": "4UonxyCx3pCxvt342zkZ4irFKouFYErZtfKLqQbfPBn1",
+      "token_address": "FZAEGkZxMpZN8v2XMZGyoAJH89r3aHJRAikwZXcWZz9R",
+      "symbol": "MOGZCAT",
+      "name": "Mogzcat",
+      "pair_address": "4ocvQcj69k4gBVDPGbTzouQxRdn9uvvuXvXxaxsBWwnY",
       "dex_id": "meteoradbc",
-      "url": "https://dexscreener.com/solana/4uonxycx3pcxvt342zkz4irfkoufyerztfklqqbfpbn1",
-      "price_usd": 6.165e-06,
+      "url": "https://dexscreener.com/solana/4ocvqcj69k4gbvdpgbtzouqxrdn9uvvuxvxxaxsbwwny",
+      "price_usd": 1.092e-05,
       "liquidity_usd": null,
-      "volume_5m_usd": 459.7,
-      "volume_1h_usd": 978.05,
-      "buys_5m": 9,
-      "sells_5m": 0,
-      "txns_5m": 9,
-      "txns_1h": 23,
-      "price_change_5m_pct": 20.63,
-      "price_change_1h_pct": 29.9,
-      "pair_created_at": 1793113840000,
+      "volume_5m_usd": 587.43,
+      "volume_1h_usd": 2281.1,
+      "buys_5m": 12,
+      "sells_5m": 1,
+      "txns_5m": 13,
+      "txns_1h": 44,
+      "price_change_5m_pct": 17.21,
+      "price_change_1h_pct": 85.33,
+      "pair_created_at": 1793116239000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
@@ -837,93 +743,58 @@
           "reason": "Volume 5m superiore alla media oraria stimata"
         }
       ],
-      "updated_at": "2026-10-28T09:50:44.576205+00:00",
+      "updated_at": "2026-10-28T09:52:27.823195+00:00",
       "last_alert_epoch": 0
     },
     {
-      "token_address": "8FDmA39SFLMEhPWgV3b1VRVQWaUTmHGHFfiBhxjUpump",
-      "symbol": "BP26",
-      "name": "Solana BreakPoint 2026",
-      "pair_address": "7kgJY3QrHXKhN8yPqDgbhogTTSNqjw3NtFLXGYvA84xR",
-      "dex_id": "pumpfun",
-      "url": "https://dexscreener.com/solana/7kgjy3qrhxkhn8ypqdgbhogttsnqjw3ntflxgyva84xr",
-      "price_usd": 3.06e-06,
+      "token_address": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+      "symbol": "GATO",
+      "name": "GTA6CAT",
+      "pair_address": "5E3dXLXGwmTDCokA51WYYaKttjFZBwqCoyUHBUi5gt2m",
+      "dex_id": "pumpswap",
+      "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
+      "price_usd": 0.004156,
+      "liquidity_usd": 203683.52,
+      "volume_5m_usd": 579.96,
+      "volume_1h_usd": 30590.74,
+      "buys_5m": 5,
+      "sells_5m": 5,
+      "txns_5m": 10,
+      "txns_1h": 201,
+      "price_change_5m_pct": -0.99,
+      "price_change_1h_pct": -4.86,
+      "pair_created_at": 1787660841000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 1,
+      "score_details": [
+        {
+          "points": 1,
+          "reason": "Volume 1h almeno $10.000"
+        }
+      ],
+      "updated_at": "2026-10-28T09:52:27.068255+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "4TXKbeYb8wZcJ9MsYwKN4HEqwHCnx3V9i8rsjYbt7ZYD",
+      "symbol": "MOGCAT",
+      "name": "MOG CAT",
+      "pair_address": "EtPmdgqbdf9cdHurnM3U7Hj3LRL5JC4kPPZtvD1pynfB",
+      "dex_id": "meteoradbc",
+      "url": "https://dexscreener.com/solana/etpmdgqbdf9cdhurnm3u7hj3lrl5jc4kppztvd1pynfb",
+      "price_usd": 1.708e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 2.42,
-      "volume_1h_usd": 402.64,
-      "buys_5m": 1,
-      "sells_5m": 1,
-      "txns_5m": 2,
-      "txns_1h": 10,
-      "price_change_5m_pct": 0.05,
-      "price_change_1h_pct": -1.23,
-      "pair_created_at": 1791702781000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 2,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Transazioni 5m in aumento di almeno il 20%"
-        },
-        {
-          "points": 1,
-          "reason": "Movimento prezzo positivo senza forte estensione"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:51.884696+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT",
-      "symbol": "FEELSGOOD",
-      "name": "Feels Good Man",
-      "pair_address": "8V79sJMPkRuX2EmzBS8uKmfDrCLAbszboC4eJ5Kowvc5",
-      "dex_id": "raydium",
-      "url": "https://dexscreener.com/solana/8v79sjmpkrux2emzbs8ukmfdrclabszboc4ej5kowvc5",
-      "price_usd": 0.00131,
-      "liquidity_usd": 138937.92,
-      "volume_5m_usd": 26.15,
-      "volume_1h_usd": 2992.56,
-      "buys_5m": 2,
-      "sells_5m": 0,
-      "txns_5m": 2,
-      "txns_1h": 25,
-      "price_change_5m_pct": 0.21,
-      "price_change_1h_pct": 6.56,
-      "pair_created_at": 1789767410000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 1,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Movimento prezzo positivo senza forte estensione"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:49.242629+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83",
-      "symbol": "USEFUL",
-      "name": "USEFUL COIN",
-      "pair_address": "FZuTAARDYJapX7HqniQEzzDboNY8RT4FXCrakVFJap2R",
-      "dex_id": "raydium",
-      "url": "https://dexscreener.com/solana/fzutaardyjapx7hqniqezzdbony8rt4fxcrakvfjap2r",
-      "price_usd": 0.0002926,
-      "liquidity_usd": 58558.56,
-      "volume_5m_usd": 13.57,
-      "volume_1h_usd": 13.57,
-      "buys_5m": 1,
-      "sells_5m": 0,
-      "txns_5m": 1,
-      "txns_1h": 1,
-      "price_change_5m_pct": -0.46,
-      "price_change_1h_pct": -0.46,
-      "pair_created_at": 1788621660000,
+      "volume_5m_usd": 57.75,
+      "volume_1h_usd": 145.45,
+      "buys_5m": 11,
+      "sells_5m": 19,
+      "txns_5m": 30,
+      "txns_1h": 67,
+      "price_change_5m_pct": -7.82,
+      "price_change_1h_pct": -11.67,
+      "pair_created_at": 1793120596000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
@@ -934,131 +805,7 @@
           "reason": "Volume 5m superiore alla media oraria stimata"
         }
       ],
-      "updated_at": "2026-10-28T09:50:59.150327+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "BqVHWpwUDgMik5gbTciFfozadpE2oZth5bxCDrgbDt52",
-      "symbol": "OPOS",
-      "name": "Only Possible On Solana",
-      "pair_address": "D1koh7pHuKwrQf6yU83L5P28LLk2ERFij5RcwfwtUg8n",
-      "dex_id": "orca",
-      "url": "https://dexscreener.com/solana/d1koh7phukwrqf6yu83l5p28llk2erfij5rcwfwtug8n",
-      "price_usd": 0.1739,
-      "liquidity_usd": 1037.55,
-      "volume_5m_usd": 0.64,
-      "volume_1h_usd": 1.58,
-      "buys_5m": 0,
-      "sells_5m": 2,
-      "txns_5m": 2,
-      "txns_1h": 4,
-      "price_change_5m_pct": -0.11,
-      "price_change_1h_pct": 1.99,
-      "pair_created_at": 1778333220000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 1,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 5m superiore alla media oraria stimata"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:45.893566+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "9dXPgyPVpfxVYRtsBYaENQF7qAPEtWQXykQeQxr9pump",
-      "symbol": "Solanaween",
-      "name": "Solanaween",
-      "pair_address": "CzR1WZufHW2dKrSqfBnV7e36SXKSqdzfjQjQs2xmPqAm",
-      "dex_id": "pumpfun",
-      "url": "https://dexscreener.com/solana/czr1wzufhw2dkrsqfbnv7e36sxksqdzfjqjqs2xmpqam",
-      "price_usd": 6.04e-06,
-      "liquidity_usd": null,
-      "volume_5m_usd": 131.37,
-      "volume_1h_usd": 203.44,
-      "buys_5m": 0,
-      "sells_5m": 2,
-      "txns_5m": 2,
-      "txns_1h": 14,
-      "price_change_5m_pct": -5.59,
-      "price_change_1h_pct": -6.15,
-      "pair_created_at": null,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 1,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 5m superiore alla media oraria stimata"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:32.117298+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "9vifzf3mNYXjAbTczZQbtSz4k1AM8Xhms7LvqUXjKdog",
-      "symbol": "DOG",
-      "name": "contract address dog",
-      "pair_address": "DSfhT8Bngd6YnBv41QF8DbEspfH2DKczGA9ptJ5GqgEd",
-      "dex_id": "pumpfun",
-      "url": "https://dexscreener.com/solana/dsfht8bngd6ynbv41qf8dbespfh2dkczga9ptj5gqged",
-      "price_usd": 2.447e-05,
-      "liquidity_usd": null,
-      "volume_5m_usd": 420.67,
-      "volume_1h_usd": 963.99,
-      "buys_5m": 1,
-      "sells_5m": 2,
-      "txns_5m": 3,
-      "txns_1h": 51,
-      "price_change_5m_pct": -7.8,
-      "price_change_1h_pct": -10.5,
-      "pair_created_at": 1793117615000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 1,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 5m superiore alla media oraria stimata"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:37.237044+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "32i7RW9e8wT1Ndwkm5DnXuDHDKJTWx8vCMsY8fErpump",
-      "symbol": "JOB",
-      "name": "CatWifJob",
-      "pair_address": "HDPVXQpTKoLSqLx6WnpZukA9Me4r2MmjFW4M2GsDxxqf",
-      "dex_id": "pumpfun",
-      "url": "https://dexscreener.com/solana/hdpvxqptkolsqlx6wnpzuka9me4r2mmjfw4m2gsdxxqf",
-      "price_usd": 3.737e-06,
-      "liquidity_usd": null,
-      "volume_5m_usd": 863.8,
-      "volume_1h_usd": 1720.1,
-      "buys_5m": 7,
-      "sells_5m": 11,
-      "txns_5m": 18,
-      "txns_1h": 32,
-      "price_change_5m_pct": -8.58,
-      "price_change_1h_pct": 22.94,
-      "pair_created_at": 1793180603000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 1,
-      "score_details": [
-        {
-          "points": 1,
-          "reason": "Volume 5m superiore alla media oraria stimata"
-        }
-      ],
-      "updated_at": "2026-10-28T09:50:45.100804+00:00",
+      "updated_at": "2026-10-28T09:52:28.222938+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1071,13 +818,13 @@
       "price_usd": 2.913e-06,
       "liquidity_usd": null,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 23321.34,
+      "volume_1h_usd": 10278.94,
       "buys_5m": 0,
       "sells_5m": 0,
       "txns_5m": 0,
-      "txns_1h": 522,
+      "txns_1h": 280,
       "price_change_5m_pct": null,
-      "price_change_1h_pct": -78.23,
+      "price_change_1h_pct": -73.83,
       "pair_created_at": 1793177058000,
       "verified": true,
       "verification_error": null,
@@ -1089,7 +836,38 @@
           "reason": "Volume 1h almeno $10.000"
         }
       ],
-      "updated_at": "2026-10-28T09:50:53.918420+00:00",
+      "updated_at": "2026-10-28T09:52:34.852331+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "BWxbtorFQMNo49vi43aXuUyxpLcihvZFuRdZG9jmpump",
+      "symbol": "Faucet",
+      "name": "Solana Faucet",
+      "pair_address": "5pjPaiBpxxXcKv9GQuzoktwq4v1PPQBwpHPAQT9c5W45",
+      "dex_id": "pumpfun",
+      "url": "https://dexscreener.com/solana/5pjpaibpxxxckv9gquzoktwq4v1ppqbwphpaqt9c5w45",
+      "price_usd": 2.872e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 0.67,
+      "volume_1h_usd": 0.67,
+      "buys_5m": 0,
+      "sells_5m": 2,
+      "txns_5m": 2,
+      "txns_1h": 2,
+      "price_change_5m_pct": -0.02,
+      "price_change_1h_pct": -0.02,
+      "pair_created_at": 1793089918000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 1,
+      "score_details": [
+        {
+          "points": 1,
+          "reason": "Volume 5m superiore alla media oraria stimata"
+        }
+      ],
+      "updated_at": "2026-10-28T09:52:40.700121+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1115,7 +893,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:01.454144+00:00",
+      "updated_at": "2026-10-28T09:52:40.504039+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1141,7 +919,33 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:35.374366+00:00",
+      "updated_at": "2026-10-28T09:52:20.979506+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+      "symbol": "USELESS",
+      "name": "USELESS COIN",
+      "pair_address": "9Ux4vtd8juEH4NMF4ae3tXYpKBdeCUUipX8z3EficKme",
+      "dex_id": "meteora",
+      "url": "https://dexscreener.com/solana/9ux4vtd8jueh4nmf4ae3txypkbdecuuipx8z3efickme",
+      "price_usd": 0.1662,
+      "liquidity_usd": 1357375.92,
+      "volume_5m_usd": 0.02,
+      "volume_1h_usd": 0.4,
+      "buys_5m": 1,
+      "sells_5m": 0,
+      "txns_5m": 1,
+      "txns_1h": 5,
+      "price_change_5m_pct": null,
+      "price_change_1h_pct": -0.2,
+      "pair_created_at": 1747825176000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 0,
+      "score_details": [],
+      "updated_at": "2026-10-28T09:52:39.307504+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1167,7 +971,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:59.403290+00:00",
+      "updated_at": "2026-10-28T09:52:38.933491+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1193,7 +997,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:58.107471+00:00",
+      "updated_at": "2026-10-28T09:52:37.981548+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1219,7 +1023,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:58.667728+00:00",
+      "updated_at": "2026-10-28T09:52:38.359878+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1232,11 +1036,11 @@
       "price_usd": 3.103e-06,
       "liquidity_usd": 276025.48,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 7613.18,
+      "volume_1h_usd": 6749.82,
       "buys_5m": 0,
       "sells_5m": 0,
       "txns_5m": 0,
-      "txns_1h": 60,
+      "txns_1h": 51,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 0.42,
       "pair_created_at": 1752767469000,
@@ -1245,7 +1049,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:58.896737+00:00",
+      "updated_at": "2026-10-28T09:52:38.551707+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1258,20 +1062,20 @@
       "price_usd": 0.00175,
       "liquidity_usd": 246009.02,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 146.86,
+      "volume_1h_usd": 136.92,
       "buys_5m": 0,
       "sells_5m": 0,
       "txns_5m": 0,
-      "txns_1h": 3,
+      "txns_1h": 2,
       "price_change_5m_pct": null,
-      "price_change_1h_pct": 0.41,
+      "price_change_1h_pct": 0.05,
       "pair_created_at": 1759430050000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:57.858675+00:00",
+      "updated_at": "2026-10-28T09:52:37.802175+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1297,7 +1101,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:58.390401+00:00",
+      "updated_at": "2026-10-28T09:52:38.162353+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1323,7 +1127,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:59.629101+00:00",
+      "updated_at": "2026-10-28T09:52:39.119825+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1349,7 +1153,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:00.416153+00:00",
+      "updated_at": "2026-10-28T09:52:39.700654+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1375,7 +1179,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:49.839160+00:00",
+      "updated_at": "2026-10-28T09:52:31.451998+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1401,7 +1205,33 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:00.925063+00:00",
+      "updated_at": "2026-10-28T09:52:40.107186+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83",
+      "symbol": "USEFUL",
+      "name": "USEFUL COIN",
+      "pair_address": "FZuTAARDYJapX7HqniQEzzDboNY8RT4FXCrakVFJap2R",
+      "dex_id": "raydium",
+      "url": "https://dexscreener.com/solana/fzutaardyjapx7hqniqezzdbony8rt4fxcrakvfjap2r",
+      "price_usd": 0.0002926,
+      "liquidity_usd": 58558.56,
+      "volume_5m_usd": 0.0,
+      "volume_1h_usd": 13.57,
+      "buys_5m": 0,
+      "sells_5m": 0,
+      "txns_5m": 0,
+      "txns_1h": 1,
+      "price_change_5m_pct": null,
+      "price_change_1h_pct": -0.46,
+      "pair_created_at": 1788621660000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 0,
+      "score_details": [],
+      "updated_at": "2026-10-28T09:52:38.735795+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1427,7 +1257,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:50.085709+00:00",
+      "updated_at": "2026-10-28T09:52:31.865957+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1453,7 +1283,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:55.729449+00:00",
+      "updated_at": "2026-10-28T09:52:36.239813+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1479,7 +1309,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:01.197215+00:00",
+      "updated_at": "2026-10-28T09:52:40.302003+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1505,7 +1335,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:52.154822+00:00",
+      "updated_at": "2026-10-28T09:52:33.276790+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1531,7 +1361,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:52.413831+00:00",
+      "updated_at": "2026-10-28T09:52:33.470012+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1557,7 +1387,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:50.354710+00:00",
+      "updated_at": "2026-10-28T09:52:32.066798+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1583,7 +1413,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:52.909672+00:00",
+      "updated_at": "2026-10-28T09:52:33.856628+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1609,7 +1439,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:32.939424+00:00",
+      "updated_at": "2026-10-28T09:52:19.179411+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1635,7 +1465,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:53.679290+00:00",
+      "updated_at": "2026-10-28T09:52:34.666066+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1661,7 +1491,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:52.663957+00:00",
+      "updated_at": "2026-10-28T09:52:33.655274+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1687,7 +1517,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:37.763807+00:00",
+      "updated_at": "2026-10-28T09:52:22.906942+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1713,7 +1543,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:45.621182+00:00",
+      "updated_at": "2026-10-28T09:52:28.618393+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1739,7 +1569,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:38.043064+00:00",
+      "updated_at": "2026-10-28T09:52:23.102706+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1765,7 +1595,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:01.969221+00:00",
+      "updated_at": "2026-10-28T09:52:41.094216+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1791,7 +1621,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:00.665413+00:00",
+      "updated_at": "2026-10-28T09:52:39.902056+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1817,7 +1647,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:55.480091+00:00",
+      "updated_at": "2026-10-28T09:52:36.041650+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1843,7 +1673,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:56.002398+00:00",
+      "updated_at": "2026-10-28T09:52:36.432213+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1869,7 +1699,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:02.228844+00:00",
+      "updated_at": "2026-10-28T09:52:41.294815+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1895,7 +1725,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:39.584209+00:00",
+      "updated_at": "2026-10-28T09:52:24.303164+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1921,7 +1751,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:02.493555+00:00",
+      "updated_at": "2026-10-28T09:52:41.494883+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1947,7 +1777,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:33.207204+00:00",
+      "updated_at": "2026-10-28T09:52:19.382425+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1973,7 +1803,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:05.605416+00:00",
+      "updated_at": "2026-10-28T09:52:43.885451+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -1999,7 +1829,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:02.743686+00:00",
+      "updated_at": "2026-10-28T09:52:41.691148+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2025,7 +1855,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:39.833525+00:00",
+      "updated_at": "2026-10-28T09:52:24.504332+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2051,7 +1881,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:02.985367+00:00",
+      "updated_at": "2026-10-28T09:52:41.888694+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2077,7 +1907,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:45.375164+00:00",
+      "updated_at": "2026-10-28T09:52:28.426479+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2103,7 +1933,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:30.366830+00:00",
+      "updated_at": "2026-10-28T09:52:17.207371+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2129,7 +1959,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:40.360378+00:00",
+      "updated_at": "2026-10-28T09:52:24.901105+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2155,7 +1985,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:03.528726+00:00",
+      "updated_at": "2026-10-28T09:52:42.280533+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2181,7 +2011,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:04.074368+00:00",
+      "updated_at": "2026-10-28T09:52:42.676796+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2207,7 +2037,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:46.141709+00:00",
+      "updated_at": "2026-10-28T09:52:29.015427+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2233,7 +2063,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:34.245983+00:00",
+      "updated_at": "2026-10-28T09:52:20.176216+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2259,7 +2089,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:33.744444+00:00",
+      "updated_at": "2026-10-28T09:52:19.777122+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2285,7 +2115,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:40.632205+00:00",
+      "updated_at": "2026-10-28T09:52:25.101372+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2311,7 +2141,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:04.572023+00:00",
+      "updated_at": "2026-10-28T09:52:43.077455+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2337,7 +2167,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:33.454239+00:00",
+      "updated_at": "2026-10-28T09:52:19.575246+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2363,7 +2193,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:03.264510+00:00",
+      "updated_at": "2026-10-28T09:52:42.086739+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2389,7 +2219,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:40.105246+00:00",
+      "updated_at": "2026-10-28T09:52:24.703396+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2415,7 +2245,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:30.140813+00:00",
+      "updated_at": "2026-10-28T09:52:17.010871+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2441,7 +2271,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:04.327552+00:00",
+      "updated_at": "2026-10-28T09:52:42.875242+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2467,7 +2297,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:03.822887+00:00",
+      "updated_at": "2026-10-28T09:52:42.483376+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2493,7 +2323,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:32.433143+00:00",
+      "updated_at": "2026-10-28T09:52:18.790064+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2519,7 +2349,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:34.578151+00:00",
+      "updated_at": "2026-10-28T09:52:20.379269+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2545,7 +2375,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:04.816055+00:00",
+      "updated_at": "2026-10-28T09:52:43.282220+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2571,7 +2401,33 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:38.817134+00:00",
+      "updated_at": "2026-10-28T09:52:23.711953+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "BqVHWpwUDgMik5gbTciFfozadpE2oZth5bxCDrgbDt52",
+      "symbol": "OPOS",
+      "name": "Only Possible On Solana",
+      "pair_address": "D1koh7pHuKwrQf6yU83L5P28LLk2ERFij5RcwfwtUg8n",
+      "dex_id": "orca",
+      "url": "https://dexscreener.com/solana/d1koh7phukwrqf6yu83l5p28llk2erfij5rcwfwtug8n",
+      "price_usd": 0.1739,
+      "liquidity_usd": 1037.55,
+      "volume_5m_usd": 0.0,
+      "volume_1h_usd": 1.58,
+      "buys_5m": 0,
+      "sells_5m": 0,
+      "txns_5m": 0,
+      "txns_1h": 4,
+      "price_change_5m_pct": null,
+      "price_change_1h_pct": 1.99,
+      "pair_created_at": 1778333220000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 0,
+      "score_details": [],
+      "updated_at": "2026-10-28T09:52:28.817219+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2584,11 +2440,11 @@
       "price_usd": 5.965e-07,
       "liquidity_usd": 980.45,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.14,
+      "volume_1h_usd": 0.0,
       "buys_5m": 0,
       "sells_5m": 0,
       "txns_5m": 0,
-      "txns_1h": 1,
+      "txns_1h": 0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
       "pair_created_at": 1739979096000,
@@ -2597,7 +2453,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:05.064668+00:00",
+      "updated_at": "2026-10-28T09:52:43.484522+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2623,7 +2479,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:01.698681+00:00",
+      "updated_at": "2026-10-28T09:52:40.900393+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2649,7 +2505,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:54.168111+00:00",
+      "updated_at": "2026-10-28T09:52:35.051344+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2675,7 +2531,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:39.065188+00:00",
+      "updated_at": "2026-10-28T09:52:23.906658+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2701,7 +2557,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:46.678682+00:00",
+      "updated_at": "2026-10-28T09:52:29.435876+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2727,7 +2583,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:54.684495+00:00",
+      "updated_at": "2026-10-28T09:52:35.454643+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2753,7 +2609,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:54.956746+00:00",
+      "updated_at": "2026-10-28T09:52:35.653500+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2779,7 +2635,33 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:54.430753+00:00",
+      "updated_at": "2026-10-28T09:52:35.253936+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "BqVHWpwUDgMik5gbTciFfozadpE2oZth5bxCDrgbDt52",
+      "symbol": "OPOS",
+      "name": "Only Possible On Solana",
+      "pair_address": "2VbVHpPHHKY57ZRjabaADg67dgie77ebyPBShXTLwcCt",
+      "dex_id": "meteora",
+      "url": "https://dexscreener.com/solana/2vbvhpphhky57zrjabaadg67dgie77ebypbshxtlwcct",
+      "price_usd": 0.174,
+      "liquidity_usd": 185.5,
+      "volume_5m_usd": 0.0,
+      "volume_1h_usd": 0.25,
+      "buys_5m": 0,
+      "sells_5m": 0,
+      "txns_5m": 0,
+      "txns_1h": 1,
+      "price_change_5m_pct": null,
+      "price_change_1h_pct": 0.58,
+      "pair_created_at": 1727025411000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 0,
+      "score_details": [],
+      "updated_at": "2026-10-28T09:52:36.638379+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2805,7 +2687,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:46.937611+00:00",
+      "updated_at": "2026-10-28T09:52:29.640732+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2818,20 +2700,20 @@
       "price_usd": 0.003423,
       "liquidity_usd": 117.98,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 1.27,
+      "volume_1h_usd": 1.16,
       "buys_5m": 0,
       "sells_5m": 0,
       "txns_5m": 0,
-      "txns_1h": 10,
+      "txns_1h": 9,
       "price_change_5m_pct": null,
-      "price_change_1h_pct": 4.46,
+      "price_change_1h_pct": 4.1,
       "pair_created_at": 1788319032000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:53.410825+00:00",
+      "updated_at": "2026-10-28T09:52:34.467748+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2857,7 +2739,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:55.224759+00:00",
+      "updated_at": "2026-10-28T09:52:35.847170+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2883,7 +2765,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:39.336470+00:00",
+      "updated_at": "2026-10-28T09:52:24.105279+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2909,33 +2791,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:41.477142+00:00",
-      "last_alert_epoch": 0
-    },
-    {
-      "token_address": "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt",
-      "symbol": "ANTFUN",
-      "name": "AntFun",
-      "pair_address": "B5d7JXzeVnnrhZDmEgJbPaibhpSkJmu5LgpGF65cGaF5",
-      "dex_id": "meteora",
-      "url": "https://dexscreener.com/solana/b5d7jxzevnnrhzdmegjbpaibhpskjmu5lgpgf65cgaf5",
-      "price_usd": 0.01671,
-      "liquidity_usd": 27.06,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.0,
-      "buys_5m": 0,
-      "sells_5m": 0,
-      "txns_5m": 0,
-      "txns_1h": 0,
-      "price_change_5m_pct": null,
-      "price_change_1h_pct": null,
-      "pair_created_at": 1792806582000,
-      "verified": true,
-      "verification_error": null,
-      "qualified": false,
-      "score": 0,
-      "score_details": [],
-      "updated_at": "2026-10-28T09:51:06.191787+00:00",
+      "updated_at": "2026-10-28T09:52:25.690204+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2961,7 +2817,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:56.821484+00:00",
+      "updated_at": "2026-10-28T09:52:37.031780+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -2974,20 +2830,20 @@
       "price_usd": 0.004659,
       "liquidity_usd": 25.86,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.72,
+      "volume_1h_usd": 0.61,
       "buys_5m": 0,
       "sells_5m": 0,
       "txns_5m": 0,
-      "txns_1h": 8,
+      "txns_1h": 7,
       "price_change_5m_pct": null,
-      "price_change_1h_pct": -10.3,
+      "price_change_1h_pct": -8.92,
       "pair_created_at": 1793144320000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:33.990143+00:00",
+      "updated_at": "2026-10-28T09:52:19.977603+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3013,7 +2869,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:41.171117+00:00",
+      "updated_at": "2026-10-28T09:52:25.498028+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3039,7 +2895,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:40.905123+00:00",
+      "updated_at": "2026-10-28T09:52:25.297040+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3065,7 +2921,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:46.390874+00:00",
+      "updated_at": "2026-10-28T09:52:29.225987+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3091,7 +2947,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:56.532937+00:00",
+      "updated_at": "2026-10-28T09:52:36.837631+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3117,7 +2973,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:05.912508+00:00",
+      "updated_at": "2026-10-28T09:52:44.088056+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3143,7 +2999,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:36.412330+00:00",
+      "updated_at": "2026-10-28T09:52:21.778425+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3169,7 +3025,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:41.716460+00:00",
+      "updated_at": "2026-10-28T09:52:25.887353+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3195,7 +3051,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:30.631779+00:00",
+      "updated_at": "2026-10-28T09:52:17.406213+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3221,7 +3077,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:30.860573+00:00",
+      "updated_at": "2026-10-28T09:52:17.606909+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3247,7 +3103,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:31.106143+00:00",
+      "updated_at": "2026-10-28T09:52:17.809914+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3273,7 +3129,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:31.366557+00:00",
+      "updated_at": "2026-10-28T09:52:18.016294+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3283,23 +3139,23 @@
       "pair_address": "5zTZV3ktTL1NDH4xCpDNT73pZHx2VGVZaVcGSPR4LBM",
       "dex_id": "pumpfun",
       "url": "https://dexscreener.com/solana/5ztzv3kttl1ndh4xcpdnt73pzhx2vgvzavcgspr4lbm",
-      "price_usd": 1.248e-05,
+      "price_usd": 1.245e-05,
       "liquidity_usd": null,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 721.61,
+      "volume_5m_usd": 13.9,
+      "volume_1h_usd": 682.49,
       "buys_5m": 0,
-      "sells_5m": 0,
-      "txns_5m": 0,
-      "txns_1h": 14,
-      "price_change_5m_pct": null,
-      "price_change_1h_pct": 4.7,
+      "sells_5m": 1,
+      "txns_5m": 1,
+      "txns_1h": 13,
+      "price_change_5m_pct": -0.25,
+      "price_change_1h_pct": 2.78,
       "pair_created_at": 1793115998000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:31.629815+00:00",
+      "updated_at": "2026-10-28T09:52:18.207345+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3312,20 +3168,20 @@
       "price_usd": 3.65e-06,
       "liquidity_usd": null,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 16.57,
+      "volume_1h_usd": 15.38,
       "buys_5m": 0,
       "sells_5m": 0,
       "txns_5m": 0,
-      "txns_1h": 8,
+      "txns_1h": 7,
       "price_change_5m_pct": null,
-      "price_change_1h_pct": -1.28,
+      "price_change_1h_pct": -0.85,
       "pair_created_at": 1793166399000,
       "verified": true,
       "verification_error": null,
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:31.867972+00:00",
+      "updated_at": "2026-10-28T09:52:18.389218+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3351,7 +3207,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:32.690897+00:00",
+      "updated_at": "2026-10-28T09:52:18.983082+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3377,7 +3233,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:34.832589+00:00",
+      "updated_at": "2026-10-28T09:52:20.580482+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3403,7 +3259,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:35.130361+00:00",
+      "updated_at": "2026-10-28T09:52:20.776943+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3429,7 +3285,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:35.621886+00:00",
+      "updated_at": "2026-10-28T09:52:21.182457+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3455,7 +3311,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:35.906750+00:00",
+      "updated_at": "2026-10-28T09:52:21.379205+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3481,7 +3337,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:36.151436+00:00",
+      "updated_at": "2026-10-28T09:52:21.577865+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3507,7 +3363,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:36.661773+00:00",
+      "updated_at": "2026-10-28T09:52:21.972559+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3533,7 +3389,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:38.291148+00:00",
+      "updated_at": "2026-10-28T09:52:23.296715+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3559,7 +3415,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:38.550178+00:00",
+      "updated_at": "2026-10-28T09:52:23.512150+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3585,7 +3441,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:41.962371+00:00",
+      "updated_at": "2026-10-28T09:52:26.086622+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3611,7 +3467,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:42.214890+00:00",
+      "updated_at": "2026-10-28T09:52:26.284189+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3637,7 +3493,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:42.457989+00:00",
+      "updated_at": "2026-10-28T09:52:26.482102+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3663,7 +3519,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:42.707268+00:00",
+      "updated_at": "2026-10-28T09:52:26.683875+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3689,7 +3545,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:42.958226+00:00",
+      "updated_at": "2026-10-28T09:52:26.885432+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3715,7 +3571,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:47.217536+00:00",
+      "updated_at": "2026-10-28T09:52:29.837540+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3741,7 +3597,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:47.479410+00:00",
+      "updated_at": "2026-10-28T09:52:30.036510+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3767,7 +3623,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:50.633388+00:00",
+      "updated_at": "2026-10-28T09:52:32.265705+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3793,7 +3649,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:50.886266+00:00",
+      "updated_at": "2026-10-28T09:52:32.464123+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3819,7 +3675,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:51.129509+00:00",
+      "updated_at": "2026-10-28T09:52:32.676127+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3845,7 +3701,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:51.384326+00:00",
+      "updated_at": "2026-10-28T09:52:32.874752+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3871,7 +3727,33 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:51.630421+00:00",
+      "updated_at": "2026-10-28T09:52:33.074966+00:00",
+      "last_alert_epoch": 0
+    },
+    {
+      "token_address": "8FDmA39SFLMEhPWgV3b1VRVQWaUTmHGHFfiBhxjUpump",
+      "symbol": "BP26",
+      "name": "Solana BreakPoint 2026",
+      "pair_address": "7kgJY3QrHXKhN8yPqDgbhogTTSNqjw3NtFLXGYvA84xR",
+      "dex_id": "pumpfun",
+      "url": "https://dexscreener.com/solana/7kgjy3qrhxkhn8ypqdgbhogttsnqjw3ntflxgyva84xr",
+      "price_usd": 3.06e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 1.21,
+      "volume_1h_usd": 402.64,
+      "buys_5m": 0,
+      "sells_5m": 1,
+      "txns_5m": 1,
+      "txns_1h": 10,
+      "price_change_5m_pct": -0.08,
+      "price_change_1h_pct": -1.23,
+      "pair_created_at": 1791702781000,
+      "verified": true,
+      "verification_error": null,
+      "qualified": false,
+      "score": 0,
+      "score_details": [],
+      "updated_at": "2026-10-28T09:52:34.062775+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3897,7 +3779,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:53.160075+00:00",
+      "updated_at": "2026-10-28T09:52:34.266944+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3923,7 +3805,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:50:57.063602+00:00",
+      "updated_at": "2026-10-28T09:52:37.232904+00:00",
       "last_alert_epoch": 0
     },
     {
@@ -3949,7 +3831,7 @@
       "qualified": false,
       "score": 0,
       "score_details": [],
-      "updated_at": "2026-10-28T09:51:05.333934+00:00",
+      "updated_at": "2026-10-28T09:52:43.685863+00:00",
       "last_alert_epoch": 0
     }
   ]
