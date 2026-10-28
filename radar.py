@@ -8,7 +8,8 @@ import requests
 
 # ============================================================
 # MEME PUMP RADAR AI - SOLANA
-# Notifiche senza soglia minima di punteggio
+# Liquidita minima: $25.000
+# Punteggio minimo notifiche: 4/9
 # ============================================================
 
 DEX_SEARCH_URL = "https://api.dexscreener.com/latest/dex/search"
@@ -16,6 +17,7 @@ DEX_PAIR_URL = "https://api.dexscreener.com/latest/dex/pairs/solana/"
 DEX_TOKEN_URL = "https://api.dexscreener.com/latest/dex/tokens/"
 
 MIN_LIQUIDITY_USD = 25_000
+MIN_SCORE = 4
 ALERT_COOLDOWN_MINUTES = 120
 MAX_PAIRS_TO_ANALYZE = 250
 REQUEST_TIMEOUT = 20
@@ -42,21 +44,14 @@ session = requests.Session()
 session.headers.update({"User-Agent": "MemePumpRadarAI/4.0"})
 
 
-def now_utc():
-    return datetime.now(timezone.utc)
-
-
 def iso_now():
-    return now_utc().isoformat()
+    return datetime.now(timezone.utc).isoformat()
 
 
 def number(value, default=0.0):
     try:
         result = float(value)
-        if result != result or result in (
-            float("inf"),
-            float("-inf"),
-        ):
+        if result != result or result in (float("inf"), float("-inf")):
             return default
         return result
     except (TypeError, ValueError):
@@ -88,33 +83,23 @@ def get_json(url, params=None):
         )
         response.raise_for_status()
         payload = response.json()
-
         if not isinstance(payload, dict):
             return None, "Risposta API non valida"
-
         return payload, None
-
     except (requests.RequestException, ValueError) as error:
         return None, str(error)
 
 
 def get_pairs_from_search(query):
-    payload, error = get_json(
-        DEX_SEARCH_URL,
-        {"q": query},
-    )
-
+    payload, error = get_json(DEX_SEARCH_URL, {"q": query})
     if error:
         print(f"[API] Ricerca '{query}' fallita: {error}")
         return []
 
-    pairs = payload.get("pairs") or []
-
     return [
         pair
-        for pair in pairs
-        if isinstance(pair, dict)
-        and pair.get("chainId") == "solana"
+        for pair in (payload.get("pairs") or [])
+        if isinstance(pair, dict) and pair.get("chainId") == "solana"
     ]
 
 
@@ -123,32 +108,23 @@ def discover_pairs():
 
     for query in SEARCH_QUERIES:
         for pair in get_pairs_from_search(query):
-            address = str(
-                pair.get("pairAddress") or ""
-            ).strip()
-
+            address = str(pair.get("pairAddress") or "").strip()
             if address:
                 found[address.lower()] = pair
-
         time.sleep(REQUEST_DELAY_SECONDS)
 
     pairs = list(found.values())
-
     pairs.sort(
         key=lambda pair: number(
             (pair.get("liquidity") or {}).get("usd")
         ),
         reverse=True,
     )
-
     return pairs[:MAX_PAIRS_TO_ANALYZE]
 
 
 def refresh_pair(pair):
-    address = str(
-        pair.get("pairAddress") or ""
-    ).strip()
-
+    address = str(pair.get("pairAddress") or "").strip()
     if not address:
         return pair, False, "Indirizzo coppia mancante"
 
@@ -158,16 +134,10 @@ def refresh_pair(pair):
         for item in payload.get("pairs") or []:
             if (
                 item.get("chainId") == "solana"
-                and str(
-                    item.get("pairAddress") or ""
-                ).lower() == address.lower()
+                and str(item.get("pairAddress") or "").lower()
+                == address.lower()
             ):
                 return item, True, None
-
-    print(
-        f"[API] Verifica coppia {address} non riuscita; "
-        "uso i dati della ricerca iniziale."
-    )
 
     token_address = (
         (pair.get("baseToken") or {}).get("address") or ""
@@ -177,18 +147,17 @@ def refresh_pair(pair):
         token_payload, token_error = get_json(
             DEX_TOKEN_URL + token_address
         )
-
         if not token_error:
             for item in token_payload.get("pairs") or []:
                 if (
                     item.get("chainId") == "solana"
-                    and str(
-                        item.get("pairAddress") or ""
-                    ).lower() == address.lower()
+                    and str(item.get("pairAddress") or "").lower()
+                    == address.lower()
                 ):
                     return item, True, None
 
-    return pair, False, error or "Verifica API non riuscita"
+    print(f"[API] Uso dati iniziali per la coppia {address}")
+    return pair, False, error or "Verifica coppia non riuscita"
 
 
 def get_metrics(pair):
@@ -209,7 +178,6 @@ def get_metrics(pair):
 
     created_ms = number(pair.get("pairCreatedAt"), -1)
     age_minutes = None
-
     if created_ms > 0:
         age_minutes = max(
             0.0,
@@ -222,20 +190,16 @@ def get_metrics(pair):
 
     address = str(pair.get("pairAddress") or "")
     token_address = str(base.get("address") or "")
+    url = pair.get("url") or (
+        f"https://dexscreener.com/solana/{address.lower()}"
+        if address else ""
+    )
 
     buy_sell_ratio = (
         round(buys5 / sells5, 2)
         if sells5 > 0
         else float(buys5)
     )
-
-    url = pair.get("url") or (
-        f"https://dexscreener.com/solana/{address.lower()}"
-        if address else ""
-    )
-
-    change5 = number(changes.get("m5"))
-    change1h = number(changes.get("h1"))
 
     return {
         "pair_address": address,
@@ -251,11 +215,8 @@ def get_metrics(pair):
         "volume_5m_usd": volume5m,
         "volume_1h_usd": volume1h,
         "volume_24h_usd": volume24h,
-
-        # Alias compatibili con versioni precedenti della dashboard
         "volume_5m": volume5m,
         "volume_1h": volume1h,
-
         "buys_5m": buys5,
         "sells_5m": sells5,
         "transactions_5m": buys5 + sells5,
@@ -264,14 +225,13 @@ def get_metrics(pair):
         "transactions_1h": buys1h + sells1h,
         "buy_sell_ratio_5m": buy_sell_ratio,
         "buy_sell_ratio": buy_sell_ratio,
-        "price_change_5m_pct": change5,
-        "price_change_1h_pct": change1h,
-        "change_5m": change5,
-        "change_1h": change1h,
+        "price_change_5m_pct": number(changes.get("m5")),
+        "price_change_1h_pct": number(changes.get("h1")),
+        "change_5m": number(changes.get("m5")),
+        "change_1h": number(changes.get("h1")),
         "age_minutes": (
             round(age_minutes, 1)
-            if age_minutes is not None
-            else None
+            if age_minutes is not None else None
         ),
         "data_source": "dexscreener",
     }
@@ -283,51 +243,44 @@ def score_pair(metrics, previous):
 
     vol5 = metrics["volume_5m_usd"]
     vol1h = metrics["volume_1h_usd"]
-    liq = metrics["liquidity_usd"]
+    liquidity = metrics["liquidity_usd"]
     tx5 = metrics["transactions_5m"]
     buys5 = metrics["buys_5m"]
     sells5 = metrics["sells_5m"]
 
-    checks["volume_5m"] = vol5 >= 1000
+    checks["volume_5m"] = vol5 >= 1_000
     if checks["volume_5m"]:
         score += 1
 
-    checks["volume_1h"] = vol1h >= 10000
+    checks["volume_1h"] = vol1h >= 10_000
     if checks["volume_1h"]:
         score += 1
 
-    prev_vol1h = number(previous.get("volume_1h_usd"))
-    vol_growth = (
-        vol1h / prev_vol1h
-        if prev_vol1h > 0
-        else None
+    previous_vol1h = number(previous.get("volume_1h_usd"))
+    volume_growth = (
+        vol1h / previous_vol1h if previous_vol1h > 0 else None
     )
-
     checks["volume_in_crescita"] = (
-        vol_growth is not None and vol_growth >= 1.20
+        volume_growth is not None and volume_growth >= 1.20
     )
     if checks["volume_in_crescita"]:
         score += 2
 
-    prev_tx5 = number(previous.get("transactions_5m"))
-    tx_growth = (
-        tx5 / prev_tx5
-        if prev_tx5 > 0
-        else None
+    previous_tx5 = number(previous.get("transactions_5m"))
+    transaction_growth = (
+        tx5 / previous_tx5 if previous_tx5 > 0 else None
     )
-
     checks["attivita_in_crescita"] = (
-        tx_growth is not None and tx_growth >= 1.20
+        transaction_growth is not None
+        and transaction_growth >= 1.20
     )
     if checks["attivita_in_crescita"]:
         score += 1
 
     buy_ratio = (
-        buys5 / sells5
-        if sells5 > 0
-        else float(buys5)
+        buys5 / sells5 if sells5 > 0
+        else (float(buys5) if buys5 else 0.0)
     )
-
     checks["pressione_acquisti"] = (
         tx5 >= 5 and buy_ratio >= 1.20
     )
@@ -335,7 +288,6 @@ def score_pair(metrics, previous):
         score += 1
 
     average_5m_volume = vol1h / 12 if vol1h > 0 else 0
-
     checks["accelerazione_volume"] = (
         average_5m_volume > 0
         and vol5 >= average_5m_volume * 1.50
@@ -345,31 +297,28 @@ def score_pair(metrics, previous):
 
     change5 = metrics["price_change_5m_pct"]
     change1h = metrics["price_change_1h_pct"]
-
     checks["movimento_iniziale"] = (
         0 < change5 <= 8 and change1h <= 20
     )
     if checks["movimento_iniziale"]:
         score += 1
 
-    prev_liq = number(previous.get("liquidity_usd"))
-
+    previous_liquidity = number(previous.get("liquidity_usd"))
     checks["liquidita_in_crescita"] = (
-        prev_liq > 0 and liq >= prev_liq * 1.05
+        previous_liquidity > 0
+        and liquidity >= previous_liquidity * 1.05
     )
     if checks["liquidita_in_crescita"]:
         score += 1
 
     growth = {
         "volume_growth_ratio": (
-            round(vol_growth, 3)
-            if vol_growth is not None
-            else None
+            round(volume_growth, 3)
+            if volume_growth is not None else None
         ),
         "transaction_growth_ratio": (
-            round(tx_growth, 3)
-            if tx_growth is not None
-            else None
+            round(transaction_growth, 3)
+            if transaction_growth is not None else None
         ),
         "buy_sell_ratio_5m": round(buy_ratio, 2),
     }
@@ -386,7 +335,7 @@ def send_telegram(message):
         return False
 
     url = (
-        "https://api.telegram.org/bot"
+        f"https://api.telegram.org/bot"
         f"{TELEGRAM_BOT_TOKEN}/sendMessage"
     )
 
@@ -401,7 +350,6 @@ def send_telegram(message):
             timeout=REQUEST_TIMEOUT,
         )
         response.raise_for_status()
-
         payload = response.json()
 
         if payload.get("ok") is True:
@@ -417,11 +365,9 @@ def send_telegram(message):
 
 def build_alert(metrics, score):
     age = metrics["age_minutes"]
-
     age_text = (
         f"{age:.0f} minuti"
-        if age is not None
-        else "non disponibile"
+        if age is not None else "non disponibile"
     )
 
     return (
@@ -469,9 +415,7 @@ def main():
     print(f"Coppie Solana scoperte: {len(pairs)}")
 
     for original_pair in pairs:
-        pair, verified, verification_error = refresh_pair(
-            original_pair
-        )
+        pair, verified, verification_error = refresh_pair(original_pair)
 
         if verified:
             api_verified += 1
@@ -493,13 +437,15 @@ def main():
         metrics["scanned_at"] = iso_now()
         metrics["api_verified"] = verified
         metrics["api_verification_error"] = verification_error
-
-        # L'eta' e il punteggio sono informativi, non bloccano gli avvisi.
         metrics["age_ok"] = True
+
         metrics["liquidity_ok"] = (
             metrics["liquidity_usd"] >= MIN_LIQUIDITY_USD
         )
-        metrics["qualified"] = metrics["liquidity_ok"]
+        metrics["score_ok"] = score >= MIN_SCORE
+        metrics["qualified"] = (
+            metrics["liquidity_ok"] and metrics["score_ok"]
+        )
 
         metrics["market_data_warning"] = (
             metrics["volume_5m_usd"] == 0
@@ -509,22 +455,19 @@ def main():
 
         all_results.append(metrics)
 
-        # UNICO REQUISITO PER L'AVVISO: liquidita' minima.
-        # Nessuna soglia di punteggio.
         if metrics["qualified"]:
             qualified_results.append(metrics)
 
             last_alert = number(alert_history.get(address))
-            cooldown = ALERT_COOLDOWN_MINUTES * 60
+            cooldown_seconds = ALERT_COOLDOWN_MINUTES * 60
 
-            if now_seconds - last_alert >= cooldown:
+            if now_seconds - last_alert >= cooldown_seconds:
                 if send_telegram(build_alert(metrics, score)):
                     alert_history[address] = now_seconds
                     alerts_sent += 1
                     print(
                         f"[ALERT] Inviato "
-                        f"{metrics['token_symbol']} "
-                        f"score={score}/9"
+                        f"{metrics['token_symbol']} score={score}/9"
                     )
                 else:
                     print(
@@ -550,7 +493,6 @@ def main():
     state["pair_snapshots"] = current_snapshots
     state["alert_history"] = alert_history
     state["updated_at"] = iso_now()
-
     save_json(STATE_FILE, state)
 
     output = {
@@ -562,7 +504,7 @@ def main():
         "api_fallback_count": api_fallback,
         "qualified_count": len(qualified_results),
         "alerts_sent": alerts_sent,
-        "min_score": 0,
+        "min_score": MIN_SCORE,
         "max_score": 9,
         "min_liquidity_usd": MIN_LIQUIDITY_USD,
         "age_filter_enabled": False,
@@ -570,9 +512,7 @@ def main():
             1 for item in all_results
             if item["market_data_warning"]
         ),
-        # "pairs" per la dashboard e per compatibilita'.
         "pairs": all_results,
-        # "results" per le versioni precedenti della dashboard.
         "results": all_results,
         "qualified_pairs": qualified_results,
     }
@@ -581,20 +521,20 @@ def main():
 
     print("\n========== RISULTATO RADAR ==========")
     print(f"Coppie analizzate: {len(all_results)}")
-    print(f"Coppie verificate con endpoint coppia: {api_verified}")
+    print(f"Coppie verificate: {api_verified}")
     print(f"Coppie con dati di fallback: {api_fallback}")
     print(
         "Coppie con volume e transazioni tutti a zero: "
         f"{output['market_data_warning_count']}"
     )
     print(
-        f"Coppie idonee (liquidita' >= "
-        f"${MIN_LIQUIDITY_USD:,.0f}): "
+        f"Coppie idonee (liquidita >= ${MIN_LIQUIDITY_USD:,.0f} "
+        f"e punteggio >= {MIN_SCORE}/9): "
         f"{len(qualified_results)}"
     )
     print(f"Avvisi Telegram inviati: {alerts_sent}")
-    print("Soglia punteggio per le notifiche: nessuna")
-    print("Filtro eta': disattivato")
+    print(f"Punteggio minimo per le notifiche: {MIN_SCORE}/9")
+    print("Filtro eta: disattivato")
     print("Dati salvati in radar_data.json")
     print("Storico salvato in radar_state.json")
 
