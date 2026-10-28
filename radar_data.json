@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-28T08:55:24.574947+00:00",
+  "updated_at": "2026-10-28T08:56:17.582152+00:00",
   "pairs_scanned": 136,
   "qualified_count": 4,
-  "alerts_sent": 2,
+  "alerts_sent": 0,
   "min_score": 4,
   "min_liquidity_usd": 25000,
   "pairs": [
@@ -25,7 +25,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 71480.0,
+      "age_minutes": 71480.9,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -72,7 +72,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 235644.4,
+      "age_minutes": 235645.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -119,7 +119,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 82.3,
+      "age_minutes": 83.2,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -166,7 +166,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 76.7,
+      "age_minutes": 77.6,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -213,7 +213,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 322.3,
+      "age_minutes": 323.2,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -260,7 +260,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1220.1,
+      "age_minutes": 1221.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -296,25 +296,25 @@
       "quote_symbol": "SOL",
       "dex": "pumpfun",
       "url": "https://dexscreener.com/solana/3srgx3qetg2l5wemhwm7ctodfvm4vnwhvn68tsgfxdak",
-      "price_usd": 3.487e-06,
+      "price_usd": 3.839e-06,
       "liquidity_usd": 0.0,
-      "volume_5m_usd": 24526.73,
-      "volume_1h_usd": 49499.99,
-      "change_5m_pct": -69.84,
-      "change_1h_pct": 0.0,
-      "buys_5m": 250,
-      "sells_5m": 281,
-      "transactions_5m": 531,
-      "buy_sell_ratio": 0.89,
-      "volume_acceleration": 5.95,
-      "age_minutes": 11.1,
-      "score": 5,
+      "volume_5m_usd": 20776.71,
+      "volume_1h_usd": 49717.98,
+      "change_5m_pct": -68.71,
+      "change_1h_pct": 10.09,
+      "buys_5m": 195,
+      "sells_5m": 245,
+      "transactions_5m": 440,
+      "buy_sell_ratio": 0.8,
+      "volume_acceleration": 5.01,
+      "age_minutes": 12.0,
+      "score": 6,
       "max_score": 8,
       "points": {
         "volume_5m": 1,
         "volume_1h": 1,
         "variazione_5m": 0,
-        "variazione_1h": 0,
+        "variazione_1h": 1,
         "rapporto_acquisti_vendite": 0,
         "accelerazione_volume": 2,
         "transazioni_5m": 1
@@ -325,7 +325,7 @@
         "volume_1h": true,
         "variazione_5m_min": false,
         "variazione_5m_max": true,
-        "variazione_1h": false,
+        "variazione_1h": true,
         "variazione_1h_max": true,
         "rapporto_acquisti_vendite": false,
         "accelerazione_volume": true,
@@ -354,7 +354,7 @@
       "transactions_5m": 3,
       "buy_sell_ratio": 2.0,
       "volume_acceleration": 1.28,
-      "age_minutes": 1028.8,
+      "age_minutes": 1029.7,
       "score": 5,
       "max_score": 8,
       "points": {
@@ -393,15 +393,15 @@
       "price_usd": 3.682e-06,
       "liquidity_usd": 0.0,
       "volume_5m_usd": 1.18,
-      "volume_1h_usd": 201.45,
+      "volume_1h_usd": 197.42,
       "change_5m_pct": -0.44,
-      "change_1h_pct": 6.0,
+      "change_1h_pct": 5.97,
       "buys_5m": 0,
       "sells_5m": 1,
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.07,
-      "age_minutes": 188.7,
+      "age_minutes": 189.6,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -448,7 +448,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 56436.5,
+      "age_minutes": 56437.4,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -495,7 +495,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 576.3,
+      "age_minutes": 577.2,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -542,7 +542,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 892264.6,
+      "age_minutes": 892265.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -589,7 +589,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 847058.2,
+      "age_minutes": 847059.1,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -625,18 +625,18 @@
       "quote_symbol": "HQ",
       "dex": "meteora",
       "url": "https://dexscreener.com/solana/2jquwhcehjj31jydjuemkckm8ekgqjqskcmovx2u31br",
-      "price_usd": 0.005116,
-      "liquidity_usd": 27.09,
+      "price_usd": 0.005038,
+      "liquidity_usd": 26.89,
       "volume_5m_usd": 0.2,
-      "volume_1h_usd": 0.92,
-      "change_5m_pct": -2.8,
-      "change_1h_pct": -12.32,
+      "volume_1h_usd": 1.02,
+      "change_5m_pct": -3.01,
+      "change_1h_pct": -13.65,
       "buys_5m": 0,
       "sells_5m": 2,
       "transactions_5m": 2,
       "buy_sell_ratio": 0.0,
-      "volume_acceleration": 2.61,
-      "age_minutes": 556.7,
+      "volume_acceleration": 2.35,
+      "age_minutes": 557.6,
       "score": 2,
       "max_score": 8,
       "points": {
@@ -683,7 +683,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 848967.2,
+      "age_minutes": 848968.1,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -730,7 +730,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 5426.7,
+      "age_minutes": 5427.6,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -777,7 +777,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 661.8,
+      "age_minutes": 662.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -824,7 +824,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 882.6,
+      "age_minutes": 883.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -871,7 +871,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 41042.4,
+      "age_minutes": 41043.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -918,7 +918,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 140692.8,
+      "age_minutes": 140693.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -965,7 +965,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 18194.9,
+      "age_minutes": 18195.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1012,7 +1012,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 138778.5,
+      "age_minutes": 138779.4,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1059,7 +1059,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 2987.3,
+      "age_minutes": 2988.2,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1106,7 +1106,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 133183.1,
+      "age_minutes": 133184.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1153,7 +1153,7 @@
       "transactions_5m": 39,
       "buy_sell_ratio": 1.44,
       "volume_acceleration": 0.66,
-      "age_minutes": 1983.5,
+      "age_minutes": 1984.4,
       "score": 4,
       "max_score": 8,
       "points": {
@@ -1200,7 +1200,7 @@
       "transactions_5m": 31,
       "buy_sell_ratio": 2.44,
       "volume_acceleration": 0.7,
-      "age_minutes": 821.9,
+      "age_minutes": 822.8,
       "score": 4,
       "max_score": 8,
       "points": {
@@ -1247,7 +1247,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 1.19,
-      "age_minutes": 14573.1,
+      "age_minutes": 14574.0,
       "score": 2,
       "max_score": 8,
       "points": {
@@ -1294,7 +1294,7 @@
       "transactions_5m": 7,
       "buy_sell_ratio": 2.5,
       "volume_acceleration": 0.38,
-      "age_minutes": 24202.3,
+      "age_minutes": 24203.2,
       "score": 3,
       "max_score": 8,
       "points": {
@@ -1341,7 +1341,7 @@
       "transactions_5m": 3,
       "buy_sell_ratio": 2.0,
       "volume_acceleration": 0.17,
-      "age_minutes": 1001.8,
+      "age_minutes": 1002.7,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -1388,7 +1388,7 @@
       "transactions_5m": 8,
       "buy_sell_ratio": "infinito",
       "volume_acceleration": 11.88,
-      "age_minutes": 183.9,
+      "age_minutes": 184.8,
       "score": 5,
       "max_score": 8,
       "points": {
@@ -1435,7 +1435,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 58419.7,
+      "age_minutes": 58420.6,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1482,7 +1482,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 96036.0,
+      "age_minutes": 96036.9,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1529,7 +1529,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 6710.3,
+      "age_minutes": 6711.2,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -1576,7 +1576,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 13062.4,
+      "age_minutes": 13063.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1623,7 +1623,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1020289.8,
+      "age_minutes": 1020290.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1670,7 +1670,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 50175.6,
+      "age_minutes": 50176.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1717,7 +1717,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 31068.0,
+      "age_minutes": 31068.9,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1764,7 +1764,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 618738.8,
+      "age_minutes": 618739.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1811,7 +1811,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1297362.8,
+      "age_minutes": 1297363.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1858,7 +1858,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 95881.9,
+      "age_minutes": 95882.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1905,7 +1905,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1056895.3,
+      "age_minutes": 1056896.2,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1952,7 +1952,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1245323.9,
+      "age_minutes": 1245324.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -1999,7 +1999,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 138773.6,
+      "age_minutes": 138774.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2046,7 +2046,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 131861.1,
+      "age_minutes": 131862.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2093,7 +2093,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 136503.8,
+      "age_minutes": 136504.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2140,7 +2140,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 27021.6,
+      "age_minutes": 27022.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2187,7 +2187,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1429774.0,
+      "age_minutes": 1429774.9,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2234,7 +2234,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 658.4,
+      "age_minutes": 659.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2281,7 +2281,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1320.9,
+      "age_minutes": 1321.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2328,7 +2328,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 136504.4,
+      "age_minutes": 136505.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2375,7 +2375,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 137810.0,
+      "age_minutes": 137810.9,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2422,7 +2422,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1400.3,
+      "age_minutes": 1401.2,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2469,7 +2469,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1399.9,
+      "age_minutes": 1400.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2516,7 +2516,7 @@
       "transactions_5m": 7,
       "buy_sell_ratio": 1.33,
       "volume_acceleration": 2.04,
-      "age_minutes": 91948.0,
+      "age_minutes": 91948.9,
       "score": 5,
       "max_score": 8,
       "points": {
@@ -2563,7 +2563,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": "infinito",
       "volume_acceleration": 0.0,
-      "age_minutes": 432.6,
+      "age_minutes": 433.5,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -2610,7 +2610,7 @@
       "transactions_5m": 8,
       "buy_sell_ratio": 1.67,
       "volume_acceleration": 0.21,
-      "age_minutes": 509.7,
+      "age_minutes": 510.6,
       "score": 4,
       "max_score": 8,
       "points": {
@@ -2657,7 +2657,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": "infinito",
       "volume_acceleration": 0.1,
-      "age_minutes": 1024.7,
+      "age_minutes": 1025.6,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -2704,7 +2704,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 952.1,
+      "age_minutes": 953.0,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -2751,7 +2751,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 560319.1,
+      "age_minutes": 560320.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2798,7 +2798,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1492675.4,
+      "age_minutes": 1492676.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2845,7 +2845,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 247408.4,
+      "age_minutes": 247409.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2892,7 +2892,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 602951.3,
+      "age_minutes": 602952.2,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2939,7 +2939,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 286141.5,
+      "age_minutes": 286142.4,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -2986,7 +2986,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1998047.6,
+      "age_minutes": 1998048.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3033,7 +3033,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1544900.2,
+      "age_minutes": 1544901.1,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3080,7 +3080,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 620544.3,
+      "age_minutes": 620545.2,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3127,7 +3127,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 49754.9,
+      "age_minutes": 49755.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3174,7 +3174,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 49754.0,
+      "age_minutes": 49754.9,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3221,7 +3221,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.03,
-      "age_minutes": 1183.4,
+      "age_minutes": 1184.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3268,7 +3268,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 1.01,
-      "age_minutes": 25507.9,
+      "age_minutes": 25508.8,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -3315,7 +3315,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 56838.6,
+      "age_minutes": 56839.5,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -3351,26 +3351,26 @@
       "quote_symbol": "SOL",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/6cfzubpujrwymb5doxuajrweht91ext6tqe2pgemzk2w",
-      "price_usd": 0.0009414,
-      "liquidity_usd": 81340.12,
-      "volume_5m_usd": 198.32,
-      "volume_1h_usd": 2878.96,
-      "change_5m_pct": -0.36,
-      "change_1h_pct": 4.32,
+      "price_usd": 0.0009405,
+      "liquidity_usd": 81268.48,
+      "volume_5m_usd": 208.3,
+      "volume_1h_usd": 2882.29,
+      "change_5m_pct": -1.59,
+      "change_1h_pct": 5.25,
       "buys_5m": 20,
-      "sells_5m": 16,
-      "transactions_5m": 36,
-      "buy_sell_ratio": 1.25,
-      "volume_acceleration": 0.83,
-      "age_minutes": 3285.9,
-      "score": 3,
+      "sells_5m": 18,
+      "transactions_5m": 38,
+      "buy_sell_ratio": 1.11,
+      "volume_acceleration": 0.87,
+      "age_minutes": 3286.8,
+      "score": 2,
       "max_score": 8,
       "points": {
         "volume_5m": 0,
         "volume_1h": 0,
         "variazione_5m": 0,
         "variazione_1h": 1,
-        "rapporto_acquisti_vendite": 1,
+        "rapporto_acquisti_vendite": 0,
         "accelerazione_volume": 0,
         "transazioni_5m": 1
       },
@@ -3382,7 +3382,7 @@
         "variazione_5m_max": true,
         "variazione_1h": true,
         "variazione_1h_max": true,
-        "rapporto_acquisti_vendite": true,
+        "rapporto_acquisti_vendite": false,
         "accelerazione_volume": false,
         "transazioni_5m": true,
         "eta_minima": true
@@ -3409,7 +3409,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 907389.1,
+      "age_minutes": 907390.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3456,7 +3456,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 292685.5,
+      "age_minutes": 292686.4,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3503,7 +3503,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 165277.4,
+      "age_minutes": 165278.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3550,7 +3550,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1369.3,
+      "age_minutes": 1370.2,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -3644,7 +3644,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 103038.7,
+      "age_minutes": 103039.6,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3691,7 +3691,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 184539.8,
+      "age_minutes": 184540.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3738,7 +3738,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 20998.0,
+      "age_minutes": 20998.9,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3785,7 +3785,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 925354.7,
+      "age_minutes": 925355.6,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3832,7 +3832,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1003027.4,
+      "age_minutes": 1003028.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3870,16 +3870,16 @@
       "url": "https://dexscreener.com/solana/7uqnr3qvet7gcvba4bbpwevfap4l3sttrjhxdugygq41",
       "price_usd": 5.124e-05,
       "liquidity_usd": 18222.73,
-      "volume_5m_usd": 5.89,
+      "volume_5m_usd": 0.0,
       "volume_1h_usd": 67.92,
-      "change_5m_pct": -0.37,
+      "change_5m_pct": 0.0,
       "change_1h_pct": -0.61,
       "buys_5m": 0,
-      "sells_5m": 1,
-      "transactions_5m": 1,
+      "sells_5m": 0,
+      "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
-      "volume_acceleration": 1.04,
-      "age_minutes": 29576.6,
+      "volume_acceleration": 0.0,
+      "age_minutes": 29577.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3926,7 +3926,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 166274.1,
+      "age_minutes": 166275.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -3973,7 +3973,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1020212.1,
+      "age_minutes": 1020213.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4020,7 +4020,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 11607.6,
+      "age_minutes": 11608.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4058,17 +4058,17 @@
       "url": "https://dexscreener.com/solana/hxvzypgcuybq8skhpvmqzgravbhmuw17rvqhfa7hfzqu",
       "price_usd": 0.003288,
       "liquidity_usd": 115.63,
-      "volume_5m_usd": 0.19,
+      "volume_5m_usd": 0.1,
       "volume_1h_usd": 1.3,
-      "change_5m_pct": 0.66,
+      "change_5m_pct": 0.35,
       "change_1h_pct": -0.89,
-      "buys_5m": 2,
+      "buys_5m": 1,
       "sells_5m": 0,
-      "transactions_5m": 2,
+      "transactions_5m": 1,
       "buy_sell_ratio": "infinito",
-      "volume_acceleration": 1.75,
-      "age_minutes": 80978.2,
-      "score": 3,
+      "volume_acceleration": 0.92,
+      "age_minutes": 80979.1,
+      "score": 1,
       "max_score": 8,
       "points": {
         "volume_5m": 0,
@@ -4076,7 +4076,7 @@
         "variazione_5m": 0,
         "variazione_1h": 0,
         "rapporto_acquisti_vendite": 1,
-        "accelerazione_volume": 2,
+        "accelerazione_volume": 0,
         "transazioni_5m": 0
       },
       "checks": {
@@ -4088,7 +4088,7 @@
         "variazione_1h": false,
         "variazione_1h_max": true,
         "rapporto_acquisti_vendite": true,
-        "accelerazione_volume": true,
+        "accelerazione_volume": false,
         "transazioni_5m": false,
         "eta_minima": true
       },
@@ -4114,7 +4114,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 897791.6,
+      "age_minutes": 897792.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4161,7 +4161,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 58481.4,
+      "age_minutes": 58482.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4208,7 +4208,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 490049.7,
+      "age_minutes": 490050.6,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4255,7 +4255,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 59730.9,
+      "age_minutes": 59731.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4302,7 +4302,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 89776.8,
+      "age_minutes": 89777.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4349,7 +4349,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 580291.9,
+      "age_minutes": 580292.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4396,7 +4396,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 55796.1,
+      "age_minutes": 55797.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4443,7 +4443,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 97033.5,
+      "age_minutes": 97034.4,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4490,7 +4490,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 10443.6,
+      "age_minutes": 10444.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4537,7 +4537,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 55796.1,
+      "age_minutes": 55797.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4584,7 +4584,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1102538.5,
+      "age_minutes": 1102539.4,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4631,7 +4631,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 602993.8,
+      "age_minutes": 602994.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4678,7 +4678,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 138773.4,
+      "age_minutes": 138774.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4725,7 +4725,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 160607.8,
+      "age_minutes": 160608.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4772,7 +4772,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 771512.1,
+      "age_minutes": 771513.0,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -4819,7 +4819,7 @@
       "transactions_5m": 9,
       "buy_sell_ratio": 8.0,
       "volume_acceleration": 0.04,
-      "age_minutes": 2019955.0,
+      "age_minutes": 2019955.9,
       "score": 2,
       "max_score": 8,
       "points": {
@@ -4866,7 +4866,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": "infinito",
       "volume_acceleration": 0.93,
-      "age_minutes": 562461.2,
+      "age_minutes": 562462.1,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -4913,7 +4913,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1452.5,
+      "age_minutes": 1453.4,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -4960,7 +4960,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 767260.0,
+      "age_minutes": 767260.9,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5007,7 +5007,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 583823.9,
+      "age_minutes": 583824.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5054,7 +5054,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 771111.5,
+      "age_minutes": 771112.4,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5101,7 +5101,7 @@
       "transactions_5m": 9,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.75,
-      "age_minutes": 673504.2,
+      "age_minutes": 673505.1,
       "score": 1,
       "max_score": 8,
       "points": {
@@ -5148,7 +5148,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": "infinito",
       "volume_acceleration": 3.7,
-      "age_minutes": 75934.4,
+      "age_minutes": 75935.3,
       "score": 3,
       "max_score": 8,
       "points": {
@@ -5195,7 +5195,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 769887.9,
+      "age_minutes": 769888.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5242,7 +5242,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 755875.8,
+      "age_minutes": 755876.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5289,7 +5289,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 678140.8,
+      "age_minutes": 678141.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5336,7 +5336,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 403911.9,
+      "age_minutes": 403912.8,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5383,7 +5383,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 258883.6,
+      "age_minutes": 258884.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5430,7 +5430,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 116443.6,
+      "age_minutes": 116444.5,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5477,7 +5477,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 557978.7,
+      "age_minutes": 557979.6,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5524,7 +5524,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 266236.1,
+      "age_minutes": 266237.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5571,7 +5571,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 93430.4,
+      "age_minutes": 93431.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5618,7 +5618,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1279796.7,
+      "age_minutes": 1279797.6,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5665,7 +5665,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1423586.2,
+      "age_minutes": 1423587.1,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5712,7 +5712,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 869404.1,
+      "age_minutes": 869405.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5759,7 +5759,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1377550.8,
+      "age_minutes": 1377551.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5806,7 +5806,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1000412.2,
+      "age_minutes": 1000413.1,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5853,7 +5853,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 46509.8,
+      "age_minutes": 46510.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5900,7 +5900,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1072287.1,
+      "age_minutes": 1072288.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5947,7 +5947,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 15551.4,
+      "age_minutes": 15552.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -5994,7 +5994,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 546881.7,
+      "age_minutes": 546882.6,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -6041,7 +6041,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 55548.3,
+      "age_minutes": 55549.2,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -6088,7 +6088,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 52393.1,
+      "age_minutes": 52394.0,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -6135,7 +6135,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 56840.4,
+      "age_minutes": 56841.3,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -6182,7 +6182,7 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 12.0,
-      "age_minutes": 886643.8,
+      "age_minutes": 886644.7,
       "score": 2,
       "max_score": 8,
       "points": {
@@ -6229,7 +6229,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 53.8,
+      "age_minutes": 54.7,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -6276,7 +6276,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 49446.2,
+      "age_minutes": 49447.1,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -6323,7 +6323,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 4668.0,
+      "age_minutes": 4668.9,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -6370,7 +6370,7 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 6185.7,
+      "age_minutes": 6186.6,
       "score": 0,
       "max_score": 8,
       "points": {
@@ -6419,7 +6419,7 @@
       "transactions_5m": 7,
       "buy_sell_ratio": 1.33,
       "volume_acceleration": 2.04,
-      "age_minutes": 91948.0,
+      "age_minutes": 91948.9,
       "score": 5,
       "max_score": 8,
       "points": {
@@ -6466,7 +6466,7 @@
       "transactions_5m": 39,
       "buy_sell_ratio": 1.44,
       "volume_acceleration": 0.66,
-      "age_minutes": 1983.5,
+      "age_minutes": 1984.4,
       "score": 4,
       "max_score": 8,
       "points": {
@@ -6513,7 +6513,7 @@
       "transactions_5m": 31,
       "buy_sell_ratio": 2.44,
       "volume_acceleration": 0.7,
-      "age_minutes": 821.9,
+      "age_minutes": 822.8,
       "score": 4,
       "max_score": 8,
       "points": {
@@ -6560,7 +6560,7 @@
       "transactions_5m": 8,
       "buy_sell_ratio": 1.67,
       "volume_acceleration": 0.21,
-      "age_minutes": 509.7,
+      "age_minutes": 510.6,
       "score": 4,
       "max_score": 8,
       "points": {
