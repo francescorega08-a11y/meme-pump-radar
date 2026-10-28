@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T10:02:43.638174+00:00",
+  "updated_at": "2026-10-28T10:04:46.539426+00:00",
   "pairs": {
     "c3hbhdcl3rwkjsc1dmfz4d3tcvg7zmwqntguftwsemp7": {
       "symbol": "MSFT",
@@ -13,7 +13,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": -0.06,
-      "scanned_at": "2026-10-28T10:02:19.469823+00:00"
+      "scanned_at": "2026-10-28T10:04:18.854564+00:00"
     },
     "ff2tdcv3lgnmksrzpolwwa4dgbavbhjueycb6knl1xxe": {
       "symbol": "memecoins",
@@ -27,7 +27,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:19.651069+00:00"
+      "scanned_at": "2026-10-28T10:04:19.285243+00:00"
     },
     "6ak8i8ul1mhf8aiebyhfsonf1ybavr2dwydh5f1pas5c": {
       "symbol": "MEMECOINS",
@@ -41,7 +41,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:19.826599+00:00"
+      "scanned_at": "2026-10-28T10:04:19.483720+00:00"
     },
     "hxjyrhbiyhjavreodrfputxxqvlnzui6yyucejnrc9kr": {
       "symbol": "MEMECOINS",
@@ -55,7 +55,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:20.006181+00:00"
+      "scanned_at": "2026-10-28T10:04:19.689980+00:00"
     },
     "3wbrvzeaekymoj5wtduhhiuczq7vzhs46zyieybr3cz1": {
       "symbol": "SMC",
@@ -69,7 +69,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:20.186239+00:00"
+      "scanned_at": "2026-10-28T10:04:19.889934+00:00"
     },
     "4uhf89anh7cm3geg6htsrc24k4mz6d9tabtvdwrijhbv": {
       "symbol": "SOLMES",
@@ -83,7 +83,21 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:20.392723+00:00"
+      "scanned_at": "2026-10-28T10:04:20.105049+00:00"
+    },
+    "5ztzv3kttl1ndh4xcpdnt73pzhx2vgvzavcgspr4lbm": {
+      "symbol": "CARTEL",
+      "name": "MemeCartel",
+      "price_usd": 1.243e-05,
+      "liquidity_usd": null,
+      "volume_5m_usd": 6.36,
+      "volume_1h_usd": 678.45,
+      "transactions_5m": 2.0,
+      "buys_5m": 0.0,
+      "sells_5m": 2.0,
+      "price_change_5m_pct": -0.13,
+      "price_change_1h_pct": 2.98,
+      "scanned_at": "2026-10-28T10:04:20.309073+00:00"
     },
     "45ijbgjkgakzt3p8ov3tgb253htpkv256tgmsmqsdj2x": {
       "symbol": "VIRUS",
@@ -97,35 +111,21 @@
       "sells_5m": 1.0,
       "price_change_5m_pct": 0.36,
       "price_change_1h_pct": -0.06,
-      "scanned_at": "2026-10-28T10:02:20.553647+00:00"
-    },
-    "5ztzv3kttl1ndh4xcpdnt73pzhx2vgvzavcgspr4lbm": {
-      "symbol": "CARTEL",
-      "name": "MemeCartel",
-      "price_usd": 1.245e-05,
-      "liquidity_usd": null,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 672.08,
-      "transactions_5m": 0,
-      "buys_5m": 0.0,
-      "sells_5m": 0.0,
-      "price_change_5m_pct": null,
-      "price_change_1h_pct": 3.12,
-      "scanned_at": "2026-10-28T10:02:20.731419+00:00"
+      "scanned_at": "2026-10-28T10:04:20.538833+00:00"
     },
     "dy8kvc8f8g9fdv9zwgsrkemt27o1zummwqf1nb3yymfu": {
       "symbol": "ZSCAT",
       "name": "ZeroKnowledge Solana Cat",
-      "price_usd": 1.111e-05,
+      "price_usd": 1.108e-05,
       "liquidity_usd": null,
-      "volume_5m_usd": 662.55,
-      "volume_1h_usd": 737.66,
-      "transactions_5m": 9.0,
-      "buys_5m": 2.0,
-      "sells_5m": 7.0,
-      "price_change_5m_pct": -17.5,
-      "price_change_1h_pct": -19.36,
-      "scanned_at": "2026-10-28T10:02:20.912082+00:00"
+      "volume_5m_usd": 232.14,
+      "volume_1h_usd": 745.05,
+      "transactions_5m": 5.0,
+      "buys_5m": 1.0,
+      "sells_5m": 4.0,
+      "price_change_5m_pct": -6.25,
+      "price_change_1h_pct": -19.56,
+      "scanned_at": "2026-10-28T10:04:20.737928+00:00"
     },
     "hw51f5ejlbuabhcdh9x7ptys9qrwygbuzsuszpozdltd": {
       "symbol": "SOLDOG",
@@ -139,7 +139,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:21.094492+00:00"
+      "scanned_at": "2026-10-28T10:04:20.940993+00:00"
     },
     "7nreppix9s5hn6yjastwdcpfpmiygoyecwopxbfsnmye": {
       "symbol": "soldog",
@@ -153,7 +153,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:21.271282+00:00"
+      "scanned_at": "2026-10-28T10:04:21.141899+00:00"
     },
     "f3kis7xz3enx9cqv7aknhcfbqvwg8uxh9bg2sryyxdch": {
       "symbol": "SDOGE",
@@ -167,7 +167,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:21.449425+00:00"
+      "scanned_at": "2026-10-28T10:04:21.343128+00:00"
     },
     "eg39azdncmui8hrbttmpnc85ptq8ubgbyhskszaf7nzc": {
       "symbol": "WIENER",
@@ -181,7 +181,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:21.631398+00:00"
+      "scanned_at": "2026-10-28T10:04:21.539885+00:00"
     },
     "7bhw6gtjrrdbq3gibdwgusvivprxuvavov61kykvo5bj": {
       "symbol": "TURDO",
@@ -195,7 +195,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:21.808993+00:00"
+      "scanned_at": "2026-10-28T10:04:21.737154+00:00"
     },
     "ba5cyctkvwtszdxyratxluu9xkarem6jk1fksofxrngy": {
       "symbol": "TEDDY",
@@ -209,7 +209,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:21.991531+00:00"
+      "scanned_at": "2026-10-28T10:04:21.941308+00:00"
     },
     "2jquwhcehjj31jydjuemkckm8ekgqjqskcmovx2u31br": {
       "symbol": "CHICO",
@@ -221,9 +221,9 @@
       "transactions_5m": 0,
       "buys_5m": 0.0,
       "sells_5m": 0.0,
-      "price_change_5m_pct": -1.49,
+      "price_change_5m_pct": null,
       "price_change_1h_pct": -8.9,
-      "scanned_at": "2026-10-28T10:02:22.167322+00:00"
+      "scanned_at": "2026-10-28T10:04:22.160797+00:00"
     },
     "z8fsret5arktyxyaanhi78ph7ohbzvvqjl5d8frpfsy": {
       "symbol": "BRDS",
@@ -237,7 +237,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:22.375270+00:00"
+      "scanned_at": "2026-10-28T10:04:22.359352+00:00"
     },
     "6mjfa8t8bcthbdw6odqgmuseduwfrhrrfd7sytywkuwg": {
       "symbol": "DWS",
@@ -251,7 +251,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:22.551897+00:00"
+      "scanned_at": "2026-10-28T10:04:22.569283+00:00"
     },
     "8sgs2svbgt4rwbfb3creqzwtxzqev3hqkrhyso7mkwdt": {
       "symbol": "Solana",
@@ -265,7 +265,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:22.731371+00:00"
+      "scanned_at": "2026-10-28T10:04:22.768254+00:00"
     },
     "9f3h2fjcb4rxgt6kgzkhhumeb9mq2bctrtkh5urbqzhd": {
       "symbol": "Solana ",
@@ -279,7 +279,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:22.908710+00:00"
+      "scanned_at": "2026-10-28T10:04:22.961234+00:00"
     },
     "a4scny86wyahtpr6ytztzn4qtfnin6z2rkl4kzewc6sa": {
       "symbol": "DOGEᅠ",
@@ -293,7 +293,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:23.099936+00:00"
+      "scanned_at": "2026-10-28T10:04:23.163870+00:00"
     },
     "9t6er6czswpvvgkcdgp1rgi8uqd34exzgyghkhny6cx7": {
       "symbol": "DOS",
@@ -307,7 +307,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:23.277127+00:00"
+      "scanned_at": "2026-10-28T10:04:23.394677+00:00"
     },
     "gjzucltrqvip1cjxpqwy3oqza5pp6plk9w33zztcjz6p": {
       "symbol": "ESR",
@@ -321,7 +321,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 0.12,
-      "scanned_at": "2026-10-28T10:02:23.455952+00:00"
+      "scanned_at": "2026-10-28T10:04:23.598559+00:00"
     },
     "hyywmbtgwovdwsdk4awxbww2xuknwcu7jlkhvhpb7c8v": {
       "symbol": "ESR",
@@ -335,7 +335,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:23.634629+00:00"
+      "scanned_at": "2026-10-28T10:04:23.806018+00:00"
     },
     "adogkkpfz2vtpqx9fqavlpf2zwhmdugqr8pk5ze5xuvc": {
       "symbol": "HSDT",
@@ -349,7 +349,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:23.819275+00:00"
+      "scanned_at": "2026-10-28T10:04:24.013376+00:00"
     },
     "cuwbvpaqa9v1gasjfmeszajgbrxqbuk6mefshxixaw6v": {
       "symbol": "LSR",
@@ -363,63 +363,63 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:23.995593+00:00"
+      "scanned_at": "2026-10-28T10:04:24.211498+00:00"
     },
     "eztwxzfmns9sjjgvych35i6e3oywsdjdeql9cbzgfdap": {
       "symbol": "CHICO",
       "name": "GTA6DOG",
-      "price_usd": 0.004309,
-      "liquidity_usd": 188863.57,
-      "volume_5m_usd": 4243.05,
-      "volume_1h_usd": 64611.4,
-      "transactions_5m": 45.0,
-      "buys_5m": 28.0,
-      "sells_5m": 17.0,
-      "price_change_5m_pct": -1.68,
-      "price_change_1h_pct": -10.8,
-      "scanned_at": "2026-10-28T10:02:24.157795+00:00"
-    },
-    "dsfht8bngd6ynbv41qf8dbespfh2dkczga9ptj5gqged": {
-      "symbol": "DOG",
-      "name": "contract address dog",
-      "price_usd": 2.431e-05,
-      "liquidity_usd": null,
-      "volume_5m_usd": 49.52,
-      "volume_1h_usd": 1102.79,
-      "transactions_5m": 4.0,
-      "buys_5m": 2.0,
-      "sells_5m": 2.0,
-      "price_change_5m_pct": 0.05,
-      "price_change_1h_pct": -10.18,
-      "scanned_at": "2026-10-28T10:02:24.334219+00:00"
+      "price_usd": 0.004347,
+      "liquidity_usd": 189712.22,
+      "volume_5m_usd": 4926.55,
+      "volume_1h_usd": 65583.81,
+      "transactions_5m": 53.0,
+      "buys_5m": 34.0,
+      "sells_5m": 19.0,
+      "price_change_5m_pct": 0.62,
+      "price_change_1h_pct": -10.92,
+      "scanned_at": "2026-10-28T10:04:24.393213+00:00"
     },
     "hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8": {
       "symbol": "JOB",
       "name": "DogWifJob",
-      "price_usd": 0.002718,
-      "liquidity_usd": 142212.22,
-      "volume_5m_usd": 2743.79,
-      "volume_1h_usd": 36159.46,
-      "transactions_5m": 37.0,
-      "buys_5m": 18.0,
-      "sells_5m": 19.0,
-      "price_change_5m_pct": -1.8,
-      "price_change_1h_pct": 19.97,
-      "scanned_at": "2026-10-28T10:02:24.493929+00:00"
+      "price_usd": 0.002761,
+      "liquidity_usd": 143357.41,
+      "volume_5m_usd": 1160.25,
+      "volume_1h_usd": 35831.45,
+      "transactions_5m": 21.0,
+      "buys_5m": 11.0,
+      "sells_5m": 10.0,
+      "price_change_5m_pct": 0.96,
+      "price_change_1h_pct": 21.89,
+      "scanned_at": "2026-10-28T10:04:24.577820+00:00"
     },
     "cxexbakxx7ztypcstryrgg2fwfmbagwtxdgewgbqmrvb": {
       "symbol": "Doge",
       "name": "Dogecoin",
-      "price_usd": 6.962e-06,
+      "price_usd": 7.05e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 11.77,
-      "volume_1h_usd": 245.18,
-      "transactions_5m": 1.0,
-      "buys_5m": 1.0,
+      "volume_5m_usd": 42.23,
+      "volume_1h_usd": 275.65,
+      "transactions_5m": 2.0,
+      "buys_5m": 2.0,
       "sells_5m": 0.0,
-      "price_change_5m_pct": 0.67,
-      "price_change_1h_pct": 7.4,
-      "scanned_at": "2026-10-28T10:02:24.673937+00:00"
+      "price_change_5m_pct": 1.95,
+      "price_change_1h_pct": 8.77,
+      "scanned_at": "2026-10-28T10:04:24.778204+00:00"
+    },
+    "dsfht8bngd6ynbv41qf8dbespfh2dkczga9ptj5gqged": {
+      "symbol": "DOG",
+      "name": "contract address dog",
+      "price_usd": 2.356e-05,
+      "liquidity_usd": null,
+      "volume_5m_usd": 186.8,
+      "volume_1h_usd": 1218.11,
+      "transactions_5m": 6.0,
+      "buys_5m": 1.0,
+      "sells_5m": 5.0,
+      "price_change_5m_pct": -3.07,
+      "price_change_1h_pct": -12.55,
+      "scanned_at": "2026-10-28T10:04:24.981405+00:00"
     },
     "9hr6nxw5wsffxnqnqxwzyhrw81uz3ppb7rf9j3i9nmt1": {
       "symbol": "SOLCAT",
@@ -433,7 +433,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:24.858284+00:00"
+      "scanned_at": "2026-10-28T10:04:25.160821+00:00"
     },
     "26m4mzwcdcjttwkt43mddiojwvwgkzwfxeaoscrw85ml": {
       "symbol": "SOLCAT",
@@ -447,7 +447,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:25.034733+00:00"
+      "scanned_at": "2026-10-28T10:04:25.410324+00:00"
     },
     "6zkvsbea4hdfzucatgcz2zvpltphjtvb4esxsiwmwymy": {
       "symbol": "SCX",
@@ -461,7 +461,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:25.211013+00:00"
+      "scanned_at": "2026-10-28T10:04:25.613044+00:00"
     },
     "98ywyqybg1ua8mhok37tps4jnowdbsynkcfyvbqgrq14": {
       "symbol": "OPOS",
@@ -475,7 +475,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:25.415674+00:00"
+      "scanned_at": "2026-10-28T10:04:25.820719+00:00"
     },
     "3w62iak7ly1lcurakrsvdbbwfaszkoytqt8apkntopyc": {
       "symbol": "HQ",
@@ -489,7 +489,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:25.611758+00:00"
+      "scanned_at": "2026-10-28T10:04:26.018833+00:00"
     },
     "bmozogdaak3hwbex4rabvmoae46nqe1l2pfsugm3jeca": {
       "symbol": "HQ",
@@ -503,7 +503,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:25.789818+00:00"
+      "scanned_at": "2026-10-28T10:04:26.220332+00:00"
     },
     "gergm1amasyem8j41hu9hucatsk3uwra2ggh5j1kgbuw": {
       "symbol": "BABYSOL",
@@ -517,7 +517,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:25.973451+00:00"
+      "scanned_at": "2026-10-28T10:04:26.419406+00:00"
     },
     "8p3hfklbuazts65v5kuzrvycenpfaj5zigb2zjdzmhla": {
       "symbol": "Advocat",
@@ -531,7 +531,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:26.150938+00:00"
+      "scanned_at": "2026-10-28T10:04:26.615500+00:00"
     },
     "9bvkq3etdlmtw3ban3mhc41budq8e2jctyyzp3hx1ugt": {
       "symbol": "HIMA",
@@ -545,7 +545,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:26.325916+00:00"
+      "scanned_at": "2026-10-28T10:04:26.841369+00:00"
     },
     "5eepvvcwp5fsrvlo3cmx1vb8qvdflkoc3e7b3h9zmphu": {
       "symbol": "mooncat",
@@ -559,7 +559,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:26.506297+00:00"
+      "scanned_at": "2026-10-28T10:04:27.039508+00:00"
     },
     "hweky5ypt2gsfqmouhqk5atngdp7pg4bqtwwvcatjlam": {
       "symbol": "SOLWIN",
@@ -573,7 +573,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:26.683175+00:00"
+      "scanned_at": "2026-10-28T10:04:27.264018+00:00"
     },
     "dzdqdysj5hbd6xnemgpxm7aaeglvkhdlxkppxwjdlcw3": {
       "symbol": "ESR",
@@ -587,7 +587,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:26.858820+00:00"
+      "scanned_at": "2026-10-28T10:04:27.463107+00:00"
     },
     "6dzwnasifjnubvrejohqeszaeet6mjrtrs19bgq1uu8i": {
       "symbol": "ESR",
@@ -601,7 +601,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:27.035385+00:00"
+      "scanned_at": "2026-10-28T10:04:27.669668+00:00"
     },
     "czczt31bjafejvohxyjn2rz19qvycbvydtbro8o9a62j": {
       "symbol": "RCAT",
@@ -615,7 +615,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:27.214035+00:00"
+      "scanned_at": "2026-10-28T10:04:27.864640+00:00"
     },
     "a6tdxxntytnyig5jxgldvjir5lus8xesrnskgtim2e3z": {
       "symbol": "SIAMOND",
@@ -629,7 +629,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:27.389858+00:00"
+      "scanned_at": "2026-10-28T10:04:28.053777+00:00"
     },
     "chmb6syrklcbvxtacvnukcj9bwrky4smcfqxgwap8htq": {
       "symbol": "solana",
@@ -643,7 +643,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:27.566036+00:00"
+      "scanned_at": "2026-10-28T10:04:28.249833+00:00"
     },
     "dwnjv6kerypw7nwnndomesx3cqsz1klxmdzgpgiglkxt": {
       "symbol": "BC",
@@ -657,7 +657,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:27.744912+00:00"
+      "scanned_at": "2026-10-28T10:04:28.453661+00:00"
     },
     "h6tjuhamr6vvh57zdccfor1hzjezs43mhfne9sjuaobw": {
       "symbol": "ESR",
@@ -671,7 +671,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": 0.19,
       "price_change_1h_pct": 0.19,
-      "scanned_at": "2026-10-28T10:02:27.921060+00:00"
+      "scanned_at": "2026-10-28T10:04:28.653418+00:00"
     },
     "3cfckggv57vnbwwqxuxfzau2glpvzxxfy2tkrt4qgjc5": {
       "symbol": "ESR",
@@ -685,7 +685,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:28.098473+00:00"
+      "scanned_at": "2026-10-28T10:04:28.849771+00:00"
     },
     "acwxc6dufs5ybdserjsdkktt6v8js4wceahtfc1t6ncr": {
       "symbol": "BLACKOUT",
@@ -699,21 +699,21 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:28.277320+00:00"
+      "scanned_at": "2026-10-28T10:04:29.044971+00:00"
     },
     "5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m": {
       "symbol": "GATO",
       "name": "GTA6CAT",
-      "price_usd": 0.004175,
-      "liquidity_usd": 204220.68,
-      "volume_5m_usd": 1236.64,
-      "volume_1h_usd": 29711.29,
-      "transactions_5m": 16.0,
-      "buys_5m": 7.0,
-      "sells_5m": 9.0,
-      "price_change_5m_pct": 0.6,
-      "price_change_1h_pct": -7.4,
-      "scanned_at": "2026-10-28T10:02:28.439241+00:00"
+      "price_usd": 0.004135,
+      "liquidity_usd": 203242.13,
+      "volume_5m_usd": 973.91,
+      "volume_1h_usd": 29207.98,
+      "transactions_5m": 14.0,
+      "buys_5m": 9.0,
+      "sells_5m": 5.0,
+      "price_change_5m_pct": -0.2,
+      "price_change_1h_pct": -8.58,
+      "scanned_at": "2026-10-28T10:04:29.230339+00:00"
     },
     "6ua6dxtngsfsn6vcdcxdkls4g1vwe8q9w4m1anrmxmgo": {
       "symbol": "pandacat",
@@ -727,63 +727,63 @@
       "sells_5m": 2.0,
       "price_change_5m_pct": -1.61,
       "price_change_1h_pct": -10.6,
-      "scanned_at": "2026-10-28T10:02:28.620794+00:00"
+      "scanned_at": "2026-10-28T10:04:29.431892+00:00"
     },
     "2amymjb1k9q1xwrvbvagpsaytgxa7uadijnljehuycjs": {
       "symbol": "CrawlCat",
       "name": "CrawlCat",
-      "price_usd": 8.178e-06,
+      "price_usd": 1.005e-05,
       "liquidity_usd": null,
-      "volume_5m_usd": 3022.12,
-      "volume_1h_usd": 97412.6,
-      "transactions_5m": 74.0,
-      "buys_5m": 44.0,
-      "sells_5m": 30.0,
-      "price_change_5m_pct": 16.0,
-      "price_change_1h_pct": 111.0,
-      "scanned_at": "2026-10-28T10:02:28.782135+00:00"
+      "volume_5m_usd": 5524.29,
+      "volume_1h_usd": 101132.9,
+      "transactions_5m": 96.0,
+      "buys_5m": 50.0,
+      "sells_5m": 46.0,
+      "price_change_5m_pct": 21.07,
+      "price_change_1h_pct": 159.0,
+      "scanned_at": "2026-10-28T10:04:29.614090+00:00"
     },
     "4j3tq21o45ipb4zdmbfqs4ccxwcyh6qezftqgbhdwwuw": {
       "symbol": "INVISIBLE",
       "name": "Invisible Cat",
-      "price_usd": 0.0001586,
-      "liquidity_usd": 36266.51,
-      "volume_5m_usd": 250.75,
-      "volume_1h_usd": 16540.87,
-      "transactions_5m": 12.0,
-      "buys_5m": 1.0,
-      "sells_5m": 11.0,
-      "price_change_5m_pct": -5.89,
-      "price_change_1h_pct": -0.12,
-      "scanned_at": "2026-10-28T10:02:28.943769+00:00"
+      "price_usd": 0.0001591,
+      "liquidity_usd": 36320.57,
+      "volume_5m_usd": 208.82,
+      "volume_1h_usd": 16588.98,
+      "transactions_5m": 11.0,
+      "buys_5m": 2.0,
+      "sells_5m": 9.0,
+      "price_change_5m_pct": -1.31,
+      "price_change_1h_pct": 6.32,
+      "scanned_at": "2026-10-28T10:04:29.794835+00:00"
     },
     "4ocvqcj69k4gbvdpgbtzouqxrdn9uvvuxvxxaxsbwwny": {
       "symbol": "MOGZCAT",
       "name": "Mogzcat",
-      "price_usd": 1.161e-05,
+      "price_usd": 1.178e-05,
       "liquidity_usd": null,
-      "volume_5m_usd": 42.1,
-      "volume_1h_usd": 2360.06,
-      "transactions_5m": 2.0,
+      "volume_5m_usd": 408.7,
+      "volume_1h_usd": 2658.71,
+      "transactions_5m": 5.0,
       "buys_5m": 2.0,
-      "sells_5m": 0.0,
-      "price_change_5m_pct": 0.86,
-      "price_change_1h_pct": 78.1,
-      "scanned_at": "2026-10-28T10:02:29.120498+00:00"
+      "sells_5m": 3.0,
+      "price_change_5m_pct": 2.11,
+      "price_change_1h_pct": 79.24,
+      "scanned_at": "2026-10-28T10:04:29.993839+00:00"
     },
     "4uonxycx3pcxvt342zkz4irfkoufyerztfklqqbfpbn1": {
       "symbol": "MCAT",
       "name": "Mog Cat",
       "price_usd": 6.425e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 169.2,
+      "volume_5m_usd": 0.0,
       "volume_1h_usd": 1788.15,
-      "transactions_5m": 4.0,
-      "buys_5m": 1.0,
-      "sells_5m": 3.0,
-      "price_change_5m_pct": -4.71,
+      "transactions_5m": 0,
+      "buys_5m": 0.0,
+      "sells_5m": 0.0,
+      "price_change_5m_pct": -4.54,
       "price_change_1h_pct": 34.98,
-      "scanned_at": "2026-10-28T10:02:29.298454+00:00"
+      "scanned_at": "2026-10-28T10:04:30.192413+00:00"
     },
     "83m2cuszqzx52wakpdt3i6hren2fxxsy9z1es1s4b1g6": {
       "symbol": "TARD",
@@ -792,12 +792,12 @@
       "liquidity_usd": null,
       "volume_5m_usd": 0.0,
       "volume_1h_usd": 0.0,
-      "transactions_5m": 1.0,
+      "transactions_5m": 2.0,
       "buys_5m": 1.0,
-      "sells_5m": 0.0,
+      "sells_5m": 1.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:29.461909+00:00"
+      "scanned_at": "2026-10-28T10:04:30.396953+00:00"
     },
     "b6f6wvsqhhc1art9wmku5mx1x3yjtbmqxf8bdzxe7ykq": {
       "symbol": "Sepe",
@@ -811,7 +811,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:29.647266+00:00"
+      "scanned_at": "2026-10-28T10:04:30.608422+00:00"
     },
     "at1staufzcjwysxfacrdwo5adnc2qyj2dmbusrnk7bxb": {
       "symbol": "SPEPE",
@@ -825,7 +825,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:29.831776+00:00"
+      "scanned_at": "2026-10-28T10:04:30.803347+00:00"
     },
     "d1koh7phukwrqf6yu83l5p28llk2erfij5rcwfwtug8n": {
       "symbol": "OPOS",
@@ -839,7 +839,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 1.99,
-      "scanned_at": "2026-10-28T10:02:30.007301+00:00"
+      "scanned_at": "2026-10-28T10:04:31.001333+00:00"
     },
     "bdn45njp5gsmu8xyo1cupebjv49kwypihfbs4cu7wvet": {
       "symbol": "PEPENA",
@@ -853,7 +853,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:30.186475+00:00"
+      "scanned_at": "2026-10-28T10:04:31.205351+00:00"
     },
     "66ouz5qdqoaegpeeofzlebxt2cg3ryjxhjvasuatbsjx": {
       "symbol": "HISS",
@@ -867,7 +867,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:30.364485+00:00"
+      "scanned_at": "2026-10-28T10:04:31.435016+00:00"
     },
     "hwn3kxk4ppktrpzddp5u8moetqwgpfigpifv9p213bku": {
       "symbol": "PEPE",
@@ -881,7 +881,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:30.538137+00:00"
+      "scanned_at": "2026-10-28T10:04:31.635973+00:00"
     },
     "3sy9a1apecsk6febtyww2sjfwa7w4ndfmnzhctlhansq": {
       "symbol": "PEPE",
@@ -895,7 +895,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:30.713915+00:00"
+      "scanned_at": "2026-10-28T10:04:31.842091+00:00"
     },
     "dd3lbncvfzwks83vfwk5zqx3zk8lgpdshm42hoq4hcys": {
       "symbol": "ESR",
@@ -909,7 +909,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:30.894892+00:00"
+      "scanned_at": "2026-10-28T10:04:32.039588+00:00"
     },
     "cxnvdhamsn58bvaravrwvbymx2ckjwjnxspfufnztldi": {
       "symbol": "LSR",
@@ -923,63 +923,63 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": -1.67,
-      "scanned_at": "2026-10-28T10:02:31.072047+00:00"
+      "scanned_at": "2026-10-28T10:04:32.245678+00:00"
     },
     "9ebmn8rcyrhgzvqmdxjxbclmvch2bt4af15akgwk7u4a": {
       "symbol": "Sunpepe",
       "name": "Sunpepe",
-      "price_usd": 1.341e-05,
+      "price_usd": 1.583e-05,
       "liquidity_usd": null,
-      "volume_5m_usd": 10537.74,
-      "volume_1h_usd": 153416.72,
-      "transactions_5m": 357.0,
-      "buys_5m": 204.0,
-      "sells_5m": 153.0,
-      "price_change_5m_pct": -17.81,
-      "price_change_1h_pct": 245.0,
-      "scanned_at": "2026-10-28T10:02:31.233591+00:00"
+      "volume_5m_usd": 7824.3,
+      "volume_1h_usd": 155415.71,
+      "transactions_5m": 276.0,
+      "buys_5m": 154.0,
+      "sells_5m": 122.0,
+      "price_change_5m_pct": -12.06,
+      "price_change_1h_pct": 308.0,
+      "scanned_at": "2026-10-28T10:04:32.431625+00:00"
     },
     "24fkukuukwnkfv8uresvffmbfu18r2gu9x26i8xtvh5i": {
       "symbol": "UP",
       "name": "Useless Pepe",
-      "price_usd": 1.342e-05,
+      "price_usd": 1.619e-05,
       "liquidity_usd": null,
-      "volume_5m_usd": 54681.23,
-      "volume_1h_usd": 116190.37,
-      "transactions_5m": 1360.0,
-      "buys_5m": 773.0,
-      "sells_5m": 587.0,
-      "price_change_5m_pct": -41.06,
-      "price_change_1h_pct": 226.0,
-      "scanned_at": "2026-10-28T10:02:31.397484+00:00"
+      "volume_5m_usd": 28938.29,
+      "volume_1h_usd": 124117.39,
+      "transactions_5m": 782.0,
+      "buys_5m": 426.0,
+      "sells_5m": 356.0,
+      "price_change_5m_pct": -26.1,
+      "price_change_1h_pct": 293.0,
+      "scanned_at": "2026-10-28T10:04:32.632420+00:00"
     },
     "76zqcg2zcyzqzpfvg225zqxdk8gdxn52dufcokbojlwu": {
       "symbol": "TREPE",
       "name": "TRON PEPE",
-      "price_usd": 5.735e-06,
+      "price_usd": 4.806e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 1888.7,
-      "volume_1h_usd": 19762.61,
-      "transactions_5m": 43.0,
-      "buys_5m": 21.0,
-      "sells_5m": 22.0,
-      "price_change_5m_pct": -18.58,
-      "price_change_1h_pct": 49.94,
-      "scanned_at": "2026-10-28T10:02:31.581657+00:00"
+      "volume_5m_usd": 1387.79,
+      "volume_1h_usd": 20149.28,
+      "transactions_5m": 33.0,
+      "buys_5m": 14.0,
+      "sells_5m": 19.0,
+      "price_change_5m_pct": -25.25,
+      "price_change_1h_pct": 25.66,
+      "scanned_at": "2026-10-28T10:04:32.827014+00:00"
     },
     "6iep3egqksbzwgzmbcyajtivtvykcgl9bnpbewlr8agq": {
       "symbol": "DOPE",
       "name": "Doge Pepe",
-      "price_usd": 0.002386,
-      "liquidity_usd": 207004.12,
-      "volume_5m_usd": 461.74,
-      "volume_1h_usd": 13002.27,
-      "transactions_5m": 6.0,
-      "buys_5m": 3.0,
-      "sells_5m": 3.0,
-      "price_change_5m_pct": 0.61,
-      "price_change_1h_pct": -4.17,
-      "scanned_at": "2026-10-28T10:02:31.744971+00:00"
+      "price_usd": 0.002426,
+      "liquidity_usd": 208764.91,
+      "volume_5m_usd": 475.51,
+      "volume_1h_usd": 12989.81,
+      "transactions_5m": 8.0,
+      "buys_5m": 4.0,
+      "sells_5m": 4.0,
+      "price_change_5m_pct": 0.19,
+      "price_change_1h_pct": -1.52,
+      "scanned_at": "2026-10-28T10:04:33.014260+00:00"
     },
     "czr1wzufhw2dkrsqfbnv7e36sxksqdzfjqjqs2xmpqam": {
       "symbol": "Solanaween",
@@ -987,41 +987,41 @@
       "price_usd": 6.092e-06,
       "liquidity_usd": null,
       "volume_5m_usd": 5.76,
-      "volume_1h_usd": 217.44,
+      "volume_1h_usd": 205.01,
       "transactions_5m": 1.0,
       "buys_5m": 0.0,
       "sells_5m": 1.0,
       "price_change_5m_pct": -0.19,
-      "price_change_1h_pct": -4.28,
-      "scanned_at": "2026-10-28T10:02:31.932390+00:00"
+      "price_change_1h_pct": -3.75,
+      "scanned_at": "2026-10-28T10:04:33.206495+00:00"
     },
     "8v79sjmpkrux2emzbs8ukmfdrclabszboc4ej5kowvc5": {
       "symbol": "FEELSGOOD",
       "name": "Feels Good Man",
       "price_usd": 0.001313,
       "liquidity_usd": 139171.99,
-      "volume_5m_usd": 57.99,
+      "volume_5m_usd": 57.95,
       "volume_1h_usd": 1324.15,
-      "transactions_5m": 3.0,
+      "transactions_5m": 2.0,
       "buys_5m": 1.0,
-      "sells_5m": 2.0,
-      "price_change_5m_pct": -0.42,
+      "sells_5m": 1.0,
+      "price_change_5m_pct": -0.11,
       "price_change_1h_pct": 1.09,
-      "scanned_at": "2026-10-28T10:02:32.110354+00:00"
+      "scanned_at": "2026-10-28T10:04:33.397262+00:00"
     },
     "6cfzubpujrwymb5doxuajrweht91ext6tqe2pgemzk2w": {
       "symbol": "s/acc",
       "name": "SOLANA ACCELERATE",
       "price_usd": 0.001097,
-      "liquidity_usd": 88017.0,
-      "volume_5m_usd": 231.8,
-      "volume_1h_usd": 3522.18,
-      "transactions_5m": 40.0,
-      "buys_5m": 20.0,
-      "sells_5m": 20.0,
-      "price_change_5m_pct": 1.4,
-      "price_change_1h_pct": 9.66,
-      "scanned_at": "2026-10-28T10:02:32.272237+00:00"
+      "liquidity_usd": 88034.14,
+      "volume_5m_usd": 199.22,
+      "volume_1h_usd": 3197.46,
+      "transactions_5m": 36.0,
+      "buys_5m": 17.0,
+      "sells_5m": 19.0,
+      "price_change_5m_pct": 0.14,
+      "price_change_1h_pct": 7.32,
+      "scanned_at": "2026-10-28T10:04:33.577751+00:00"
     },
     "hdt4asuvnjwn1y5mv2r3spxf54hc911anyihu8htmk7z": {
       "symbol": "SSE",
@@ -1035,7 +1035,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:32.434960+00:00"
+      "scanned_at": "2026-10-28T10:04:33.785019+00:00"
     },
     "gbzd5oomfkytygzumkfzyaejpvzxvm5fk4fdjcpvjjch": {
       "symbol": "CLAWD",
@@ -1049,7 +1049,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 1.27,
-      "scanned_at": "2026-10-28T10:02:32.610734+00:00"
+      "scanned_at": "2026-10-28T10:04:33.984449+00:00"
     },
     "8lvi23yktg2damhynyboggnflnphrhlkveu2irqvscgg": {
       "symbol": "CURB",
@@ -1063,7 +1063,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:32.792380+00:00"
+      "scanned_at": "2026-10-28T10:04:34.180177+00:00"
     },
     "7qtoalubuudhi4lhbv8laozuwxn4ywv2tfylthcdavap": {
       "symbol": "Solanaween",
@@ -1077,7 +1077,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 0.03,
-      "scanned_at": "2026-10-28T10:02:32.969216+00:00"
+      "scanned_at": "2026-10-28T10:04:34.383756+00:00"
     },
     "aqucqke8j8a7zp8ziowcejf2acqwft4tnpah94dqwber": {
       "symbol": "VIRUSEM",
@@ -1091,7 +1091,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:33.146287+00:00"
+      "scanned_at": "2026-10-28T10:04:34.590037+00:00"
     },
     "9rubzfff8wtfxhvyfjszfo1ajatmqgzfsrmhn1nie4vx": {
       "symbol": "$MAXBTC",
@@ -1105,7 +1105,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:33.320988+00:00"
+      "scanned_at": "2026-10-28T10:04:34.788205+00:00"
     },
     "ahkpfpep9r7ednvdcm5kj3llceflvwce2oaexfp4oah8": {
       "symbol": "LayoWif",
@@ -1119,7 +1119,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:33.510295+00:00"
+      "scanned_at": "2026-10-28T10:04:34.987192+00:00"
     },
     "gqcpxxok5apqqkv4lng572dv2g8bxg2wzxw3gkpswpmi": {
       "symbol": "Solana ",
@@ -1133,7 +1133,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 4.37,
-      "scanned_at": "2026-10-28T10:02:33.686769+00:00"
+      "scanned_at": "2026-10-28T10:04:35.201739+00:00"
     },
     "3rzcrvdu4osdjkdmhcykqhu5ef8f8lsy9bdgham8rmva": {
       "symbol": "STORE",
@@ -1147,7 +1147,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:33.851556+00:00"
+      "scanned_at": "2026-10-28T10:04:35.403560+00:00"
     },
     "5iktvxj3dckq8huws7nxzqjzwkhigwy8josg3rguxk5g": {
       "symbol": "XRP",
@@ -1161,21 +1161,35 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:34.013340+00:00"
+      "scanned_at": "2026-10-28T10:04:35.597936+00:00"
     },
     "7uqnr3qvet7gcvba4bbpwevfap4l3sttrjhxdugygq41": {
       "symbol": "BOMBERS",
       "name": "Solana Bombers",
       "price_usd": 5.051e-05,
       "liquidity_usd": 18074.98,
-      "volume_5m_usd": 7.57,
+      "volume_5m_usd": 0.0,
       "volume_1h_usd": 122.36,
+      "transactions_5m": 0,
+      "buys_5m": 0.0,
+      "sells_5m": 0.0,
+      "price_change_5m_pct": null,
+      "price_change_1h_pct": -3.87,
+      "scanned_at": "2026-10-28T10:04:35.812441+00:00"
+    },
+    "fwmlcstr3auysmg5vxradrcje6muj3mgqanlrh964zzy": {
+      "symbol": "Solanaguy",
+      "name": "Just a Solana guy ",
+      "price_usd": 2.874e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 0.76,
+      "volume_1h_usd": 0.76,
       "transactions_5m": 1.0,
       "buys_5m": 0.0,
       "sells_5m": 1.0,
-      "price_change_5m_pct": 0.08,
-      "price_change_1h_pct": -3.87,
-      "scanned_at": "2026-10-28T10:02:34.175965+00:00"
+      "price_change_5m_pct": null,
+      "price_change_1h_pct": null,
+      "scanned_at": "2026-10-28T10:04:36.001416+00:00"
     },
     "j61fedaj3uyyl7gfueojn7e2koyz6th88t6wpc5n2hjw": {
       "symbol": "BABYSOL",
@@ -1183,13 +1197,13 @@
       "price_usd": 6.676e-05,
       "liquidity_usd": 22537.07,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.15,
+      "volume_1h_usd": 0.0,
       "transactions_5m": 0,
       "buys_5m": 0.0,
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:34.338294+00:00"
+      "scanned_at": "2026-10-28T10:04:36.204059+00:00"
     },
     "45henojstluzwqambgtkcxbnwcadi2h9kmzgiaddyuh8": {
       "symbol": "Solana",
@@ -1203,7 +1217,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:34.512669+00:00"
+      "scanned_at": "2026-10-28T10:04:36.405161+00:00"
     },
     "hxvzypgcuybq8skhpvmqzgravbhmuw17rvqhfa7hfzqu": {
       "symbol": "RETARDIO",
@@ -1215,9 +1229,9 @@
       "transactions_5m": 0,
       "buys_5m": 0.0,
       "sells_5m": 0.0,
-      "price_change_5m_pct": 0.32,
+      "price_change_5m_pct": null,
       "price_change_1h_pct": 4.07,
-      "scanned_at": "2026-10-28T10:02:34.689272+00:00"
+      "scanned_at": "2026-10-28T10:04:36.607223+00:00"
     },
     "hwueave5typpv2jaalmx2qg7hxttfksxrpfow9sdmgm6": {
       "symbol": "HIMA",
@@ -1231,7 +1245,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:34.866832+00:00"
+      "scanned_at": "2026-10-28T10:04:36.807581+00:00"
     },
     "3srgx3qetg2l5wemhwm7ctodfvm4vnwhvn68tsgfxdak": {
       "symbol": "Solanachan",
@@ -1239,13 +1253,13 @@
       "price_usd": 2.913e-06,
       "liquidity_usd": null,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 455.33,
+      "volume_1h_usd": 409.44,
       "transactions_5m": 0,
       "buys_5m": 0.0,
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
-      "price_change_1h_pct": -6.27,
-      "scanned_at": "2026-10-28T10:02:35.044638+00:00"
+      "price_change_1h_pct": -3.39,
+      "scanned_at": "2026-10-28T10:04:37.013887+00:00"
     },
     "52aryw51bts1hahim2dimn9u7pghiwytc3qceafqcpfg": {
       "symbol": "SSE",
@@ -1259,7 +1273,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:35.221503+00:00"
+      "scanned_at": "2026-10-28T10:04:37.224085+00:00"
     },
     "8pgzshp2ajq7t7g8zgbufbslkwek15wfc5zw8njfgngx": {
       "symbol": "LPPP",
@@ -1273,7 +1287,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:35.400539+00:00"
+      "scanned_at": "2026-10-28T10:04:37.421330+00:00"
     },
     "35d3jmscgvtnqhp7fhprsu9ifebqhgjtjz3iuhutfjic": {
       "symbol": "DOBBY",
@@ -1287,7 +1301,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:35.576526+00:00"
+      "scanned_at": "2026-10-28T10:04:37.638968+00:00"
     },
     "gyrcae6fgkq1p6rtszmyrnov9ebym8h4slzj59gbb7kb": {
       "symbol": "SHEEPLE",
@@ -1301,7 +1315,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:35.753040+00:00"
+      "scanned_at": "2026-10-28T10:04:37.858993+00:00"
     },
     "4cs5jwmxdczk7btmnaeevgspmo9vraor8q6hljlmcs8a": {
       "symbol": "$PLAY",
@@ -1315,7 +1329,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:35.931316+00:00"
+      "scanned_at": "2026-10-28T10:04:38.063870+00:00"
     },
     "fiavfzfe7jkcxy8k4sj1hznqzfv3xe14c7gnaxbhdb3k": {
       "symbol": "$CrepSol",
@@ -1329,7 +1343,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:36.107481+00:00"
+      "scanned_at": "2026-10-28T10:04:38.270742+00:00"
     },
     "czknevjhvkmdzbuqhz4xblfaay4ymnphz1j5rcvxvjq2": {
       "symbol": "HQ",
@@ -1343,7 +1357,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 0.24,
-      "scanned_at": "2026-10-28T10:02:36.270282+00:00"
+      "scanned_at": "2026-10-28T10:04:38.470055+00:00"
     },
     "57vsjsvtykiadvmmhowvn28k2yp4h46jvbopiv3oza4k": {
       "symbol": "$SNEKO",
@@ -1357,21 +1371,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:36.450233+00:00"
-    },
-    "5upyuvpf835gfnahzfabg4c3bw6gpk6asbth3wpe1ntp": {
-      "symbol": "$SNEKO",
-      "name": "Solana Neko",
-      "price_usd": 5.147e-05,
-      "liquidity_usd": 34697.37,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.0,
-      "transactions_5m": 0,
-      "buys_5m": 0.0,
-      "sells_5m": 0.0,
-      "price_change_5m_pct": null,
-      "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:36.624252+00:00"
+      "scanned_at": "2026-10-28T10:04:38.680433+00:00"
     },
     "2vbvhpphhky57zrjabaadg67dgie77ebypbshxtlwcct": {
       "symbol": "OPOS",
@@ -1385,7 +1385,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 0.58,
-      "scanned_at": "2026-10-28T10:02:36.801898+00:00"
+      "scanned_at": "2026-10-28T10:04:38.875811+00:00"
     },
     "6wmnq3macp28s5ucgl3zlsphxk6yndsmochng3axrnfc": {
       "symbol": "SSX",
@@ -1399,7 +1399,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:36.979356+00:00"
+      "scanned_at": "2026-10-28T10:04:39.075857+00:00"
     },
     "3dwetgq9utyvy6h7vhuc3fbmnbzuukstxlfc3nztou3k": {
       "symbol": "ESR",
@@ -1413,7 +1413,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:37.160431+00:00"
+      "scanned_at": "2026-10-28T10:04:39.269524+00:00"
     },
     "6dsffm5m9t6f2jzjvebhwf7ahboy2xp4amrkuf8zbgrr": {
       "symbol": "BONKBULL",
@@ -1427,35 +1427,35 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:37.338778+00:00"
+      "scanned_at": "2026-10-28T10:04:39.471430+00:00"
     },
     "q2sphpduwfmg7m7wwrqklrn619caucfrsmhvjffodsp": {
       "symbol": "USELESS",
       "name": "USELESS COIN",
       "price_usd": 0.1668,
-      "liquidity_usd": 4191418.12,
-      "volume_5m_usd": 2178.18,
-      "volume_1h_usd": 11149.63,
-      "transactions_5m": 15.0,
-      "buys_5m": 11.0,
-      "sells_5m": 4.0,
-      "price_change_5m_pct": 0.17,
+      "liquidity_usd": 4191418.27,
+      "volume_5m_usd": 1103.31,
+      "volume_1h_usd": 11149.76,
+      "transactions_5m": 11.0,
+      "buys_5m": 9.0,
+      "sells_5m": 2.0,
+      "price_change_5m_pct": 0.26,
       "price_change_1h_pct": 0.72,
-      "scanned_at": "2026-10-28T10:02:37.500430+00:00"
+      "scanned_at": "2026-10-28T10:04:39.654897+00:00"
     },
     "5zpyutju9ee6jfymdgok7f6s5kczqtc9fomp3uekuya9": {
       "symbol": "Bonk",
       "name": "Bonk",
       "price_usd": 3.106e-06,
-      "liquidity_usd": 312930.34,
-      "volume_5m_usd": 321.21,
-      "volume_1h_usd": 3792.97,
-      "transactions_5m": 38.0,
+      "liquidity_usd": 312910.81,
+      "volume_5m_usd": 317.36,
+      "volume_1h_usd": 3791.87,
+      "transactions_5m": 26.0,
       "buys_5m": 0.0,
-      "sells_5m": 38.0,
-      "price_change_5m_pct": 0.06,
-      "price_change_1h_pct": 0.63,
-      "scanned_at": "2026-10-28T10:02:37.660999+00:00"
+      "sells_5m": 26.0,
+      "price_change_5m_pct": 0.05,
+      "price_change_1h_pct": 0.72,
+      "scanned_at": "2026-10-28T10:04:39.842329+00:00"
     },
     "7dnw2mhctqozcduyrbj5lmoefss9tpacdskk4qmstgpm": {
       "symbol": "KITTY",
@@ -1469,7 +1469,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": -0.09,
-      "scanned_at": "2026-10-28T10:02:37.838735+00:00"
+      "scanned_at": "2026-10-28T10:04:40.046410+00:00"
     },
     "j28smrhedlyhpzcjlvhexsimifedswfhobhpeqryhdjl": {
       "symbol": "KORI",
@@ -1483,7 +1483,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:38.001207+00:00"
+      "scanned_at": "2026-10-28T10:04:40.230331+00:00"
     },
     "6sekz73vph5afymqtzav6h5vaqqlz2c8wqecq6mhlqfk": {
       "symbol": "1",
@@ -1497,21 +1497,21 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 0.08,
-      "scanned_at": "2026-10-28T10:02:38.162617+00:00"
+      "scanned_at": "2026-10-28T10:04:40.414591+00:00"
     },
     "8ztfxjfpfvutef4slsapcfj8gw2dxyua9no2blpq7h7v": {
       "symbol": "USELESS",
       "name": "USELESS COIN",
-      "price_usd": 0.1668,
-      "liquidity_usd": 402163.57,
-      "volume_5m_usd": 695.78,
-      "volume_1h_usd": 2985.32,
-      "transactions_5m": 9.0,
-      "buys_5m": 3.0,
-      "sells_5m": 6.0,
-      "price_change_5m_pct": null,
-      "price_change_1h_pct": 0.62,
-      "scanned_at": "2026-10-28T10:02:38.342975+00:00"
+      "price_usd": 0.167,
+      "liquidity_usd": 402829.06,
+      "volume_5m_usd": 0.17,
+      "volume_1h_usd": 2441.65,
+      "transactions_5m": 1.0,
+      "buys_5m": 1.0,
+      "sells_5m": 0.0,
+      "price_change_5m_pct": 0.17,
+      "price_change_1h_pct": 0.52,
+      "scanned_at": "2026-10-28T10:04:40.615747+00:00"
     },
     "fzutaardyjapx7hqniqezzdbony8rt4fxcrakvfjap2r": {
       "symbol": "USEFUL",
@@ -1525,7 +1525,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": -0.46,
-      "scanned_at": "2026-10-28T10:02:38.504133+00:00"
+      "scanned_at": "2026-10-28T10:04:40.797570+00:00"
     },
     "31p1hptjhfo6zd8obqkfutnxqkggpyi7yceafsykw777": {
       "symbol": "Bonk",
@@ -1539,7 +1539,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 0.42,
-      "scanned_at": "2026-10-28T10:02:38.678828+00:00"
+      "scanned_at": "2026-10-28T10:04:40.997995+00:00"
     },
     "hsqgweh3ib6w59rbh5n1jxmi8vxfbqkejxozl6pgfcgb": {
       "symbol": "USELESS",
@@ -1553,7 +1553,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": -0.09,
-      "scanned_at": "2026-10-28T10:02:38.859852+00:00"
+      "scanned_at": "2026-10-28T10:04:41.196015+00:00"
     },
     "3rwervy1j7obztflbydtmmrgj7um26yswcgvf2rmep21": {
       "symbol": "Hosico",
@@ -1567,21 +1567,21 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:39.022844+00:00"
+      "scanned_at": "2026-10-28T10:04:41.395486+00:00"
     },
     "9ux4vtd8jueh4nmf4ae3txypkbdecuuipx8z3efickme": {
       "symbol": "USELESS",
       "name": "USELESS COIN",
-      "price_usd": 0.1667,
-      "liquidity_usd": 1361624.79,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.51,
-      "transactions_5m": 0,
-      "buys_5m": 0.0,
+      "price_usd": 0.1672,
+      "liquidity_usd": 1365501.9,
+      "volume_5m_usd": 0.1,
+      "volume_1h_usd": 0.62,
+      "transactions_5m": 1.0,
+      "buys_5m": 1.0,
       "sells_5m": 0.0,
-      "price_change_5m_pct": null,
-      "price_change_1h_pct": 0.52,
-      "scanned_at": "2026-10-28T10:02:39.184925+00:00"
+      "price_change_5m_pct": 0.29,
+      "price_change_1h_pct": 0.81,
+      "scanned_at": "2026-10-28T10:04:41.578936+00:00"
     },
     "8ujpqxxnnwvrohu2oce3easzol7pau2uj3fen4zp72us": {
       "symbol": "Ani",
@@ -1595,21 +1595,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 0.22,
-      "scanned_at": "2026-10-28T10:02:39.361012+00:00"
-    },
-    "6mhj1z5bgc1uitnewrnjfbgtqpupdh2qgdwkemgxt2c5": {
-      "symbol": "SPSC",
-      "name": "Shit Piss Skin Can",
-      "price_usd": 0.0001987,
-      "liquidity_usd": 93329.2,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 0.0,
-      "transactions_5m": 0,
-      "buys_5m": 0.0,
-      "sells_5m": 0.0,
-      "price_change_5m_pct": null,
-      "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:39.539865+00:00"
+      "scanned_at": "2026-10-28T10:04:41.759355+00:00"
     },
     "f2kgf28qfne5uwwsz1iwfnkcvvbcgwlldenfgqn2yxaq": {
       "symbol": "SOLANAAI",
@@ -1623,7 +1609,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:39.716194+00:00"
+      "scanned_at": "2026-10-28T10:04:41.958589+00:00"
     },
     "61z2epy6bm9uwrgaqjt6a2uoqaiknqdcbxywpqcxgu6k": {
       "symbol": "SDEX",
@@ -1637,7 +1623,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": 0.89,
-      "scanned_at": "2026-10-28T10:02:39.892731+00:00"
+      "scanned_at": "2026-10-28T10:04:42.162246+00:00"
     },
     "52vhd46exavjc1kwhwn9zhhtalycsmj1bjzvzkl8ug6q": {
       "symbol": "DEADS",
@@ -1651,7 +1637,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:40.070289+00:00"
+      "scanned_at": "2026-10-28T10:04:42.372493+00:00"
     },
     "9kfaag7zkrnmxyeuq2ymjkznsvbeaisrmpjz1mdiv7ny": {
       "symbol": "SOL",
@@ -1665,7 +1651,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:40.253817+00:00"
+      "scanned_at": "2026-10-28T10:04:42.689299+00:00"
     },
     "7sls5vdmdokduqc5vxsy9usfkaisjv82jv5urvv6gnpa": {
       "symbol": "OPOS",
@@ -1679,7 +1665,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:40.431286+00:00"
+      "scanned_at": "2026-10-28T10:04:42.938250+00:00"
     },
     "fz2pyazumrbb3qkbisktvbmuyrvs9jeainddx6esrkbq": {
       "symbol": "SWIFT",
@@ -1693,7 +1679,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:40.623381+00:00"
+      "scanned_at": "2026-10-28T10:04:43.141229+00:00"
     },
     "ac5tnq4oycxdvjpi5y4evnks8pvtzkvmqa52wwgy7d9f": {
       "symbol": "SOLINU",
@@ -1707,21 +1693,21 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:40.803399+00:00"
+      "scanned_at": "2026-10-28T10:04:43.337905+00:00"
     },
     "2are5knlqsqtz7647taqjkfhnnfd3sjguuqemmbbxy5k": {
       "symbol": "SAA",
       "name": "Solana AI Agents",
       "price_usd": 4.336e-06,
       "liquidity_usd": 7276.37,
-      "volume_5m_usd": 4.67,
+      "volume_5m_usd": 0.0,
       "volume_1h_usd": 4.67,
-      "transactions_5m": 1.0,
+      "transactions_5m": 0,
       "buys_5m": 0.0,
-      "sells_5m": 1.0,
+      "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:40.982961+00:00"
+      "scanned_at": "2026-10-28T10:04:43.536691+00:00"
     },
     "859f85a2th4h9c8ozvrwvdggnyvfqipgbvzy1a1hvew6": {
       "symbol": "RESERVE",
@@ -1735,7 +1721,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:41.160859+00:00"
+      "scanned_at": "2026-10-28T10:04:43.735075+00:00"
     },
     "8nx826bes2ihnwq5p2xuckfwytelye4qb6bkfyj5ty1p": {
       "symbol": "MEV",
@@ -1749,7 +1735,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:41.340523+00:00"
+      "scanned_at": "2026-10-28T10:04:43.943243+00:00"
     },
     "ehdnaigpam9lqhhjeaokh1ievuatse7ng8zbabza67du": {
       "symbol": "ETHS",
@@ -1763,7 +1749,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:41.516733+00:00"
+      "scanned_at": "2026-10-28T10:04:44.156301+00:00"
     },
     "eudaiu3zewq6tzomufzvek7tslnmydra3vru4syhpghh": {
       "symbol": "DDOS",
@@ -1777,7 +1763,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:41.693039+00:00"
+      "scanned_at": "2026-10-28T10:04:44.357242+00:00"
     },
     "2hzac5wjlxdkbbuwkcaieqmeoqkxki5516ilvwzwceis": {
       "symbol": "$ASS",
@@ -1791,7 +1777,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:41.870222+00:00"
+      "scanned_at": "2026-10-28T10:04:44.568428+00:00"
     },
     "fvvvfwekn9rn3edkezuj25antj5zaa4gs1jaqlotyhre": {
       "symbol": "sol/acc",
@@ -1805,7 +1791,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:42.049376+00:00"
+      "scanned_at": "2026-10-28T10:04:44.774128+00:00"
     },
     "6vm3le4s8pvv2qkfgnndnladjvgn5ztpxmnqcv3beqxp": {
       "symbol": "MSGA",
@@ -1819,7 +1805,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:42.225225+00:00"
+      "scanned_at": "2026-10-28T10:04:44.971162+00:00"
     },
     "asrhett6gbsvfyev98ikh5wqausb2cistbavurtzj8xf": {
       "symbol": "MSGA",
@@ -1833,7 +1819,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:42.402477+00:00"
+      "scanned_at": "2026-10-28T10:04:45.171189+00:00"
     },
     "dy21gkppugdjnr5bxrj7qskr7h1csa2f8nb4bqnnwu39": {
       "symbol": "◎",
@@ -1847,7 +1833,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:42.580006+00:00"
+      "scanned_at": "2026-10-28T10:04:45.371533+00:00"
     },
     "5gumybx3hskqm6hs7owkdg1uj8623gderv5ugwgkjuzq": {
       "symbol": "SOLBULL",
@@ -1861,7 +1847,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:42.762128+00:00"
+      "scanned_at": "2026-10-28T10:04:45.573320+00:00"
     },
     "7tgdxvmstwvzhlbag3blcr5bqyk7bkf3yxywp8h46fyo": {
       "symbol": "MSGA",
@@ -1875,7 +1861,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:42.942414+00:00"
+      "scanned_at": "2026-10-28T10:04:45.774220+00:00"
     },
     "cnnskyr7gkvgmz98hcf7asfrewlqmnpuflgkskhn1cb2": {
       "symbol": "GRAIL",
@@ -1889,7 +1875,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:43.132367+00:00"
+      "scanned_at": "2026-10-28T10:04:45.979015+00:00"
     },
     "2gozbecqiv7oqgd5fwcjhcgwhj2v81qbndz5uduakn7r": {
       "symbol": "SOLBROKER",
@@ -1903,7 +1889,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:43.312654+00:00"
+      "scanned_at": "2026-10-28T10:04:46.185510+00:00"
     },
     "7ir3f6wbxmdv7twjf5wghxphlyrn2duhvaig7jbys31n": {
       "symbol": "BTC",
@@ -1917,7 +1903,7 @@
       "sells_5m": 0.0,
       "price_change_5m_pct": null,
       "price_change_1h_pct": null,
-      "scanned_at": "2026-10-28T10:02:43.488014+00:00"
+      "scanned_at": "2026-10-28T10:04:46.389301+00:00"
     }
   },
   "last_alerts": {
