@@ -1,8 +1,10 @@
 {
-  "updated_at": "2026-10-28T08:52:16.844016+00:00",
-  "pairs_scanned": 133,
-  "qualified_count": 0,
+  "updated_at": "2026-10-28T08:53:14.193158+00:00",
+  "pairs_scanned": 134,
+  "qualified_count": 1,
   "alerts_sent": 0,
+  "min_score": 4,
+  "min_liquidity_usd": 25000,
   "pairs": [
     {
       "name": "Meme Solana Feline Token",
@@ -23,7 +25,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 71476.9,
+      "age_minutes": 71477.8,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -37,6 +50,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -58,7 +72,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 235641.3,
+      "age_minutes": 235642.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -72,6 +97,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -93,7 +119,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 79.2,
+      "age_minutes": 80.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -107,6 +144,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -128,7 +166,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 73.5,
+      "age_minutes": 74.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -142,6 +191,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -163,7 +213,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 319.2,
+      "age_minutes": 320.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -177,6 +238,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -198,7 +260,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1217.0,
+      "age_minutes": 1217.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -212,6 +285,54 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
+      "qualified": false
+    },
+    {
+      "name": "Solanachan",
+      "symbol": "Solanachan",
+      "token_address": "3EzWo847WzemWrwqxiErhWPoJh1Ax2SyEALVth9Xpump",
+      "pair_address": "3sRGx3qetg2L5weMhwm7ctoDfvm4VnwHVn68tSgfxDAK",
+      "quote_symbol": "SOL",
+      "dex": "pumpfun",
+      "url": "https://dexscreener.com/solana/3srgx3qetg2l5wemhwm7ctodfvm4vnwhvn68tsgfxdak",
+      "price_usd": 1.037e-05,
+      "liquidity_usd": 0.0,
+      "volume_5m_usd": 28499.17,
+      "volume_1h_usd": 43497.06,
+      "change_5m_pct": 42.79,
+      "change_1h_pct": 197.0,
+      "buys_5m": 331,
+      "sells_5m": 249,
+      "transactions_5m": 580,
+      "buy_sell_ratio": 1.33,
+      "volume_acceleration": 7.86,
+      "age_minutes": 8.9,
+      "score": 6,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 1,
+        "volume_1h": 1,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 2,
+        "transazioni_5m": 1
+      },
+      "checks": {
+        "liquidita": false,
+        "volume_5m": true,
+        "volume_1h": true,
+        "variazione_5m_min": true,
+        "variazione_5m_max": false,
+        "variazione_1h": true,
+        "variazione_1h_max": false,
+        "rapporto_acquisti_vendite": true,
+        "accelerazione_volume": true,
+        "transazioni_5m": true,
+        "eta_minima": true
+      },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -233,7 +354,18 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.07,
-      "age_minutes": 185.6,
+      "age_minutes": 186.6,
+      "score": 1,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -247,41 +379,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
-      "qualified": false
-    },
-    {
-      "name": "Solanachan",
-      "symbol": "Solanachan",
-      "token_address": "3EzWo847WzemWrwqxiErhWPoJh1Ax2SyEALVth9Xpump",
-      "pair_address": "3sRGx3qetg2L5weMhwm7ctoDfvm4VnwHVn68tSgfxDAK",
-      "quote_symbol": "SOL",
-      "dex": "pumpfun",
-      "url": "https://dexscreener.com/solana/3srgx3qetg2l5wemhwm7ctodfvm4vnwhvn68tsgfxdak",
-      "price_usd": 9.984e-06,
-      "liquidity_usd": 0.0,
-      "volume_5m_usd": 26505.01,
-      "volume_1h_usd": 37177.02,
-      "change_5m_pct": 22.69,
-      "change_1h_pct": 186.0,
-      "buys_5m": 322,
-      "sells_5m": 225,
-      "transactions_5m": 547,
-      "buy_sell_ratio": 1.43,
-      "volume_acceleration": 8.56,
-      "age_minutes": 8.0,
-      "checks": {
-        "liquidita": false,
-        "volume_5m": true,
-        "volume_1h": true,
-        "variazione_5m_min": true,
-        "variazione_5m_max": false,
-        "variazione_1h": true,
-        "variazione_1h_max": false,
-        "rapporto_acquisti_vendite": true,
-        "accelerazione_volume": true,
-        "transazioni_5m": true,
-        "eta_minima": true
-      },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -303,7 +401,18 @@
       "transactions_5m": 2,
       "buy_sell_ratio": "infinito",
       "volume_acceleration": 1.09,
-      "age_minutes": 1025.6,
+      "age_minutes": 1026.6,
+      "score": 3,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 1,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -317,6 +426,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -327,18 +437,29 @@
       "quote_symbol": "SOL",
       "dex": "pumpfun",
       "url": "https://dexscreener.com/solana/eqhozhkf8bx8z3p7uynxmjwnhnwp9pfyuapcicggx2pr",
-      "price_usd": 1.306e-08,
+      "price_usd": 1.17e-08,
       "liquidity_usd": 0.0,
-      "volume_5m_usd": 251.71,
-      "volume_1h_usd": 251.71,
-      "change_5m_pct": -99.55,
-      "change_1h_pct": -99.55,
-      "buys_5m": 159,
-      "sells_5m": 138,
-      "transactions_5m": 297,
-      "buy_sell_ratio": 1.15,
-      "volume_acceleration": 12.0,
-      "age_minutes": 5.7,
+      "volume_5m_usd": 132.52,
+      "volume_1h_usd": 252.49,
+      "change_5m_pct": -93.1,
+      "change_1h_pct": -99.6,
+      "buys_5m": 121,
+      "sells_5m": 104,
+      "transactions_5m": 225,
+      "buy_sell_ratio": 1.16,
+      "volume_acceleration": 6.3,
+      "age_minutes": 6.7,
+      "score": 3,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 2,
+        "transazioni_5m": 1
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -352,6 +473,7 @@
         "transazioni_5m": true,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -373,7 +495,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 56433.4,
+      "age_minutes": 56434.3,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -387,6 +520,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -408,7 +542,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 573.2,
+      "age_minutes": 574.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -422,6 +567,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -443,7 +589,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 892261.5,
+      "age_minutes": 892262.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -457,6 +614,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -478,7 +636,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 847055.1,
+      "age_minutes": 847056.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -492,6 +661,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -513,7 +683,18 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 1.33,
-      "age_minutes": 553.6,
+      "age_minutes": 554.6,
+      "score": 2,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 2,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -527,6 +708,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -548,7 +730,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 848964.0,
+      "age_minutes": 848965.0,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -562,6 +755,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -583,7 +777,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 5423.5,
+      "age_minutes": 5424.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -597,6 +802,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -618,7 +824,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 658.7,
+      "age_minutes": 659.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -632,6 +849,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -653,7 +871,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 879.5,
+      "age_minutes": 880.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -667,6 +896,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -688,7 +918,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 41039.3,
+      "age_minutes": 41040.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -702,6 +943,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -723,7 +965,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 140689.7,
+      "age_minutes": 140690.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -737,6 +990,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -758,7 +1012,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 18191.8,
+      "age_minutes": 18192.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -772,6 +1037,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -793,7 +1059,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 138775.3,
+      "age_minutes": 138776.3,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -807,6 +1084,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -828,7 +1106,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 2984.2,
+      "age_minutes": 2985.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -842,6 +1131,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -863,7 +1153,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 133180.0,
+      "age_minutes": 133181.0,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -877,6 +1178,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -887,18 +1189,29 @@
       "quote_symbol": "SOL",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/eztwxzfmns9sjjgvych35i6e3oywsdjdeql9cbzgfdap",
-      "price_usd": 0.004997,
-      "liquidity_usd": 203265.14,
-      "volume_5m_usd": 3808.55,
-      "volume_1h_usd": 65809.02,
-      "change_5m_pct": -2.42,
-      "change_1h_pct": -12.67,
-      "buys_5m": 27,
-      "sells_5m": 24,
-      "transactions_5m": 51,
-      "buy_sell_ratio": 1.12,
-      "volume_acceleration": 0.69,
-      "age_minutes": 1980.4,
+      "price_usd": 0.00491,
+      "liquidity_usd": 201482.47,
+      "volume_5m_usd": 3709.22,
+      "volume_1h_usd": 62854.26,
+      "change_5m_pct": -5.16,
+      "change_1h_pct": -9.76,
+      "buys_5m": 23,
+      "sells_5m": 25,
+      "transactions_5m": 48,
+      "buy_sell_ratio": 0.92,
+      "volume_acceleration": 0.71,
+      "age_minutes": 1981.3,
+      "score": 3,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 1,
+        "volume_1h": 1,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 1
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": true,
@@ -912,6 +1225,7 @@
         "transazioni_5m": true,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -924,16 +1238,27 @@
       "url": "https://dexscreener.com/solana/dsfht8bngd6ynbv41qf8dbespfh2dkczga9ptj5gqged",
       "price_usd": 2.738e-05,
       "liquidity_usd": 0.0,
-      "volume_5m_usd": 115.66,
+      "volume_5m_usd": 108.06,
       "volume_1h_usd": 2361.38,
-      "change_5m_pct": -1.38,
+      "change_5m_pct": -1.32,
       "change_1h_pct": -5.62,
-      "buys_5m": 7,
-      "sells_5m": 5,
-      "transactions_5m": 12,
-      "buy_sell_ratio": 1.4,
-      "volume_acceleration": 0.59,
-      "age_minutes": 998.7,
+      "buys_5m": 6,
+      "sells_5m": 4,
+      "transactions_5m": 10,
+      "buy_sell_ratio": 1.5,
+      "volume_acceleration": 0.55,
+      "age_minutes": 999.7,
+      "score": 2,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 1
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -947,6 +1272,7 @@
         "transazioni_5m": true,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -957,23 +1283,34 @@
       "quote_symbol": "SOL",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8",
-      "price_usd": 0.002286,
-      "liquidity_usd": 130146.49,
-      "volume_5m_usd": 788.59,
-      "volume_1h_usd": 23826.07,
-      "change_5m_pct": 2.1,
-      "change_1h_pct": 22.19,
-      "buys_5m": 12,
-      "sells_5m": 4,
-      "transactions_5m": 16,
-      "buy_sell_ratio": 3.0,
-      "volume_acceleration": 0.4,
-      "age_minutes": 818.8,
+      "price_usd": 0.00229,
+      "liquidity_usd": 130265.0,
+      "volume_5m_usd": 1032.06,
+      "volume_1h_usd": 24015.28,
+      "change_5m_pct": 0.62,
+      "change_1h_pct": 19.98,
+      "buys_5m": 15,
+      "sells_5m": 6,
+      "transactions_5m": 21,
+      "buy_sell_ratio": 2.5,
+      "volume_acceleration": 0.52,
+      "age_minutes": 819.8,
+      "score": 4,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 1,
+        "variazione_5m": 0,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 1
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
         "volume_1h": true,
-        "variazione_5m_min": true,
+        "variazione_5m_min": false,
         "variazione_5m_max": true,
         "variazione_1h": true,
         "variazione_1h_max": true,
@@ -982,7 +1319,8 @@
         "transazioni_5m": true,
         "eta_minima": true
       },
-      "qualified": false
+      "liquidity_ok": true,
+      "qualified": true
     },
     {
       "name": "Doge Pepe",
@@ -992,18 +1330,29 @@
       "quote_symbol": "SOL",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/6iep3egqksbzwgzmbcyajtivtvykcgl9bnpbewlr8agq",
-      "price_usd": 0.00252,
-      "liquidity_usd": 212705.99,
-      "volume_5m_usd": 1052.68,
-      "volume_1h_usd": 18876.02,
-      "change_5m_pct": -0.66,
-      "change_1h_pct": 12.87,
+      "price_usd": 0.002536,
+      "liquidity_usd": 213381.89,
+      "volume_5m_usd": 1029.57,
+      "volume_1h_usd": 18866.38,
+      "change_5m_pct": 0.62,
+      "change_1h_pct": 11.69,
       "buys_5m": 9,
-      "sells_5m": 4,
-      "transactions_5m": 13,
-      "buy_sell_ratio": 2.25,
-      "volume_acceleration": 0.67,
-      "age_minutes": 24199.1,
+      "sells_5m": 3,
+      "transactions_5m": 12,
+      "buy_sell_ratio": 3.0,
+      "volume_acceleration": 0.65,
+      "age_minutes": 24200.1,
+      "score": 3,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 1
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -1017,6 +1366,7 @@
         "transazioni_5m": true,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -1038,7 +1388,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 58416.6,
+      "age_minutes": 58417.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1052,6 +1413,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1073,7 +1435,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 96032.9,
+      "age_minutes": 96033.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1087,6 +1460,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1108,7 +1482,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 6707.1,
+      "age_minutes": 6708.1,
+      "score": 1,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1122,6 +1507,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1143,7 +1529,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 13059.3,
+      "age_minutes": 13060.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1157,6 +1554,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1178,7 +1576,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1020286.7,
+      "age_minutes": 1020287.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1192,6 +1601,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1213,7 +1623,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 50172.5,
+      "age_minutes": 50173.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1227,6 +1648,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1248,7 +1670,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 31064.9,
+      "age_minutes": 31065.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1262,6 +1695,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1283,7 +1717,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 618735.7,
+      "age_minutes": 618736.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1297,6 +1742,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1318,7 +1764,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1297359.6,
+      "age_minutes": 1297360.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1332,6 +1789,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1353,7 +1811,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 95878.8,
+      "age_minutes": 95879.8,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1367,6 +1836,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1388,7 +1858,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1056892.2,
+      "age_minutes": 1056893.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1402,6 +1883,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1423,7 +1905,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1245320.8,
+      "age_minutes": 1245321.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1437,6 +1930,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1458,7 +1952,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 138770.5,
+      "age_minutes": 138771.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1472,6 +1977,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1493,7 +1999,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 131858.0,
+      "age_minutes": 131859.0,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1507,6 +2024,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1528,7 +2046,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 136500.7,
+      "age_minutes": 136501.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1542,6 +2071,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1563,7 +2093,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 27018.4,
+      "age_minutes": 27019.4,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1577,6 +2118,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1598,7 +2140,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1429770.9,
+      "age_minutes": 1429771.8,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1612,6 +2165,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1633,7 +2187,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 655.3,
+      "age_minutes": 656.3,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1647,6 +2212,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1668,7 +2234,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1317.8,
+      "age_minutes": 1318.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1682,6 +2259,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1703,7 +2281,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 136501.3,
+      "age_minutes": 136502.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1717,6 +2306,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1738,7 +2328,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 137806.9,
+      "age_minutes": 137807.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1752,6 +2353,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1773,7 +2375,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1397.1,
+      "age_minutes": 1398.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1787,6 +2400,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1808,7 +2422,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1396.8,
+      "age_minutes": 1397.8,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1822,6 +2447,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1832,18 +2458,29 @@
       "quote_symbol": "SOL",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
-      "price_usd": 0.004407,
-      "liquidity_usd": 209716.44,
-      "volume_5m_usd": 783.8,
-      "volume_1h_usd": 12530.07,
-      "change_5m_pct": 0.63,
-      "change_1h_pct": -3.48,
-      "buys_5m": 7,
+      "price_usd": 0.004368,
+      "liquidity_usd": 208770.5,
+      "volume_5m_usd": 772.79,
+      "volume_1h_usd": 12675.68,
+      "change_5m_pct": -1.14,
+      "change_1h_pct": -4.34,
+      "buys_5m": 5,
       "sells_5m": 5,
-      "transactions_5m": 12,
-      "buy_sell_ratio": 1.4,
-      "volume_acceleration": 0.75,
-      "age_minutes": 91944.9,
+      "transactions_5m": 10,
+      "buy_sell_ratio": 1.0,
+      "volume_acceleration": 0.73,
+      "age_minutes": 91945.9,
+      "score": 1,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 1
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -1852,11 +2489,12 @@
         "variazione_5m_max": true,
         "variazione_1h": false,
         "variazione_1h_max": true,
-        "rapporto_acquisti_vendite": true,
+        "rapporto_acquisti_vendite": false,
         "accelerazione_volume": false,
         "transazioni_5m": true,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -1867,66 +2505,43 @@
       "quote_symbol": "ZEC",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/4j3tq21o45ipb4zdmbfqs4ccxwcyh6qezftqgbhdwwuw",
-      "price_usd": 0.0001609,
-      "liquidity_usd": 36470.23,
-      "volume_5m_usd": 1803.52,
-      "volume_1h_usd": 18235.35,
-      "change_5m_pct": -5.24,
-      "change_1h_pct": 8.59,
-      "buys_5m": 8,
-      "sells_5m": 13,
-      "transactions_5m": 21,
-      "buy_sell_ratio": 0.62,
-      "volume_acceleration": 1.19,
-      "age_minutes": 506.6,
+      "price_usd": 0.0001615,
+      "liquidity_usd": 36540.87,
+      "volume_5m_usd": 1625.71,
+      "volume_1h_usd": 18002.31,
+      "change_5m_pct": 1.33,
+      "change_1h_pct": 11.46,
+      "buys_5m": 7,
+      "sells_5m": 10,
+      "transactions_5m": 17,
+      "buy_sell_ratio": 0.7,
+      "volume_acceleration": 1.08,
+      "age_minutes": 507.5,
+      "score": 3,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 1,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 1
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
         "volume_1h": false,
-        "variazione_5m_min": false,
+        "variazione_5m_min": true,
         "variazione_5m_max": true,
         "variazione_1h": true,
         "variazione_1h_max": true,
         "rapporto_acquisti_vendite": false,
-        "accelerazione_volume": true,
+        "accelerazione_volume": false,
         "transazioni_5m": true,
         "eta_minima": true
       },
-      "qualified": false
-    },
-    {
-      "name": "green cat",
-      "symbol": "GrenCAT",
-      "token_address": "A2kcFbJ1pD3CC36zbnLoSh8qu1MWZnCNhPSQwQcCpump",
-      "pair_address": "EdFnJ3zcCZCWjYHEz4SEhm4B6uGNFiGqWWemKXoT24G5",
-      "quote_symbol": "SOL",
-      "dex": "pumpfun",
-      "url": "https://dexscreener.com/solana/edfnj3zcczcwjyhez4sehm4b6ugnfigqwwemkxot24g5",
-      "price_usd": 5.573e-09,
-      "liquidity_usd": 0.0,
-      "volume_5m_usd": 618.47,
-      "volume_1h_usd": 1066.72,
-      "change_5m_pct": -98.44,
-      "change_1h_pct": -99.81,
-      "buys_5m": 241,
-      "sells_5m": 229,
-      "transactions_5m": 470,
-      "buy_sell_ratio": 1.05,
-      "volume_acceleration": 6.96,
-      "age_minutes": 10.3,
-      "checks": {
-        "liquidita": false,
-        "volume_5m": false,
-        "volume_1h": false,
-        "variazione_5m_min": false,
-        "variazione_5m_max": true,
-        "variazione_1h": false,
-        "variazione_1h_max": true,
-        "rapporto_acquisti_vendite": false,
-        "accelerazione_volume": true,
-        "transazioni_5m": true,
-        "eta_minima": true
-      },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -1948,7 +2563,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1021.6,
+      "age_minutes": 1022.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1962,6 +2588,54 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
+      "qualified": false
+    },
+    {
+      "name": "HARDFORKMONEROCAT",
+      "symbol": "HARDFORK",
+      "token_address": "2u9gENQpHLSHGaB7VvSxCshMCjD9C6HpPmvD214Fpump",
+      "pair_address": "HpSJokSTedoZv9ie87c8715AYJVppidsj7NmHPTTj3vv",
+      "quote_symbol": "LUKE",
+      "dex": "pumpfun",
+      "url": "https://dexscreener.com/solana/hpsjokstedozv9ie87c8715ayjvppidsj7nmhpttj3vv",
+      "price_usd": 0.0,
+      "liquidity_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "volume_1h_usd": 0.0,
+      "change_5m_pct": 0.0,
+      "change_1h_pct": 0.0,
+      "buys_5m": 0,
+      "sells_5m": 1,
+      "transactions_5m": 1,
+      "buy_sell_ratio": 0.0,
+      "volume_acceleration": 0.0,
+      "age_minutes": 13375.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
+      "checks": {
+        "liquidita": false,
+        "volume_5m": false,
+        "volume_1h": false,
+        "variazione_5m_min": false,
+        "variazione_5m_max": true,
+        "variazione_1h": false,
+        "variazione_1h_max": true,
+        "rapporto_acquisti_vendite": false,
+        "accelerazione_volume": false,
+        "transazioni_5m": false,
+        "eta_minima": true
+      },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -1983,7 +2657,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 560316.0,
+      "age_minutes": 560317.0,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -1997,6 +2682,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2018,7 +2704,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1492672.3,
+      "age_minutes": 1492673.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2032,6 +2729,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2053,7 +2751,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 247405.3,
+      "age_minutes": 247406.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2067,6 +2776,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2088,7 +2798,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 602948.2,
+      "age_minutes": 602949.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2102,6 +2823,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2123,7 +2845,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 286138.4,
+      "age_minutes": 286139.4,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2137,6 +2870,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2158,7 +2892,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1998044.5,
+      "age_minutes": 1998045.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2172,6 +2917,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2193,7 +2939,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1544897.1,
+      "age_minutes": 1544898.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2207,6 +2964,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2228,7 +2986,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 620541.1,
+      "age_minutes": 620542.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2242,6 +3011,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2263,7 +3033,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 49751.8,
+      "age_minutes": 49752.8,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2277,6 +3058,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2298,7 +3080,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 49750.9,
+      "age_minutes": 49751.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2312,6 +3105,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2322,18 +3116,29 @@
       "quote_symbol": "SOL",
       "dex": "pumpfun",
       "url": "https://dexscreener.com/solana/76zqcg2zcyzqzpfvg225zqxdk8gdxn52dufcokbojlwu",
-      "price_usd": 3.837e-06,
+      "price_usd": 3.825e-06,
       "liquidity_usd": 0.0,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 94.13,
-      "change_5m_pct": 0.0,
-      "change_1h_pct": -4.07,
+      "volume_5m_usd": 0.2,
+      "volume_1h_usd": 94.34,
+      "change_5m_pct": -0.3,
+      "change_1h_pct": -4.36,
       "buys_5m": 0,
-      "sells_5m": 0,
-      "transactions_5m": 0,
+      "sells_5m": 1,
+      "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
-      "volume_acceleration": 0.0,
-      "age_minutes": 1180.3,
+      "volume_acceleration": 0.03,
+      "age_minutes": 1181.3,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2347,6 +3152,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2368,7 +3174,18 @@
       "transactions_5m": 2,
       "buy_sell_ratio": 1.0,
       "volume_acceleration": 2.49,
-      "age_minutes": 56835.4,
+      "age_minutes": 56836.4,
+      "score": 3,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 2,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2382,41 +3199,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
-      "qualified": false
-    },
-    {
-      "name": "Solanaween",
-      "symbol": "Solanaween",
-      "token_address": "6cNKbhaxCvjNaeTYYATq7LpJcdW9KcwTbUR1pUCvpump",
-      "pair_address": "7QToaLuBuUdhi4LHBV8LAozuWXN4YWv2TfyLthcDavAp",
-      "quote_symbol": "SOL",
-      "dex": "pumpfun",
-      "url": "https://dexscreener.com/solana/7qtoalubuudhi4lhbv8laozuwxn4ywv2tfylthcdavap",
-      "price_usd": 5.868e-06,
-      "liquidity_usd": 0.0,
-      "volume_5m_usd": 13.43,
-      "volume_1h_usd": 127.71,
-      "change_5m_pct": 0.02,
-      "change_1h_pct": 2.5,
-      "buys_5m": 0,
-      "sells_5m": 1,
-      "transactions_5m": 1,
-      "buy_sell_ratio": 0.0,
-      "volume_acceleration": 1.26,
-      "age_minutes": 1366.1,
-      "checks": {
-        "liquidita": false,
-        "volume_5m": false,
-        "volume_1h": false,
-        "variazione_5m_min": false,
-        "variazione_5m_max": true,
-        "variazione_1h": true,
-        "variazione_1h_max": true,
-        "rapporto_acquisti_vendite": false,
-        "accelerazione_volume": true,
-        "transazioni_5m": false,
-        "eta_minima": true
-      },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -2427,18 +3210,29 @@
       "quote_symbol": "SOL",
       "dex": "pumpswap",
       "url": "https://dexscreener.com/solana/6cfzubpujrwymb5doxuajrweht91ext6tqe2pgemzk2w",
-      "price_usd": 0.0009548,
-      "liquidity_usd": 81930.04,
-      "volume_5m_usd": 208.42,
-      "volume_1h_usd": 2903.18,
-      "change_5m_pct": -0.22,
-      "change_1h_pct": 6.56,
+      "price_usd": 0.0009434,
+      "liquidity_usd": 81430.28,
+      "volume_5m_usd": 193.12,
+      "volume_1h_usd": 2895.66,
+      "change_5m_pct": -0.25,
+      "change_1h_pct": 5.15,
       "buys_5m": 21,
-      "sells_5m": 16,
-      "transactions_5m": 37,
-      "buy_sell_ratio": 1.31,
-      "volume_acceleration": 0.86,
-      "age_minutes": 3282.8,
+      "sells_5m": 13,
+      "transactions_5m": 34,
+      "buy_sell_ratio": 1.62,
+      "volume_acceleration": 0.8,
+      "age_minutes": 3283.8,
+      "score": 3,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 1
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2452,6 +3246,7 @@
         "transazioni_5m": true,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -2473,7 +3268,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 907385.9,
+      "age_minutes": 907386.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2487,6 +3293,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -2508,7 +3315,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 292682.4,
+      "age_minutes": 292683.4,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2522,6 +3340,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -2543,7 +3362,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 165274.3,
+      "age_minutes": 165275.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2557,6 +3387,54 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
+      "qualified": false
+    },
+    {
+      "name": "Solanaween",
+      "symbol": "Solanaween",
+      "token_address": "6cNKbhaxCvjNaeTYYATq7LpJcdW9KcwTbUR1pUCvpump",
+      "pair_address": "7QToaLuBuUdhi4LHBV8LAozuWXN4YWv2TfyLthcDavAp",
+      "quote_symbol": "SOL",
+      "dex": "pumpfun",
+      "url": "https://dexscreener.com/solana/7qtoalubuudhi4lhbv8laozuwxn4ywv2tfylthcdavap",
+      "price_usd": 5.868e-06,
+      "liquidity_usd": 0.0,
+      "volume_5m_usd": 13.43,
+      "volume_1h_usd": 127.71,
+      "change_5m_pct": 0.02,
+      "change_1h_pct": 2.84,
+      "buys_5m": 0,
+      "sells_5m": 1,
+      "transactions_5m": 1,
+      "buy_sell_ratio": 0.0,
+      "volume_acceleration": 1.26,
+      "age_minutes": 1367.1,
+      "score": 3,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 2,
+        "transazioni_5m": 0
+      },
+      "checks": {
+        "liquidita": false,
+        "volume_5m": false,
+        "volume_1h": false,
+        "variazione_5m_min": false,
+        "variazione_5m_max": true,
+        "variazione_1h": true,
+        "variazione_1h_max": true,
+        "rapporto_acquisti_vendite": false,
+        "accelerazione_volume": true,
+        "transazioni_5m": false,
+        "eta_minima": true
+      },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2579,6 +3457,17 @@
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
       "age_minutes": null,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2592,6 +3481,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2613,7 +3503,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 103035.6,
+      "age_minutes": 103036.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2627,6 +3528,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2648,7 +3550,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 184536.7,
+      "age_minutes": 184537.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2662,6 +3575,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2683,7 +3597,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 20994.9,
+      "age_minutes": 20995.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2697,41 +3622,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
-      "qualified": false
-    },
-    {
-      "name": "Castan",
-      "symbol": "Solana",
-      "token_address": "6gXn4syN1yuonExU1euNWsiYAoY8yFas4CcoYS46pump",
-      "pair_address": "CGx13s3orUTMA1LGwF6LUpVwfUbEnB6hGL7gtch54v7R",
-      "quote_symbol": "SOL",
-      "dex": "pumpfun",
-      "url": "https://dexscreener.com/solana/cgx13s3orutma1lgwf6lupvwfubenb6hgl7gtch54v7r",
-      "price_usd": 2.877e-06,
-      "liquidity_usd": 0.0,
-      "volume_5m_usd": 0.96,
-      "volume_1h_usd": 57.4,
-      "change_5m_pct": -0.43,
-      "change_1h_pct": 0.05,
-      "buys_5m": 0,
-      "sells_5m": 1,
-      "transactions_5m": 1,
-      "buy_sell_ratio": 0.0,
-      "volume_acceleration": 0.2,
-      "age_minutes": 17.4,
-      "checks": {
-        "liquidita": false,
-        "volume_5m": false,
-        "volume_1h": false,
-        "variazione_5m_min": false,
-        "variazione_5m_max": true,
-        "variazione_1h": false,
-        "variazione_1h_max": true,
-        "rapporto_acquisti_vendite": false,
-        "accelerazione_volume": false,
-        "transazioni_5m": false,
-        "eta_minima": true
-      },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2753,7 +3644,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 25504.8,
+      "age_minutes": 25505.8,
+      "score": 1,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2767,6 +3669,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2788,7 +3691,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 925351.6,
+      "age_minutes": 925352.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2802,6 +3716,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -2823,7 +3738,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1003024.3,
+      "age_minutes": 1003025.3,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -2837,6 +3763,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -2850,7 +3777,7 @@
       "price_usd": 5.124e-05,
       "liquidity_usd": 18222.73,
       "volume_5m_usd": 5.89,
-      "volume_1h_usd": 68.03,
+      "volume_1h_usd": 67.92,
       "change_5m_pct": -0.37,
       "change_1h_pct": -0.61,
       "buys_5m": 0,
@@ -2858,7 +3785,18 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 1.04,
-      "age_minutes": 29573.5,
+      "age_minutes": 29574.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2872,6 +3810,54 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
+      "qualified": false
+    },
+    {
+      "name": "Castan",
+      "symbol": "Solana",
+      "token_address": "6gXn4syN1yuonExU1euNWsiYAoY8yFas4CcoYS46pump",
+      "pair_address": "CGx13s3orUTMA1LGwF6LUpVwfUbEnB6hGL7gtch54v7R",
+      "quote_symbol": "SOL",
+      "dex": "pumpfun",
+      "url": "https://dexscreener.com/solana/cgx13s3orutma1lgwf6lupvwfubenb6hgl7gtch54v7r",
+      "price_usd": 2.877e-06,
+      "liquidity_usd": 0.0,
+      "volume_5m_usd": 0.96,
+      "volume_1h_usd": 57.4,
+      "change_5m_pct": -0.43,
+      "change_1h_pct": 0.05,
+      "buys_5m": 0,
+      "sells_5m": 1,
+      "transactions_5m": 1,
+      "buy_sell_ratio": 0.0,
+      "volume_acceleration": 0.2,
+      "age_minutes": 18.4,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
+      "checks": {
+        "liquidita": false,
+        "volume_5m": false,
+        "volume_1h": false,
+        "variazione_5m_min": false,
+        "variazione_5m_max": true,
+        "variazione_1h": false,
+        "variazione_1h_max": true,
+        "rapporto_acquisti_vendite": false,
+        "accelerazione_volume": false,
+        "transazioni_5m": false,
+        "eta_minima": true
+      },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2893,7 +3879,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 166271.0,
+      "age_minutes": 166272.0,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2907,6 +3904,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2928,7 +3926,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1020209.0,
+      "age_minutes": 1020210.0,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2942,6 +3951,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2963,7 +3973,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 11604.5,
+      "age_minutes": 11605.4,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -2977,6 +3998,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -2987,18 +4009,29 @@
       "quote_symbol": "HQ",
       "dex": "meteora",
       "url": "https://dexscreener.com/solana/hxvzypgcuybq8skhpvmqzgravbhmuw17rvqhfa7hfzqu",
-      "price_usd": 0.003277,
-      "liquidity_usd": 115.43,
-      "volume_5m_usd": 0.09,
-      "volume_1h_usd": 1.19,
-      "change_5m_pct": 0.31,
-      "change_1h_pct": -1.23,
-      "buys_5m": 1,
+      "price_usd": 0.003288,
+      "liquidity_usd": 115.63,
+      "volume_5m_usd": 0.19,
+      "volume_1h_usd": 1.3,
+      "change_5m_pct": 0.66,
+      "change_1h_pct": -0.89,
+      "buys_5m": 2,
       "sells_5m": 0,
-      "transactions_5m": 1,
+      "transactions_5m": 2,
       "buy_sell_ratio": "infinito",
-      "volume_acceleration": 0.91,
-      "age_minutes": 80975.1,
+      "volume_acceleration": 1.75,
+      "age_minutes": 80976.0,
+      "score": 3,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 2,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3008,10 +4041,11 @@
         "variazione_1h": false,
         "variazione_1h_max": true,
         "rapporto_acquisti_vendite": true,
-        "accelerazione_volume": false,
+        "accelerazione_volume": true,
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3033,7 +4067,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 897788.5,
+      "age_minutes": 897789.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3047,6 +4092,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3068,7 +4114,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 58478.2,
+      "age_minutes": 58479.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3082,6 +4139,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3103,7 +4161,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 490046.6,
+      "age_minutes": 490047.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3117,6 +4186,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3138,7 +4208,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 59727.8,
+      "age_minutes": 59728.8,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3152,6 +4233,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3173,7 +4255,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 89773.7,
+      "age_minutes": 89774.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3187,6 +4280,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3208,7 +4302,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 580288.7,
+      "age_minutes": 580289.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3222,6 +4327,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3243,7 +4349,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 55793.0,
+      "age_minutes": 55793.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3257,6 +4374,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3278,7 +4396,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 97030.4,
+      "age_minutes": 97031.4,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3292,6 +4421,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3305,15 +4435,26 @@
       "price_usd": 2.007e-05,
       "liquidity_usd": 10288.58,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 9.92,
+      "volume_1h_usd": 9.82,
       "change_5m_pct": 0.0,
-      "change_1h_pct": 0.89,
+      "change_1h_pct": -1.25,
       "buys_5m": 0,
       "sells_5m": 0,
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 10440.5,
+      "age_minutes": 10441.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3327,6 +4468,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3348,7 +4490,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1102535.4,
+      "age_minutes": 1102536.4,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3362,6 +4515,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3383,7 +4537,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 602990.7,
+      "age_minutes": 602991.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3397,6 +4562,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3418,7 +4584,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 138770.3,
+      "age_minutes": 138771.3,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3432,6 +4609,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3453,7 +4631,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 160604.7,
+      "age_minutes": 160605.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3467,6 +4656,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3479,16 +4669,27 @@
       "url": "https://dexscreener.com/solana/q2sphpduwfmg7m7wwrqklrn619caucfrsmhvjffodsp",
       "price_usd": 0.1668,
       "liquidity_usd": 4194619.69,
-      "volume_5m_usd": 12.84,
+      "volume_5m_usd": 0.0,
       "volume_1h_usd": 25597.67,
       "change_5m_pct": 0.0,
       "change_1h_pct": -0.1,
       "buys_5m": 0,
-      "sells_5m": 1,
-      "transactions_5m": 1,
+      "sells_5m": 0,
+      "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
-      "volume_acceleration": 0.01,
-      "age_minutes": 771509.0,
+      "volume_acceleration": 0.0,
+      "age_minutes": 771510.0,
+      "score": 1,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 1,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3502,6 +4703,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3513,17 +4715,28 @@
       "dex": "orca",
       "url": "https://dexscreener.com/solana/5zpyutju9ee6jfymdgok7f6s5kczqtc9fomp3uekuya9",
       "price_usd": 3.093e-06,
-      "liquidity_usd": 311881.37,
-      "volume_5m_usd": 202.55,
-      "volume_1h_usd": 6497.7,
-      "change_5m_pct": -0.25,
+      "liquidity_usd": 311883.33,
+      "volume_5m_usd": 149.69,
+      "volume_1h_usd": 6500.04,
+      "change_5m_pct": -0.14,
       "change_1h_pct": 0.72,
       "buys_5m": 13,
-      "sells_5m": 6,
-      "transactions_5m": 19,
-      "buy_sell_ratio": 2.17,
-      "volume_acceleration": 0.37,
-      "age_minutes": 2019951.9,
+      "sells_5m": 2,
+      "transactions_5m": 15,
+      "buy_sell_ratio": 6.5,
+      "volume_acceleration": 0.28,
+      "age_minutes": 2019952.8,
+      "score": 2,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 1
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3537,6 +4750,7 @@
         "transazioni_5m": true,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3547,18 +4761,29 @@
       "quote_symbol": "SOL",
       "dex": "raydium",
       "url": "https://dexscreener.com/solana/7dnw2mhctqozcduyrbj5lmoefss9tpacdskk4qmstgpm",
-      "price_usd": 0.001743,
-      "liquidity_usd": 245279.17,
-      "volume_5m_usd": 0.0,
-      "volume_1h_usd": 117.93,
-      "change_5m_pct": 0.0,
-      "change_1h_pct": 0.68,
-      "buys_5m": 0,
+      "price_usd": 0.00175,
+      "liquidity_usd": 246137.66,
+      "volume_5m_usd": 9.94,
+      "volume_1h_usd": 127.88,
+      "change_5m_pct": 0.36,
+      "change_1h_pct": 1.04,
+      "buys_5m": 1,
       "sells_5m": 0,
-      "transactions_5m": 0,
-      "buy_sell_ratio": 0.0,
-      "volume_acceleration": 0.0,
-      "age_minutes": 562458.1,
+      "transactions_5m": 1,
+      "buy_sell_ratio": "infinito",
+      "volume_acceleration": 0.93,
+      "age_minutes": 562459.1,
+      "score": 1,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3567,11 +4792,12 @@
         "variazione_5m_max": true,
         "variazione_1h": false,
         "variazione_1h_max": true,
-        "rapporto_acquisti_vendite": false,
+        "rapporto_acquisti_vendite": true,
         "accelerazione_volume": false,
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3593,7 +4819,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 767256.9,
+      "age_minutes": 767257.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3607,6 +4844,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3628,7 +4866,18 @@
       "transactions_5m": 1,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 12.0,
-      "age_minutes": 583820.8,
+      "age_minutes": 583821.8,
+      "score": 2,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 2,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3642,6 +4891,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3655,15 +4905,26 @@
       "price_usd": 0.1664,
       "liquidity_usd": 400576.89,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 7222.94,
+      "volume_1h_usd": 7222.53,
       "change_5m_pct": 0.0,
-      "change_1h_pct": -0.65,
+      "change_1h_pct": -0.41,
       "buys_5m": 0,
       "sells_5m": 0,
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 771108.3,
+      "age_minutes": 771109.3,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3677,6 +4938,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3689,16 +4951,27 @@
       "url": "https://dexscreener.com/solana/31p1hptjhfo6zd8obqkfutnxqkggpyi7yceafsykw777",
       "price_usd": 3.09e-06,
       "liquidity_usd": 275203.49,
-      "volume_5m_usd": 829.46,
-      "volume_1h_usd": 13779.54,
+      "volume_5m_usd": 871.37,
+      "volume_1h_usd": 13821.45,
       "change_5m_pct": 0.0,
       "change_1h_pct": 0.8,
       "buys_5m": 0,
-      "sells_5m": 11,
-      "transactions_5m": 11,
+      "sells_5m": 12,
+      "transactions_5m": 12,
       "buy_sell_ratio": 0.0,
-      "volume_acceleration": 0.72,
-      "age_minutes": 673501.1,
+      "volume_acceleration": 0.76,
+      "age_minutes": 673502.1,
+      "score": 1,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 1
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3712,6 +4985,7 @@
         "transazioni_5m": true,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3723,17 +4997,28 @@
       "dex": "raydium",
       "url": "https://dexscreener.com/solana/fzutaardyjapx7hqniqezzdbony8rt4fxcrakvfjap2r",
       "price_usd": 0.000294,
-      "liquidity_usd": 58856.89,
-      "volume_5m_usd": 127.71,
+      "liquidity_usd": 58851.73,
+      "volume_5m_usd": 50.02,
       "volume_1h_usd": 162.2,
-      "change_5m_pct": 0.56,
+      "change_5m_pct": 0.31,
       "change_1h_pct": 0.58,
-      "buys_5m": 3,
-      "sells_5m": 1,
-      "transactions_5m": 4,
-      "buy_sell_ratio": 3.0,
-      "volume_acceleration": 9.45,
-      "age_minutes": 75931.3,
+      "buys_5m": 1,
+      "sells_5m": 0,
+      "transactions_5m": 1,
+      "buy_sell_ratio": "infinito",
+      "volume_acceleration": 3.7,
+      "age_minutes": 75932.2,
+      "score": 3,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 2,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3747,6 +5032,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3768,7 +5054,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 769884.8,
+      "age_minutes": 769885.8,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3782,6 +5079,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3795,15 +5093,26 @@
       "price_usd": 0.1665,
       "liquidity_usd": 1360044.49,
       "volume_5m_usd": 0.0,
-      "volume_1h_usd": 2.02,
+      "volume_1h_usd": 1.76,
       "change_5m_pct": 0.0,
-      "change_1h_pct": -0.38,
+      "change_1h_pct": -0.71,
       "buys_5m": 0,
       "sells_5m": 0,
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 755872.7,
+      "age_minutes": 755873.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3817,6 +5126,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3838,7 +5148,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 678137.6,
+      "age_minutes": 678138.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3852,6 +5173,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3873,7 +5195,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 403908.7,
+      "age_minutes": 403909.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3887,6 +5220,54 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
+      "qualified": false
+    },
+    {
+      "name": "Shit Piss Skin Can",
+      "symbol": "SPSC",
+      "token_address": "4nswj3o1Lo9iWYvvRJxUD8vbCy9ay7QQoXYcncHNbonk",
+      "pair_address": "6MHj1z5BgC1UiTNEWrnJfbGtQPuPdh2qgdWkemGxT2c5",
+      "quote_symbol": "USD1",
+      "dex": "raydium",
+      "url": "https://dexscreener.com/solana/6mhj1z5bgc1uitnewrnjfbgtqpupdh2qgdwkemgxt2c5",
+      "price_usd": 0.0001987,
+      "liquidity_usd": 93329.2,
+      "volume_5m_usd": 0.0,
+      "volume_1h_usd": 12.49,
+      "change_5m_pct": 0.0,
+      "change_1h_pct": -0.01,
+      "buys_5m": 0,
+      "sells_5m": 0,
+      "transactions_5m": 0,
+      "buy_sell_ratio": 0.0,
+      "volume_acceleration": 0.0,
+      "age_minutes": 513580.7,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
+      "checks": {
+        "liquidita": true,
+        "volume_5m": false,
+        "volume_1h": false,
+        "variazione_5m_min": false,
+        "variazione_5m_max": true,
+        "variazione_1h": false,
+        "variazione_1h_max": true,
+        "rapporto_acquisti_vendite": false,
+        "accelerazione_volume": false,
+        "transazioni_5m": false,
+        "eta_minima": true
+      },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3908,7 +5289,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 258880.5,
+      "age_minutes": 258881.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -3922,6 +5314,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -3943,7 +5336,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 116440.5,
+      "age_minutes": 116441.4,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3957,6 +5361,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -3978,7 +5383,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 557975.6,
+      "age_minutes": 557976.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -3992,6 +5408,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -4013,7 +5430,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 266233.0,
+      "age_minutes": 266233.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": true,
         "volume_5m": false,
@@ -4027,6 +5455,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": true,
       "qualified": false
     },
     {
@@ -4048,7 +5477,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 93427.3,
+      "age_minutes": 93428.3,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4062,6 +5502,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4083,7 +5524,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1279793.6,
+      "age_minutes": 1279794.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4097,6 +5549,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4118,7 +5571,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1423583.1,
+      "age_minutes": 1423584.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4132,6 +5596,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4153,7 +5618,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 869401.0,
+      "age_minutes": 869401.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4167,6 +5643,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4188,7 +5665,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1377547.7,
+      "age_minutes": 1377548.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4202,6 +5690,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4223,7 +5712,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1000409.1,
+      "age_minutes": 1000410.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4237,6 +5737,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4258,7 +5759,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 46506.6,
+      "age_minutes": 46507.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4272,6 +5784,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4293,7 +5806,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 1072284.0,
+      "age_minutes": 1072285.0,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4307,6 +5831,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4328,7 +5853,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 15548.3,
+      "age_minutes": 15549.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4342,6 +5878,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4363,7 +5900,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 546878.6,
+      "age_minutes": 546879.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4377,6 +5925,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4398,7 +5947,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 55545.2,
+      "age_minutes": 55546.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4412,6 +5972,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4433,7 +5994,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 52390.0,
+      "age_minutes": 52391.0,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4447,6 +6019,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4468,7 +6041,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 56837.3,
+      "age_minutes": 56838.2,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4482,6 +6066,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4503,7 +6088,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 50.7,
+      "age_minutes": 51.6,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4517,6 +6113,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4538,7 +6135,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 49443.1,
+      "age_minutes": 49444.1,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4552,6 +6160,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4573,7 +6182,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 4664.9,
+      "age_minutes": 4665.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4587,6 +6207,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4608,7 +6229,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 6182.6,
+      "age_minutes": 6183.5,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4622,6 +6254,7 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     },
     {
@@ -4643,7 +6276,18 @@
       "transactions_5m": 0,
       "buy_sell_ratio": 0.0,
       "volume_acceleration": 0.0,
-      "age_minutes": 913.9,
+      "age_minutes": 914.9,
+      "score": 0,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 0,
+        "variazione_5m": 0,
+        "variazione_1h": 0,
+        "rapporto_acquisti_vendite": 0,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 0
+      },
       "checks": {
         "liquidita": false,
         "volume_5m": false,
@@ -4657,8 +6301,57 @@
         "transazioni_5m": false,
         "eta_minima": true
       },
+      "liquidity_ok": false,
       "qualified": false
     }
   ],
-  "qualified_pairs": []
+  "qualified_pairs": [
+    {
+      "name": "DogWifJob",
+      "symbol": "JOB",
+      "token_address": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+      "pair_address": "HAUVBmNthCFmG9SRXMvZ1GAXNpU955hkPdSAsC2cx4C8",
+      "quote_symbol": "SOL",
+      "dex": "pumpswap",
+      "url": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8",
+      "price_usd": 0.00229,
+      "liquidity_usd": 130265.0,
+      "volume_5m_usd": 1032.06,
+      "volume_1h_usd": 24015.28,
+      "change_5m_pct": 0.62,
+      "change_1h_pct": 19.98,
+      "buys_5m": 15,
+      "sells_5m": 6,
+      "transactions_5m": 21,
+      "buy_sell_ratio": 2.5,
+      "volume_acceleration": 0.52,
+      "age_minutes": 819.8,
+      "score": 4,
+      "max_score": 8,
+      "points": {
+        "volume_5m": 0,
+        "volume_1h": 1,
+        "variazione_5m": 0,
+        "variazione_1h": 1,
+        "rapporto_acquisti_vendite": 1,
+        "accelerazione_volume": 0,
+        "transazioni_5m": 1
+      },
+      "checks": {
+        "liquidita": true,
+        "volume_5m": false,
+        "volume_1h": true,
+        "variazione_5m_min": false,
+        "variazione_5m_max": true,
+        "variazione_1h": true,
+        "variazione_1h_max": true,
+        "rapporto_acquisti_vendite": true,
+        "accelerazione_volume": false,
+        "transazioni_5m": true,
+        "eta_minima": true
+      },
+      "liquidity_ok": true,
+      "qualified": true
+    }
+  ]
 }
