@@ -1,10 +1,9 @@
-
 name: Meme Pump Radar AI
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
@@ -18,42 +17,42 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Scarica il repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          fetch-depth: 0
 
-      - name: Configura Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Installa dipendenze
-        run: python -m pip install requests
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
-      - name: Esegui radar
+      - name: Run Meme Pump Radar
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python radar.py
 
-      - name: Salva lo stato del radar
-        if: always()
+      - name: Save radar state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if [ -f radar_state.json ]; then
-            git add radar_state.json
+          git add radar_state.json radar_data.json
+
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica da salvare."
+            exit 0
           fi
 
-          if [ -f alerted_pairs.json ]; then
-            git add alerted_pairs.json
-          fi
+          git commit -m "Aggiorna stato e dati del radar"
 
-          if ! git diff --cached --quiet; then
-            git commit -m "Aggiorna stato Meme Pump Radar"
-            git push
-          else
-            echo "Nessuna modifica allo stato."
-          fi
+          git fetch origin main
+          git rebase origin/main
+
+          git push origin HEAD:main
