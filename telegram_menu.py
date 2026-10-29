@@ -1,4 +1,10 @@
-"""Menu Telegram e allarmi percentuali per Meme Pump Radar AI."""
+
+"""Menu Telegram e allarmi percentuali per Meme Pump Radar AI.
+
+Nessun acquisto o vendita automatica.
+Le impostazioni vengono salvate in radar_state.json.
+"""
+
 import os
 import re
 import time
@@ -18,6 +24,7 @@ http.headers.update({"User-Agent": "MemePumpRadarAI/5.1"})
 def _api(method, payload=None):
     if not API_BASE:
         return None
+
     try:
         response = http.post(
             f"{API_BASE}/{method}",
@@ -38,8 +45,10 @@ def _send(chat_id, text, keyboard=None):
         "text": text,
         "disable_web_page_preview": True,
     }
+
     if keyboard:
         payload["reply_markup"] = {"inline_keyboard": keyboard}
+
     return _api("sendMessage", payload) is not None
 
 
@@ -49,12 +58,14 @@ def _menu_keyboard(config, state):
         if config.get("enabled", False)
         else "▶️ Attiva allarme prezzo"
     )
+
     new_alerts = state.get("new_coin_alerts_enabled", True)
     new_label = (
         "🔕 Disattiva alert nuove coin"
         if new_alerts
         else "🔔 Attiva alert nuove coin"
     )
+
     return [
         [
             {"text": "🪙 Cambia coin", "callback_data": "coin"},
@@ -72,6 +83,7 @@ def _menu_keyboard(config, state):
 
 def _config(state):
     config = state.get("price_alert_config")
+
     if not isinstance(config, dict):
         config = {
             "enabled": False,
@@ -85,17 +97,15 @@ def _config(state):
             "triggered": False,
         }
         state["price_alert_config"] = config
+
     return config
 
 
 def _status_text(config, state):
-    try:
-        entry = float(config.get("entry_price_usd") or 0)
-        pct = float(config.get("target_change_pct") or 50)
-    except (TypeError, ValueError):
-        entry, pct = 0, 50
-
+    entry = float(config.get("entry_price_usd") or 0)
+    pct = float(config.get("target_change_pct") or 50)
     direction = config.get("direction", "up")
+
     if direction == "up":
         target = entry * (1 + pct / 100)
         direction_text = "rialzo"
@@ -136,17 +146,16 @@ def _valid_token_address(value):
 
 
 def process_telegram_updates(state):
-    """Elabora comandi e pulsanti Telegram a ogni avvio del workflow."""
+    """Elabora i comandi e i pulsanti Telegram a ogni avvio del radar."""
+
     config = _config(state)
 
     if not BOT_TOKEN or not AUTHORIZED_CHAT_ID:
-        print(
-            "[TELEGRAM MENU] Token o chat ID mancante; "
-            "menu non disponibile."
-        )
+        print("[TELEGRAM MENU] Token o chat ID mancante.")
         return state
 
     offset = int(state.get("telegram_update_offset", 0) or 0)
+
     data = _api(
         "getUpdates",
         {
@@ -155,6 +164,7 @@ def process_telegram_updates(state):
             "allowed_updates": ["message", "callback_query"],
         },
     )
+
     if not data:
         return state
 
@@ -166,6 +176,7 @@ def process_telegram_updates(state):
         )
 
         callback = update.get("callback_query")
+
         if callback:
             message = callback.get("message") or {}
             chat = message.get("chat") or {}
@@ -183,10 +194,7 @@ def process_telegram_updates(state):
                 )
                 continue
 
-            _api(
-                "answerCallbackQuery",
-                {"callback_query_id": callback_id},
-            )
+            _api("answerCallbackQuery", {"callback_query_id": callback_id})
 
             if action == "coin":
                 state["telegram_pending_input"] = {
@@ -196,8 +204,8 @@ def process_telegram_updates(state):
                 _send(
                     chat_id,
                     "Invia nome e indirizzo del token Solana in un solo "
-                    "messaggio, separati da |\nEsempio:\n"
-                    "GTA 6 | "
+                    "messaggio, separati da |\n"
+                    "Esempio: GTA 6 | "
                     "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
                 )
 
@@ -208,8 +216,8 @@ def process_telegram_updates(state):
                 }
                 _send(
                     chat_id,
-                    "Scrivi la soglia percentuale positiva, ad esempio "
-                    "50 per +50% o 20 per 20%.",
+                    "Scrivi la soglia percentuale positiva, "
+                    "ad esempio 50 per +50%.",
                 )
 
             elif action == "entry":
@@ -220,7 +228,7 @@ def process_telegram_updates(state):
                 _send(
                     chat_id,
                     "Scrivi il prezzo d'ingresso in USD per singolo token, "
-                    "ad esempio 0.0002. Usa il punto per i decimali.",
+                    "ad esempio 0.0002. Usa un punto per i decimali.",
                 )
 
             elif action == "direction":
@@ -234,13 +242,12 @@ def process_telegram_updates(state):
                     "per avviso al ribasso.",
                 )
 
-            elif action in ("pause", "toggle_price"):
-                config["enabled"] = (
-                    False if action == "pause"
-                    else not bool(config.get("enabled", False))
-                )
+            elif action == "toggle_price":
+                config["enabled"] = not bool(config.get("enabled", False))
+
                 if config["enabled"]:
                     config["triggered"] = False
+
                 _send(
                     chat_id,
                     "🟢 Allarme prezzo attivato."
@@ -249,20 +256,11 @@ def process_telegram_updates(state):
                 )
                 _show_menu(chat_id, config, state)
 
-            elif action == "resume":
-                config["enabled"] = True
-                config["triggered"] = False
-                _send(
-                    chat_id,
-                    "▶️ Allarme prezzo riattivato. La soglia verrà "
-                    "controllata alle prossime scansioni.",
-                )
-                _show_menu(chat_id, config, state)
-
             elif action == "toggle_new_alerts":
                 state["new_coin_alerts_enabled"] = not bool(
                     state.get("new_coin_alerts_enabled", True)
                 )
+
                 _send(
                     chat_id,
                     "🟢 Alert nuove coin/pre-pump attivati."
@@ -283,16 +281,21 @@ def process_telegram_updates(state):
 
         if not text:
             continue
+
         if chat_id != AUTHORIZED_CHAT_ID:
             print("[TELEGRAM MENU] Ignorato messaggio da chat non autorizzata.")
             continue
 
+        # Accetta /allert, /allarme, /start e /help,
+        # anche se Telegram aggiunge @nome_bot.
         command = text.split()[0].split("@")[0].lower()
-        if command in ("/allarme", "/start", "/help"):
+
+        if command in ("/allert", "/allarme", "/start", "/help"):
             _show_menu(chat_id, config, state)
             continue
 
         pending = state.get("telegram_pending_input") or {}
+
         if str(pending.get("chat_id", "")) != chat_id:
             continue
 
@@ -300,6 +303,7 @@ def process_telegram_updates(state):
 
         if field == "coin":
             parts = [part.strip() for part in text.split("|", 1)]
+
             if (
                 len(parts) != 2
                 or not parts[0]
@@ -307,8 +311,7 @@ def process_telegram_updates(state):
             ):
                 _send(
                     chat_id,
-                    "Formato non valido. Invia: NOME | INDIRIZZO_SOLANA\n"
-                    "L'indirizzo deve essere una chiave pubblica Solana valida.",
+                    "Formato non valido. Invia: NOME | INDIRIZZO_SOLANA",
                 )
                 continue
 
@@ -321,8 +324,8 @@ def process_telegram_updates(state):
 
             _send(
                 chat_id,
-                "✅ Coin aggiornata. L'allarme prezzo è in pausa finché "
-                "non imposti il prezzo d'ingresso e lo attivi dal menu.",
+                "✅ Coin aggiornata. L'allarme prezzo è in pausa. "
+                "Imposta il prezzo d'ingresso e attivalo dal menu.",
             )
             _show_menu(chat_id, config, state)
 
@@ -355,7 +358,8 @@ def process_telegram_updates(state):
             if entry <= 0 or entry != entry or entry == float("inf"):
                 _send(
                     chat_id,
-                    "Prezzo non valido. Inserisci un prezzo in USD maggiore di zero.",
+                    "Prezzo non valido. Inserisci un prezzo in USD maggiore "
+                    "di zero.",
                 )
                 continue
 
@@ -367,11 +371,9 @@ def process_telegram_updates(state):
 
         elif field == "direction":
             value = text.strip().lower()
+
             if value not in ("up", "down"):
-                _send(
-                    chat_id,
-                    "Rispondi UP per rialzo o DOWN per ribasso.",
-                )
+                _send(chat_id, "Rispondi UP per rialzo o DOWN per ribasso.")
                 continue
 
             config["direction"] = value
@@ -384,13 +386,15 @@ def process_telegram_updates(state):
 
 
 def check_price_alert(state):
-    """Controlla la soglia a ogni scansione e invia una sola notifica."""
+    """Controlla la soglia del prezzo e invia una sola notifica."""
+
     config = _config(state)
 
     if not config.get("enabled", False):
         return state
 
     token_address = str(config.get("token_address") or "").strip()
+
     try:
         entry = float(config.get("entry_price_usd"))
         pct = float(config.get("target_change_pct", 50))
@@ -399,23 +403,21 @@ def check_price_alert(state):
         return state
 
     direction = config.get("direction", "up")
+
     if (
         not _valid_token_address(token_address)
         or entry <= 0
         or pct <= 0
         or direction not in ("up", "down")
     ):
-        print("[PRICE ALERT] Configurazione incompleta: imposta coin e prezzo d'ingresso.")
+        print("[PRICE ALERT] Configurazione incompleta o non valida.")
         return state
 
     if config.get("triggered", False):
         return state
 
     try:
-        response = http.get(
-            DEX_TOKEN_URL + token_address,
-            timeout=TIMEOUT,
-        )
+        response = http.get(DEX_TOKEN_URL + token_address, timeout=TIMEOUT)
         response.raise_for_status()
         data = response.json()
     except (requests.RequestException, ValueError) as exc:
@@ -423,17 +425,22 @@ def check_price_alert(state):
         return state
 
     candidates = []
+
     for pair in data.get("pairs") or []:
         if not isinstance(pair, dict) or pair.get("chainId") != "solana":
             continue
+
         base = pair.get("baseToken") or {}
+
         if str(base.get("address") or "").lower() != token_address.lower():
             continue
+
         try:
             price = float(pair.get("priceUsd") or 0)
             liquidity = float((pair.get("liquidity") or {}).get("usd") or 0)
         except (TypeError, ValueError):
             continue
+
         if price > 0:
             candidates.append((liquidity, price, pair))
 
@@ -443,11 +450,13 @@ def check_price_alert(state):
 
     candidates.sort(key=lambda item: item[0], reverse=True)
     _, current, pair = candidates[0]
+
     target = (
         entry * (1 + pct / 100)
         if direction == "up"
         else entry * (1 - pct / 100)
     )
+
     reached = current >= target if direction == "up" else current <= target
     change = (current / entry - 1) * 100
 
@@ -456,12 +465,14 @@ def check_price_alert(state):
         f"${current:.12g}; variazione {change:+.2f}%; "
         f"obiettivo ${target:.12g}"
     )
+
     if not reached:
         return state
 
     url = pair.get("url") or (
         f"https://dexscreener.com/solana/{pair.get('pairAddress', '')}"
     )
+
     message = (
         "🔔 MEME PUMP RADAR AI — OBIETTIVO RAGGIUNTO\n\n"
         f"Coin: {config.get('token_name') or 'Token'}\n"
@@ -478,6 +489,6 @@ def check_price_alert(state):
         config["triggered_at"] = time.time()
         print("[PRICE ALERT] Notifica inviata.")
     else:
-        print("[PRICE ALERT] Invio fallito; verrà riprovato alla prossima scansione.")
+        print("[PRICE ALERT] Invio non riuscito; riproverà alla prossima scansione.")
 
     return state
