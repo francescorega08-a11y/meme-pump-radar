@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T15:41:25.293565+00:00",
+  "updated_at": "2026-11-25T23:49:36.938856+00:00",
   "pairs": {
     "c3hbhdcl3rwkjsc1dmfz4d3tcvg7zmwqntguftwsemp7": {
       "symbol": "MSFT",
@@ -1876,195 +1876,6 @@
     "8ujpqxxnnwvrohu2oce3easzol7pau2uj3fen4zp72us": 1793186777.4773097
   },
   "pair_snapshots": {
-    "5ou7cemqrfbu5xxxvcmmf9nlzr7yvgnt9brysgkgf8am": {
-      "volume_1h_usd": 47.2,
-      "volume_5m_usd": 47.2,
-      "transactions_5m": 1,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:11:03.357868+00:00"
-    },
-    "dm2htzxk5d9nhiycqrwdrdui92cxrg6edzumv5azvgj5": {
-      "volume_1h_usd": 3051.08,
-      "volume_5m_usd": 3051.08,
-      "transactions_5m": 32,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:16:46.412878+00:00"
-    },
-    "floqn5gklydozi84hptotsh9ewcbseryvlvnfp5thwj4": {
-      "volume_1h_usd": 13445.66,
-      "volume_5m_usd": 1.12,
-      "transactions_5m": 1,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:58:44.020517+00:00"
-    },
-    "esfkzxuvewrmbr6wsuh5cbza2h8htghmya1pepeq7z5b": {
-      "volume_1h_usd": 10675.57,
-      "volume_5m_usd": 10675.57,
-      "transactions_5m": 288,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:14:54.846195+00:00"
-    },
-    "cfr5fhykcudvr1qclungrx3whrr8brzlkbnur2swquj8": {
-      "volume_1h_usd": 5582.93,
-      "volume_5m_usd": 5582.93,
-      "transactions_5m": 69,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:21:06.410017+00:00"
-    },
-    "2bzsskdvsrumpnw4zreqebyphrt3zpyhbzfuvpibkxs1": {
-      "volume_1h_usd": 32215.92,
-      "volume_5m_usd": 27.13,
-      "transactions_5m": 4,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:44:46.312778+00:00"
-    },
-    "ezsjzy2wd5nv5i8vxb5msrb8b9gjd3nh2de8dy7abxur": {
-      "volume_1h_usd": 5578.86,
-      "volume_5m_usd": 5578.86,
-      "transactions_5m": 106,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:24:42.407060+00:00"
-    },
-    "bkviw3obp9nizfo2gqrcenwgmqzzjqpdeul8uakynhxj": {
-      "volume_1h_usd": 8000.58,
-      "volume_5m_usd": 8000.58,
-      "transactions_5m": 262,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:26:53.003164+00:00"
-    },
-    "6whg2rejp3bidsga2mcfq26vbwz7xwyrk37cddqtbpra": {
-      "volume_1h_usd": 0.0,
-      "volume_5m_usd": 0.0,
-      "transactions_5m": 23,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:36:44.574411+00:00"
-    },
-    "ctrdeew3tysxzaiyhz8aq3zfjdz6qttsuhlhbrl7pyrd": {
-      "volume_1h_usd": 10228.28,
-      "volume_5m_usd": 10228.28,
-      "transactions_5m": 214,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:28:44.788110+00:00"
-    },
-    "2qksbbct3gtdvj2savyzzf8c2cdlabrk2cxk6ypyr6f2": {
-      "volume_1h_usd": 11588.09,
-      "volume_5m_usd": 6705.09,
-      "transactions_5m": 173,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:34:41.025111+00:00"
-    },
-    "hvt87hkkevyomg3yuxz1l4qzhj6budsyri5jitk3fuux": {
-      "volume_1h_usd": 2638.03,
-      "volume_5m_usd": 2638.03,
-      "transactions_5m": 42,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:31:20.685263+00:00"
-    },
-    "2uzrbje8a4zugfu3wkceppteb1mytcpqhul1yxff4bfc": {
-      "volume_1h_usd": 2142.27,
-      "volume_5m_usd": 1316.99,
-      "transactions_5m": 68,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:32:45.411688+00:00"
-    },
-    "drbzyhrrgrjumbw6mrct2mie8ybrggx7sq71fzhdpmpf": {
-      "volume_1h_usd": 3817.19,
-      "volume_5m_usd": 3817.19,
-      "transactions_5m": 163,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:36:52.614765+00:00"
-    },
-    "7sp5qhhtnfkg4tmmm8vzehlkbtyvaxy8gwj523ljk3zt": {
-      "volume_1h_usd": 133.81,
-      "volume_5m_usd": 66.53,
-      "transactions_5m": 1,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:42:53.979025+00:00"
-    },
-    "hs9hytwaur4f6yrqwbgwhegxqd3gswmwhjfanuyrp5zx": {
-      "volume_1h_usd": 6609.91,
-      "volume_5m_usd": 342.72,
-      "transactions_5m": 14,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T15:31:27.939612+00:00"
-    },
-    "9mlfunfo44bc2vq8lkndxhdor3ku5yxdp4gjerhaske1": {
-      "volume_1h_usd": 13685.94,
-      "volume_5m_usd": 13685.94,
-      "transactions_5m": 370,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:40:52.805760+00:00"
-    },
-    "ffenhwq44fxrnmn1sux1fk51cfyfeugzi3vxhxme78h8": {
-      "volume_1h_usd": 3773.9,
-      "volume_5m_usd": 3773.9,
-      "transactions_5m": 64,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:40:52.994262+00:00"
-    },
-    "d2x8dsbvdsnkhqjz5xligmuikmgnnsk4dtrlili5u3i4": {
-      "volume_1h_usd": 1150.74,
-      "volume_5m_usd": 1150.74,
-      "transactions_5m": 33,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:40:57.693721+00:00"
-    },
-    "hroicatcugmcshtmwwms3xp4qa8vrmbf8nkcc26rn1yq": {
-      "volume_1h_usd": 0.0,
-      "volume_5m_usd": 0.0,
-      "transactions_5m": 6,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:40:57.883466+00:00"
-    },
-    "5u18sr6frerd7vssprrfujeiwjekpzggutul1ptbnmym": {
-      "volume_1h_usd": 2373.2,
-      "volume_5m_usd": 2373.2,
-      "transactions_5m": 88,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:44:39.834067+00:00"
-    },
-    "ftkuawknsphetqhssevwphkyi2gqhkwddd8shkxk1qax": {
-      "volume_1h_usd": 142.71,
-      "volume_5m_usd": 66.39,
-      "transactions_5m": 1,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:56:39.649599+00:00"
-    },
-    "6qfaqavcs1qykvxquqgzemqqpxslxepnxrr4tryhegae": {
-      "volume_1h_usd": 11540.85,
-      "volume_5m_usd": 11540.85,
-      "transactions_5m": 509,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:44:44.677214+00:00"
-    },
-    "3rixudakfrcly32vs74ngc48qcl23fyhuatv2rscxkdj": {
-      "volume_1h_usd": 3599.09,
-      "volume_5m_usd": 3599.09,
-      "transactions_5m": 90,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:46:45.191562+00:00"
-    },
-    "fngzemndg8vjcdwvwwwfho6u9pq6ngvjqvyccf8dhv9c": {
-      "volume_1h_usd": 5211.12,
-      "volume_5m_usd": 5211.12,
-      "transactions_5m": 118,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:46:45.426469+00:00"
-    },
-    "6bc57uiruwp2whxcbbc6r4ft7f5zc68tzw1auyvav2ei": {
-      "volume_1h_usd": 6747.95,
-      "volume_5m_usd": 6747.95,
-      "transactions_5m": 122,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:46:50.437982+00:00"
-    },
-    "4lnqreryetlit68cr6gx6raf3qzwampz2koads1htmfr": {
-      "volume_1h_usd": 1071.93,
-      "volume_5m_usd": 1071.93,
-      "transactions_5m": 15,
-      "liquidity_usd": 0.0,
-      "updated_at": "2026-11-02T04:48:38.689182+00:00"
-    },
     "8chuzc5vhwngckdesm3x6ozj1ejbu3ra16jiuvsod3kw": {
       "volume_1h_usd": 3584.83,
       "volume_5m_usd": 2624.59,
@@ -2388,11 +2199,11 @@
       "updated_at": "2026-11-08T20:11:45.010683+00:00"
     },
     "42bp19ntff7fxleabw8wwb7tungsmhfhjr9i4zv1gjgk": {
-      "volume_1h_usd": 49.86,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 11317.83,
-      "updated_at": "2026-11-25T15:40:54.764982+00:00"
+      "updated_at": "2026-11-25T23:49:02.762900+00:00"
     },
     "7trvlrn1ueh1k2lcgbg94e1gnewfmfceqky2n53rndxc": {
       "volume_1h_usd": 1105.42,
@@ -10609,8 +10420,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 1709.6,
-      "updated_at": "2026-11-25T05:01:09.159690+00:00"
+      "liquidity_usd": 1693.7,
+      "updated_at": "2026-11-25T23:49:09.012475+00:00"
     },
     "8qafjqb1gevseacraqlnfn2vn9lufhagaavfxxkmjyx4": {
       "volume_1h_usd": 12744.3,
@@ -14740,7 +14551,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:20.763518+00:00"
+      "updated_at": "2026-11-25T23:49:34.018100+00:00"
     },
     "6lhvbsmbi1vaq9iktg6vkhkjvsch2a1fysftbsplstvp": {
       "volume_1h_usd": 413.47,
@@ -16021,14 +15832,14 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 18030742.72,
-      "updated_at": "2026-11-25T15:40:49.526842+00:00"
+      "updated_at": "2026-11-25T23:48:55.468071+00:00"
     },
     "q2sphpduwfmg7m7wwrqklrn619caucfrsmhvjffodsp": {
-      "volume_1h_usd": 31588.07,
-      "volume_5m_usd": 2497.57,
-      "transactions_5m": 17,
-      "liquidity_usd": 2131532.4,
-      "updated_at": "2026-11-25T15:40:49.728289+00:00"
+      "volume_1h_usd": 52755.55,
+      "volume_5m_usd": 3019.89,
+      "transactions_5m": 24,
+      "liquidity_usd": 2306691.87,
+      "updated_at": "2026-11-25T23:48:55.699316+00:00"
     },
     "g4iwc3xfgmuguuz5e9vgsyvjyq3c2ybp8fccsmcmmx16": {
       "volume_1h_usd": 1454.72,
@@ -16066,32 +15877,32 @@
       "updated_at": "2026-11-05T15:13:22.341336+00:00"
     },
     "hsqgweh3ib6w59rbh5n1jxmi8vxfbqkejxozl6pgfcgb": {
-      "volume_1h_usd": 330.24,
+      "volume_1h_usd": 4087.8,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 360786.55,
-      "updated_at": "2026-11-24T19:17:22.933944+00:00"
+      "liquidity_usd": 371196.47,
+      "updated_at": "2026-11-25T23:48:55.950024+00:00"
     },
     "j28smrhedlyhpzcjlvhexsimifedswfhobhpeqryhdjl": {
-      "volume_1h_usd": 75.26,
-      "volume_5m_usd": 5.75,
-      "transactions_5m": 4,
-      "liquidity_usd": 281350.13,
-      "updated_at": "2026-11-25T15:40:49.933834+00:00"
+      "volume_1h_usd": 238.36,
+      "volume_5m_usd": 238.31,
+      "transactions_5m": 1,
+      "liquidity_usd": 295774.89,
+      "updated_at": "2026-11-25T23:48:56.201642+00:00"
     },
     "8ztfxjfpfvutef4slsapcfj8gw2dxyua9no2blpq7h7v": {
-      "volume_1h_usd": 11920.6,
-      "volume_5m_usd": 1860.88,
-      "transactions_5m": 14,
-      "liquidity_usd": 194838.28,
-      "updated_at": "2026-11-25T15:40:50.313455+00:00"
+      "volume_1h_usd": 15929.6,
+      "volume_5m_usd": 948.89,
+      "transactions_5m": 8,
+      "liquidity_usd": 236966.16,
+      "updated_at": "2026-11-25T23:48:56.454171+00:00"
     },
     "5zpyutju9ee6jfymdgok7f6s5kczqtc9fomp3uekuya9": {
-      "volume_1h_usd": 198174.92,
-      "volume_5m_usd": 1575.93,
-      "transactions_5m": 114,
-      "liquidity_usd": 201635.54,
-      "updated_at": "2026-11-25T15:40:50.128044+00:00"
+      "volume_1h_usd": 2878.36,
+      "volume_5m_usd": 37.1,
+      "transactions_5m": 23,
+      "liquidity_usd": 210794.95,
+      "updated_at": "2026-11-25T23:48:56.621754+00:00"
     },
     "d29pwurtjrj4ndzcnfrbjtaet3hho6ukfdib2z21hrwx": {
       "volume_1h_usd": 10919.73,
@@ -16136,46 +15947,46 @@
       "updated_at": "2026-11-04T16:16:53.300670+00:00"
     },
     "31p1hptjhfo6zd8obqkfutnxqkggpyi7yceafsykw777": {
-      "volume_1h_usd": 237940.53,
-      "volume_5m_usd": 4165.48,
-      "transactions_5m": 71,
-      "liquidity_usd": 185578.3,
-      "updated_at": "2026-11-25T15:40:50.518219+00:00"
+      "volume_1h_usd": 3.1,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 192604.74,
+      "updated_at": "2026-11-25T23:48:57.079298+00:00"
     },
     "7dnw2mhctqozcduyrbj5lmoefss9tpacdskk4qmstgpm": {
-      "volume_1h_usd": 1967.69,
-      "volume_5m_usd": 0.04,
-      "transactions_5m": 1,
-      "liquidity_usd": 183002.66,
-      "updated_at": "2026-11-25T15:40:50.715494+00:00"
+      "volume_1h_usd": 3658.12,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 202844.86,
+      "updated_at": "2026-11-25T23:48:56.849698+00:00"
     },
     "6iep3egqksbzwgzmbcyajtivtvykcgl9bnpbewlr8agq": {
-      "volume_1h_usd": 4308.16,
-      "volume_5m_usd": 0.0,
-      "transactions_5m": 0,
-      "liquidity_usd": 89674.7,
-      "updated_at": "2026-11-25T15:40:51.540375+00:00"
+      "volume_1h_usd": 3284.13,
+      "volume_5m_usd": 85.86,
+      "transactions_5m": 2,
+      "liquidity_usd": 99006.54,
+      "updated_at": "2026-11-25T23:48:58.143200+00:00"
     },
     "8v79sjmpkrux2emzbs8ukmfdrclabszboc4ej5kowvc5": {
-      "volume_1h_usd": 450.08,
-      "volume_5m_usd": 3.98,
-      "transactions_5m": 1,
-      "liquidity_usd": 74053.75,
-      "updated_at": "2026-11-25T15:40:51.744753+00:00"
+      "volume_1h_usd": 90.63,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 78083.47,
+      "updated_at": "2026-11-25T23:48:58.380365+00:00"
     },
     "6sekz73vph5afymqtzav6h5vaqqlz2c8wqecq6mhlqfk": {
-      "volume_1h_usd": 1293.55,
-      "volume_5m_usd": 0.0,
-      "transactions_5m": 0,
-      "liquidity_usd": 140711.72,
-      "updated_at": "2026-11-25T15:40:50.926548+00:00"
+      "volume_1h_usd": 24.29,
+      "volume_5m_usd": 19.55,
+      "transactions_5m": 3,
+      "liquidity_usd": 141648.93,
+      "updated_at": "2026-11-25T23:48:57.305025+00:00"
     },
     "hdt4asuvnjwn1y5mv2r3spxf54hc911anyihu8htmk7z": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 0.04,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 57863.64,
-      "updated_at": "2026-11-24T12:13:58.747766+00:00"
+      "liquidity_usd": 56240.24,
+      "updated_at": "2026-11-25T23:48:59.141267+00:00"
     },
     "fzutaardyjapx7hqniqezzdbony8rt4fxcrakvfjap2r": {
       "volume_1h_usd": 43.61,
@@ -16189,14 +16000,14 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 5706.21,
-      "updated_at": "2026-11-25T15:40:56.534340+00:00"
+      "updated_at": "2026-11-25T23:49:04.389444+00:00"
     },
     "gbzd5oomfkytygzumkfzyaejpvzxvm5fk4fdjcpvjjch": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 29536.16,
-      "updated_at": "2026-11-25T15:40:52.338892+00:00"
+      "liquidity_usd": 31130.2,
+      "updated_at": "2026-11-25T23:48:59.561958+00:00"
     },
     "6sdydzyfzy3bzmhaaw6pugpgjylgh5dr6webnxerux2o": {
       "volume_1h_usd": 1.03,
@@ -16276,39 +16087,39 @@
       "updated_at": "2026-11-23T21:22:44.072534+00:00"
     },
     "52vhd46exavjc1kwhwn9zhhtalycsmj1bjzvzkl8ug6q": {
-      "volume_1h_usd": 58.86,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 22741.63,
-      "updated_at": "2026-11-25T15:40:52.587840+00:00"
+      "liquidity_usd": 23980.94,
+      "updated_at": "2026-11-25T23:48:59.986296+00:00"
     },
     "3rzcrvdu4osdjkdmhcykqhu5ef8f8lsy9bdgham8rmva": {
-      "volume_1h_usd": 0.11,
+      "volume_1h_usd": 0.02,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 21749.14,
-      "updated_at": "2026-11-25T15:40:53.028655+00:00"
+      "liquidity_usd": 22888.89,
+      "updated_at": "2026-11-25T23:49:00.805347+00:00"
     },
     "5iktvxj3dckq8huws7nxzqjzwkhigwy8josg3rguxk5g": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 17659.59,
-      "updated_at": "2026-11-25T15:40:53.250119+00:00"
+      "liquidity_usd": 18408.48,
+      "updated_at": "2026-11-25T23:49:01.058319+00:00"
     },
     "8lvi23yktg2damhynyboggnflnphrhlkveu2irqvscgg": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 11748.95,
-      "updated_at": "2026-11-25T15:40:54.539015+00:00"
+      "liquidity_usd": 11940.05,
+      "updated_at": "2026-11-25T23:49:02.524773+00:00"
     },
     "j61fedaj3uyyl7gfueojn7e2koyz6th88t6wpc5n2hjw": {
       "volume_1h_usd": 0.17,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 14730.72,
-      "updated_at": "2026-11-25T15:40:53.672859+00:00"
+      "liquidity_usd": 15556.75,
+      "updated_at": "2026-11-25T23:49:01.308914+00:00"
     },
     "at1staufzcjwysxfacrdwo5adnc2qyj2dmbusrnk7bxb": {
       "volume_1h_usd": 0.0,
@@ -16318,18 +16129,18 @@
       "updated_at": "2026-11-24T22:30:19.608157+00:00"
     },
     "26m4mzwcdcjttwkt43mddiojwvwgkzwfxeaoscrw85ml": {
-      "volume_1h_usd": 23.03,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 12125.68,
-      "updated_at": "2026-11-25T15:40:54.295916+00:00"
+      "liquidity_usd": 12931.69,
+      "updated_at": "2026-11-25T23:49:01.844994+00:00"
     },
     "9hr6nxw5wsffxnqnqxwzyhrw81uz3ppb7rf9j3i9nmt1": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 8901.14,
-      "updated_at": "2026-11-25T15:40:55.252016+00:00"
+      "liquidity_usd": 9711.71,
+      "updated_at": "2026-11-25T23:49:03.092660+00:00"
     },
     "7uqnr3qvet7gcvba4bbpwevfap4l3sttrjhxdugygq41": {
       "volume_1h_usd": 254.13,
@@ -16363,8 +16174,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 8859.38,
-      "updated_at": "2026-11-25T15:40:55.465398+00:00"
+      "liquidity_usd": 8417.94,
+      "updated_at": "2026-11-25T23:49:03.615941+00:00"
     },
     "gergm1amasyem8j41hu9hucatsk3uwra2ggh5j1kgbuw": {
       "volume_1h_usd": 0.0,
@@ -16374,11 +16185,11 @@
       "updated_at": "2026-11-05T04:32:37.258780+00:00"
     },
     "eg39azdncmui8hrbttmpnc85ptq8ubgbyhskszaf7nzc": {
-      "volume_1h_usd": 1.85,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 5105.13,
-      "updated_at": "2026-11-25T15:40:56.778644+00:00"
+      "liquidity_usd": 5414.86,
+      "updated_at": "2026-11-25T23:49:04.668855+00:00"
     },
     "2gozbecqiv7oqgd5fwcjhcgwhj2v81qbndz5uduakn7r": {
       "volume_1h_usd": 0.0,
@@ -16524,15 +16335,15 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 708.04,
-      "updated_at": "2026-11-25T15:41:01.589902+00:00"
+      "liquidity_usd": 751.6,
+      "updated_at": "2026-11-25T23:49:11.538383+00:00"
     },
     "d1koh7phukwrqf6yu83l5p28llk2erfij5rcwfwtug8n": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 4.75,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 708.67,
-      "updated_at": "2026-11-25T15:41:00.881109+00:00"
+      "liquidity_usd": 738.08,
+      "updated_at": "2026-11-25T23:49:11.850615+00:00"
     },
     "3isakqat6d9fqhq75ge5ndivmbaute61fmy8crxueraw": {
       "volume_1h_usd": 2249.42,
@@ -16556,25 +16367,25 @@
       "updated_at": "2026-11-04T16:47:11.864280+00:00"
     },
     "7sls5vdmdokduqc5vxsy9usfkaisjv82jv5urvv6gnpa": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 0.39,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 1032.88,
-      "updated_at": "2026-11-25T15:41:00.463316+00:00"
+      "liquidity_usd": 1087.37,
+      "updated_at": "2026-11-25T23:49:10.612728+00:00"
     },
     "3w62iak7ly1lcurakrsvdbbwfaszkoytqt8apkntopyc": {
+      "volume_1h_usd": 0.29,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 425.77,
+      "updated_at": "2026-11-25T23:49:12.111511+00:00"
+    },
+    "hwn3kxk4ppktrpzddp5u8moetqwgpfigpifv9p213bku": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 429.81,
-      "updated_at": "2026-11-25T15:41:02.709015+00:00"
-    },
-    "hwn3kxk4ppktrpzddp5u8moetqwgpfigpifv9p213bku": {
-      "volume_1h_usd": 0.46,
-      "volume_5m_usd": 0.0,
-      "transactions_5m": 0,
-      "liquidity_usd": 362.18,
-      "updated_at": "2026-11-25T15:41:02.918765+00:00"
+      "liquidity_usd": 364.25,
+      "updated_at": "2026-11-25T23:49:12.387241+00:00"
     },
     "5tp2ap4uyde6232zn3nbvitb2i8k1cdjzgr47cdd4ywi": {
       "volume_1h_usd": 3253.12,
@@ -16587,15 +16398,15 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 154.75,
-      "updated_at": "2026-11-25T15:41:04.232038+00:00"
+      "liquidity_usd": 160.14,
+      "updated_at": "2026-11-25T23:49:13.538364+00:00"
     },
     "2vbvhpphhky57zrjabaadg67dgie77ebypbshxtlwcct": {
-      "volume_1h_usd": 0.09,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 117.66,
-      "updated_at": "2026-11-25T15:41:05.177131+00:00"
+      "liquidity_usd": 124.5,
+      "updated_at": "2026-11-25T23:49:14.646216+00:00"
     },
     "gyrcae6fgkq1p6rtszmyrnov9ebym8h4slzj59gbb7kb": {
       "volume_1h_usd": 0.0,
@@ -16612,11 +16423,11 @@
       "updated_at": "2026-11-21T00:32:32.246602+00:00"
     },
     "3sy9a1apecsk6febtyww2sjfwa7w4ndfmnzhctlhansq": {
-      "volume_1h_usd": 0.46,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 114.9,
-      "updated_at": "2026-11-25T15:41:05.416592+00:00"
+      "liquidity_usd": 118.42,
+      "updated_at": "2026-11-25T23:49:14.994548+00:00"
     },
     "hxvzypgcuybq8skhpvmqzgravbhmuw17rvqhfa7hfzqu": {
       "volume_1h_usd": 5.56,
@@ -16644,28 +16455,28 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:17.696809+00:00"
+      "updated_at": "2026-11-25T23:49:31.325631+00:00"
     },
     "3dwetgq9utyvy6h7vhuc3fbmnbzuukstxlfc3nztou3k": {
-      "volume_1h_usd": 0.06,
+      "volume_1h_usd": 0.16,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 18.58,
-      "updated_at": "2026-11-25T15:41:06.096447+00:00"
+      "liquidity_usd": 18.8,
+      "updated_at": "2026-11-25T23:49:16.459108+00:00"
     },
     "czczt31bjafejvohxyjn2rz19qvycbvydtbro8o9a62j": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:17.497239+00:00"
+      "updated_at": "2026-11-25T23:49:31.623422+00:00"
     },
     "6dzwnasifjnubvrejohqeszaeet6mjrtrs19bgq1uu8i": {
-      "volume_1h_usd": 0.27,
+      "volume_1h_usd": 0.11,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 16.89,
-      "updated_at": "2026-11-25T15:41:06.758466+00:00"
+      "liquidity_usd": 16.41,
+      "updated_at": "2026-11-25T23:49:17.337840+00:00"
     },
     "hwsmke7bf5q37ug6qymbalnauz62f56ujgvzqkenj5rr": {
       "volume_1h_usd": 2294.08,
@@ -16689,11 +16500,11 @@
       "updated_at": "2026-11-21T19:11:41.729915+00:00"
     },
     "dzdqdysj5hbd6xnemgpxm7aaeglvkhdlxkppxwjdlcw3": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 0.04,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 10.56,
-      "updated_at": "2026-11-25T15:41:08.490263+00:00"
+      "liquidity_usd": 11.19,
+      "updated_at": "2026-11-25T23:49:18.724074+00:00"
     },
     "66ouz5qdqoaegpeeofzlebxt2cg3ryjxhjvasuatbsjx": {
       "volume_1h_usd": 0.0,
@@ -16752,11 +16563,11 @@
       "updated_at": "2026-11-04T17:05:00.065919+00:00"
     },
     "gjzucltrqvip1cjxpqwy3oqza5pp6plk9w33zztcjz6p": {
-      "volume_1h_usd": 0.08,
+      "volume_1h_usd": 0.03,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 9.84,
-      "updated_at": "2026-11-25T15:41:09.257482+00:00"
+      "liquidity_usd": 10.72,
+      "updated_at": "2026-11-25T23:49:18.980260+00:00"
     },
     "asrhett6gbsvfyev98ikh5wqausb2cistbavurtzj8xf": {
       "volume_1h_usd": 0.0,
@@ -16766,18 +16577,18 @@
       "updated_at": "2026-11-20T15:40:07.470691+00:00"
     },
     "hyywmbtgwovdwsdk4awxbww2xuknwcu7jlkhvhpb7c8v": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 0.1,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 24.17,
-      "updated_at": "2026-11-25T15:41:05.881356+00:00"
+      "liquidity_usd": 24.45,
+      "updated_at": "2026-11-25T23:49:15.938759+00:00"
     },
     "cuwbvpaqa9v1gasjfmeszajgbrxqbuk6mefshxixaw6v": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 7.63,
-      "updated_at": "2026-11-25T15:41:09.983337+00:00"
+      "updated_at": "2026-11-25T23:49:22.013534+00:00"
     },
     "6grqfv7tvdqdu9n2bfo1wqnbzvjhdu9wxtmxp9kyvcfx": {
       "volume_1h_usd": 60597.09,
@@ -16874,8 +16685,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 4.8,
-      "updated_at": "2026-11-25T15:41:10.631967+00:00"
+      "liquidity_usd": 4.88,
+      "updated_at": "2026-11-25T23:49:22.281843+00:00"
     },
     "e5d1inzulmr8ay15sbhmaa4ayzypauudvxxdihm878bt": {
       "volume_1h_usd": 0.15,
@@ -16896,14 +16707,14 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 4.37,
-      "updated_at": "2026-11-25T15:41:11.103118+00:00"
+      "updated_at": "2026-11-25T23:49:22.795421+00:00"
     },
     "aqucqke8j8a7zp8ziowcejf2acqwft4tnpah94dqwber": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:20.230256+00:00"
+      "updated_at": "2026-11-25T23:49:33.214129+00:00"
     },
     "gqcpxxok5apqqkv4lng572dv2g8bxg2wzxw3gkpswpmi": {
       "volume_1h_usd": 88.59,
@@ -17070,8 +16881,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 3759.39,
-      "updated_at": "2026-11-25T05:01:04.107466+00:00"
+      "liquidity_usd": 3737.18,
+      "updated_at": "2026-11-25T23:49:06.514531+00:00"
     },
     "eda4j3zyks9rb7nzwjtzrdab5qvwjph1e5k6yq511u7": {
       "volume_1h_usd": 0.0,
@@ -17497,8 +17308,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 10.04,
-      "updated_at": "2026-11-25T15:41:08.733295+00:00"
+      "liquidity_usd": 10.14,
+      "updated_at": "2026-11-25T23:49:19.620572+00:00"
     },
     "6qj3bnndimjeqx97n5s1ucpdpvnjv4gxacmxctc5szqf": {
       "volume_1h_usd": 14532.75,
@@ -17707,8 +17518,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 14775.73,
-      "updated_at": "2026-11-25T15:40:53.462107+00:00"
+      "liquidity_usd": 15298.14,
+      "updated_at": "2026-11-25T23:49:01.575326+00:00"
     },
     "97hnb1jvdbzqtqpfkyuhl9xn4mgxjkfchrzgrht51ivp": {
       "volume_1h_usd": 12881.48,
@@ -18183,8 +17994,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 7315.69,
-      "updated_at": "2026-11-25T15:40:56.279902+00:00"
+      "liquidity_usd": 7770.96,
+      "updated_at": "2026-11-25T23:49:04.140225+00:00"
     },
     "8x51xhcsvcqlwuf3pw4myh76fntfpjdeconehvwdb14e": {
       "volume_1h_usd": 3925.68,
@@ -19044,8 +18855,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 17.65,
-      "updated_at": "2026-11-25T15:41:06.545769+00:00"
+      "liquidity_usd": 18.31,
+      "updated_at": "2026-11-25T23:49:16.795567+00:00"
     },
     "dog3cdswtschvgz1aj9r6ufh7zszv51jtucb3xnpsezq": {
       "volume_1h_usd": 2406.12,
@@ -19237,11 +19048,11 @@
       "updated_at": "2026-11-05T01:28:57.590521+00:00"
     },
     "6rij69caav1svepv8tuizvqrjoa417btzwpd1u9wtfj1": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 0.12,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 8.33,
-      "updated_at": "2026-11-25T15:41:09.723719+00:00"
+      "liquidity_usd": 8.76,
+      "updated_at": "2026-11-25T23:49:21.398756+00:00"
     },
     "avvutqkwzjf4rejocamb266r8fs6nmsc4vbvrp3hjctr": {
       "volume_1h_usd": 0.0,
@@ -19307,11 +19118,11 @@
       "updated_at": "2026-11-05T01:56:50.276511+00:00"
     },
     "etspm15qsrtgvmzbphagkls54n3dzdzx2eqrha1lnp9k": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 0.15,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 14.58,
-      "updated_at": "2026-11-25T15:41:07.189860+00:00"
+      "liquidity_usd": 15.04,
+      "updated_at": "2026-11-25T23:49:17.912473+00:00"
     },
     "39pxegtys41gjmpwm7jqafyaq9aee5aek1zckxtln2mz": {
       "volume_1h_usd": 0.0,
@@ -19678,11 +19489,11 @@
       "updated_at": "2026-11-05T04:13:07.422774+00:00"
     },
     "acmesdq4mckampa9gjyyhg3kmekmkinjoz9yemvavwxt": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 0.15,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 15.52,
-      "updated_at": "2026-11-25T15:41:06.963305+00:00"
+      "liquidity_usd": 16.2,
+      "updated_at": "2026-11-25T23:49:17.649421+00:00"
     },
     "5fy1mhbevbdmvjnkajwpoqqvrnonccarasmzmsgwt3zr": {
       "volume_1h_usd": 2674.26,
@@ -19909,11 +19720,11 @@
       "updated_at": "2026-11-05T06:47:51.107671+00:00"
     },
     "3cfckggv57vnbwwqxuxfzau2glpvzxxfy2tkrt4qgjc5": {
-      "volume_1h_usd": 0.08,
+      "volume_1h_usd": 0.04,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 7.61,
-      "updated_at": "2026-11-25T15:41:10.342047+00:00"
+      "liquidity_usd": 8.85,
+      "updated_at": "2026-11-25T23:49:20.703517+00:00"
     },
     "5irjqyb79f9ggsswoftpdb1evsoysrqybhxugqfye4ut": {
       "volume_1h_usd": 143.93,
@@ -20031,8 +19842,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 13.0,
-      "updated_at": "2026-11-25T15:41:07.813609+00:00"
+      "liquidity_usd": 13.97,
+      "updated_at": "2026-11-25T23:49:18.178013+00:00"
     },
     "bnvebtx9v2n9kwozkppgp3zdqyf3tty2bd3utplkdqit": {
       "volume_1h_usd": 3230.45,
@@ -20452,7 +20263,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 3.78,
-      "updated_at": "2026-11-25T15:41:11.330698+00:00"
+      "updated_at": "2026-11-25T23:49:23.334883+00:00"
     },
     "a5whsnpcceev8uhvl2kv8bk7qnz7gurlnnmhitfjpsaq": {
       "volume_1h_usd": 55.44,
@@ -20592,7 +20403,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 3547.66,
-      "updated_at": "2026-11-25T15:40:56.995552+00:00"
+      "updated_at": "2026-11-25T23:49:06.780689+00:00"
     },
     "8aw2t6rljbmhzkdpg37yjgjsp9rcybssucdkd9ohefwl": {
       "volume_1h_usd": 0.0,
@@ -20802,7 +20613,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 53.42,
-      "updated_at": "2026-11-25T15:41:05.628195+00:00"
+      "updated_at": "2026-11-25T23:49:15.689280+00:00"
     },
     "2bquidpwk81zcsrdczmpxjndxummj74pjkv2zqwojhae": {
       "volume_1h_usd": 0.0,
@@ -20899,8 +20710,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 210.4,
-      "updated_at": "2026-11-25T15:41:03.758900+00:00"
+      "liquidity_usd": 218.98,
+      "updated_at": "2026-11-25T23:49:12.978364+00:00"
     },
     "7j5pcphnwmpxcdna57s5r2k5dsmwtjpgqmv2tgvetfra": {
       "volume_1h_usd": 0.0,
@@ -20983,8 +20794,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 17.73,
-      "updated_at": "2026-11-25T15:41:06.306813+00:00"
+      "liquidity_usd": 17.93,
+      "updated_at": "2026-11-25T23:49:17.049026+00:00"
     },
     "j9tx5jq6aqgbi6frxx8gjmor9u4dgz9gezuqgpmjtfd3": {
       "volume_1h_usd": 0.0,
@@ -21026,7 +20837,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 156.25,
-      "updated_at": "2026-11-25T15:41:03.986116+00:00"
+      "updated_at": "2026-11-25T23:49:13.849851+00:00"
     },
     "78qjbyraab1hel6bqh7snzibl8qshpaxk58pnokkrye2": {
       "volume_1h_usd": 0.0,
@@ -21845,7 +21656,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-11T16:52:33.430617+00:00"
+      "updated_at": "2026-11-25T23:49:34.781321+00:00"
     },
     "2v6xbrh7ngkwpwbgng4qakgh3sc1pte7ddvv9a4kdbyz": {
       "volume_1h_usd": 513.82,
@@ -21886,8 +21697,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 8.38,
-      "updated_at": "2026-11-25T15:41:09.473119+00:00"
+      "liquidity_usd": 8.58,
+      "updated_at": "2026-11-25T23:49:21.669221+00:00"
     },
     "481zcfafawfsynz2wa1mk7udv8aawuxelhtguqrw33na": {
       "volume_1h_usd": 69848.87,
@@ -22363,7 +22174,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 1370.02,
-      "updated_at": "2026-11-25T15:40:59.745966+00:00"
+      "updated_at": "2026-11-25T23:49:10.101014+00:00"
     },
     "4emrua9ojher7sv4kvxfkcw6xbpvyeugpddtz3v51zdn": {
       "volume_1h_usd": 0.0,
@@ -22478,11 +22289,11 @@
       "updated_at": "2026-11-07T21:34:29.279968+00:00"
     },
     "6fgezmt24scvcwkmqsw3qaq83jweg2j8oncjw5yhybpw": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 0.17,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 128.97,
-      "updated_at": "2026-11-25T15:41:04.438281+00:00"
+      "liquidity_usd": 138.03,
+      "updated_at": "2026-11-25T23:49:14.393392+00:00"
     },
     "f3zuxehzjjxnrvnwa3cpqe8qzkvk4djtmpe7dcqz2ro9": {
       "volume_1h_usd": 0.0,
@@ -23909,8 +23720,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 4.55,
-      "updated_at": "2026-11-25T15:41:10.871893+00:00"
+      "liquidity_usd": 4.61,
+      "updated_at": "2026-11-25T23:49:22.546013+00:00"
     },
     "9vmcjjvayzmr9s8npnywensbvxjyitr3yp8pqqhjeokw": {
       "volume_1h_usd": 0.0,
@@ -24438,11 +24249,11 @@
       "updated_at": "2026-11-10T07:56:52.243034+00:00"
     },
     "9ndjdvdyqybdx7kbh3hvp47ocuafadueb8xp1erehmvx": {
-      "volume_1h_usd": 139.61,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 22578.1,
-      "updated_at": "2026-11-25T15:40:52.818957+00:00"
+      "liquidity_usd": 23654.51,
+      "updated_at": "2026-11-25T23:49:00.549068+00:00"
     },
     "7wlngax3hg7ubr7jfg3ejjz7z6zdtwahzjponico1onz": {
       "volume_1h_usd": 0.0,
@@ -24634,11 +24445,11 @@
       "updated_at": "2026-11-11T11:40:04.285776+00:00"
     },
     "4eu1lrgsx8vfvi26ycjcqfkvhnwwfjvycozygkc5nyz4": {
-      "volume_1h_usd": 46.2,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:20.468467+00:00"
+      "updated_at": "2026-11-25T23:49:33.767391+00:00"
     },
     "5isvs31h7hmdggmyuvzmhdsywv7cydd6czjtbqzctlii": {
       "volume_1h_usd": 1655.68,
@@ -24956,18 +24767,18 @@
       "updated_at": "2026-11-10T21:26:40.498145+00:00"
     },
     "elgudg4fhrdkztpvex2mqqvffnfsjnkf1ag7xh7zvth8": {
-      "volume_1h_usd": 98.35,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 8210.1,
-      "updated_at": "2026-11-25T15:40:55.782309+00:00"
+      "updated_at": "2026-11-25T23:49:03.888363+00:00"
     },
     "6ne1nkgyfehnna3c6wnxwkayeqcryom7sbrpoa8snhkp": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 25.3,
-      "updated_at": "2026-11-11T19:56:22.771213+00:00"
+      "liquidity_usd": 21.39,
+      "updated_at": "2026-11-25T23:49:16.204508+00:00"
     },
     "fwu1suo1br8qtziun2u8thhddjzcwmvkfx2widyx7me9": {
       "volume_1h_usd": 0.0,
@@ -25170,7 +24981,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 3001.57,
-      "updated_at": "2026-11-25T15:40:57.462200+00:00"
+      "updated_at": "2026-11-25T23:49:07.862424+00:00"
     },
     "8g6cg4omp8eyhsikmq9wndgqjnwxzrstt2axztxlhd2l": {
       "volume_1h_usd": 0.0,
@@ -26171,7 +25982,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:14.035428+00:00"
+      "updated_at": "2026-11-25T23:49:27.943520+00:00"
     },
     "boa7roneqpru7ugtlfxgzf2vgkdc3rvqjmdcvxqgwqjz": {
       "volume_1h_usd": 2735.73,
@@ -26237,11 +26048,11 @@
       "updated_at": "2026-11-12T09:41:11.640025+00:00"
     },
     "fqd8z3dy6nrxzgx152sumyl9ayyqabycptsmy4spegnh": {
-      "volume_1h_usd": 29.78,
-      "volume_5m_usd": 29.78,
-      "transactions_5m": 1,
-      "liquidity_usd": 105042.76,
-      "updated_at": "2026-11-25T15:40:51.350988+00:00"
+      "volume_1h_usd": 568.02,
+      "volume_5m_usd": 497.73,
+      "transactions_5m": 4,
+      "liquidity_usd": 111615.51,
+      "updated_at": "2026-11-25T23:48:57.549741+00:00"
     },
     "9pyw8oxx3saqcetkzgzvhb68q8xzzwpkfw6jk1sweqdv": {
       "volume_1h_usd": 0.0,
@@ -26398,11 +26209,11 @@
       "updated_at": "2026-11-23T19:17:57.430988+00:00"
     },
     "cxzdgnd4gdn1vpnarfo5wehl75q2a8tut1z8bkgg2phb": {
-      "volume_1h_usd": 0.17,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 214.78,
-      "updated_at": "2026-11-25T15:41:03.533667+00:00"
+      "liquidity_usd": 217.61,
+      "updated_at": "2026-11-25T23:49:13.267387+00:00"
     },
     "4uuyttefmuqbcbf6p5xrwntpj3zm3fgg3np7fuo76ku6": {
       "volume_1h_usd": 113.06,
@@ -26454,11 +26265,11 @@
       "updated_at": "2026-11-14T01:21:46.387256+00:00"
     },
     "6sjj33plnkawgwg4cghszzajxmynutkmebnufqgs8igb": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 0.17,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 127.97,
-      "updated_at": "2026-11-25T15:41:04.740415+00:00"
+      "liquidity_usd": 139.54,
+      "updated_at": "2026-11-25T23:49:14.114483+00:00"
     },
     "fcensxyjfrsksz6tasuencsfgwkgkh6yurn1ammyhhzn": {
       "volume_1h_usd": 0.0,
@@ -26478,8 +26289,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 105454.85,
-      "updated_at": "2026-11-25T15:40:51.134962+00:00"
+      "liquidity_usd": 107836.82,
+      "updated_at": "2026-11-25T23:48:57.777696+00:00"
     },
     "epvwqejcnenvsnyecma2955bgtqjk2ptxuggrvtiffg2": {
       "volume_1h_usd": 0.0,
@@ -28194,7 +28005,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:23.743402+00:00"
+      "updated_at": "2026-11-25T23:49:35.848007+00:00"
     },
     "bxkfxabozrkm7jmmmyacrnjnaxsduc5esyu6efu4zlph": {
       "volume_1h_usd": 0.0,
@@ -28648,8 +28459,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 2.92,
-      "updated_at": "2026-11-25T15:41:11.540216+00:00"
+      "liquidity_usd": 3.32,
+      "updated_at": "2026-11-25T23:49:23.587519+00:00"
     },
     "asyajtrpbnhhwjmpsqhk2pxn5zdp76javsgvvfe9bmu5": {
       "volume_1h_usd": 450.93,
@@ -29166,8 +28977,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 3106.01,
-      "updated_at": "2026-11-24T15:50:45.904807+00:00"
+      "liquidity_usd": 2855.74,
+      "updated_at": "2026-11-25T23:49:08.106333+00:00"
     },
     "ebelq7rlbhrrqnrhndtskhujiyjdv3wxwzesaer12pe2": {
       "volume_1h_usd": 188.72,
@@ -29313,8 +29124,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 4.69,
-      "updated_at": "2026-11-15T21:35:54.259296+00:00"
+      "liquidity_usd": 4.18,
+      "updated_at": "2026-11-25T23:49:23.047343+00:00"
     },
     "djztj8zjfr7lqnqwj7asypvipa5sk7bmtpgwyajmnph1": {
       "volume_1h_usd": 0.0,
@@ -29334,15 +29145,15 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 3222.75,
-      "updated_at": "2026-11-16T10:03:50.206477+00:00"
+      "liquidity_usd": 3127.93,
+      "updated_at": "2026-11-25T23:49:07.064436+00:00"
     },
     "dld8xxdrscmzzb9qflajnebfbq1x7n5umubqmq27yyq8": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 1.03,
-      "updated_at": "2026-11-16T10:04:01.386176+00:00"
+      "liquidity_usd": 0.89,
+      "updated_at": "2026-11-25T23:49:24.194304+00:00"
     },
     "4ysi3cn32dx6zcpvjj5a8tndcagzxx152hukhsmemjnv": {
       "volume_1h_usd": 131.75,
@@ -29649,8 +29460,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 2.43,
-      "updated_at": "2026-11-17T00:17:34.758942+00:00"
+      "liquidity_usd": 2.68,
+      "updated_at": "2026-11-25T23:49:23.937298+00:00"
     },
     "gmq4ezwj5m3ns9yrd61a3hjjnavctx7uzirm7qzyjzpf": {
       "volume_1h_usd": 0.0,
@@ -30028,7 +29839,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:12.869423+00:00"
+      "updated_at": "2026-11-25T23:49:26.287263+00:00"
     },
     "cqbcptg64ptw2nfsjgxmhu9hhqkyjuq25i1bwqjgrtxq": {
       "volume_1h_usd": 0.0,
@@ -30500,11 +30311,11 @@
       "updated_at": "2026-11-16T16:17:37.049483+00:00"
     },
     "8b79cmtrtcs7nxj3zlnhxaq156gygzedxvmwjdn2idsx": {
-      "volume_1h_usd": 644.76,
-      "volume_5m_usd": 3.35,
+      "volume_1h_usd": 703.73,
+      "volume_5m_usd": 44.93,
       "transactions_5m": 1,
-      "liquidity_usd": 53399.5,
-      "updated_at": "2026-11-25T15:40:51.943489+00:00"
+      "liquidity_usd": 60001.94,
+      "updated_at": "2026-11-25T23:48:58.885932+00:00"
     },
     "crbuyj2j7hpzd1fwuughopq25hyffkvjujgtpmxcojrp": {
       "volume_1h_usd": 0.0,
@@ -30542,11 +30353,11 @@
       "updated_at": "2026-11-16T17:41:38.096176+00:00"
     },
     "cp6whu9kcj2ixvfu1ozluip7oozxrq3yfjevikinbbkc": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 78.89,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:19.625325+00:00"
+      "updated_at": "2026-11-25T23:49:32.539501+00:00"
     },
     "9daj9lvnvbf4yfsi6coonw87jdgnwqsbou2dmdygggfz": {
       "volume_1h_usd": 0.0,
@@ -30812,7 +30623,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:13.377671+00:00"
+      "updated_at": "2026-11-25T23:49:27.093237+00:00"
     },
     "9snxdgymhbe43krpkermmp2g9kw7sr4vyzliuq1xmnvr": {
       "volume_1h_usd": 18745.53,
@@ -32576,7 +32387,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:16.300600+00:00"
+      "updated_at": "2026-11-25T23:49:30.169200+00:00"
     },
     "6hg29fnjkiht2jfd4bjf7uukwqukw1eqziyvm9kh1k9n": {
       "volume_1h_usd": 0.0,
@@ -33744,8 +33555,8 @@
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 334.98,
-      "updated_at": "2026-11-25T15:41:03.127953+00:00"
+      "liquidity_usd": 338.37,
+      "updated_at": "2026-11-25T23:49:12.656869+00:00"
     },
     "2j2qnwsfmmqdwxuzep1iutchdfnppweyfmtflyxkeqbj": {
       "volume_1h_usd": 526.7,
@@ -34616,11 +34427,11 @@
       "updated_at": "2026-11-22T13:33:22.028539+00:00"
     },
     "gx3vpyqv9rpeec9lydyc1t6b9nyqcz7kvbonref5uxxl": {
-      "volume_1h_usd": 0.09,
-      "volume_5m_usd": 0.0,
-      "transactions_5m": 0,
-      "liquidity_usd": 13.03,
-      "updated_at": "2026-11-25T15:41:07.502293+00:00"
+      "volume_1h_usd": 0.14,
+      "volume_5m_usd": 0.02,
+      "transactions_5m": 1,
+      "liquidity_usd": 13.1,
+      "updated_at": "2026-11-25T23:49:18.445120+00:00"
     },
     "eh3mync4g9nvuivxtu7jj8fspgxjrhozegbd99uow5b": {
       "volume_1h_usd": 1327.21,
@@ -35103,7 +34914,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:13.816288+00:00"
+      "updated_at": "2026-11-25T23:49:27.614080+00:00"
     },
     "qc1xf8gsgcmxzwefea4w7cntt4de6manefg7t4fmhnd": {
       "volume_1h_usd": 0.0,
@@ -35155,11 +34966,11 @@
       "updated_at": "2026-11-23T23:25:13.071687+00:00"
     },
     "dyn6hys8o2rrwvhxm29sishpqdm58cshmdbvuffftwbt": {
-      "volume_1h_usd": 156.76,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 1860.27,
-      "updated_at": "2026-11-25T15:40:58.817289+00:00"
+      "liquidity_usd": 2267.44,
+      "updated_at": "2026-11-25T23:49:08.488616+00:00"
     },
     "axqrduklxc3wsmvkmncz8vkox5dx4rvrsgvn1qcsrhds": {
       "volume_1h_usd": 0.0,
@@ -35264,7 +35075,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:21.132735+00:00"
+      "updated_at": "2026-11-25T23:49:34.279817+00:00"
     },
     "gqfpnrtf5xe7rgdcsfpedbe6fmkrxjhyftdq4ol5xc58": {
       "volume_1h_usd": 125.67,
@@ -35421,11 +35232,11 @@
       "updated_at": "2026-11-23T09:44:52.344302+00:00"
     },
     "b47j5erjfnkcavuyrmuyus6ywvc6g8doufimfjhfae9t": {
-      "volume_1h_usd": 0.0,
+      "volume_1h_usd": 367.36,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 1947.91,
-      "updated_at": "2026-11-25T15:40:58.601067+00:00"
+      "liquidity_usd": 2029.29,
+      "updated_at": "2026-11-25T23:49:08.740109+00:00"
     },
     "3aar7qvnnpopqcy9by7g1ghguonl22nxks9chk8uuwuv": {
       "volume_1h_usd": 0.0,
@@ -35446,7 +35257,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:24.232673+00:00"
+      "updated_at": "2026-11-25T23:49:36.222235+00:00"
     },
     "e129lxesxx4qn199eusezmqaspnp4papev6zhpmaj3zp": {
       "volume_1h_usd": 169.78,
@@ -35509,7 +35320,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 1321.27,
-      "updated_at": "2026-11-25T15:40:59.965056+00:00"
+      "updated_at": "2026-11-25T23:49:10.362520+00:00"
     },
     "7pwu7ggzxzywou9hgnht5hgepq6gdfvuzme4e6uaz59u": {
       "volume_1h_usd": 0.0,
@@ -35883,11 +35694,11 @@
       "updated_at": "2026-11-23T22:24:19.112814+00:00"
     },
     "8wxlity6my6u4qqmtxhpakxgm6flcklney2cupwckj4z": {
-      "volume_1h_usd": 30.88,
-      "volume_5m_usd": 3.85,
-      "transactions_5m": 1,
+      "volume_1h_usd": 47.28,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:19.937168+00:00"
+      "updated_at": "2026-11-25T23:49:32.707927+00:00"
     },
     "4e9wvzapqfy6gnbyszrzsolegbxvqs5zfaqvfvgg3uql": {
       "volume_1h_usd": 3048.49,
@@ -36132,7 +35943,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:14.354292+00:00"
+      "updated_at": "2026-11-25T23:49:28.215026+00:00"
     },
     "875hfgtmdx3a7gmkf6mybf5rfudia2eulkppbffs58sx": {
       "volume_1h_usd": 0.0,
@@ -36664,7 +36475,7 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 1064.14,
-      "updated_at": "2026-11-25T15:41:00.251277+00:00"
+      "updated_at": "2026-11-25T23:49:10.861299+00:00"
     },
     "3cdwxs64qqxqkpdsd4qtjimvbjyuuxxazwyqwfmdely9": {
       "volume_1h_usd": 0.0,
@@ -36702,32 +36513,32 @@
       "updated_at": "2026-11-25T05:01:28.258048+00:00"
     },
     "zjyimb6i8gm4ldmmxhtfaorym2ifnngtne6y2a6qg4n": {
-      "volume_1h_usd": 136.65,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
-      "liquidity_usd": 1014.02,
-      "updated_at": "2026-11-25T15:41:00.664183+00:00"
+      "liquidity_usd": 982.46,
+      "updated_at": "2026-11-25T23:49:11.185851+00:00"
     },
     "d2xcj7rzbvz7beubn5noxyb44wvmgepubtw1yzdkmokk": {
-      "volume_1h_usd": 0.03,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.03,
-      "updated_at": "2026-11-25T15:41:12.251958+00:00"
+      "updated_at": "2026-11-25T23:49:24.752693+00:00"
     },
     "cpbrxyqjsd7srkk2lreayzpau6qmnckp1jymmmnda4ky": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:12.467345+00:00"
+      "updated_at": "2026-11-25T23:49:26.557239+00:00"
     },
     "5y9v9syevwjjzb9pdat2plfhw9ves9pkvaedzrsu3nk4": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:13.160930+00:00"
+      "updated_at": "2026-11-25T23:49:26.839326+00:00"
     },
     "7zmmxeqcbacvpnom2optkw2hbctueolz5eozbvdgk5wa": {
       "volume_1h_usd": 3791.88,
@@ -36762,21 +36573,21 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:16.519761+00:00"
+      "updated_at": "2026-11-25T23:49:30.727144+00:00"
     },
     "a2a8hghftrca1uzxsahjhwogxgtcatmua3spjnbeimjs": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:16.829109+00:00"
+      "updated_at": "2026-11-25T23:49:31.058782+00:00"
     },
     "22cdgbekmuj9attmy1pupgiwacg9y88bixppucatrnby": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:18.023548+00:00"
+      "updated_at": "2026-11-25T23:49:31.879687+00:00"
     },
     "q6exldrkt56texhbxubwpvpmfbqsesxn9pqh8remhpb": {
       "volume_1h_usd": 0.0,
@@ -36807,11 +36618,11 @@
       "updated_at": "2026-11-25T15:41:19.355419+00:00"
     },
     "bundnwb2slk1ttzmkyo5stuxthbettmrdnkdrgydmuvz": {
-      "volume_1h_usd": 5.25,
+      "volume_1h_usd": 1.81,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:21.330109+00:00"
+      "updated_at": "2026-11-25T23:49:34.520969+00:00"
     },
     "hmqkmnhimeshsxcqxpbjbm6zvojskrnqk2wmfbmyx9gn": {
       "volume_1h_usd": 6983.39,
@@ -36828,11 +36639,11 @@
       "updated_at": "2026-11-25T15:41:21.878535+00:00"
     },
     "bqvta6n4q8cx5q4cuwwafurnetk25owvydvstsucwdy7": {
-      "volume_1h_usd": 1.63,
+      "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:22.121839+00:00"
+      "updated_at": "2026-11-25T23:49:35.316224+00:00"
     },
     "eprdnpcfkjlrzvk8wrnvsz5evngp7bcy5mltrchy7p3d": {
       "volume_1h_usd": 0.0,
@@ -36860,21 +36671,210 @@
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:23.318825+00:00"
+      "updated_at": "2026-11-25T23:49:35.584102+00:00"
     },
     "6pvrgt4aihav7v4zuqzfphsffbhyewqywyalw3naxugw": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:24.929426+00:00"
+      "updated_at": "2026-11-25T23:49:36.517080+00:00"
     },
     "85yf2ozzgtyuvsysvvc6gz1xtp4c6qte96fukzan21dt": {
       "volume_1h_usd": 0.0,
       "volume_5m_usd": 0.0,
       "transactions_5m": 0,
       "liquidity_usd": 0.0,
-      "updated_at": "2026-11-25T15:41:25.142700+00:00"
+      "updated_at": "2026-11-25T23:49:36.788061+00:00"
+    },
+    "hw4jf8lfw2ycf4wzscvb8zq4bekeeyhy8pyc4br6gvcl": {
+      "volume_1h_usd": 377550.59,
+      "volume_5m_usd": 66921.57,
+      "transactions_5m": 1757,
+      "liquidity_usd": 54528.6,
+      "updated_at": "2026-11-25T23:48:59.317978+00:00"
+    },
+    "7x5dcjapwmfjkmuockqsvv1rbakumo2avhvum377m2xg": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 4445.68,
+      "updated_at": "2026-11-25T23:49:04.988705+00:00"
+    },
+    "3zjxf2kfn8pwdvzxget33aw3r8tnih5ekdwk3gbrdgmr": {
+      "volume_1h_usd": 2913.7,
+      "volume_5m_usd": 75.43,
+      "transactions_5m": 8,
+      "liquidity_usd": 3927.8,
+      "updated_at": "2026-11-25T23:49:05.195658+00:00"
+    },
+    "gwa39b3gvdrirfcpnqvkaeberc1kjcmdtshid4oylahq": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 3812.45,
+      "updated_at": "2026-11-25T23:49:05.468612+00:00"
+    },
+    "6wzv9ngdrh7cw9ecyqkfqmtqflwfbnmr6dv4ytij8m1d": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 1584.22,
+      "updated_at": "2026-11-25T23:49:09.566334+00:00"
+    },
+    "5yg6bj24wku86ja8zkccat26texzzylx94g3gatc4tcb": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 1567.86,
+      "updated_at": "2026-11-25T23:49:09.844525+00:00"
+    },
+    "7wgceijzvdnmt7yrkahwcmtn71ptbcbcl1cryfoqs4rx": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 56.44,
+      "updated_at": "2026-11-25T23:49:15.358601+00:00"
+    },
+    "9aggqnhow7syblw8gbwemskh3wlyyceooubtkdtbxryy": {
+      "volume_1h_usd": 0.16,
+      "volume_5m_usd": 0.03,
+      "transactions_5m": 1,
+      "liquidity_usd": 10.19,
+      "updated_at": "2026-11-25T23:49:19.354672+00:00"
+    },
+    "huqbukapjupxjcrn62tynktnrzfzbrkgjxccz6axcdqc": {
+      "volume_1h_usd": 0.03,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 9.81,
+      "updated_at": "2026-11-25T23:49:20.225772+00:00"
+    },
+    "7hgl1tajse4gct6ggepn6hihgtp48tilu8xyyrv1cvr8": {
+      "volume_1h_usd": 3.13,
+      "volume_5m_usd": 0.26,
+      "transactions_5m": 5,
+      "liquidity_usd": 8.87,
+      "updated_at": "2026-11-25T23:49:20.452398+00:00"
+    },
+    "g7ejvwo3i2rclxdbxe3ua7bu4aiywrt7ubewtsnwza71": {
+      "volume_1h_usd": 1.61,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 8.82,
+      "updated_at": "2026-11-25T23:49:20.977268+00:00"
+    },
+    "6dpckn6qpyakgpmkekemxrcnshthvrfcs1sugbw857pn": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.29,
+      "updated_at": "2026-11-25T23:49:24.473828+00:00"
+    },
+    "hqhhp54d2tecvt4tcas4k312k7yy4gpxrdgsgvxgxagw": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:25.053939+00:00"
+    },
+    "hnyjb7ymdudyjjgk1kkujvnzjlgaj7foglpewmo2ctvy": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:25.337387+00:00"
+    },
+    "cafc8prtwfbbe2uxjpk9vk2yzftmu3jnoue5je5gh5g4": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:25.596137+00:00"
+    },
+    "ahosdxasssd462wwwvuxzvgmyjl3mzbu44utbcvpsphc": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:26.044576+00:00"
+    },
+    "e4lxtcquaufsoxmp1rpj2t2ddenb7ihqdk7wb6a8whih": {
+      "volume_1h_usd": 4421.34,
+      "volume_5m_usd": 4421.34,
+      "transactions_5m": 248,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:27.350375+00:00"
+    },
+    "bkvxycibxncfj2jvm1imp9ebg474gbwdq7tfjgjkaprw": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:28.471360+00:00"
+    },
+    "9refamdqiztmtrkcob35ggfaiunoqlvcwcrurmdj8nqn": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:28.759529+00:00"
+    },
+    "d72b7hb6somukwcm2cbelf5eyp8ggnlkiun3aob2ggbf": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:29.103525+00:00"
+    },
+    "aqvqm8bwjpx98jbazgd6b4yrjyuh4aofbxzybozeliyl": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:29.347340+00:00"
+    },
+    "fgg22tkavqyp4do47ehgs6fpiomksabch49gyj2bpcsk": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:29.643029+00:00"
+    },
+    "6tgraakwyqsdfebbs8byd6c2qxeeixjser27j5v2bpct": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:29.889141+00:00"
+    },
+    "civf5pvcalp9vtvuladdx7mfqcsrgx9fcxagkujxyctu": {
+      "volume_1h_usd": 20013.83,
+      "volume_5m_usd": 13287.24,
+      "transactions_5m": 123,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:32.177208+00:00"
+    },
+    "gxdpgpkijehskfrxxwebvxburtumlvcuknujux5a1edb": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:32.953686+00:00"
+    },
+    "uagrzgsetxy8eeqz5rqbwiymeszvzfcmpawize8hfhs": {
+      "volume_1h_usd": 0.0,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:33.511643+00:00"
+    },
+    "abcqhs5bnt37ehehmt5rkine83aqcv6rccyzig53zeo8": {
+      "volume_1h_usd": 1470.68,
+      "volume_5m_usd": 0.0,
+      "transactions_5m": 0,
+      "liquidity_usd": 0.0,
+      "updated_at": "2026-11-25T23:49:35.065918+00:00"
     }
   },
   "alert_history": {
